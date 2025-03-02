@@ -24,9 +24,51 @@
 
 <body>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/app.js"></script>
+<div>
+    <label for="search-i">Palabra</label>
+    <input type="text" class="search" id="search-i" placeholder="buscar...">
+
+    <button type="submit" id="search-b" onclick="searchWord()">
+      Buscar
+    </button>
+</div>
+
+<!-- Add your site or application content here -->
+<p style="color: white; font-weight: bold; font-size: larger;">mew, mu</p>
+<p style="color: yellow; font-weight: bold; border-bottom: solid; border-bottom-width: thin">sufijo instrumental</p>
+<p id="resultsBody">El sufijo instrumental -mew ∼ -mu se adjunta solo a sustantivos..<br/>
+<p style="color: #888888;font-weight: bold;">usos</p>
+
+
+<p>
+<span style="color: orange; font-weight: bold;">posicion:</span> sirve para decir donde estamosecir donde estamosecir donde estamosecir donde estamos<br/><br/>
+<span style="color: orange; font-weight: bold;">lugar:</span> sirve para decir donde estamos<br/>
+</p>
+<p style="font-style: italic; color: aquamarine; border-bottom: solid; border-bottom-width: thin">Ejemplos</p>
+<p>
+  <span style="padding-right:3px; padding-top: 3px; display:inline-block;">
+<img class="manImg" src="img/mapuche_flag.svg" width="20px" height="20px"></img>
+</span>
+  <span style="text-decoration: red underline; text-decoration-thickness: 3px;">anel</span><span style="text-decoration: yellow underline; text-decoration-thickness: 3px;">tu</span><span style="text-decoration: orange underline; text-decoration-thickness: 3px;">fiñ</span>
+  <span style="text-decoration: orange underline; text-decoration-thickness: 3px;">kiñe</span>
+  <span style="text-decoration: orange underline; text-decoration-thickness: 3px;">kuchillo</span>
+  <span style="text-decoration: blue underline;  text-decoration-thickness: 3px;">mew</span>
+<br/>
+  <span style="padding-right:3px; padding-top: 3px; display:inline-block;">
+<img class="manImg" src="img/spain_flag.svg" width="20px" height="20px"></img>
+</span>
+  <span style="font-style: italic;">lo amenacé con un cuchillo</span>
+</p>
+
+<script src="js/app.js"></script>
+
+<script>
+
+  function searchWord() {
+    document.getElementById("resultsBody").innerText = "aa"
+  }
+
+</script>
 
 </body>
 
