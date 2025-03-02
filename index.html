@@ -26,36 +26,29 @@
 <body>
 
 <div>
-    <label for="search-i">Palabra</label>
-    <input type="text" class="search" id="search-i" placeholder="buscar...">
+  <label for="search-i">Palabra</label>
+  <input type="text" class="search" id="search-i" placeholder="buscar...">
 
-    <button type="submit" id="search-b" onclick="searchWord()">
-      Buscar
-    </button>
+  <button type="submit" id="search-b" onclick="searchWord()">
+    Buscar
+  </button>
 </div>
 
 <!-- Detalles de la palabra -->
 <p class="particleTitle">mew, mu</p>
-<p class="particleTypeTitle">sufijo instrumental</p>
-<p class="particleExplanation" id="resultsBody">El sufijo instrumental -mew ∼ -mu se adjunta solo a sustantivos..<br/>
+<p class="particleTypeTitle" id="particleTypeTitle">[particleTypeTitle]</p>
+<p class="particleExplanation" id="particleExplanation">[particleExplanation]<br/>
 <p class="particleUses">usos</p>
 
-<p class="particleUsesBox">
-  <span class="particleOneWordUse">posicion: </span><span class="particleOneWordUseExplanation">sirve para decir donde estamosecir donde estamosecir donde estamosecir donde estamos</span><br/><br/>
-  <span class="particleOneWordUse">lugar: </span><span class="particleOneWordUseExplanation">sirve para decir donde estamos</span><br/>
+<p class="particleUsesBox" id="particleUsesBox">
+  [particleUsesBox]
 </p>
 <p class="particleExamplesTitle">Ejemplos</p>
-<p>
-  <img src="img/mapuche_flag.svg" width="20px" height="20px">
-  <span class="normalWordExample">anel</span><span class="particleExample1">tu</span><span class="particleExample2">fiñ</span>
-  <span class="normalWordExample">kiñe</span> <span class="normalWordExample">kuchillo</span>
-  <span class="particleExample3 mainParticle">mew</span>
-<br/>
-<img src="img/spain_flag.svg" width="20px" height="20px">
-  <span class="winkaExample">lo amenacé con un cuchillo</span>
+<p id="exampleList">
+  [exampleList]
 </p>
 
-<script src="js/app.js"></script>
+<script src="render.js"></script>
 
 <script>
 
@@ -64,7 +57,5 @@
   }
 
 </script>
-
 </body>
-
 </html>
