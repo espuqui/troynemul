@@ -1,13 +1,26 @@
 [
   {
     "type": "inst",
-    "forms": ["mew", "mu"],
+    "forms": [
+      "mew",
+      "mu"
+    ],
     "title": "sufijo instrumental",
-    "explanation": "El sufijo instrumental -mew ∼ -mu se adjunta solo a sustantivos (incluidos los sustantivos verbales) y pronombres. Indica instrumento, lugar, tiempo, causa y se utiliza en construcciones comparativas y partitiva. El sufijo -mew ∼ -mu también puede referirse a las circunstancias bajo las cuales ocurre un evento."
+    "explanation": "El sufijo instrumental -mew ∼ -mu se adjunta solo a sustantivos (incluidos los sustantivos verbales) y pronombres. Indica instrumento, lugar, tiempo, causa y se utiliza en construcciones comparativas y partitiva. El sufijo -mew ∼ -mu también puede referirse a las circunstancias bajo las cuales ocurre un evento.",
+    "usages": [
+      "posicion: sirve para ",
+      "lugar: bla"
+    ]
   },
   {
     "type": "ind4-33",
-    "forms": ["y"],
-    "explanation": "Tercera persona singular"
+    "forms": [
+      "y"
+    ],
+    "title": "conjugacion",
+    "explanation": "Tercera persona singular",
+    "usages": [
+      "verbo: al final "
+    ]
   }
 ]
