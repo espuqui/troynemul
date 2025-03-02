@@ -1,0 +1,90 @@
+/**
+Estilos
+ */
+
+.particleTitle {
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.particleTypeTitle {
+  color: yellow;
+  font-weight: bold;
+  border-bottom: solid;
+  border-bottom-width: thin
+}
+
+.particleExplanation {
+
+
+}
+
+.particleUses {
+  color: #888888;
+  font-weight: bold;
+}
+
+.particleUsesBox {
+  padding-left: 10px;
+}
+
+.particleOneWordUse {
+  color: orange;
+  font-weight: bold;
+}
+
+.particleOneWordUseExplanation {
+
+}
+
+.particleExamplesTitle {
+  font-style: italic;
+  color: aquamarine;
+  border-bottom: solid;
+  border-bottom-width: thin
+}
+
+.mapImg {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-image: url("../img/mapuche_flag.svg");
+}
+
+.normalWordExample {
+  cursor: pointer;
+}
+
+.particleExample1 {
+  text-decoration: yellow underline;
+  text-decoration-thickness: 3px;
+  cursor: pointer;
+}
+
+.particleExample2 {
+  text-decoration: orange underline;
+  text-decoration-thickness: 3px;
+  cursor: pointer;
+}
+
+.particleExample3 {
+  text-decoration: blue underline;
+  text-decoration-thickness: 3px;
+  cursor: pointer;
+}
+
+.mainParticle {
+  font-weight: bold;
+}
+
+.winkaExample {
+  font-style: italic;
+}
+
+.flagSpan {
+  padding-right: 3px;
+  padding-top: 3px;
+  display: inline-block;
+}
