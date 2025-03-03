@@ -1,4 +1,3 @@
-import particles from "./js/data/nouns.json" assert { type: "json" };
 import {parseExample} from "./js/src/parser.js";
 window.addEventListener('load', function () {
   render("mew|inst")
@@ -18,8 +17,15 @@ function handleTooltips() {
   });
 }
 
-
 function render(wordId) {
+  fetch("./js/data/nouns.json")
+    .then((res) => res.json())
+    .then((data) => {
+      renderFromParticleData(data[wordId], wordId)
+    })
+}
+
+function renderFromParticleData(particleData, wordId) {
 
   const particleTitle = document.getElementById("particleTitle")
   const particleTypeTitle = document.getElementById("particleTypeTitle")
@@ -27,24 +33,20 @@ function render(wordId) {
   const particleUsesBox = document.getElementById("particleUsesBox")
   const exampleList = document.getElementById("exampleList")
 
-  particleTitle.innerText = getWordTitle(wordId)
-  particleTypeTitle.innerText = particles[wordId].title
-  particleExplanation.innerText = particles[wordId].explanation
+  particleTitle.innerText = getWordTitle(particleData, wordId)
+  particleTypeTitle.innerText = particleData.title
+  particleExplanation.innerText = particleData.explanation
   particleUsesBox.innerHTML = ""
   exampleList.innerHTML = ""
 
-  for (let usage of particles[wordId].usages) {
+  for (let usage of particleData.usages) {
     particleUsesBox.innerHTML += renderUsage(usage)
   }
 
-  for (let examples of particles[wordId].examples) {
+  for (let examples of particleData.examples) {
     exampleList.innerHTML += renderMapu(examples[0], examples[1]) + "<br/>" + renderWinka(examples[2])
       + "<br /><br />"
   }
-
-  // Necesito mapear wordId > Ejemplos
-  // example = [mapu, spañol]
-
 
 }
 
@@ -62,10 +64,10 @@ function renderUsage(usage) {
   + renderWithSpan(details, "particleOneWordUseExplanation") + "<br/>"
 }
 
-function getWordTitle(wordId) {
+function getWordTitle(particleData, wordId) {
   let wordTitle = getMainWord(wordId)
-  if (particles[wordId].variations.length > 0) {
-    for (let otherWord of particles[wordId].variations) {
+  if (particleData.variations.length > 0) {
+    for (let otherWord of particleData.variations) {
       wordTitle += ", "
       wordTitle += otherWord
     }
@@ -113,15 +115,6 @@ function renderMapu(mapuche, grammar) {
       html += " "
     }
   }
- /* html += renderWithSpanOnClickTooltip("anel", "amenazar", "normalWordExample")
-  html += renderWithSpan("tu", "particleExample1")
-  html += renderWithSpan("fiñ", "particleExample2")
-  html += " "
-  html += renderWithSpanOnClickTooltip("kiñe", "amenazar", "normalWordExample")
-  html += " "
-  html += renderWithSpanOnClickTooltip("kuchillo", "amenazar", "normalWordExample")
-  html += " "
-  html += renderWithSpan("mew", "particleExample3 mainParticle")*/
 
   return html
 }
