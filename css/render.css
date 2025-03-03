@@ -45,6 +45,13 @@ Estilos
   border-bottom-width: thin
 }
 
+.particleRelativeExamplesTitle {
+  font-style: italic;
+  color: aqua;
+  border-bottom: solid;
+  border-bottom-width: thin
+}
+
 .mapImg {
   display: inline-block;
   width: 50px;
@@ -88,45 +95,6 @@ Estilos
   padding-top: 3px;
   display: inline-block;
 }
-
-/*
-.tooltip {
-  position: relative;
-  border-bottom: 1px dotted white;
-}
-.tooltip span {
-  visibility: hidden;
-  width: 10em;
-  background-color: #fff;
-  color: #000;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 9;
-  top: -1em;
-  left:  100%;
-  margin-left:1em;
-  opacity: 0;
-  transition: opacity 1s;
-}
-.tooltip span::after {
-  content: "";
-  position: absolute;
-  top: 1.5em;
-  right: 100%;
-  margin-top: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent white transparent transparent;
-}
-.tooltip input {
-  display:none;
-}
-.tooltip input:checked+span {
-  visibility: visible;
-  opacity: 1;
-}*/
 
 .tooltip {
   position: relative;

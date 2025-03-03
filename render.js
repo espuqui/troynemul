@@ -1,6 +1,6 @@
+import particles from "./js/data/nouns.json" assert { type: "json" };
 window.addEventListener('load', function () {
-  render("mew")
-
+  render("inst|mew")
   handleTooltips()
 });
 
@@ -18,22 +18,54 @@ function handleTooltips() {
 }
 
 
-function render() {
+function render(wordId) {
+
+  const particleTitle = document.getElementById("particleTitle")
   const particleTypeTitle = document.getElementById("particleTypeTitle")
   const particleExplanation = document.getElementById("particleExplanation")
   const particleUsesBox = document.getElementById("particleUsesBox")
   const exampleList = document.getElementById("exampleList")
 
+  particleTitle.innerText = getWordTitle(wordId)
+  particleTypeTitle.innerText = particles[wordId].title
+  particleExplanation.innerText = particles[wordId].explanation
+  particleUsesBox.innerHTML = ""
 
-  particleTypeTitle.innerText = "sufijo instrumental"
-  particleExplanation.innerText = "El sufijo instrumental -mew ∼ -mu se adjunta solo a sustantivos.."
-  particleUsesBox.innerHTML = renderWithSpan("posicion: ", "particleOneWordUse")
-    + renderWithSpan("blabla", "particleOneWordUseExplanation") + "<br/>"
-    + renderWithSpan("tiempo: ", "particleOneWordUse")
-    + renderWithSpan("blabla", "particleOneWordUseExplanation") + "<br/>"
+  for (let usage of particles[wordId].usages) {
+    particleUsesBox.innerHTML += renderUsage(usage)
+  }
 
   exampleList.innerHTML = renderMapu() + "<br/>" + renderWinka("lo amenacé con un cuchillo") + "<br /><br />"
   exampleList.innerHTML += renderMapu() + "<br/>" + renderWinka("lo amenacé con un cuchillo")
+}
+
+function renderUsage(usage) {
+  let colonIndex = usage.indexOf(":")
+
+  if (colonIndex === -1) {
+    return usage + "<br/>"
+  }
+
+  let subTitle = usage.substring(0, colonIndex + 1)
+  let details = usage.substring(colonIndex + 1)
+
+  return renderWithSpan(subTitle, "particleOneWordUse")
+  + renderWithSpan(details, "particleOneWordUseExplanation") + "<br/>"
+}
+
+function getWordTitle(wordId) {
+  let wordTitle = getMainWord(wordId)
+  if (particles[wordId].variations.length > 0) {
+    for (let otherWord of particles[wordId].variations) {
+      wordTitle += ", "
+      wordTitle += otherWord
+    }
+  }
+  return wordTitle
+}
+
+function getMainWord(wordId) {
+  return wordId.split("|")[1]
 }
 
 function renderWithSpan(text, spanClass) {
