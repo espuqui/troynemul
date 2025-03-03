@@ -1,11 +1,12 @@
-import {assertEqual} from "../tools/test_tools.js"
-import {NOUN_EXAMPLES} from "../data/nouns.js"
+import {assertEqualArray} from "../tools/test_tools.js"
 
+import {parseExample} from "../src/parser.js";
 export function runAllTests() {
-  parseNouns();
+  checkParseExample();
+  checkParseExample2();
 }
 
-
+/*
 class DictionaryEntry {
   constructor(entryType, form, mapucheWord) {
     this.examples = []
@@ -111,4 +112,21 @@ function parseNouns() {
   }
 
   console.dir(dictionary.mapucheDictionary.get("enew"));
+}
+*/
+
+function checkParseExample() {
+  let actual = parseExample("anel mew fach-antü",
+                            "amenazar (inst) este-dia")
+  let expected = ["anel*amenazar", " ", "mew|inst", " ", "fach*este", "antü*dia"]
+
+  assertEqualArray(actual, expected)
+}
+
+function checkParseExample2() {
+  let actual = parseExample("apon anel mew fach-antü",
+                            "estar.lleno amenazar (inst) este-dia")
+  let expected = ["apon*estar lleno", " ", "anel*amenazar", " ", "mew|inst", " ", "fach*este", "antü*dia"]
+
+  assertEqualArray(actual, expected)
 }

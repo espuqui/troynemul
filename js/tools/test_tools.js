@@ -15,3 +15,14 @@ export function assertEqual(actual, expected) {
     }
   }
 }
+
+export function assertEqualArray(actual, expected) {
+  if (actual.length !== expected .length) {
+    console.error("FAIL: Size don't match " + actual.length + " != " + expected.length)
+  }
+
+  for (let i in actual) {
+    assertEqual(actual[i], expected[i])
+  }
+
+}

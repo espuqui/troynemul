@@ -67,6 +67,7 @@ Estilos
 .particleExample1 {
   text-decoration: yellow underline;
   text-decoration-thickness: 3px;
+  text-decoration-skip-ink: none;
   cursor: pointer;
 }
 

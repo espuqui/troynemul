@@ -1,6 +1,7 @@
 import particles from "./js/data/nouns.json" assert { type: "json" };
+import {parseExample} from "./js/src/parser.js";
 window.addEventListener('load', function () {
-  render("inst|mew")
+  render("mew|inst")
   handleTooltips()
 });
 
@@ -30,13 +31,21 @@ function render(wordId) {
   particleTypeTitle.innerText = particles[wordId].title
   particleExplanation.innerText = particles[wordId].explanation
   particleUsesBox.innerHTML = ""
+  exampleList.innerHTML = ""
 
   for (let usage of particles[wordId].usages) {
     particleUsesBox.innerHTML += renderUsage(usage)
   }
 
-  exampleList.innerHTML = renderMapu() + "<br/>" + renderWinka("lo amenacé con un cuchillo") + "<br /><br />"
-  exampleList.innerHTML += renderMapu() + "<br/>" + renderWinka("lo amenacé con un cuchillo")
+  for (let examples of particles[wordId].examples) {
+    exampleList.innerHTML += renderMapu(examples[0], examples[1]) + "<br/>" + renderWinka(examples[2])
+      + "<br /><br />"
+  }
+
+  // Necesito mapear wordId > Ejemplos
+  // example = [mapu, spañol]
+
+
 }
 
 function renderUsage(usage) {
@@ -65,7 +74,7 @@ function getWordTitle(wordId) {
 }
 
 function getMainWord(wordId) {
-  return wordId.split("|")[1]
+  return wordId.split("|")[0]
 }
 
 function renderWithSpan(text, spanClass) {
@@ -84,10 +93,27 @@ function renderWithSpanOnClickTooltip(text, tooltipText, spanClass) {
     return `<span class="tooltip spanClass">${text}<span>${tooltipText}</span></span>`
 }
 
-function renderMapu() {
+
+
+function renderMapu(mapuche, grammar) {
   let html = '<img src="img/mapuche_flag.svg" width="20px" height="20px" alt="">'
+
+  let exampleParts = parseExample(mapuche, grammar)
   html += " "
-  html += renderWithSpanOnClickTooltip("anel", "amenazar", "normalWordExample")
+
+  for (let example of exampleParts) {
+    if (example.includes("*")) {
+      let wordParts = example.split("*")
+      html += renderWithSpanOnClickTooltip(wordParts[0], wordParts[1], "normalWordExample")
+    } else if (example.includes("|")) {
+      let wordParts = example.split("|")
+
+      html += renderWithSpan(wordParts[0], generateColorClassFromString(wordParts[1]))
+    } else if (example === " ") {
+      html += " "
+    }
+  }
+ /* html += renderWithSpanOnClickTooltip("anel", "amenazar", "normalWordExample")
   html += renderWithSpan("tu", "particleExample1")
   html += renderWithSpan("fiñ", "particleExample2")
   html += " "
@@ -95,7 +121,7 @@ function renderMapu() {
   html += " "
   html += renderWithSpanOnClickTooltip("kuchillo", "amenazar", "normalWordExample")
   html += " "
-  html += renderWithSpan("mew", "particleExample3 mainParticle")
+  html += renderWithSpan("mew", "particleExample3 mainParticle")*/
 
   return html
 }
@@ -105,5 +131,15 @@ function renderWinka(word) {
   html += " "
   html += renderWithSpan(word, "winkaExample")
   return html
+}
+
+function generateColorClassFromString(str) {
+  let hash = 0
+  for (let i = 0; i < str.length; i++) {
+    hash += str.charCodeAt(i)
+  }
+
+  let colorIndex = hash % 3
+  return `particleExample${colorIndex}`
 }
 

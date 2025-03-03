@@ -1,5 +1,5 @@
 {
-  "inst|mew": {
+  "mew|inst": {
     "title": "sufijo instrumental",
     "variations": [
       "mu"
@@ -26,8 +26,8 @@
         "mi mamá me miró"
       ],
       [
-        "anel-tu-fiñ kiñe kuchillo-mew",
-        "amenazar-(tr33)-(edo6-ind1s3) un cuchillo-(inst)",
+        "anel-tu-fiñ kiñe kuchillo mu",
+        "amenazar-(tr33)-(edo6-ind1s3) un cuchillo (inst)",
         "lo amenacé con un cuchillo"
       ],
       [
@@ -42,7 +42,7 @@
       ]
     ]
   },
-  "ind4-33|y": {
+  "y|ind4-33": {
     "title": "conjugacion",
     "variations": [],
     "explanation": "Tercera persona singular",
