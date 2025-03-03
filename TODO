@@ -1,9 +1,9 @@
 P0: Split usages in parts [DONE]
+P0: Define what to render [DONE]
 
 P0: Common words will not point to another page nor are searchable
 P0: Highlight word in the focus
 
-P0: Define what to render
 P0: Render APIs
 
 P0: Hyperlinks in examples
