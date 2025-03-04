@@ -50,3 +50,35 @@ export function buildAliasMap(data) {
   }
   return result
 }
+
+export function searchAdditionalExamples(particle, data, aliasMap) {
+
+  let results = []
+
+  let uniqueParticle = aliasMap.get(particle)
+
+  for (const particleInData in data) {
+    if (data.hasOwnProperty(particleInData)) {
+      if (particleInData === uniqueParticle) {
+        continue
+      }
+
+      const contents = data[particleInData];
+
+      for (let example of contents.examples) {
+        let grammarParts = parseExample(example[0], example[1])
+        for (let part of grammarParts) {
+          if (aliasMap.get(part) === uniqueParticle) {
+            let additionalExample = []
+            additionalExample.push(grammarParts)
+            additionalExample.push(example[2])
+            results.push(additionalExample)
+            break
+          }
+        }
+      }
+    }
+  }
+
+  return results
+}

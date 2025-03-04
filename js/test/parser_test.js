@@ -1,11 +1,13 @@
 import {assertEqual, assertEqualArray} from "../tools/test_tools.js"
-import {buildAliasMap} from "../src/parser.js";
+import {buildAliasMap, searchAdditionalExamples} from "../src/parser.js";
 
 import {parseExample} from "../src/parser.js";
 export function runAllTests() {
   //checkParseExample();
   //checkParseExample2();
-  checkBuildAliasMap();
+  //checkBuildAliasMap();
+
+  checkSearchAdditionalExamples()
 }
 
 /*
@@ -158,4 +160,33 @@ function checkBuildAliasMap() {
   assertEqual(aliasMap.get("ya|conj"), "a|conj")
 
   assertEqual(aliasMap.get("b|conj"), "b|conj")
+}
+
+function checkSearchAdditionalExamples() {
+  let data = {}
+  data["mew|inst"] = {}
+  data["mew|inst"]["variations"] = ["mu", "mo"]
+  data["mew|inst"]["examples"] = [["", "",""],["","",""]]
+  data["le|adv"] = {}
+  data["le|adv"]["variations"] = ["küle"]
+  data["le|adv"]["examples"] = [["mew ko-le", "(inst) agua-(adv)","esp1"]]
+  data["a|conj"] = {}
+  data["a|conj"]["variations"] = ["ya"]
+  data["a|conj"]["examples"] = [["", "",""],["b a piru","(conj) (conj) gusano","esp2"]]
+  data["b|conj"] = {}
+  data["b|conj"]["examples"] = [["", "",""],["fey-mu","el-(inst)","esp3"]]
+  data["b|conj"]["variations"] = []
+
+  let aliasMap = buildAliasMap(data)
+  let examples = searchAdditionalExamples("mu|inst", data, aliasMap)
+
+  assertEqualArray(["mew|inst", " ", "ko*agua", "le|adv"], examples[0][0])
+  assertEqualArray("esp1", examples[0][1])
+
+  assertEqualArray(["fey*el", "mu|inst"], examples[1][0])
+  assertEqualArray("esp3", examples[1][1])
+
+  let examples2 = searchAdditionalExamples("b|conj", data, aliasMap)
+  assertEqualArray(["b|conj", " ", "a|conj", " ", "piru*gusano"], examples2[0][0])
+  assertEqualArray("esp2", examples2[0][1])
 }
