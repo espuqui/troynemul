@@ -1,9 +1,9 @@
 import {parseExample} from "./js/src/parser.js";
-window.addEventListener('load', function () {
-  render("mew|inst")
-  handleTooltips()
-});
+import {buildAliasMap} from "./js/src/parser.js";
 
+export function init() {
+  handleTooltips();
+}
 function handleTooltips() {
   document.addEventListener('click', function(event) {
     let elements = document.getElementsByClassName("tooltip")
@@ -17,15 +17,17 @@ function handleTooltips() {
   });
 }
 
-function render(wordId) {
+export function render(particleId) {
   fetch("./js/data/nouns.json")
     .then((res) => res.json())
     .then((data) => {
-      renderFromParticleData(data[wordId], wordId)
+      let aliasMap = buildAliasMap(data)
+      let uniqueParticleId = aliasMap.get(particleId)
+      renderFromParticleData(data[uniqueParticleId], uniqueParticleId)
     })
 }
 
-function renderFromParticleData(particleData, wordId) {
+function renderFromParticleData(particleData, particleId) {
 
   const particleTitle = document.getElementById("particleTitle")
   const particleTypeTitle = document.getElementById("particleTypeTitle")
@@ -33,7 +35,7 @@ function renderFromParticleData(particleData, wordId) {
   const particleUsesBox = document.getElementById("particleUsesBox")
   const exampleList = document.getElementById("exampleList")
 
-  particleTitle.innerText = getWordTitle(particleData, wordId)
+  particleTitle.innerText = getWordTitle(particleData, particleId)
   particleTypeTitle.innerText = particleData.title
   particleExplanation.innerText = particleData.explanation
   particleUsesBox.innerHTML = ""
@@ -83,10 +85,6 @@ function renderWithSpan(text, spanClass) {
   return `<span class="${spanClass}">${text}</span>`
 }
 
-function renderWithSpanOnClickAlert(text, spanClass) {
-  return renderWithSpanOnClick(text, spanClass, "alert('" + text + "')")
-}
-
 function renderWithSpanOnClick(text, spanClass, code) {
   return `<span class="${spanClass}" onclick="${code}">${text}</span>`
 }
@@ -95,7 +93,9 @@ function renderWithSpanOnClickTooltip(text, tooltipText, spanClass) {
     return `<span class="tooltip spanClass">${text}<span>${tooltipText}</span></span>`
 }
 
-
+function renderWithSpanOnClickParticle(text, particleId, spanClass) {
+  return renderWithSpanOnClick(text, spanClass, `renderEvent('${particleId}')`)
+}
 
 function renderMapu(mapuche, grammar) {
   let html = '<img src="img/mapuche_flag.svg" width="20px" height="20px" alt="">'
@@ -103,15 +103,15 @@ function renderMapu(mapuche, grammar) {
   let exampleParts = parseExample(mapuche, grammar)
   html += " "
 
-  for (let example of exampleParts) {
-    if (example.includes("*")) {
-      let wordParts = example.split("*")
+  for (let examplePart of exampleParts) {
+    if (examplePart.includes("*")) {
+      let wordParts = examplePart.split("*")
       html += renderWithSpanOnClickTooltip(wordParts[0], wordParts[1], "normalWordExample")
-    } else if (example.includes("|")) {
-      let wordParts = example.split("|")
+    } else if (examplePart.includes("|")) {
+      let wordParts = examplePart.split("|")
 
-      html += renderWithSpan(wordParts[0], generateColorClassFromString(wordParts[1]))
-    } else if (example === " ") {
+      html += renderWithSpanOnClickParticle(wordParts[0], examplePart, generateColorClassFromString(wordParts[1]))
+    } else if (examplePart === " ") {
       html += " "
     }
   }

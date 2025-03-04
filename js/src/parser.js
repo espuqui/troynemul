@@ -35,3 +35,18 @@ export function parseExample(mapuche, grammar) {
 
   return output
 }
+
+export function buildAliasMap(data) {
+
+  let result = new Map()
+
+  for (let key in data) {
+    result.set(key, key)
+    let type = key.split("|")[1]
+    for (let variation of data[key].variations) {
+      let variationKey = variation + "|" + type
+      result.set(variationKey, key)
+    }
+  }
+  return result
+}

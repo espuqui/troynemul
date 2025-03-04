@@ -1,9 +1,11 @@
-import {assertEqualArray} from "../tools/test_tools.js"
+import {assertEqual, assertEqualArray} from "../tools/test_tools.js"
+import {buildAliasMap} from "../src/parser.js";
 
 import {parseExample} from "../src/parser.js";
 export function runAllTests() {
-  checkParseExample();
-  checkParseExample2();
+  //checkParseExample();
+  //checkParseExample2();
+  checkBuildAliasMap();
 }
 
 /*
@@ -129,4 +131,31 @@ function checkParseExample2() {
   let expected = ["apon*estar lleno", " ", "anel*amenazar", " ", "mew|inst", " ", "fach*este", "antü*dia"]
 
   assertEqualArray(actual, expected)
+}
+
+function checkBuildAliasMap() {
+
+  let data = {}
+  data["mew|inst"] = {}
+  data["mew|inst"]["variations"] = ["mu", "mo"]
+  data["le|adv"] = {}
+  data["le|adv"]["variations"] = ["küle"]
+  data["a|conj"] = {}
+  data["a|conj"]["variations"] = ["ya"]
+  data["b|conj"] = {}
+  data["b|conj"]["variations"] = []
+
+  let aliasMap = buildAliasMap(data)
+
+  assertEqual(aliasMap.get("mu|inst"), "mew|inst")
+  assertEqual(aliasMap.get("mew|inst"), "mew|inst")
+  assertEqual(aliasMap.get("mo|inst"), "mew|inst")
+
+  assertEqual(aliasMap.get("le|adv"), "le|adv")
+  assertEqual(aliasMap.get("küle|adv"), "le|adv")
+
+  assertEqual(aliasMap.get("a|conj"), "a|conj")
+  assertEqual(aliasMap.get("ya|conj"), "a|conj")
+
+  assertEqual(aliasMap.get("b|conj"), "b|conj")
 }

@@ -45,12 +45,25 @@
 <p class="particleRelativeExamplesTitle">Otros ejemplos</p>
 <p id="relativeExampleList">[relativeExampleList]</p>
 
-<script type="module" src="render.js"></script>
+<script type="module">
+  import {render, init} from "./render.js";
+
+  window.addEventListener('load', function () {
+    init()
+    render("mu|inst")
+    window.render = render
+  })
+
+</script>
 
 <script>
 
   function searchWord() {
     document.getElementById("resultsBody").innerText = "aa"
+  }
+
+  function renderEvent(particleId) {
+    window.render(particleId)
   }
 
 </script>
