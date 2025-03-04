@@ -1,8 +1,12 @@
 import {parseExample} from "./js/src/parser.js";
 import {buildAliasMap} from "./js/src/parser.js";
 
-export function init() {
+export function init(data) {
   handleTooltips();
+  window.myvar = "AA"
+  window.particleData = data
+  window.aliasMap = buildAliasMap(data)
+  render("mew|inst")
 }
 function handleTooltips() {
   document.addEventListener('click', function(event) {
@@ -18,13 +22,8 @@ function handleTooltips() {
 }
 
 export function render(particleId) {
-  fetch("./js/data/nouns.json")
-    .then((res) => res.json())
-    .then((data) => {
-      let aliasMap = buildAliasMap(data)
-      let uniqueParticleId = aliasMap.get(particleId)
-      renderFromParticleData(data[uniqueParticleId], uniqueParticleId)
-    })
+  let uniqueParticleId = window.aliasMap.get(particleId)
+  renderFromParticleData(window.particleData[uniqueParticleId], uniqueParticleId)
 }
 
 function renderFromParticleData(particleData, particleId) {

@@ -47,11 +47,14 @@
 
 <script type="module">
   import {render, init} from "./render.js";
+  window.render = render
 
   window.addEventListener('load', function () {
-    init()
-    render("mu|inst")
-    window.render = render
+    fetch("./js/data/nouns.json")
+      .then((res) => res.json())
+      .then((data) => {
+        init(data)
+      })
   })
 
 </script>
