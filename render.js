@@ -1,5 +1,6 @@
 import {parseExample} from "./js/src/parser.js";
 import {buildAliasMap} from "./js/src/parser.js";
+import {searchAdditionalExamples} from "./js/src/parser.js";
 
 export function init(data) {
   handleTooltips();
@@ -33,22 +34,31 @@ function renderFromParticleData(particleData, particleId) {
   const particleExplanation = document.getElementById("particleExplanation")
   const particleUsesBox = document.getElementById("particleUsesBox")
   const exampleList = document.getElementById("exampleList")
+  const relativeExampleList = document.getElementById("relativeExampleList")
 
   particleTitle.innerText = getWordTitle(particleData, particleId)
   particleTypeTitle.innerText = particleData.title
   particleExplanation.innerText = particleData.explanation
   particleUsesBox.innerHTML = ""
   exampleList.innerHTML = ""
+  relativeExampleList.innerHTML = ""
 
   for (let usage of particleData.usages) {
     particleUsesBox.innerHTML += renderUsage(usage)
   }
 
   for (let examples of particleData.examples) {
-    exampleList.innerHTML += renderMapu(examples[0], examples[1]) + "<br/>" + renderWinka(examples[2])
+    let exampleParts = parseExample(examples[0], examples[1])
+    exampleList.innerHTML += renderMapu(exampleParts) + "<br/>" + renderWinka(examples[2])
       + "<br /><br />"
   }
 
+  let relativeExamples = searchAdditionalExamples(particleId, window.particleData, window.aliasMap)
+
+  for (let examples of relativeExamples) {
+    relativeExampleList.innerHTML += renderMapu(examples[0]) + "<br/>" + renderWinka(examples[1])
+      + "<br /><br />"
+  }
 }
 
 function renderUsage(usage) {
@@ -96,10 +106,9 @@ function renderWithSpanOnClickParticle(text, particleId, spanClass) {
   return renderWithSpanOnClick(text, spanClass, `renderEvent('${particleId}')`)
 }
 
-function renderMapu(mapuche, grammar) {
+function renderMapu(exampleParts) {
   let html = '<img src="img/mapuche_flag.svg" width="20px" height="20px" alt="">'
 
-  let exampleParts = parseExample(mapuche, grammar)
   html += " "
 
   for (let examplePart of exampleParts) {
