@@ -4,8 +4,13 @@ P0: Render APIs [DONE]
 P0: Highlight word in the focus
 
 P0: Common words will not point to another page nor are searchable
-P0: Hyperlinks in examples
+P0: Hyperlinks in examples [DONE]
 P0: Search bar
 P0: Colors in JSON instead of hash
 
 P1: Create CSS properly
+
+P1: Toggle Spanish show/hide
+P1: Busqueda y particula siempre visible
+P1: ancho tooltip de acuerdo al texto
+P1: color en definicion

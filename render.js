@@ -49,14 +49,14 @@ function renderFromParticleData(particleData, particleId) {
 
   for (let examples of particleData.examples) {
     let exampleParts = parseExample(examples[0], examples[1])
-    exampleList.innerHTML += renderMapu(exampleParts) + "<br/>" + renderWinka(examples[2])
+    exampleList.innerHTML += renderMapu(exampleParts, particleId) + "<br/>" + renderWinka(examples[2])
       + "<br /><br />"
   }
 
   let relativeExamples = searchAdditionalExamples(particleId, window.particleData, window.aliasMap)
 
   for (let examples of relativeExamples) {
-    relativeExampleList.innerHTML += renderMapu(examples[0]) + "<br/>" + renderWinka(examples[1])
+    relativeExampleList.innerHTML += renderMapu(examples[0], particleId) + "<br/>" + renderWinka(examples[1])
       + "<br /><br />"
   }
 }
@@ -94,20 +94,23 @@ function renderWithSpan(text, spanClass) {
   return `<span class="${spanClass}">${text}</span>`
 }
 
-function renderWithSpanOnClick(text, spanClass, code) {
-  return `<span class="${spanClass}" onclick="${code}">${text}</span>`
+function renderWithSpanOnClick(text, spanClass, code, styleDef) {
+  return `<span class="${spanClass}" style="${styleDef}" onclick="${code}">${text}</span>`
 }
 
 function renderWithSpanOnClickTooltip(text, tooltipText, spanClass) {
-    return `<span class="tooltip spanClass">${text}<span>${tooltipText}</span></span>`
+    return `<span class="tooltip ${spanClass}">${text}<span>${tooltipText}</span></span>`
 }
 
-function renderWithSpanOnClickParticle(text, particleId, spanClass) {
-  return renderWithSpanOnClick(text, spanClass, `renderEvent('${particleId}')`)
+function renderWithSpanOnClickParticle(text, particleId, spanClass, color) {
+  return renderWithSpanOnClick(text, spanClass, `renderEvent('${particleId}')`,
+                               `text-decoration: ${color} underline;
+                               text-decoration-thickness: 3px;
+                               text-decoration-skip-ink: none;`)
 }
 
-function renderMapu(exampleParts) {
-  let html = '<img src="img/mapuche_flag.svg" width="20px" height="20px" alt="">'
+function renderMapu(exampleParts, particleId) {
+  let html = '<img src="img/mapuche_flag.svg" width="10px" height="10px" alt="">'
 
   html += " "
 
@@ -117,8 +120,17 @@ function renderMapu(exampleParts) {
       html += renderWithSpanOnClickTooltip(wordParts[0], wordParts[1], "normalWordExample")
     } else if (examplePart.includes("|")) {
       let wordParts = examplePart.split("|")
-
-      html += renderWithSpanOnClickParticle(wordParts[0], examplePart, generateColorClassFromString(wordParts[1]))
+      let currentWord = window.aliasMap.get(examplePart)
+      if (currentWord === undefined) {
+        html += renderWithSpanOnClickParticle(wordParts[0], examplePart, "particleExample", "gray")
+      } else {
+        let color = window.particleData[currentWord].color
+        if (window.aliasMap.get(examplePart) === particleId) {
+          html += renderWithSpanOnClickParticle(wordParts[0], examplePart, "particleExample particleCurrent", color)
+        } else {
+          html += renderWithSpanOnClickParticle(wordParts[0], examplePart, "particleExample", color)
+        }
+      }
     } else if (examplePart === " ") {
       html += " "
     }
@@ -128,7 +140,7 @@ function renderMapu(exampleParts) {
 }
 
 function renderWinka(word) {
-  let html = '<img src="img/spain_flag.svg" width="20px" height="20px" alt="">'
+  let html = '<img src="img/spain_flag.svg" width="10px" height="10px" alt="">'
   html += " "
   html += renderWithSpan(word, "winkaExample")
   return html

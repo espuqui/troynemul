@@ -1,6 +1,7 @@
 {
   "mew|inst": {
     "title": "sufijo instrumental",
+    "color": "green",
     "variations": [
       "mu"
     ],
@@ -44,6 +45,7 @@
   },
   "y|ind4-33": {
     "title": "conjugacion",
+    "color": "yellow",
     "variations": [],
     "explanation": "Tercera persona singular",
     "usages": [
