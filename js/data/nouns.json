@@ -7,27 +7,7 @@
     ],
     "content": [
       {
-        "explanation": "El sufijo instrumental -mew ∼ -mu se adjunta solo a sustantivos (incluidos los sustantivos verbales) y pronombres.",
-        "examples": [
-          [
-            "iñche ñi ñuke ngüma-y",
-            "yo (poss1s) mamá llorar-(ind4-33)",
-            "mi mamá lloró"
-          ],
-          [
-            "leli-fiñ ñi ñuke",
-            "watch-(edo6-ind1s3) (poss1s) mamá",
-            "yo miré a mi mamá"
-          ],
-          [
-            "leli-enew ñi ñuke",
-            "mirar-(ido6-ind1s3-ds1) (poss1s) mother",
-            "mi mamá me miró"
-          ]
-        ]
-      },
-      {
-        "explanation": "Ademas, el sufijo instrumental",
+        "explanation": "El sufijo instrumental -mew ∼ -mu se añade únicamente a los sustantivos (incluidos los sustantivos verbales) y a los pronombres. Indica instrumento, lugar, tiempo, causa y se usa en construcciones comparativas y partitivas. El sufijo -mew ∼ -mu también puede referirse a las circunstancias bajo las cuales tiene lugar un evento. ",
         "examples": [
           [
             "anel-tu-fiñ kiñe kuchillo mu",
@@ -35,14 +15,44 @@
             "lo amenacé con un cuchillo"
           ],
           [
-            "apo-li-y ta-ñi nge küllewün-mew",
-            "estar.lleno-(st28)-(ind4-33) el-(poss3) ojo lágrima-(inst)",
+            "apo-li-y ta-ñi nge küllewün mew",
+            "estar.lleno-(st28)-(ind4-33) el-(poss3) ojo lágrima (inst)",
             "sus ojos estan llenos de lágrimas"
           ],
           [
-            "are-tu-n-mew monge-liy",
-            "prestar-(tr33)-(pvn4)-(inst) vivir-(st28-ind4-33)",
+            "are-tu-n mew monge-liy",
+            "prestar-(tr33)-(pvn4) (inst) vivir-(st28-ind4-33)",
             "él vive de lo prestado"
+          ]
+        ]
+      },
+      {
+        "explanation": "El instrumental no solo indica un lugar donde, sino también una dirección hacia la cual, desde la cual, etc. La ambigüedad del sufijo -mew como marcador de dirección puede aclararse añadiendo un verbo que indique dirección, como en a continuación.",
+        "examples": [
+          [
+            "fey-mew fücha puru-yngün",
+            "que-(inst) largo baile-(ind4-3ns3-p2)",
+            "allá ellos² bailaron por largo rato"
+          ],
+          [
+            "uma-pu-n ta-ñi peñi mu",
+            "alojarse-(loc17)-(ind1s3) ese-(poss1s) hermano (inst)",
+            "Me alojé donde mi hermano"
+          ],
+          [
+            "dewma-ke-fu-yiñ linea kiñe waria-mu ka waria mu",
+            "hacer-(cf14)-(ipd8)-(ind4-1ns3-p2) cable una ciudad-(inst) otra ciudad (inst)",
+            "antes hacíamos² un cable de una ciudad a otra (ciudad)"
+          ],
+          [
+            "potrü-tripa-n ti wangku mu",
+            "caerse.hacia.atrás-irse/salir-(ind1s3) la silla (inst)",
+            "Me caí de la silla para atrás"
+          ],
+          [
+            "tüfa püntü-le-y ka-ke-lu mew",
+            "esta separar-(st28)-(ind4-33) otro-(distr)-(svn4) (inst)",
+            "Esto se distingue de los demás / Esto se distingue entre los demás"
           ]
         ]
       }
