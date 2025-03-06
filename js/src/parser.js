@@ -1,5 +1,3 @@
-
-
 export function parseExample(mapuche, grammar) {
   let mapucheParts = mapuche.split(/[\-\s]/)
   let grammarParts = grammar.split(/[\-\s](?![^(]*\))/)
@@ -65,15 +63,17 @@ export function searchAdditionalExamples(particle, data, aliasMap) {
 
       const contents = data[particleInData];
 
-      for (let example of contents.examples) {
-        let grammarParts = parseExample(example[0], example[1])
-        for (let part of grammarParts) {
-          if (aliasMap.get(part) === uniqueParticle) {
-            let additionalExample = []
-            additionalExample.push(grammarParts)
-            additionalExample.push(example[2])
-            results.push(additionalExample)
-            break
+      for (let content of contents.content) {
+        for (let example of content.examples) {
+          let grammarParts = parseExample(example[0], example[1])
+          for (let part of grammarParts) {
+            if (aliasMap.get(part) === uniqueParticle) {
+              let additionalExample = []
+              additionalExample.push(grammarParts)
+              additionalExample.push(example[2])
+              results.push(additionalExample)
+              break
+            }
           }
         }
       }

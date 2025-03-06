@@ -31,26 +31,22 @@ function renderFromParticleData(particleData, particleId) {
 
   const particleTitle = document.getElementById("particleTitle")
   const particleTypeTitle = document.getElementById("particleTypeTitle")
-  const particleExplanation = document.getElementById("particleExplanation")
-  const particleUsesBox = document.getElementById("particleUsesBox")
-  const exampleList = document.getElementById("exampleList")
+  const particleContent = document.getElementById("particleContent")
   const relativeExampleList = document.getElementById("relativeExampleList")
 
   particleTitle.innerText = getWordTitle(particleData, particleId)
   particleTypeTitle.innerText = particleData.title
-  particleExplanation.innerText = particleData.explanation
-  particleUsesBox.innerHTML = ""
-  exampleList.innerHTML = ""
+  particleContent.innerText = ""
   relativeExampleList.innerHTML = ""
 
-  for (let usage of particleData.usages) {
-    particleUsesBox.innerHTML += renderUsage(usage)
-  }
+  for (let content of particleData.content) {
+    particleContent.innerHTML += "<p class='particleContent'>" + content.explanation + "</p>"
 
-  for (let examples of particleData.examples) {
-    let exampleParts = parseExample(examples[0], examples[1])
-    exampleList.innerHTML += renderMapu(exampleParts, particleId) + "<br/>" + renderWinka(examples[2])
-      + "<br /><br />"
+    for (let examples of content.examples) {
+      let exampleParts = parseExample(examples[0], examples[1])
+      particleContent.innerHTML += renderMapu(exampleParts, particleId) + "<br/>" + renderWinka(examples[2])
+        + "<br /><br />"
+    }
   }
 
   let relativeExamples = searchAdditionalExamples(particleId, window.particleData, window.aliasMap)
