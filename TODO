@@ -14,3 +14,15 @@ P1: Toggle Spanish show/hide
 P1: Busqueda y particula siempre visible
 P1: ancho tooltip de acuerdo al texto
 P1: Go back
+
+
+{
+        "explanation": "",
+        "examples": [
+          [
+            "",
+            "",
+            ""
+          ]
+        ]
+      }

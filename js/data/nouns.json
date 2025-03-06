@@ -30,8 +30,8 @@
         "explanation": "El instrumental no solo indica un lugar donde, sino también una dirección hacia la cual, desde la cual, etc. La ambigüedad del sufijo -mew como marcador de dirección puede aclararse añadiendo un verbo que indique dirección, como en a continuación.",
         "examples": [
           [
-            "fey-mew fücha puru-yngün",
-            "que-(inst) largo baile-(ind4-3ns3-p2)",
+            "fey mew fücha puru-yngün",
+            "que (inst) largo baile-(ind4-3ns3-p2)",
             "allá ellos² bailaron por largo rato"
           ],
           [
@@ -53,6 +53,81 @@
             "tüfa püntü-le-y ka-ke-lu mew",
             "esta separar-(st28)-(ind4-33) otro-(distr)-(svn4) (inst)",
             "Esto se distingue de los demás / Esto se distingue entre los demás"
+          ]
+        ]
+      },
+      {
+        "explanation": "El sufijo -mew ∼ -mu se omite cuando el lugar o la dirección está especificado por un nombre. Al omitir -mew ∼ -mu, se cambia la función del sustantivo de objeto instrumental a complemento. Compare",
+        "examples": [
+          [
+            "amu-a-y waria-mew",
+            "ir-(nrld9)-(ind4-33) ciudad (inst)",
+            "el irá a la ciudad"
+          ],
+          [
+            "amu-a-y Temuko",
+            "ir-(nrld9)-(ind4-33) Temuco",
+            "he irá a Temuco"
+          ]
+        ]
+      },
+      {
+        "explanation": "Algunos sustantivos de lugar y tiempo pueden usarse de manera adverbial. Con estos sustantivos, -mew ∼ -mu es opcional.",
+        "examples": [
+          [
+            "furi mew müle-y / furi müle-y",
+            "atrás (inst) estar-(ind4-33) / atrás estar-(ind4-33)",
+            "él está atrás"
+          ]
+        ]
+      },
+      {
+        "explanation": "La relación entre un sustantivo de lugar y otro sustantivo se expresa por yuxtaposición. El segundo sustantivo toma opcionalmente el sufijo -mew ∼ -mu.",
+        "examples": [
+          [
+            "furi ruka mew müle-y /furi ruka müle-y",
+            "atrás casa (inst) estar-(ind4-33) / atrás casa estar-(ind4-33)",
+            "ella está atrás de la casa"
+          ]
+        ]
+      },
+      {
+        "explanation": "El instrumento y el lugar también se expresan mediante el sufijo nominalizador -m. Para desambiguar -m, se puede añadir el sufijo -mew ∼ -mu, pero solo cuando -m indica lugar. Cuando el sufijo -mew ∼ -mu tiene un significado temporal, puede indicar un período de tiempo durante el cual tiene lugar un evento o un momento, antes o después de un momento de orientación, en el cual ocurre un evento.",
+        "examples": [
+          [
+            "küla antü mew kutran-fu-n",
+            "tres día-(inst) enfermo-(ipd8)-(ind1s3)",
+            "Yo he estado enfermo por tres días"
+          ],
+          [
+            "külá antü mew tripa-n",
+            "tres dias (inst) salir-(ind1s3)",
+            "Yo partí hace tres días / Yo partí tres dïas después"
+          ],
+          [
+            "küla antü mew tripa-ya-n",
+            "tres días (inst) salir-(nrld9)-(ind1s3)",
+            "Yo partiré en tres días, Yo partiré tres días mas tarde"
+          ]
+        ]
+      },
+      {
+        "explanation": "El sustantivo antü 'día' es uno de los sustantivos que puede usarse de manera adverbial. Como resultado, -mew ∼ -mu puede omitirse  sin crear una diferencia semántica clara. Cuando -mew ∼ -mu tiene un significado causal, se encuentra especialmente con oraciones subordinadas. Compare:",
+        "examples": [
+          [
+            "chafo-a-fu-ymi wütre (mew)",
+            "resfrío-(nrld9)-(ipd8)-(ind4-23-s2) resfrío (inst)",
+            "Tu podrías agarrar un resfrío con el frío que hace"
+          ],
+          [
+            "pepi wiri-la-n rume wütre-le-n mew",
+            "poder escribir-(neg10)-(ind1s3) muy frío-(st28)-(pvn4) (inst)",
+            "No puedo escribir porque está muy helado"
+          ],
+          [
+            "ayü-w-küle-n eymi mi fey-pi-n-mew ti dungu",
+            "gustar-(ref31)-(st28)-(ind1s3) tu (poss2s) que-decir-(pvn4)-(inst) la palabra,idea",
+            "Estoy contento porque tu dijiste eso"
           ]
         ]
       }
