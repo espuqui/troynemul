@@ -10,12 +10,18 @@ Estilos
   left: 0pt;
   z-index: 100;
   background-color: black;
+  display: table;
 }
 
-.innerTopWidget{
-  padding-top: 10pt;
-  padding-bottom: 10pt;
-  padding-left: 10pt;
+.contentWidget {
+  padding-top: 40pt;
+}
+
+.innerTopWidget {
+  display: table-cell;
+  vertical-align: middle;
+  background-color: #222222;
+  text-align: center;
 }
 
 .particleTitle {
