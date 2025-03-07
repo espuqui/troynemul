@@ -7,22 +7,30 @@ P1: Create CSS properly [DONE]
 P1: color en definicion [DONE]
 P0: Hyperlinks in examples [DONE]
 P0: Multiple explanations [DONE]
+P0: Keep search bar on top [DONE]
 
 P0: Common words will not point to another page nor are searchable
 P0: Search bar
 P1: Toggle Spanish show/hide
 P1: Busqueda y particula siempre visible
 P1: ancho tooltip de acuerdo al texto
+P1: Prefix suffix infix none
+P1: Otras cosas
 P1: Go back
 
+Bugs:
+"." not removed
+"/" shouldn't have tooltip
 
+
+Entries:
 {
-        "explanation": "",
-        "examples": [
-          [
-            "",
-            "",
-            ""
-          ]
-        ]
-      }
+  "explanation": "",
+  "examples": [
+    [
+      "",
+      "",
+      ""
+    ]
+  ]
+}

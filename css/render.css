@@ -2,6 +2,23 @@
 Estilos
  */
 
+.topWidget {
+  position: fixed;
+  width: 100%;
+  height: 30pt;
+  background: black;
+}
+
+.contentWidget {
+  position: absolute;
+  top: 30pt;
+  right: 10pt;
+  bottom: 0pt;
+  left: 10pt;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
 .particleTitle {
   color: white;
   font-weight: bold;
@@ -91,6 +108,7 @@ Estilos
   border-bottom: 1px dotted black;
   cursor: pointer;
 }
+
 .tooltip span {
   visibility: hidden;
   width: 100px;
@@ -107,6 +125,7 @@ Estilos
   opacity: 0;
   transition: opacity 0.3s;
 }
+
 .tooltip span::after {
   content: "";
   position: absolute;

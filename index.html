@@ -25,7 +25,7 @@
 
 <body>
 
-<div>
+<div class="topWidget">
   <label for="search-i">Palabra</label>
   <input type="text" class="search" id="search-i" placeholder="buscar...">
 
@@ -34,15 +34,16 @@
   </button>
 </div>
 
-<!-- Detalles de la palabra -->
-<p class="particleTitle" id="particleTitle">[particleTitle]</p>
-<p class="particleTypeTitle" id="particleTypeTitle">[particleTypeTitle]</p>
-<p id="particleContent">[particleContent]<br/>
-<p class="particleRelativeExamplesTitle">Ejemplos adicionales</p>
-<p id="relativeExampleList">[relativeExampleList]</p>
-
+<div class="contentWidget">
+  <p class="particleTitle" id="particleTitle">[particleTitle]</p>
+  <p class="particleTypeTitle" id="particleTypeTitle">[particleTypeTitle]</p>
+  <p id="particleContent">[particleContent]<br/>
+  <p class="particleRelativeExamplesTitle">Ejemplos adicionales</p>
+  <p id="relativeExampleList">[relativeExampleList]</p>
+</div>
 <script type="module">
   import {render, init} from "./render.js";
+
   window.render = render
 
   window.addEventListener('load', function () {
