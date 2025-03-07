@@ -26,15 +26,17 @@
 <body>
 
 <div class="topWidget">
-  <label for="search-i">Palabra</label>
-  <input type="text" class="search" id="search-i" placeholder="buscar...">
+  <div class="innerTopWidget">
+    <label for="search-i">Palabra</label>
+    <input type="text" class="search" id="search-i" placeholder="buscar...">
 
-  <button type="submit" id="search-b" onclick="searchWord()">
-    Buscar
-  </button>
+    <button type="submit" id="search-b" onclick="searchWord()">
+      Buscar
+    </button>
+  </div>
 </div>
 
-<div class="contentWidget">
+<div>
   <p class="particleTitle" id="particleTitle">[particleTitle]</p>
   <p class="particleTypeTitle" id="particleTypeTitle">[particleTypeTitle]</p>
   <p id="particleContent">[particleContent]<br/>

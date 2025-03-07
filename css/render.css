@@ -5,18 +5,17 @@ Estilos
 .topWidget {
   position: fixed;
   width: 100%;
-  height: 30pt;
-  background: black;
+  height: 40pt;
+  top: 0pt;
+  left: 0pt;
+  z-index: 100;
+  background-color: black;
 }
 
-.contentWidget {
-  position: absolute;
-  top: 30pt;
-  right: 10pt;
-  bottom: 0pt;
-  left: 10pt;
-  overflow-y: auto;
-  overflow-x: hidden;
+.innerTopWidget{
+  padding-top: 10pt;
+  padding-bottom: 10pt;
+  padding-left: 10pt;
 }
 
 .particleTitle {
