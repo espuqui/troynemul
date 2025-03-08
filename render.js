@@ -67,7 +67,7 @@ function renderFromParticleData(particleData, particleId) {
 function renderParticleTitle(particleTitle, particleData, particleId) {
   particleTitle.innerText = getWordTitle(particleData, particleId)
   particleTitle.style = `text-decoration: ${particleData.color} underline;
-  text-decoration-thickness: 3px; text-underline-offset: 4px;  text-decoration-skip-ink: none;"`
+  text-decoration-thickness: 3px; text-underline-offset: 5px;  text-decoration-skip-ink: none;"`
 }
 function renderUsage(usage) {
   let colonIndex = usage.indexOf(":")

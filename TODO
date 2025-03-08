@@ -10,14 +10,15 @@ P0: Multiple explanations [DONE]
 P0: Keep search bar on top [DONE]
 P1: Busqueda y particula siempre visible [DONE]
 P1: Prefix suffix infix none [DONE]
-P0: Particula actual en search bar y search bar style
+P0: Particula actual en search bar y search bar style [DONE]
+P0: Go back
 P0: Render search bar results
 
-P0: Common words will not point to another page nor are searchable
 P1: Toggle Spanish show/hide
-P1: ancho tooltip de acuerdo al texto
-P1: Otras cosas
-P1: Go back
+P1: Ancho tooltip de acuerdo al texto
+P1: Render artifacts
+P1: Welcome page
+P1: Common words will not point to another page nor are searchable
 
 Bugs:
 "." not removed
