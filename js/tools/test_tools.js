@@ -26,3 +26,27 @@ export function assertEqualArray(actual, expected) {
   }
 
 }
+
+export function assertEqualDictionary(actual, expected) {
+
+  const keysActual = Object.keys(actual);
+  const keysExpected = Object.keys(expected);
+
+  if (keysActual.length !== keysExpected.length) {
+    console.error("FAIL: Keys don't match " + keysActual.length + " != " + keysExpected.length)
+  }
+
+  for (let key of keysActual) {
+    if (!expected.hasOwnProperty(key)) {
+      console.error("FAIL: Expected doesn't have key: " + key)
+      return false;
+    }
+    if (actual[key] !== expected[key]) {
+      console.error("FAIL: Key " + key + "has different values " + actual[key] + " != " + expected[key])
+      return false;
+    }
+  }
+
+  return true;
+
+}

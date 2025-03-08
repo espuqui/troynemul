@@ -1,4 +1,5 @@
-import { runAllTests } from "./test/parser_test.js"
+import { runAllParserTests } from "./test/parser_test.js"
+import { runAllSearchTests } from "./test/search_test.js"
 
-
-runAllTests()
+runAllParserTests()
+runAllSearchTests()

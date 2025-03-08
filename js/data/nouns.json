@@ -136,6 +136,7 @@
   "y|ind4-33": {
     "title": "conjugacion",
     "color": "yellow",
+    "fix": "pre",
     "variations": [],
     "content": [
       {

@@ -2,7 +2,7 @@ import {assertEqual, assertEqualArray} from "../tools/test_tools.js"
 import {buildAliasMap, searchAdditionalExamples} from "../src/parser.js";
 
 import {parseExample} from "../src/parser.js";
-export function runAllTests() {
+export function runAllParserTests() {
   checkParseExample();
   checkParseExample2();
   checkBuildAliasMap();
