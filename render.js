@@ -1,6 +1,7 @@
 import {parseExample} from "./js/src/parser.js";
 import {buildAliasMap} from "./js/src/parser.js";
 import {searchAdditionalExamples} from "./js/src/parser.js";
+import {searchWord} from "./js/src/search.js";
 
 export function init(data) {
   handleTooltips();
@@ -25,6 +26,11 @@ function handleTooltips() {
 export function render(particleId) {
   let uniqueParticleId = window.aliasMap.get(particleId)
   renderFromParticleData(window.particleData[uniqueParticleId], uniqueParticleId)
+}
+
+export function search(partialWord) {
+  console.log(partialWord)
+  return searchWord(partialWord, window.particleData, window.aliasMap)
 }
 
 function renderFromParticleData(particleData, particleId) {

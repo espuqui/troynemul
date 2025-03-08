@@ -25,7 +25,6 @@ export function searchWord(partialWord, data, aliasMap) {
       result.color = data[value].color
       results.push(result)
     }
-
   }
 
   return results

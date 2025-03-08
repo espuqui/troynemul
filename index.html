@@ -27,12 +27,13 @@
 
 <div class="topWidget">
   <div class="innerTopWidget">
-    <label for="search-i">Palabra</label>
-    <input type="text" class="search" id="search-i" placeholder="buscar...">
-
-    <button type="submit" id="search-b" onclick="searchWord()">
-      Buscar
-    </button>
+      <p id="searchTitle">Palabra</p>
+  </div>
+  <div class="innerTopWidget">
+      <input type="text" class="search" id="searchWordInput" placeholder="buscar...">
+  </div>
+  <div class="searchIcon">
+      <img src="img/search.svg" width="25px" height="25px" alt="" onclick="searchWord()">
   </div>
 </div>
 
@@ -44,9 +45,10 @@
   <p id="relativeExampleList">[relativeExampleList]</p>
 </div>
 <script type="module">
-  import {render, init} from "./render.js";
+  import {render, init, search} from "./render.js";
 
   window.render = render
+  window.search = search
 
   window.addEventListener('load', function () {
     fetch("./js/data/nouns.json")
@@ -61,7 +63,13 @@
 <script>
 
   function searchWord() {
-    document.getElementById("resultsBody").innerText = "aa"
+    let searchBox = document.getElementById("searchWordInput")
+    let result = window.search(searchBox.value)
+    let renderedResult = ""
+    for (let r of result) {
+      renderedResult += r.summary
+    }
+    document.getElementById("searchTitle").innerText = renderedResult
   }
 
   function renderEvent(particleId) {
