@@ -26,30 +26,30 @@
 <body>
 
 <div class="searchBarWidget">
-  <div class="searchBarWhileSearching" id="topWidgetSearching">
+  <div class="searchBarWhileResting" id="topWidgetResting">
     <div class="searchIcon">
-      <img src="img/mapuche_flag.svg" width="25px" height="25px" alt="" onclick="searchWord()">
+      <img src="img/mapuche_flag.svg" width="25px" height="25px" alt="">
     </div>
 
     <div class="searchBarItemFill">
       <p class="particleTitle" id="particleTitle">[particleTitle]</p>
     </div>
-    <div class="searchIcon">
-      <img src="img/search.svg" width="25px" height="25px" alt="" onclick="searchWord()">
+    <div class="searchIcon" onclick="searchWord()">
+      <img src="img/search.svg" width="25px" height="25px" alt="">
     </div>
   </div>
-  <div class="searchBarWhileResting" id="topWidgetResting">
-    <div class="searchIcon">
-      <img src="img/back.svg" width="25px" height="25px" alt="" onclick="searchWord()">
-    </div>
-    <div class="searchBarItem">
-      <p class="particleTitle" id="particleTitle2">[particleTitle]</p>
-    </div>
-    <div class="searchBarItem">
-      <input type="text" class="search" id="searchWordInput" placeholder="buscar...">
+
+  <div class="searchBarWhileSearching" id="topWidgetSearching">
+    <div class="searchIcon" onclick="backSearch()">
+      <img src="img/back.svg" width="25px" height="25px" alt="">
     </div>
     <div class="searchIcon">
-      <img src="img/search.svg" width="25px" height="25px" alt="" onclick="searchWord()">
+      <img src="img/search.svg" width="15px" height="15px" alt="">
+    </div>
+    <div class="searchBarItemFill">
+      <label for="searchWordInput"></label><input type="search" class="searchBox" id="searchWordInput" placeholder="Buscar partícula...">
+    </div>
+    <div class="searchIcon">
     </div>
   </div>
 </div>
@@ -63,8 +63,8 @@
 <script type="module">
   import {render, init, search} from "./render.js";
 
-  document.getElementById("topWidgetSearching").hidden = false
-  document.getElementById("topWidgetResting").hidden = true
+  document.getElementById("topWidgetSearching").hidden = true
+  document.getElementById("topWidgetResting").hidden = false
 
   window.render = render
   window.search = search
@@ -81,7 +81,20 @@
 
 <script>
 
+  function cancelText() {
+    document.getElementById("searchWordInput").value = ""
+  }
+
+  function backSearch() {
+    document.getElementById("topWidgetSearching").hidden = !document.getElementById("topWidgetSearching").hidden
+    document.getElementById("topWidgetResting").hidden = !document.getElementById("topWidgetResting").hidden
+
+  }
+
   function searchWord() {
+    document.getElementById("topWidgetSearching").hidden = !document.getElementById("topWidgetSearching").hidden
+    document.getElementById("topWidgetResting").hidden = !document.getElementById("topWidgetResting").hidden
+    return
     let searchBox = document.getElementById("searchWordInput")
     let result = window.search(searchBox.value)
     let renderedResult = ""

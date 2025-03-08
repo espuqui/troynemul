@@ -5,7 +5,7 @@ Estilos
 .searchBarWidget {
   position: fixed;
   width: 100%;
-  height: 40pt;
+  height: 50pt;
   top: 0pt;
   left: 0pt;
   z-index: 100;
@@ -13,13 +13,13 @@ Estilos
   display: table;
 }
 
-.searchBarWhileSearching {
+.searchBarWhileResting {
   display: table-cell;
 }
 
-.searchBarWhileResting {
+.searchBarWhileSearching {
   display: table-cell;
-  width: 100%;
+
 }
 
 .searchBarItem {
@@ -32,6 +32,7 @@ Estilos
   display: table-cell;
   vertical-align: middle;
   width: 100%;
+  height: 50pt;
 }
 
 .searchIcon {
@@ -43,6 +44,42 @@ Estilos
   padding-left: 10pt;
   padding-right: 10pt;
 }
+
+.searchBox {
+  background-color: #222222;
+  border-style: solid;
+  border-top: hidden;
+  border-left: hidden;
+  border-right: hidden;
+  width: 100%;
+  height: 30px;
+  color: #FFFFFF;
+  font-size: medium;
+}
+
+.searchBox::-webkit-search-cancel-button{
+  position:relative;
+  -webkit-appearance: none;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-size: cover;
+  background-image: url("../img/cancel_text.svg");
+
+}
+
+.searchBox:focus {
+  outline: none;
+  background-color: #222222;
+  border-style: solid;
+  border-top: hidden;
+  border-left: hidden;
+  border-right: hidden;
+  width: 100%;
+  height: 30px;
+  color: #FFFFFF;
+}
+
 
 .bulletColor {
   width: 10px;
