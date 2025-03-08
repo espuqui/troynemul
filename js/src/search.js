@@ -55,7 +55,7 @@ export function renderWordWithFixVariations(data, entryWord) {
   return results + "]"
 }
 
-function applyFix(word, fix) {
+export function applyFix(word, fix) {
   let outputWord = word
   if (fix !== undefined) {
     if (fix === "pre") {

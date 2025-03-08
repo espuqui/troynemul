@@ -1,7 +1,7 @@
 import {parseExample} from "./js/src/parser.js";
 import {buildAliasMap} from "./js/src/parser.js";
 import {searchAdditionalExamples} from "./js/src/parser.js";
-import {searchWord} from "./js/src/search.js";
+import {applyFix, renderWordWithFixVariations, searchWord} from "./js/src/search.js";
 
 export function init(data) {
   handleTooltips();
@@ -40,7 +40,8 @@ function renderFromParticleData(particleData, particleId) {
   const particleContent = document.getElementById("particleContent")
   const relativeExampleList = document.getElementById("relativeExampleList")
 
-  particleTitle.innerText = getWordTitle(particleData, particleId)
+  renderParticleTitle(particleTitle, particleData, particleId)
+
   particleTypeTitle.innerText = particleData.title
   particleContent.innerText = ""
   relativeExampleList.innerHTML = ""
@@ -63,6 +64,11 @@ function renderFromParticleData(particleData, particleId) {
   }
 }
 
+function renderParticleTitle(particleTitle, particleData, particleId) {
+  particleTitle.innerText = getWordTitle(particleData, particleId)
+  particleTitle.style = `text-decoration: ${particleData.color} underline;
+  text-decoration-thickness: 3px; text-underline-offset: 4px;  text-decoration-skip-ink: none;"`
+}
 function renderUsage(usage) {
   let colonIndex = usage.indexOf(":")
 
@@ -82,7 +88,7 @@ function getWordTitle(particleData, wordId) {
   if (particleData.variations.length > 0) {
     for (let otherWord of particleData.variations) {
       wordTitle += ", "
-      wordTitle += otherWord
+      wordTitle += applyFix(otherWord, particleData.fix)
     }
   }
   return wordTitle
@@ -108,6 +114,7 @@ function renderWithSpanOnClickParticle(text, particleId, spanClass, color) {
   return renderWithSpanOnClick(text, spanClass, `renderEvent('${particleId}')`,
                                `text-decoration: ${color} underline;
                                text-decoration-thickness: 3px;
+                               text-underline-offset: 4px;
                                text-decoration-skip-ink: none;`)
 }
 
@@ -146,15 +153,5 @@ function renderWinka(word) {
   html += " "
   html += renderWithSpan(word, "winkaExample")
   return html
-}
-
-function generateColorClassFromString(str) {
-  let hash = 0
-  for (let i = 0; i < str.length; i++) {
-    hash += str.charCodeAt(i)
-  }
-
-  let colorIndex = hash % 3
-  return `particleExample${colorIndex}`
 }
 

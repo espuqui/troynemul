@@ -25,20 +25,36 @@
 
 <body>
 
-<div class="topWidget">
-  <div class="innerTopWidget">
-      <p id="searchTitle">Palabra</p>
-  </div>
-  <div class="innerTopWidget">
-      <input type="text" class="search" id="searchWordInput" placeholder="buscar...">
-  </div>
-  <div class="searchIcon">
+<div class="searchBarWidget">
+  <div class="searchBarWhileSearching" id="topWidgetSearching">
+    <div class="searchIcon">
+      <img src="img/mapuche_flag.svg" width="25px" height="25px" alt="" onclick="searchWord()">
+    </div>
+
+    <div class="searchBarItemFill">
+      <p class="particleTitle" id="particleTitle">[particleTitle]</p>
+    </div>
+    <div class="searchIcon">
       <img src="img/search.svg" width="25px" height="25px" alt="" onclick="searchWord()">
+    </div>
+  </div>
+  <div class="searchBarWhileResting" id="topWidgetResting">
+    <div class="searchIcon">
+      <img src="img/back.svg" width="25px" height="25px" alt="" onclick="searchWord()">
+    </div>
+    <div class="searchBarItem">
+      <p class="particleTitle" id="particleTitle2">[particleTitle]</p>
+    </div>
+    <div class="searchBarItem">
+      <input type="text" class="search" id="searchWordInput" placeholder="buscar...">
+    </div>
+    <div class="searchIcon">
+      <img src="img/search.svg" width="25px" height="25px" alt="" onclick="searchWord()">
+    </div>
   </div>
 </div>
 
 <div class="contentWidget">
-  <p class="particleTitle" id="particleTitle">[particleTitle]</p>
   <p class="particleTypeTitle" id="particleTypeTitle">[particleTypeTitle]</p>
   <p id="particleContent">[particleContent]<br/>
   <p class="particleRelativeExamplesTitle">Ejemplos adicionales</p>
@@ -46,6 +62,9 @@
 </div>
 <script type="module">
   import {render, init, search} from "./render.js";
+
+  document.getElementById("topWidgetSearching").hidden = false
+  document.getElementById("topWidgetResting").hidden = true
 
   window.render = render
   window.search = search
@@ -69,7 +88,7 @@
     for (let r of result) {
       renderedResult += r.summary
     }
-    document.getElementById("searchTitle").innerText = renderedResult
+    document.getElementById("particleTitle").innerText = renderedResult
   }
 
   function renderEvent(particleId) {
