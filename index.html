@@ -25,52 +25,67 @@
 
 <body>
 
-<div class="searchBarWidget">
-  <div class="searchBarWhileResting" id="topWidgetResting">
-    <div class="searchIcon">
-      <img src="img/mapuche_flag.svg" width="25px" height="25px" alt="">
+<div id="mainDiv" hidden="hidden">
+  <div class="searchBarWidget">
+    <div class="searchBarWhileResting" id="topWidgetResting">
+      <div class="searchIcon">
+        <img src="img/mapuche_flag.svg" width="25px" height="25px" alt="">
+      </div>
+
+      <div class="searchBarItemFill">
+        <p class="particleTitle" id="particleTitle">[particleTitle]</p>
+      </div>
+      <div class="searchIcon" id="navigationBackIconEnabled" onclick="back()">
+        <img src="img/back_active.svg" width="25px" height="25px" alt="">
+      </div>
+      <div class="searchIcon" id="navigationBackIconDisabled">
+        <img src="img/back_inactive.svg" width="25px" height="25px" alt="">
+      </div>
+      <div class="searchIcon" onclick="toggleSearch()">
+        <img src="img/search.svg" width="25px" height="25px" alt="">
+      </div>
     </div>
 
-    <div class="searchBarItemFill">
-      <p class="particleTitle" id="particleTitle">[particleTitle]</p>
-    </div>
-    <div class="searchIcon" id="navigationBackIconEnabled"  onclick="back()">
-      <img src="img/back_active.svg" width="25px" height="25px" alt="">
-    </div>
-    <div class="searchIcon" id="navigationBackIconDisabled">
-      <img src="img/back_inactive.svg" width="25px" height="25px" alt="">
-    </div>
-    <div class="searchIcon" onclick="searchWord()">
-      <img src="img/search.svg" width="25px" height="25px" alt="">
+    <div class="searchBarWhileSearching" id="topWidgetSearching">
+      <div class="searchIcon" onclick="toggleSearch()">
+        <img src="img/back_active.svg" width="25px" height="25px" alt="">
+      </div>
+      <div class="searchIcon">
+        <img src="img/search.svg" width="15px" height="15px" alt="">
+      </div>
+      <div class="searchBarItemFill">
+        <label for="searchWordInput"></label><input type="search" class="searchBox" id="searchWordInput"
+                                                    placeholder="Buscar partícula..."
+                                                    onkeydown="updateSearchList();"
+                                                    onpaste="updateSearchList();"
+                                                    oninput="updateSearchList();"
+                                                    onchange="updateSearchList();">
+      </div>
+      <div class="searchIcon">
+      </div>
     </div>
   </div>
 
-  <div class="searchBarWhileSearching" id="topWidgetSearching">
-    <div class="searchIcon" onclick="toggleSearch()">
-      <img src="img/back_active.svg" width="25px" height="25px" alt="">
-    </div>
-    <div class="searchIcon">
-      <img src="img/search.svg" width="15px" height="15px" alt="">
-    </div>
-    <div class="searchBarItemFill">
-      <label for="searchWordInput"></label><input type="search" class="searchBox" id="searchWordInput" placeholder="Buscar partícula...">
-    </div>
-    <div class="searchIcon">
+  <div class="contentWidget" id="contentWidget">
+    <p class="particleTypeTitle" id="particleTypeTitle">[particleTypeTitle]</p>
+    <p id="particleContent">[particleContent]<br/>
+    <p class="particleRelativeExamplesTitle">Ejemplos adicionales</p>
+    <p id="relativeExampleList">[relativeExampleList]</p>
+  </div>
+
+  <div class="searchResultsWidget" id="searchResultsWidget">
+    <div class="searchResultsRow">
     </div>
   </div>
 </div>
 
-<div class="contentWidget">
-  <p class="particleTypeTitle" id="particleTypeTitle">[particleTypeTitle]</p>
-  <p id="particleContent">[particleContent]<br/>
-  <p class="particleRelativeExamplesTitle">Ejemplos adicionales</p>
-  <p id="relativeExampleList">[relativeExampleList]</p>
-</div>
 <script type="module">
-  import {render, init, search, updateForwardHist, backHist} from "./render.js";
+  import {render, init, search, backHist} from "./render.js";
 
   document.getElementById("topWidgetSearching").hidden = true
   document.getElementById("topWidgetResting").hidden = false
+  document.getElementById("searchResultsWidget").hidden = true
+  document.getElementById("contentWidget").hidden = false
 
   window.render = render
   window.search = search
@@ -84,6 +99,8 @@
         init(data)
       })
   })
+
+  //toggleSearch()
 </script>
 
 <script>
@@ -92,23 +109,43 @@
   }
 
   function toggleSearch() {
-    document.getElementById("topWidgetSearching").hidden = !document.getElementById("topWidgetSearching").hidden
-    document.getElementById("topWidgetResting").hidden = !document.getElementById("topWidgetResting").hidden
+    let searching = document.getElementById("searchResultsWidget").hidden
+
+    document.getElementById("searchWordInput").value = ""
+    document.getElementById("searchResultsWidget").hidden = !searching
+    document.getElementById("topWidgetSearching").hidden = !searching
+    document.getElementById("contentWidget").hidden = searching
+    document.getElementById("topWidgetResting").hidden = searching
+
+    if (searching) {
+      document.getElementById("searchWordInput").focus()
+      updateSearchList()
+    }
+
   }
 
-  function searchWord() {
-    document.getElementById("topWidgetSearching").hidden = !document.getElementById("topWidgetSearching").hidden
-    document.getElementById("topWidgetResting").hidden = !document.getElementById("topWidgetResting").hidden
-    return
-    /*
+  function updateSearchList() {
+
     let searchBox = document.getElementById("searchWordInput")
     let result = window.search(searchBox.value)
     let renderedResult = ""
+
     for (let r of result) {
-      renderedResult += r.summary
+      let style = `text-decoration: ${r.color} underline;
+  text-decoration-thickness: 3px; text-underline-offset: 5px;  text-decoration-skip-ink: none;"`
+
+      renderedResult += `<div class="searchResultsRow">
+      <div class="searchResultsCell">
+      <p>
+          <span style="${style}">${r.summary}</span>
+          <span class="searchVariations">${r.variations}</span>
+          <span class="searchTitle">${r.title}</span>
+      </p>
+      </div>
+    </div>`
     }
 
-    document.getElementById("particleTitle").innerText = renderedResult*/
+    document.getElementById("searchResultsWidget").innerHTML = renderedResult
   }
 
   function renderEvent(particleId) {

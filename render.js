@@ -8,6 +8,8 @@ export function init(data) {
   window.myvar = "AA"
   window.particleData = data
   window.aliasMap = buildAliasMap(data)
+
+  document.getElementById("mainDiv").hidden = false
   render("mew|inst")
 }
 function handleTooltips() {

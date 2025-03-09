@@ -15,12 +15,13 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-  font-family: Helvetica;
+  font-family: Helvetica, sans-serif;
 }
 
 body {
   background-color: #000000;
   color: white;
+  margin: 0pt;
 }
 
 /*

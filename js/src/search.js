@@ -42,7 +42,7 @@ export function renderWordWithFixVariations(data, entryWord) {
     return ""
   }
 
-  let results = "["
+  let results = "("
   let first = true
   for (let v of value.variations) {
     if (!first) {
@@ -52,7 +52,7 @@ export function renderWordWithFixVariations(data, entryWord) {
     }
     results += applyFix(v, value.fix)
   }
-  return results + "]"
+  return results + ")"
 }
 
 export function applyFix(word, fix) {

@@ -90,7 +90,48 @@ Estilos
 }
 
 .contentWidget {
-  padding-top: 40pt;
+  padding-top: 50pt;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.searchResultsWidget {
+  padding-top: 50pt;
+  display: table;
+  width: 100%;
+}
+
+.searchResultsRow {
+  display: table-row;
+  height: 40px;
+  width: 100%;
+}
+
+.searchVariations {
+  color: #888888;
+  font-style: italic;
+}
+.searchTitle {
+  color: #AAA;
+  font-style: italic;
+}
+
+.searchResultsCell {
+  display: table-cell;
+  height: 40px;
+  background-color: black;
+  width: 100%;
+  border-style: solid;
+  border-top: hidden;
+  border-left: hidden;
+  border-right: hidden;
+  border-bottom:1px solid white;
+  padding-left: 10pt;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .particleTitle {
@@ -113,10 +154,6 @@ Estilos
 .particleUses {
   color: #888888;
   font-weight: bold;
-}
-
-.particleUsesBox {
-  padding-left: 10px;
 }
 
 .particleOneWordUse {
