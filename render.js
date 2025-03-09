@@ -27,6 +27,17 @@ function handleTooltips() {
 
 export function render(particleId) {
   let uniqueParticleId = window.aliasMap.get(particleId)
+
+  // Prevenir recargar la misma palabra
+  if (window.hist.length !== 0) {
+    let lastPart = window.hist.at(window.hist.length-1)
+    let lastPartUniqueId = window.aliasMap.get(lastPart)
+
+    if (lastPartUniqueId === uniqueParticleId) {
+      return
+    }
+  }
+
   forwardHist(uniqueParticleId)
   renderFromParticleData(window.particleData[uniqueParticleId], uniqueParticleId)
 }

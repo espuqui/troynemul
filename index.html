@@ -41,13 +41,13 @@
       <div class="searchIcon" id="navigationBackIconDisabled">
         <img src="img/back_inactive.svg" width="25px" height="25px" alt="">
       </div>
-      <div class="searchIcon" onclick="toggleSearch()">
+      <div class="searchIcon" onclick="switchSearch(true)">
         <img src="img/search.svg" width="25px" height="25px" alt="">
       </div>
     </div>
 
     <div class="searchBarWhileSearching" id="topWidgetSearching">
-      <div class="searchIcon" onclick="toggleSearch()">
+      <div class="searchIcon" onclick="switchSearch(false)">
         <img src="img/back_active.svg" width="25px" height="25px" alt="">
       </div>
       <div class="searchIcon">
@@ -81,11 +81,7 @@
 
 <script type="module">
   import {render, init, search, backHist} from "./render.js";
-
-  document.getElementById("topWidgetSearching").hidden = true
-  document.getElementById("topWidgetResting").hidden = false
-  document.getElementById("searchResultsWidget").hidden = true
-  document.getElementById("contentWidget").hidden = false
+  switchSearch(false)
 
   window.render = render
   window.search = search
@@ -100,7 +96,6 @@
       })
   })
 
-  //toggleSearch()
 </script>
 
 <script>
@@ -108,16 +103,14 @@
     window.backHist()
   }
 
-  function toggleSearch() {
-    let searching = document.getElementById("searchResultsWidget").hidden
-
+  function switchSearch(visible) {
     document.getElementById("searchWordInput").value = ""
-    document.getElementById("searchResultsWidget").hidden = !searching
-    document.getElementById("topWidgetSearching").hidden = !searching
-    document.getElementById("contentWidget").hidden = searching
-    document.getElementById("topWidgetResting").hidden = searching
+    document.getElementById("searchResultsWidget").hidden = !visible
+    document.getElementById("topWidgetSearching").hidden = !visible
+    document.getElementById("contentWidget").hidden = visible
+    document.getElementById("topWidgetResting").hidden = visible
 
-    if (searching) {
+    if (visible) {
       document.getElementById("searchWordInput").focus()
       updateSearchList()
     }
@@ -134,7 +127,7 @@
       let style = `text-decoration: ${r.color} underline;
   text-decoration-thickness: 3px; text-underline-offset: 5px;  text-decoration-skip-ink: none;"`
 
-      renderedResult += `<div class="searchResultsRow">
+      renderedResult += `<div class="searchResultsRow" onclick="renderEvent('${r.particleId}')">
       <div class="searchResultsCell">
       <p>
           <span style="${style}">${r.summary}</span>
@@ -149,6 +142,7 @@
   }
 
   function renderEvent(particleId) {
+    switchSearch(false)
     window.render(particleId)
   }
 

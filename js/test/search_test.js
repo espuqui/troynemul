@@ -43,13 +43,15 @@ function searchWordTests() {
 
   let expectedResults = []
   let expectedResults1 = {}
+  expectedResults1.particleId = "mew|inst"
   expectedResults1.summary = "-mew"
-  expectedResults1.variations = "[-mu,-mo]"
+  expectedResults1.variations = "(-mu, -mo)"
   expectedResults1.title = "sufijoinst"
   expectedResults1.color = "kallfü"
   expectedResults.push(expectedResults1)
 
   let expectedResults2 = {}
+  expectedResults2.particleId = "me|conj"
   expectedResults2.summary = "me-"
   expectedResults2.variations = ""
   expectedResults2.title = "any2"
@@ -57,6 +59,7 @@ function searchWordTests() {
   expectedResults.push(expectedResults2)
 
   let expectedResults3 = {}
+  expectedResults3.particleId = "ma|conj"
   expectedResults3.summary = "ma"
   expectedResults3.variations = ""
   expectedResults3.title = "any3"
@@ -74,8 +77,9 @@ function searchWordTests() {
 
   let expectedResultsWithLi = []
   let expectedResultsWithLi1 = {}
+  expectedResultsWithLi1.particleId = "li|conj"
   expectedResultsWithLi1.summary = "-li-"
-  expectedResultsWithLi1.variations = "[-ya-]"
+  expectedResultsWithLi1.variations = "(-ya-)"
   expectedResultsWithLi1.title = "any1"
   expectedResultsWithLi1.color = "chod"
   expectedResultsWithLi.push(expectedResultsWithLi1)

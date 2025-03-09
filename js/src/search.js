@@ -19,6 +19,7 @@ export function searchWord(partialWord, data, aliasMap) {
       currentMatches.add(value)
 
       let result = {}
+      result.particleId = value
       result.summary = renderWordWithFix(data, value)
       result.variations = renderWordWithFixVariations(data, value)
       result.title = data[value].title
@@ -46,7 +47,7 @@ export function renderWordWithFixVariations(data, entryWord) {
   let first = true
   for (let v of value.variations) {
     if (!first) {
-      results += ","
+      results += ", "
     } else {
       first = false
     }
