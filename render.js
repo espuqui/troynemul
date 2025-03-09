@@ -100,7 +100,7 @@ function renderParticleTitle(particleTitle, particleData, particleId) {
   text-decoration-thickness: 3px; text-underline-offset: 5px;  text-decoration-skip-ink: none;"`
 }
 function getWordTitle(particleData, wordId) {
-  let wordTitle = getMainWord(wordId)
+  let wordTitle = applyFix(getMainWord(wordId), particleData.fix)
   if (particleData.variations.length > 0) {
     for (let otherWord of particleData.variations) {
       wordTitle += ", "

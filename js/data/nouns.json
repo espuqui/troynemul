@@ -47,12 +47,12 @@
           [
             "potrü-tripa-n ti wangku mu",
             "caerse.hacia.atrás-irse/salir-(ind1s3) la silla (inst)",
-            "Me caí de la silla para atrás"
+            "me caí de la silla para atrás"
           ],
           [
             "tüfa püntü-le-y ka-ke-lu mew",
             "esta separar-(st28)-(ind4-33) otro-(distr)-(svn4) (inst)",
-            "Esto se distingue de los demás / Esto se distingue entre los demás"
+            "esto se distingue de los demás / Esto se distingue entre los demás"
           ]
         ]
       },
@@ -67,7 +67,7 @@
           [
             "amu-a-y Temuko",
             "ir-(nrld9)-(ind4-33) Temuco",
-            "he irá a Temuco"
+            "él irá a Temuco"
           ]
         ]
       },
@@ -85,7 +85,7 @@
         "explanation": "La relación entre un sustantivo de lugar y otro sustantivo se expresa por yuxtaposición. El segundo sustantivo toma opcionalmente el sufijo -mew ∼ -mu.",
         "examples": [
           [
-            "furi ruka mew müle-y /furi ruka müle-y",
+            "furi ruka mew müle-y / furi ruka müle-y",
             "atrás casa (inst) estar-(ind4-33) / atrás casa estar-(ind4-33)",
             "ella está atrás de la casa"
           ]
@@ -97,17 +97,17 @@
           [
             "küla antü mew kutran-fu-n",
             "tres día-(inst) enfermo-(ipd8)-(ind1s3)",
-            "Yo he estado enfermo por tres días"
+            "yo he estado enfermo por tres días"
           ],
           [
             "külá antü mew tripa-n",
             "tres dias (inst) salir-(ind1s3)",
-            "Yo partí hace tres días / Yo partí tres dïas después"
+            "yo partí hace tres días / Yo partí tres dïas después"
           ],
           [
             "küla antü mew tripa-ya-n",
             "tres días (inst) salir-(nrld9)-(ind1s3)",
-            "Yo partiré en tres días, Yo partiré tres días mas tarde"
+            "yo partiré en tres días, Yo partiré tres días mas tarde"
           ]
         ]
       },
@@ -117,35 +117,81 @@
           [
             "chafo-a-fu-ymi wütre (mew)",
             "resfrío-(nrld9)-(ipd8)-(ind4-23-s2) resfrío (inst)",
-            "Tu podrías agarrar un resfrío con el frío que hace"
+            "tu podrías agarrar un resfrío con el frío que hace"
           ],
           [
             "pepi wiri-la-n rume wütre-le-n mew",
             "poder escribir-(neg10)-(ind1s3) muy frío-(st28)-(pvn4) (inst)",
-            "No puedo escribir porque está muy helado"
+            "no puedo escribir porque está muy helado"
           ],
           [
             "ayü-w-küle-n eymi mi fey-pi-n-mew ti dungu",
             "gustar-(ref31)-(st28)-(ind1s3) tu (poss2s) que-decir-(pvn4)-(inst) la palabra,idea",
-            "Estoy contento porque tu dijiste eso"
+            "estoy contento porque tu dijiste eso"
           ]
         ]
       }
     ]
   },
-  "y|ind4-33": {
-    "title": "conjugacion",
-    "color": "yellow",
-    "fix": "pre",
+  "a|nrld9": {
+    "title": "situacion no realizada",
+    "color": "lightblue",
+    "fix": "in",
     "variations": [],
     "content": [
       {
-        "explanation": "Tercera persona singular",
+        "explanation": "El sufijo -a- indica que la situación no se realiza. Un verbo que lleva la partícula -a- denota una situación que se presenta como no siendo un hecho actual. La interpretación básica de un verbo marcado con el sufijo -a- es que la situación denotada ocurrirá en un momento posterior al momento de orientación. Por lo tanto, una forma con -a- se traduce comúnmente como tiempo futuro.",
         "examples": [
           [
-            "ngüma-y mew",
-            "llorar-(ind4-33) (inst)",
-            "lloró"
+            "trür amu-a-yu üyüw",
+            "junto ir-(nrld9)-(ind4-1ns3-d2) por.allá",
+            "juntos iremos² para allá"
+          ]
+        ]
+      }
+    ]
+  },
+  "la|neg10": {
+    "title": "negación",
+    "color": "red",
+    "fix": "in",
+    "variations": [],
+    "content": [
+      {
+        "explanation": "La partícula -la- indica negación en la forma indicativa",
+        "examples": [
+          [
+            "la-le-la-y",
+            "morir-(st28)-(neg10)-(ind4-33)",
+            "él no está muerto"
+          ]
+        ]
+      }
+    ]
+  },
+  "ke|cf14": {
+    "title": "característica constante",
+    "color": "lightgreen",
+    "fix": "in",
+    "variations": [],
+    "content": [
+      {
+        "explanation": "El sufijo -ke- expresa una característica constante. El sufijo -ke- y el sufijo -ye-, que también indica una característica constante, son mutuamente excluyentes. El sufijo -ye- se combina solo con el marcador de nombre verbal instrumental -m, mientras que el morfema -ke- se usa en otros contextos. Una forma con -ke- denota una situación que puede continuar en el presente. Por lo tanto, una forma marcada con -ke- se traduce comúnmente como tiempo presente. La discontinuación de una situación denotada por una forma con -ke- se indica con el impedidor -fu-.",
+        "examples": [
+          [
+            "pod-küle-ke-y",
+            "sucio-(st28)-(cf14)-(ind4-33)",
+            "eso siempre está sucio"
+          ],
+          [
+            "küpa leli-ke-n pelikula",
+            "quiero mirar-(cf14)-(ind1s3) película",
+            "me gusta ver películas"
+          ],
+          [
+            "antü-küdaw-kiaw-ke-rke-fu-y",
+            "día-trabajo-(circ30)-(cf14)-(rep12)-(ipd8)-(ind4-33)",
+            "el solía trabajar como jornalero"
           ]
         ]
       }
