@@ -38,6 +38,12 @@
       <div class="searchIcon" id="navigationBackIconEnabled" onclick="back()">
         <img src="img/back_active.svg" width="25px" height="25px" alt="">
       </div>
+      <div class="searchIcon" id="winkaDungunOff" onclick="setWinkaDungunExamples(true)">
+        <img src="img/spain_flag_off.svg" width="25px" height="25px" alt="">
+      </div>
+      <div class="searchIcon" id="winkaDungunOn" onclick="setWinkaDungunExamples(false)">
+        <img src="img/spain_flag_on.svg" width="25px" height="25px" alt="">
+      </div>
       <div class="searchIcon" id="navigationBackIconDisabled">
         <img src="img/back_inactive.svg" width="25px" height="25px" alt="">
       </div>
@@ -80,13 +86,18 @@
 </div>
 
 <script type="module">
-  import {render, init, search, backHist} from "./render.js";
-  switchSearch(false)
+  import {render, init, search, backHist, updateWinkaDungunExamples} from "./render.js";
+
 
   window.render = render
   window.search = search
   window.back = backHist
+  window.winkaDungunExamples = false
+  window.updateExamples = updateWinkaDungunExamples
   window.hist = []
+
+  switchSearch(false)
+  setWinkaDungunExamples(false)
 
   window.addEventListener('load', function () {
     fetch("./js/data/nouns.json")
@@ -144,6 +155,13 @@
   function renderEvent(particleId) {
     switchSearch(false)
     window.render(particleId)
+  }
+
+  function setWinkaDungunExamples(value) {
+    window.winkaDungunExamples = value
+    document.getElementById("winkaDungunOff").hidden = value
+    document.getElementById("winkaDungunOn").hidden = !value
+    window.updateExamples()
   }
 
 </script>

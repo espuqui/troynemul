@@ -5,7 +5,6 @@ import {applyFix, renderWordWithFixVariations, searchWord} from "./js/src/search
 
 export function init(data) {
   handleTooltips();
-  window.myvar = "AA"
   window.particleData = data
   window.aliasMap = buildAliasMap(data)
 
@@ -84,7 +83,6 @@ function renderFromParticleData(particleData, particleId) {
     for (let examples of content.examples) {
       let exampleParts = parseExample(examples[0], examples[1])
       particleContent.innerHTML += renderMapu(exampleParts, particleId) + "<br/>" + renderWinka(examples[2])
-        + "<br /><br />"
     }
   }
 
@@ -92,8 +90,8 @@ function renderFromParticleData(particleData, particleId) {
 
   for (let examples of relativeExamples) {
     relativeExampleList.innerHTML += renderMapu(examples[0], particleId) + "<br/>" + renderWinka(examples[1])
-      + "<br /><br />"
   }
+  updateWinkaDungunExamples()
 }
 
 function renderParticleTitle(particleTitle, particleData, particleId) {
@@ -167,9 +165,19 @@ function renderMapu(exampleParts, particleId) {
 }
 
 function renderWinka(word) {
-  let html = '<img src="img/spain_flag.svg" width="10px" height="10px" alt="">'
+  let html = '<span class="winkaExampleSpan"><img src="img/spain_flag.svg" width="10px" height="10px" alt="">'
   html += " "
   html += renderWithSpan(word, "winkaExample")
+  html += "<br /><br />"
+  html += "</span>"
   return html
 }
 
+export function updateWinkaDungunExamples() {
+  let enabled = window.winkaDungunExamples
+
+  const elements = document.querySelectorAll(`.winkaExampleSpan`);
+  elements.forEach(element => {
+    element.hidden = !enabled
+  });
+}
