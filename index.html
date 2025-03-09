@@ -34,14 +34,20 @@
     <div class="searchBarItemFill">
       <p class="particleTitle" id="particleTitle">[particleTitle]</p>
     </div>
+    <div class="searchIcon" id="navigationBackIconEnabled"  onclick="back()">
+      <img src="img/back_active.svg" width="25px" height="25px" alt="">
+    </div>
+    <div class="searchIcon" id="navigationBackIconDisabled">
+      <img src="img/back_inactive.svg" width="25px" height="25px" alt="">
+    </div>
     <div class="searchIcon" onclick="searchWord()">
       <img src="img/search.svg" width="25px" height="25px" alt="">
     </div>
   </div>
 
   <div class="searchBarWhileSearching" id="topWidgetSearching">
-    <div class="searchIcon" onclick="backSearch()">
-      <img src="img/back.svg" width="25px" height="25px" alt="">
+    <div class="searchIcon" onclick="toggleSearch()">
+      <img src="img/back_active.svg" width="25px" height="25px" alt="">
     </div>
     <div class="searchIcon">
       <img src="img/search.svg" width="15px" height="15px" alt="">
@@ -61,13 +67,15 @@
   <p id="relativeExampleList">[relativeExampleList]</p>
 </div>
 <script type="module">
-  import {render, init, search} from "./render.js";
+  import {render, init, search, updateForwardHist, backHist} from "./render.js";
 
   document.getElementById("topWidgetSearching").hidden = true
   document.getElementById("topWidgetResting").hidden = false
 
   window.render = render
   window.search = search
+  window.back = backHist
+  window.hist = []
 
   window.addEventListener('load', function () {
     fetch("./js/data/nouns.json")
@@ -76,32 +84,31 @@
         init(data)
       })
   })
-
 </script>
 
 <script>
-
-  function cancelText() {
-    document.getElementById("searchWordInput").value = ""
+  function back() {
+    window.backHist()
   }
 
-  function backSearch() {
+  function toggleSearch() {
     document.getElementById("topWidgetSearching").hidden = !document.getElementById("topWidgetSearching").hidden
     document.getElementById("topWidgetResting").hidden = !document.getElementById("topWidgetResting").hidden
-
   }
 
   function searchWord() {
     document.getElementById("topWidgetSearching").hidden = !document.getElementById("topWidgetSearching").hidden
     document.getElementById("topWidgetResting").hidden = !document.getElementById("topWidgetResting").hidden
     return
+    /*
     let searchBox = document.getElementById("searchWordInput")
     let result = window.search(searchBox.value)
     let renderedResult = ""
     for (let r of result) {
       renderedResult += r.summary
     }
-    document.getElementById("particleTitle").innerText = renderedResult
+
+    document.getElementById("particleTitle").innerText = renderedResult*/
   }
 
   function renderEvent(particleId) {

@@ -16,6 +16,7 @@ P0: Render search bar results
 
 P1: Toggle Spanish show/hide
 P1: Ancho tooltip de acuerdo al texto
+P1: Entry point with GET
 P1: Render artifacts
 P1: Welcome page
 P1: Common words will not point to another page nor are searchable

@@ -25,11 +25,30 @@ function handleTooltips() {
 
 export function render(particleId) {
   let uniqueParticleId = window.aliasMap.get(particleId)
+  forwardHist(uniqueParticleId)
   renderFromParticleData(window.particleData[uniqueParticleId], uniqueParticleId)
 }
 
+function forwardHist(uniqueParticleId) {
+  updateForwardHist()
+  window.hist.push(uniqueParticleId)
+}
+
+export function backHist() {
+  if (window.hist.length !== 0) {
+    window.hist.pop()
+  }
+
+  if (window.hist.length !== 0) {
+    render(window.hist.pop())
+  }
+}
+export function updateForwardHist() {
+  document.getElementById("navigationBackIconEnabled").hidden = (window.hist.length === 0)
+  document.getElementById("navigationBackIconDisabled").hidden = (window.hist.length !== 0)
+}
+
 export function search(partialWord) {
-  console.log(partialWord)
   return searchWord(partialWord, window.particleData, window.aliasMap)
 }
 
@@ -69,20 +88,6 @@ function renderParticleTitle(particleTitle, particleData, particleId) {
   particleTitle.style = `text-decoration: ${particleData.color} underline;
   text-decoration-thickness: 3px; text-underline-offset: 5px;  text-decoration-skip-ink: none;"`
 }
-function renderUsage(usage) {
-  let colonIndex = usage.indexOf(":")
-
-  if (colonIndex === -1) {
-    return usage + "<br/>"
-  }
-
-  let subTitle = usage.substring(0, colonIndex + 1)
-  let details = usage.substring(colonIndex + 1)
-
-  return renderWithSpan(subTitle, "particleOneWordUse")
-  + renderWithSpan(details, "particleOneWordUseExplanation") + "<br/>"
-}
-
 function getWordTitle(particleData, wordId) {
   let wordTitle = getMainWord(wordId)
   if (particleData.variations.length > 0) {
