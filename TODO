@@ -31,13 +31,12 @@ Bugs:
 
 
 Entries:
-{
-  "explanation": "",
-  "examples": [
-    [
-      "",
-      "",
-      ""
+  "tu|verb36": {
+    "title": "verbalizador",
+    "color": "orange",
+    "fix": "in",
+    "variations": [],
+    "content": [
+
     ]
-  ]
-}
+  }

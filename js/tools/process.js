@@ -45,16 +45,16 @@ function alignExamples(data) {
   let mapuWord = ""
   let winkaWord = ""
 
-  let jsonObject = {}
-  jsonObject["content"] = []
+  let jsonObject = []
 
   let currentContent = {}
   currentContent["explanation"] = ""
   currentContent["examples"] = []
-  jsonObject["content"].push(currentContent)
+  jsonObject.push(currentContent)
 
   for (let line of lines) {
     let lineNoRef = line.replaceAll(/\((.*?)\)\s/g, "")
+
     // Begin example
     if (line.length > 0 && line[0] === '(') {
       // End explanation
@@ -87,7 +87,7 @@ function alignExamples(data) {
         currentContent = {}
         currentContent["explanation"] = ""
         currentContent["examples"] = []
-        jsonObject["content"].push(currentContent)
+        jsonObject.push(currentContent)
       }
     }
 
@@ -104,6 +104,10 @@ function alignExamples(data) {
       lastLine = line
     }
   }
-  
+
+  if (currentContent["explanation"] !== undefined && currentContent["explanation"].trim() === "") {
+    jsonObject.pop()
+  }
+
   return JSON.stringify(jsonObject, null, 2);
 }

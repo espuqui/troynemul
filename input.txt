@@ -1,29 +1,106 @@
-An adjective is used as a modifier of a following noun.
-(1) k¨um´e
-good
-wentru
-man
-‘a good man’
-An adjective does not occur as a nominal predicate. Instead, one can use a
-verbal predicate which is derived from an adjective.
-(2) ti
-the
-wentru
-man
-k¨ume-y
-good-verb36-ind4-33
-‘the man is good’
-For verbalization, see chapter 21.
-The adjectives man ‘right’ and wele ‘left’ can be used as nouns:
-(3) man
-right
-kuw¨u-mew
-hand-inst
-n¨u-fi-nge!
-take-edo6-imp2s3
-‘take it with the right hand!’
-(4) man-mew
-right-inst
-n¨u-fi-nge!
-take-edo6-imp2s3
-‘take it with the right [hand]!’
+The suffixes -(k¨u)le- denote a state. A telic verb which contains -(k¨u)le-, is result-oriented. An
+                    atelic verb which contains one of these suffixes is event-oriented. The change
+                        of state which is the result of an event denoted by a telic verb is attributed to
+                                                                              the intransitive subject or to the patient of the corresponding perfective
+With certain verbs, the suffix -(k¨u)le- denotes either a change of state which
+is the result of an earlier event or an ongoing event. Compare:
+(1) po -k¨ule-y
+dirty-st28-ind4-33
+‘he is dirty’
+(2) m¨uchay-ke
+soon-distr
+po -k¨ule-w-¨uy
+dirty-st28-ref31-ind4-33
+‘he is getting dirtier and dirtier’
+(3) a˜ni -k¨ule-y
+get.hot/scorch-st28-ind4-33
+‘he has been scorched’, ‘it is scorching’
+(4) a˜ni -kon-k¨ule-y
+get.hot/scorch-enter-st28-ind4-33
+‘it is scorching’
+(5) wiri-le-y
+write-st28-ind4-33
+‘it is written’
+(6) wiri-kon-k¨ule-y
+write-enter-st28-ind4-33
+‘he is writing’
+For the verb kon- ‘to enter’ in compound verbs, see 29.1.
+It is not always clear beforehand whether a -(k¨u)le- form is result-oriented or
+event-oriented or both. Compare for instance the verb k¨ullew- ‘to burst open’
+(of grain), which behaves like an atelic verb (k¨ullew-k¨ule-y ‘it is bursting open’),
+and the verb pawk¨u- ‘to burst open, to explode’ (of an egg or gas bottle), which
+behaves like a telic verb (pawk¨u-le-y ‘it is exploded’). Take for instance tripa-
+‘to leave’, which behaves like an atelic verb (tripa-le-y ‘he is leaving’), and
+tripa- ‘to go out’, which behaves like a telic verb (tripa-le-y ‘he is outside’).
+Also compare atelic witra- ‘to pull’ (witra-le-y ‘he is pulling’) and telic witra-
+‘to get up’ (witra-le-y ‘he is standing’).
+has acquired as a result of an earlier process or event. Apparently the verbs
+mentioned above do not result in a change of characteristics of the patient.
+They do not denote a process or event which results in a present feature of the
+subject. Likewise, *rapi-le-y ‘it is vomited’ or *muntu-le-y ‘it is taken away’ are
+unacceptable utterances. Instead, the passive rapi-nge-y ‘it has been vomited’
+or muntu-nge-y ‘it has been taken away’ should be used.
+Factitive verbs which have an incorporated object or are derived from a noun
+behave like atelic verbs.
+A result-oriented -(k¨u)le- form is used to denote a non-intrinsic quality, i.e.
+a quality which is the result of an earlier process or event, or a temporary quality.
+The verbalizer -nge-36 (21.2) denotes the presence of an intrinsic quality.
+Compare the following -(k¨u)le- and -nge- forms:
+k¨untro-le-y ‘he limps’; k¨untro-nge-y ‘he is lame’
+fentre-le-y ‘they are many’ (Sp. est´an muchos); fentre-nge-y ‘they are many’
+(Sp. son muchos)
+welu- uam-k¨ule-y ‘he is/has gone out of his mind’; welu- uam-nge-y ‘he is
+crazy’
+pilu-le-y ‘he is deaf’ (temporarily or he is pretending to be deaf); pilu-nge-y
+‘he is deaf’ (always)
+kallf¨u-le-y/kallf¨u-y ‘it is blue’; kallf¨u-nge-y ‘it is blue’ (always)
+The suffixes -nge- verb36 and -(k¨u)le- may co-occur. Their combination is
+infrequent. It means that the subject temporarily finds itself in a state of
+having the intrinsic quality denoted by the root.
+(7) witran-nge-le-pa-y
+visitor-verb36-st28-hh17-ind4-33
+‘he is a visitor here’ (he is behaving formally, as a visitor)
+(8) nge-n-nge-le-lu
+have-pvn4-verb36-st28-svn4
+‘the one who is the owner/boss’ (lit.: he who is being the one who is the one who has)
+The suffix -nge- verb36 may indicate a weather condition or celestial phenomenon:
+(9) ale-nge-le-y
+moon-verb36-st28-ind4-33
+‘the moon is still there’
+A -(k¨u)le- form is intransitive and cannot take a slot 6 filler. This implies
+that verbs which logically need a patient do not take the morpheme -(k¨u)le-.
+Thus, *utu-le-y does not occur. Instead, the expression utu-nie-fi-y ‘he is
+approaching it’ is found. Instead of the expressions *ngoyma-le-y and *pe-le-y,
+the expressions ngoy-ma-nie-fi-y ‘he forgets it’ and pe-nie-fi-y ‘he sees it’ are
+found.
+A -(k¨u)le- form may occur with an incorporated object (10), with an instrumental
+object (11) or with a complement noun phrase (12).
+(10) kintu-k¨u aw-k¨ule-n
+look.for-work-st28-ind1s3
+‘I am looking for work’
+(11) raki uam-k¨ule-n
+think-st28-ind1s3
+fey-mew
+he-inst
+‘I am thinking of him’
+(12) raki uam-k¨ule-n
+think-st28-ind1s3
+˜ni
+poss1s
+tripa-yal
+leave-nrld9.ovn4
+‘I am thinking of leaving’
+Verbs which denote a lasting situation and are not marked with the suffix -anrld9
+denote a situation which is an actual fact and may continue to be so up
+to the present moment. Such verbs may be translated in the present or past
+tense. For the sake of brevity, -(k¨u)le- and -meke- forms are translated in the
+present tense only.
+26.28.1 Uses of -(k¨u)le-
+In combination with the plain verbal noun marker -(¨u)n pvn4, the suffix
+-(k¨u)le- denotes a background event.
+(13) witra-le-n
+get.up-st28-pvn4
+ungu-a-y-m-i
+speak-nrld9-ind4-23-s2
+‘yous must speak standing up’
+

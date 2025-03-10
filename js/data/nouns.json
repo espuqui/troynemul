@@ -130,6 +130,181 @@
             "estoy contento porque tu dijiste eso"
           ]
         ]
+      },
+      {
+        "explanation": "mew ∼ mu sirve para introducir el estándar de comparación. ‘Rude [es] más joven que yo’ ‘mi perro es más grande que su perro’ ",
+        "examples": [
+          [
+            "Rude iñche mew ina-n",
+            "Rude yo (inst) siguiente-(pvn4)",
+            "Rude [es] más joven que yo"
+          ],
+          [
+            "iñche ñi trewa doy-(üy) fey (ñi) trewa (mew)",
+            "yo (poss1s) perro más-(ind4-33) el (poss3) perro (inst)",
+            "mi perro es más grande que su perro"
+          ]
+        ]
+      },
+      {
+        "explanation": "Los ejemplos muestran -mew ∼ -mu en construcciones partitivas.",
+        "examples": [
+          [
+            "itro-kom mew wente-le-lu",
+            "varios-todos (inst) arriba-(st28)-(svn4)",
+            "el más alto de todos"
+          ],
+          [
+            "wüne-lu mew müle-pu-y",
+            "primer-(svn4) (inst) estar-(loc17)-(ind4-33)",
+            "él está entre los primeros"
+          ],
+          [
+            "iñchiu misha-w-a-yu korü mew",
+            "nosotros² compartiremos.con-(ref31)-(nrld9)-(ind4-1ns3-d2) sopa (inst)",
+            "nosotros² comeremos algo de la sopa juntos"
+          ]
+        ]
+      },
+      {
+        "explanation": "El sufijo -mew ∼ -mu no se usa con frecuencia para expresar las circunstancias en las que ocurre un evento. Se prefiere usar -(kü)le-n. Comparar:",
+        "examples": [
+          [
+            "re llüka-n mew müle-ke-fu-yngün",
+            "solo miedo-(pvn4) (inst) estar-(cf14)-(ipd8)-(ind4-3ns3-p2)",
+            "ellos vivieron solo con miedo"
+          ],
+          [
+            "llüka-le-n amu-yngün",
+            "miedo-(st28)-(pvn4) ir-(ind4-3ns3-p2)",
+            "asustados, ellos se fueron"
+          ]
+        ]
+      },
+      {
+        "explanation": "El objeto instrumental es el argumento que tiene la menor agentividad. Se refiere al actante que está menos involucrado en el evento. Comparar:",
+        "examples": [
+          [
+            "allkü-tu-le-n fey mew",
+            "escuchar-(tr33)-(st28)-(ind1s3) el (inst)",
+            "yo lo escucho de forma casual"
+          ],
+          [
+            "allkü-tu-nie-fi-n",
+            "escuchar-(tr33)-(prps32)-(edo6)-(ind1s3)",
+            "Yo lo estoy escuchando"
+          ],
+          [
+            "ungu-nge fey mew!",
+            "habla-(imp2s3) el (inst)",
+            "¡dile!"
+          ],
+          [
+            "ungu-fi-nge!",
+            "habla-(edo6)-(imp2s3)",
+            "¡habla con él!"
+          ],
+          [
+            "elfal-ke-fu-y ti wawa ñi pu wenüy mew",
+            "confiar-(cf14)-(ipd8)-(ind4-33) la guagua (poss3) (coll) amigo (inst)",
+            "él confiaría la guagua a sus amigos"
+          ],
+          [
+            "elfal-ke-fwi-y ti wawa ñi pu wenüy",
+            "confiar-(cf14)-(ipd8.edo6)-(ind4-33) la guagua (poss3) (coll) amigo",
+            "él confiaría a sus amigos la guagua"
+          ]
+        ]
+      },
+      {
+        "explanation": "En y es un complemento, ñi pu wenüy es correferencial con -fi- y es el objeto directo.",
+        "examples": [
+          [
+            "illu-le-n serbesa mew",
+            "tener.ganas-(st28)-(ind1s3) cerveza (inst)",
+            "tengo ganas de [tomar] una cerveza"
+          ],
+          [
+            "illu-le-n serbesa-tu-al",
+            "tener.ganas-(st28)-(ind1s3) cerveza-(verb36)-(nrld9.ovn4)",
+            "tengo ganas de tomar una cerveza"
+          ],
+          [
+            "rakiduam-küle-n fey mew",
+            "pensar-(st28)-(ind1s3) el (inst)",
+            "Estoy pensando en él"
+          ],
+          [
+            "rakiduam-küle-n fey ñi tripa-yal",
+            "pensar-(st28)-(ind1s3) el (poss3) salir-(nrld9.ovn4)",
+            "Creo que él se va a ir"
+          ]
+        ]
+      },
+      {
+        "explanation": "Con verbos transitivos, el instrumental puede usarse para indicar un actante adicional, después del sujeto, el objeto directo y el complemento: ‘Intercambié con Juan una oveja por un saco de trigo’ ",
+        "examples": [
+          [
+            "iñche trafkintu-l-fi-n kiñe ufisha Xuan kiñe sako ketran mew",
+            "Yo cambié-(ben27)-(edo6)-(ind1s3) una oveja Juan un saco trigo (inst)",
+            "Intercambié con Juan una oveja por un saco de trigo"
+          ]
+        ]
+      },
+      {
+        "explanation": "En los siguientes ejemplos iñche ‘yo’ es el sujeto. Xuan es el objeto directo y correferencial con -fi-. La adición del sufijo -(l)el-  cambia el paciente en el beneficiario del evento. La frase kiñe ufisha es un complemento y denota el paciente del evento. Kiñe sako ketran-mew es el objeto instrumental. El sufijo -mew ∼ -mu también aparece en las siguientes expresiones:",
+        "examples": [
+          [
+            "müna nümü-le-y pütrem mew",
+            "mucho olor-(st28)-(ind4-33) tabaco (inst)",
+            "huele mucho a tabaco"
+          ],
+          [
+            "küme-y kutran-pütra mew",
+            "bueno-(ind4-33) enfermo-estómago (inst)",
+            "es bueno contra el dolor de estómago"
+          ],
+          [
+            "küme-y püto-ko-nge-n-mu",
+            "bueno-(ind4-33) beber-agua-(pass23)-(pvn4)-(inst)",
+            "es bueno estar borracho"
+          ],
+          [
+            "müna-li-y teki mu",
+            "ser.habilidoso-(st28)-(ind4-33) tejer-(inst)",
+            "ella es hábil en el tejido"
+          ],
+          [
+            "fey petu pule-y pali-n mew",
+            "el todavía ser.bueno.para-(ind4-33) palin-(pvn4) (inst)",
+            "él aún es diestro en jugar al juego de pelota"
+          ],
+          [
+            "mañum-nie-e-yu witran mew",
+            "agradecer-(prps32)-(ido6)-(ind4-1ns3-d2-ds1) visitar (inst)",
+            "estoy agradecido con ustedes por su visita"
+          ],
+          [
+            "tuku-nge-ke-fu-y küdaw mew",
+            "ponerse-(pass23)-(cf14)-(ipd8)-(ind4-33) trabajar (inst)",
+            "él fue puesto a trabajar"
+          ],
+          [
+            "mari pesu mew antü küdaw-ke-fu-n",
+            "diez pesos (inst) dia trabajar-(cf14)-(ipd8)-(ind1s3)",
+            "solía trabajar por diez pesos al día"
+          ],
+          [
+            "ad-nu mew",
+            "forma-(neg) (inst)",
+            "sin razón"
+          ],
+          [
+            "ella mew",
+            "un.poco (inst)",
+            "al principio, en un rato"
+          ]
+        ]
       }
     ]
   },
@@ -192,6 +367,150 @@
             "antü-küdaw-kiaw-ke-rke-fu-y",
             "día-trabajo-(circ30)-(cf14)-(rep12)-(ipd8)-(ind4-33)",
             "el solía trabajar como jornalero"
+          ]
+        ]
+      }
+    ]
+  },
+  "tu|re16": {
+    "title": "repetitivo restaurativo",
+    "color": "magenta",
+    "fix": "in",
+    "variations": [],
+    "content": [
+      {
+        "explanation": "El sufijo -tu- indica que una situación se repite o se restaura.",
+        "examples": [
+          [
+            "nel-üm-tu-fi-n",
+            "soltarse-(ca34)-(re16)-(edo6)-(ind1s3)",
+            "Lo liberé de nuevo / le restauré su libertad"
+          ],
+          [
+            "nor-tu-y",
+            "derecho-(re16)-(ind4-33)",
+            "Él/eso se enderezó nuevamente / él retomó el camino correcto"
+          ],
+          [
+            "doy küme-l-ka-le-tu-n",
+            "mas bueno-(ca34)-(fac33)-(st28)-(re16)-(ind1s3)",
+            "Estoy mejor otra vez"
+          ],
+          [
+            "witra-tripa-tu-y",
+            "levantarse-salir-(re16)-(ind4-33)",
+            "Él se levantó y se fue [a casa]"
+          ],
+          [
+            "utrüf-tuku-künu-me-tu-fi-yiñ",
+            "lanzar-poner-(pfps32)-(th20)-(re16)-(edo6)-(ind4-1ns3-p2)",
+            "nosotros lo echamos y lo dejamos por donde vino"
+          ],
+          [
+            "wiño-tu-ke-fu-yiñ",
+            "volver-(re16)-(cf14)-(ipd8)-(ind4-1ns3-p2)",
+            "nosotros siempre volvuanos [a casa] de nuevo"
+          ]
+        ]
+      },
+      {
+        "explanation": "Cuando el morfema -tu- se combina con el marcador de proximidad -pe-, el sufijo -tu- sigue al sufijo -pe-, por ejemplo. Este orden irregular de palabras probablemente se deba al sufijo -tu-, que es algo versátil, y no al sufijo -pe-, que de otro modo es regular. El sufijo -tu- ocasionalmente puede encontrarse después de -ke-. Nótese que -tu- se combina con -ka-. Estos sufijos, en otras circunstancias, son mutuamente excluyentes. Tal vez se deba asumir un segundo sufijo -tu- homófono. En un caso, el morfema -tu- tiene un significado lexicalizado: fey-pi-tu- ‘decir algo diferente todo el tiempo’ (fey-pi- eso-decir-). ",
+        "examples": [
+          [
+            "amu-pe-tu-la-y",
+            "ir-(px13)-(re16)-(neg10)-(ind4-33)",
+            "Probablemente él volvió"
+          ],
+          [
+            "aku-pe-tu-a-fu-n",
+            "llegar-(px13)-(re16)-(nrld9)-(ipd8)-(ind1s3)",
+            "Puede que yo llegue (donde estaba antes)"
+          ],
+          [
+            "treka-ka-pe-tu-la-ya-y",
+            "caminar-(cont16)-(px13)-(re16)-(neg10)-(nrld9)-(ind4-33)",
+            "Puede que él todavía camine de nuevo"
+          ]
+        ]
+      }
+    ]
+  },
+  "tu|verb36": {
+    "title": "verbalizador",
+    "color": "darkorange",
+    "fix": "in",
+    "variations": [],
+    "content": [
+      {
+        "explanation": "El verbalizador -tu- se adhiere a los sustantivos. El verbo resultante puede interpretarse como ‘consumir’, ‘usar’ o ‘tomar’ lo que se refiere con el sustantivo. Una forma con -tu- puede ser transitiva o intransitiva.",
+        "examples": [
+          [
+            "trutruka-tu-fi-ñ",
+            "trutruca-(verb36)-(edo6)-(ind1s3)",
+            "Toqué esa trutruca"
+          ],
+          [
+            "trutruka-tu-n",
+            "trutruca-(verb36)-(ind1s3)",
+            "Toqué la trutruca"
+          ],
+          [
+            "üy-tu-fi-ñ",
+            "nombre-(verb36)-(edo6)-(ind1s3)",
+            "Lo llamé por el nombre"
+          ]
+        ]
+      },
+      {
+        "explanation": "El verbalizador -tu- ocasionalmente ocurre como factitivo: ‘Hice un fuego con esa madera’",
+        "examples": [
+          [
+            "kütral-tu-fi-ñ ti mamüll",
+            "fuego-(verb36)-(edo6)-(ind1s3) la madera",
+            "Hice un fuego con esa madera"
+          ]
+        ]
+      }
+    ]
+  },
+  "le|st28": {
+    "title": "estativo",
+    "color": "yellow",
+    "fix": "in",
+    "variations": ["küle"],
+    "content": [
+      {
+        "explanation": "Los sufijos -(kü)le- denotan un estado. Un verbo telico que contiene -(kü)le- está orientado al resultado. Un verbo atelic que contiene uno de estos sufijos está orientado al evento. El cambio de estado que es el resultado de un evento denotado por un verbo telico se atribuye al sujeto intransitivo o al paciente de la forma perfectiva correspondiente. Con ciertos verbos, el sufijo -(kü)le- denota ya sea un cambio de estado que es el resultado de un evento anterior o un evento en curso. Comparar: ",
+        "examples": [
+          [
+            "pod-küle-y",
+            "sucio-(st28)-(ind4-33)",
+            "él está sucio"
+          ],
+          [
+            "müchay-ke pod-küle-w-üy",
+            "luego-(distr) sucio-(st28)-(ref31)-(ind4-33)",
+            "él se está ensuciando cada vez más"
+          ],
+          [
+            "añid-küle-y",
+            "arder-(st28)-(ind4-33)",
+            "él ha sido quemado / está quemando"
+          ],
+          [
+            "añid-kon-küle-y",
+            "arder-entrar-(st28)-(ind4-33)",
+            "está quemando"
+          ],
+          [
+            "wiri-le-y",
+            "escribir-(st28)-(ind4-33)",
+            "está escrito"
+          ],
+          [
+            "wiri-kon-küle-y",
+            "escribir-entrar-(st28)-(ind4-33)",
+            "él está escribiendo"
           ]
         ]
       }
