@@ -1,0 +1,29 @@
+An adjective is used as a modifier of a following noun.
+(1) k¨um´e
+good
+wentru
+man
+‘a good man’
+An adjective does not occur as a nominal predicate. Instead, one can use a
+verbal predicate which is derived from an adjective.
+(2) ti
+the
+wentru
+man
+k¨ume-y
+good-verb36-ind4-33
+‘the man is good’
+For verbalization, see chapter 21.
+The adjectives man ‘right’ and wele ‘left’ can be used as nouns:
+(3) man
+right
+kuw¨u-mew
+hand-inst
+n¨u-fi-nge!
+take-edo6-imp2s3
+‘take it with the right hand!’
+(4) man-mew
+right-inst
+n¨u-fi-nge!
+take-edo6-imp2s3
+‘take it with the right [hand]!’
