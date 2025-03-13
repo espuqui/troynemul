@@ -7,7 +7,7 @@
     ],
     "content": [
       {
-        "explanation": "El sufijo instrumental -mew ∼ -mu se añade únicamente a los sustantivos (incluidos los sustantivos verbales) y a los pronombres. Indica instrumento, lugar, tiempo, causa y se usa en construcciones comparativas y partitivas. El sufijo -mew ∼ -mu también puede referirse a las circunstancias bajo las cuales tiene lugar un evento. ",
+        "explanation": "El sufijo instrumental -mew ∼ -mu. Indica instrumento, lugar, tiempo. ",
         "examples": [
           [
             "anel-tu-fiñ kiñe kuchillo mu",
@@ -23,12 +23,7 @@
             "are-tu-n mew monge-liy",
             "prestar-(tr33)-(pvn4) (inst) vivir-(st28-ind4-33)",
             "él vive de lo prestado"
-          ]
-        ]
-      },
-      {
-        "explanation": "El instrumental no solo indica un lugar donde, sino también una dirección hacia la cual, desde la cual, etc. La ambigüedad del sufijo -mew como marcador de dirección puede aclararse añadiendo un verbo que indique dirección, como en a continuación.",
-        "examples": [
+          ],
           [
             "fey mew fücha puru-yngün",
             "que (inst) largo baile-(ind4-3ns3-p2)",
@@ -45,166 +40,6 @@
             "antes hacíamos² un cable de una ciudad a otra (ciudad)"
           ],
           [
-            "potrü-tripa-n ti wangku mu",
-            "caerse.hacia.atrás-irse/salir-(ind1s3) la silla (inst)",
-            "me caí de la silla para atrás"
-          ],
-          [
-            "tüfa püntü-le-y ka-ke-lu mew",
-            "esta separar-(st28)-(ind4-33) otro-(distr)-(svn4) (inst)",
-            "esto se distingue de los demás / Esto se distingue entre los demás"
-          ]
-        ]
-      },
-      {
-        "explanation": "El sufijo -mew ∼ -mu se omite cuando el lugar o la dirección está especificado por un nombre. Al omitir -mew ∼ -mu, se cambia la función del sustantivo de objeto instrumental a complemento. Compare",
-        "examples": [
-          [
-            "amu-a-y waria-mew",
-            "ir-(nrld9)-(ind4-33) ciudad (inst)",
-            "el irá a la ciudad"
-          ],
-          [
-            "amu-a-y Temuko",
-            "ir-(nrld9)-(ind4-33) Temuco",
-            "él irá a Temuco"
-          ]
-        ]
-      },
-      {
-        "explanation": "Algunos sustantivos de lugar y tiempo pueden usarse de manera adverbial. Con estos sustantivos, -mew ∼ -mu es opcional.",
-        "examples": [
-          [
-            "furi mew müle-y / furi müle-y",
-            "atrás (inst) estar-(ind4-33) / atrás estar-(ind4-33)",
-            "él está atrás"
-          ]
-        ]
-      },
-      {
-        "explanation": "La relación entre un sustantivo de lugar y otro sustantivo se expresa por yuxtaposición. El segundo sustantivo toma opcionalmente el sufijo -mew ∼ -mu.",
-        "examples": [
-          [
-            "furi ruka mew müle-y / furi ruka müle-y",
-            "atrás casa (inst) estar-(ind4-33) / atrás casa estar-(ind4-33)",
-            "ella está atrás de la casa"
-          ]
-        ]
-      },
-      {
-        "explanation": "El instrumento y el lugar también se expresan mediante el sufijo nominalizador -m. Para desambiguar -m, se puede añadir el sufijo -mew ∼ -mu, pero solo cuando -m indica lugar. Cuando el sufijo -mew ∼ -mu tiene un significado temporal, puede indicar un período de tiempo durante el cual tiene lugar un evento o un momento, antes o después de un momento de orientación, en el cual ocurre un evento.",
-        "examples": [
-          [
-            "küla antü mew kutran-fu-n",
-            "tres día-(inst) enfermo-(ipd8)-(ind1s3)",
-            "yo he estado enfermo por tres días"
-          ],
-          [
-            "külá antü mew tripa-n",
-            "tres dias (inst) salir-(ind1s3)",
-            "yo partí hace tres días / Yo partí tres dïas después"
-          ],
-          [
-            "küla antü mew tripa-ya-n",
-            "tres días (inst) salir-(nrld9)-(ind1s3)",
-            "yo partiré en tres días, Yo partiré tres días mas tarde"
-          ]
-        ]
-      },
-      {
-        "explanation": "El sustantivo antü 'día' es uno de los sustantivos que puede usarse de manera adverbial. Como resultado, -mew ∼ -mu puede omitirse  sin crear una diferencia semántica clara. Cuando -mew ∼ -mu tiene un significado causal, se encuentra especialmente con oraciones subordinadas. Compare:",
-        "examples": [
-          [
-            "chafo-a-fu-ymi wütre (mew)",
-            "resfrío-(nrld9)-(ipd8)-(ind4-23-s2) resfrío (inst)",
-            "tu podrías agarrar un resfrío con el frío que hace"
-          ],
-          [
-            "pepi wiri-la-n rume wütre-le-n mew",
-            "poder escribir-(neg10)-(ind1s3) muy frío-(st28)-(pvn4) (inst)",
-            "no puedo escribir porque está muy helado"
-          ],
-          [
-            "ayü-w-küle-n eymi mi fey-pi-n-mew ti dungu",
-            "gustar-(ref31)-(st28)-(ind1s3) tu (poss2s) que-decir-(pvn4)-(inst) la palabra,idea",
-            "estoy contento porque tu dijiste eso"
-          ]
-        ]
-      },
-      {
-        "explanation": "mew ∼ mu sirve para introducir el estándar de comparación. ‘Rude [es] más joven que yo’ ‘mi perro es más grande que su perro’ ",
-        "examples": [
-          [
-            "Rude iñche mew ina-n",
-            "Rude yo (inst) siguiente-(pvn4)",
-            "Rude [es] más joven que yo"
-          ],
-          [
-            "iñche ñi trewa doy-(üy) fey (ñi) trewa (mew)",
-            "yo (poss1s) perro más-(ind4-33) el (poss3) perro (inst)",
-            "mi perro es más grande que su perro"
-          ]
-        ]
-      },
-      {
-        "explanation": "Los ejemplos muestran -mew ∼ -mu en construcciones partitivas.",
-        "examples": [
-          [
-            "itro-kom mew wente-le-lu",
-            "varios-todos (inst) arriba-(st28)-(svn4)",
-            "el más alto de todos"
-          ],
-          [
-            "wüne-lu mew müle-pu-y",
-            "primer-(svn4) (inst) estar-(loc17)-(ind4-33)",
-            "él está entre los primeros"
-          ],
-          [
-            "iñchiu misha-w-a-yu korü mew",
-            "nosotros² compartiremos.con-(ref31)-(nrld9)-(ind4-1ns3-d2) sopa (inst)",
-            "nosotros² comeremos algo de la sopa juntos"
-          ]
-        ]
-      },
-      {
-        "explanation": "El sufijo -mew ∼ -mu no se usa con frecuencia para expresar las circunstancias en las que ocurre un evento. Se prefiere usar -(kü)le-n. Comparar:",
-        "examples": [
-          [
-            "re llüka-n mew müle-ke-fu-yngün",
-            "solo miedo-(pvn4) (inst) estar-(cf14)-(ipd8)-(ind4-3ns3-p2)",
-            "ellos vivieron solo con miedo"
-          ],
-          [
-            "llüka-le-n amu-yngün",
-            "miedo-(st28)-(pvn4) ir-(ind4-3ns3-p2)",
-            "asustados, ellos se fueron"
-          ]
-        ]
-      },
-      {
-        "explanation": "El objeto instrumental es el argumento que tiene la menor agentividad. Se refiere al actante que está menos involucrado en el evento. Comparar:",
-        "examples": [
-          [
-            "allkü-tu-le-n fey mew",
-            "escuchar-(tr33)-(st28)-(ind1s3) el (inst)",
-            "yo lo escucho de forma casual"
-          ],
-          [
-            "allkü-tu-nie-fi-n",
-            "escuchar-(tr33)-(prps32)-(edo6)-(ind1s3)",
-            "Yo lo estoy escuchando"
-          ],
-          [
-            "ungu-nge fey mew!",
-            "habla-(imp2s3) el (inst)",
-            "¡dile!"
-          ],
-          [
-            "ungu-fi-nge!",
-            "habla-(edo6)-(imp2s3)",
-            "¡habla con él!"
-          ],
-          [
             "elfal-ke-fu-y ti wawa ñi pu wenüy mew",
             "confiar-(cf14)-(ipd8)-(ind4-33) la guagua (poss3) (coll) amigo (inst)",
             "él confiaría la guagua a sus amigos"
@@ -213,86 +48,11 @@
             "elfal-ke-fwi-y ti wawa ñi pu wenüy",
             "confiar-(cf14)-(ipd8.edo6)-(ind4-33) la guagua (poss3) (coll) amigo",
             "él confiaría a sus amigos la guagua"
-          ]
-        ]
-      },
-      {
-        "explanation": "En y es un complemento, ñi pu wenüy es correferencial con -fi- y es el objeto directo.",
-        "examples": [
+          ],
           [
             "illu-le-n serbesa mew",
             "tener.ganas-(st28)-(ind1s3) cerveza (inst)",
             "tengo ganas de [tomar] una cerveza"
-          ],
-          [
-            "illu-le-n serbesa-tu-al",
-            "tener.ganas-(st28)-(ind1s3) cerveza-(verb36)-(nrld9.ovn4)",
-            "tengo ganas de tomar una cerveza"
-          ],
-          [
-            "rakiduam-küle-n fey mew",
-            "pensar-(st28)-(ind1s3) el (inst)",
-            "Estoy pensando en él"
-          ],
-          [
-            "rakiduam-küle-n fey ñi tripa-yal",
-            "pensar-(st28)-(ind1s3) el (poss3) salir-(nrld9.ovn4)",
-            "Creo que él se va a ir"
-          ]
-        ]
-      },
-      {
-        "explanation": "Con verbos transitivos, el instrumental puede usarse para indicar un actante adicional, después del sujeto, el objeto directo y el complemento: ‘Intercambié con Juan una oveja por un saco de trigo’ ",
-        "examples": [
-          [
-            "iñche trafkintu-l-fi-n kiñe ufisha Xuan kiñe sako ketran mew",
-            "Yo cambié-(ben27)-(edo6)-(ind1s3) una oveja Juan un saco trigo (inst)",
-            "Intercambié con Juan una oveja por un saco de trigo"
-          ]
-        ]
-      },
-      {
-        "explanation": "En los siguientes ejemplos iñche ‘yo’ es el sujeto. Xuan es el objeto directo y correferencial con -fi-. La adición del sufijo -(l)el-  cambia el paciente en el beneficiario del evento. La frase kiñe ufisha es un complemento y denota el paciente del evento. Kiñe sako ketran-mew es el objeto instrumental. El sufijo -mew ∼ -mu también aparece en las siguientes expresiones:",
-        "examples": [
-          [
-            "müna nümü-le-y pütrem mew",
-            "mucho olor-(st28)-(ind4-33) tabaco (inst)",
-            "huele mucho a tabaco"
-          ],
-          [
-            "küme-y kutran-pütra mew",
-            "bueno-(ind4-33) enfermo-estómago (inst)",
-            "es bueno contra el dolor de estómago"
-          ],
-          [
-            "küme-y püto-ko-nge-n-mu",
-            "bueno-(ind4-33) beber-agua-(pass23)-(pvn4)-(inst)",
-            "es bueno estar borracho"
-          ],
-          [
-            "müna-li-y teki mu",
-            "ser.habilidoso-(st28)-(ind4-33) tejer-(inst)",
-            "ella es hábil en el tejido"
-          ],
-          [
-            "fey petu pule-y pali-n mew",
-            "el todavía ser.bueno.para-(ind4-33) palin-(pvn4) (inst)",
-            "él aún es diestro en jugar al juego de pelota"
-          ],
-          [
-            "mañum-nie-e-yu witran mew",
-            "agradecer-(prps32)-(ido6)-(ind4-1ns3-d2-ds1) visitar (inst)",
-            "estoy agradecido con ustedes por su visita"
-          ],
-          [
-            "tuku-nge-ke-fu-y küdaw mew",
-            "ponerse-(pass23)-(cf14)-(ipd8)-(ind4-33) trabajar (inst)",
-            "él fue puesto a trabajar"
-          ],
-          [
-            "mari pesu mew antü küdaw-ke-fu-n",
-            "diez pesos (inst) dia trabajar-(cf14)-(ipd8)-(ind1s3)",
-            "solía trabajar por diez pesos al día"
           ],
           [
             "ad-nu mew",
@@ -315,7 +75,7 @@
     "variations": [],
     "content": [
       {
-        "explanation": "El sufijo -a- indica que la situación no se realiza. Un verbo que lleva la partícula -a- denota una situación que se presenta como no siendo un hecho actual. La interpretación básica de un verbo marcado con el sufijo -a- es que la situación denotada ocurrirá en un momento posterior al momento de orientación. Por lo tanto, una forma con -a- se traduce comúnmente como tiempo futuro.",
+        "explanation": "El sufijo -a- indica que la situación no se realiza.",
         "examples": [
           [
             "trür amu-a-yu üyüw",
@@ -351,7 +111,7 @@
     "variations": [],
     "content": [
       {
-        "explanation": "El sufijo -ke- expresa una característica constante. El sufijo -ke- y el sufijo -ye-, que también indica una característica constante, son mutuamente excluyentes. El sufijo -ye- se combina solo con el marcador de nombre verbal instrumental -m, mientras que el morfema -ke- se usa en otros contextos. Una forma con -ke- denota una situación que puede continuar en el presente. Por lo tanto, una forma marcada con -ke- se traduce comúnmente como tiempo presente. La discontinuación de una situación denotada por una forma con -ke- se indica con el impedidor -fu-.",
+        "explanation": "El sufijo -ke- expresa una característica constante.",
         "examples": [
           [
             "pod-küle-ke-y",
@@ -414,7 +174,7 @@
         ]
       },
       {
-        "explanation": "Cuando el morfema -tu- se combina con el marcador de proximidad -pe-, el sufijo -tu- sigue al sufijo -pe-, por ejemplo. Este orden irregular de palabras probablemente se deba al sufijo -tu-, que es algo versátil, y no al sufijo -pe-, que de otro modo es regular. El sufijo -tu- ocasionalmente puede encontrarse después de -ke-. Nótese que -tu- se combina con -ka-. Estos sufijos, en otras circunstancias, son mutuamente excluyentes. Tal vez se deba asumir un segundo sufijo -tu- homófono. En un caso, el morfema -tu- tiene un significado lexicalizado: fey-pi-tu- ‘decir algo diferente todo el tiempo’ (fey-pi- eso-decir-). ",
+        "explanation": "Cuando el morfema -tu- se combina con el marcador de proximidad -pe-",
         "examples": [
           [
             "amu-pe-tu-la-y",
@@ -442,7 +202,7 @@
     "variations": [],
     "content": [
       {
-        "explanation": "El verbalizador -tu- se adhiere a los sustantivos. El verbo resultante puede interpretarse como ‘consumir’, ‘usar’ o ‘tomar’ lo que se refiere con el sustantivo. Una forma con -tu- puede ser transitiva o intransitiva.",
+        "explanation": "El verbalizador -tu- se adhiere a los sustantivos..",
         "examples": [
           [
             "trutruka-tu-fi-ñ",
@@ -480,7 +240,7 @@
     "variations": ["küle"],
     "content": [
       {
-        "explanation": "Los sufijos -(kü)le- denotan un estado. Un verbo telico que contiene -(kü)le- está orientado al resultado. Un verbo atelic que contiene uno de estos sufijos está orientado al evento. El cambio de estado que es el resultado de un evento denotado por un verbo telico se atribuye al sujeto intransitivo o al paciente de la forma perfectiva correspondiente. Con ciertos verbos, el sufijo -(kü)le- denota ya sea un cambio de estado que es el resultado de un evento anterior o un evento en curso. Comparar: ",
+        "explanation": "Los sufijos -(kü)le- denotan un estado.",
         "examples": [
           [
             "pod-küle-y",
