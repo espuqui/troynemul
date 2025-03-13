@@ -9,7 +9,7 @@ export function init(data) {
   window.aliasMap = buildAliasMap(data)
 
   document.getElementById("mainDiv").hidden = false
-  render("mew|inst")
+  render("le|st28")
 }
 function handleTooltips() {
   document.addEventListener('click', function(event) {
