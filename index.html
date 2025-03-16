@@ -86,7 +86,7 @@
 </div>
 
 <script type="module">
-  import {render, init, search, backHist, updateWinkaDungunExamples} from "./render.js";
+  import {render, init, search, backHist, updateWinkaDungunExamples} from "./js/src/render.js";
 
 
   window.render = render
@@ -100,7 +100,7 @@
   setWinkaDungunExamples(false)
 
   window.addEventListener('load', function () {
-    fetch("./js/data/nouns.json")
+    fetch("./data/particles.json")
       .then((res) => res.json())
       .then((data) => {
         init(data)

@@ -1,7 +1,7 @@
-import {parseExample} from "./js/src/parser.js";
-import {buildAliasMap} from "./js/src/parser.js";
-import {searchAdditionalExamples} from "./js/src/parser.js";
-import {applyFix, renderWordWithFixVariations, searchWord} from "./js/src/search.js";
+import {parseExample} from "./parser.js";
+import {buildAliasMap} from "./parser.js";
+import {searchAdditionalExamples} from "./parser.js";
+import {applyFix, renderWordWithFixVariations, searchWord} from "./search.js";
 
 export function init(data) {
   handleTooltips();
@@ -135,7 +135,7 @@ function renderWithSpanOnClickParticle(text, particleId, spanClass, color) {
 }
 
 function renderMapu(exampleParts, particleId) {
-  let html = '<img src="img/mapuche_flag.svg" width="10px" height="10px" alt="">'
+  let html = '<img src="../../img/mapuche_flag.svg" width="10px" height="10px" alt="">'
 
   html += " "
 
@@ -165,7 +165,7 @@ function renderMapu(exampleParts, particleId) {
 }
 
 function renderWinka(word) {
-  let html = '<span class="winkaExampleSpan"><img src="img/spain_flag.svg" width="10px" height="10px" alt="">'
+  let html = '<span class="winkaExampleSpan"><img src="../../img/spain_flag.svg" width="10px" height="10px" alt="">'
   html += " "
   html += renderWithSpan(word, "winkaExample")
   html += "<br /><br />"
