@@ -173,7 +173,7 @@ function renderMapu(exampleParts, particleId) {
       let wordParts = examplePart.split("|")
       let currentWord = window.aliasMap.get(examplePart)
       if (currentWord === undefined) {
-        html += renderWithSpanOnClickParticle(wordParts[0], examplePart, "particleExample", "gray")
+        html += renderWithSpanOnClickTooltip(wordParts[0], "Falta: <br/> (" + examplePart  + ")", "particleMissing particleExample")
       } else {
         let color = window.particleData[currentWord].color
         if (window.aliasMap.get(examplePart) === particleId) {

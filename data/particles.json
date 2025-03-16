@@ -7,62 +7,12 @@
     ],
     "content": [
       {
-        "explanation": "El sufijo instrumental -mew ∼ -mu. Indica instrumento, lugar, tiempo. ",
+        "explanation": "El sufijo instrumental -mew ∼ -mu indica instrumento, lugar, tiempo. ",
         "examples": [
-          [
-            "anel-tu-fiñ kiñe kuchillo mu",
-            "amenazar-(tr33)-(edo6-ind1s3) un cuchillo (inst)",
-            "lo amenacé con un cuchillo"
-          ],
           [
             "apo-li-y ta-ñi nge küllewün mew",
             "estar.lleno-(st28)-(ind4-33) el-(poss3) ojo lágrima (inst)",
             "sus ojos estan llenos de lágrimas"
-          ],
-          [
-            "are-tu-n mew monge-liy",
-            "prestar-(tr33)-(pvn4) (inst) vivir-(st28-ind4-33)",
-            "él vive de lo prestado"
-          ],
-          [
-            "fey mew fücha puru-yngün",
-            "que (inst) largo baile-(ind4-3ns3-p2)",
-            "allá ellos² bailaron por largo rato"
-          ],
-          [
-            "uma-pu-n ta-ñi peñi mu",
-            "alojarse-(loc17)-(ind1s3) ese-(poss1s) hermano (inst)",
-            "Me alojé donde mi hermano"
-          ],
-          [
-            "dewma-ke-fu-yiñ linea kiñe waria-mu ka waria mu",
-            "hacer-(cf14)-(ipd8)-(ind4-1ns3-p2) cable una ciudad-(inst) otra ciudad (inst)",
-            "antes hacíamos² un cable de una ciudad a otra (ciudad)"
-          ],
-          [
-            "elfal-ke-fu-y ti wawa ñi pu wenüy mew",
-            "confiar-(cf14)-(ipd8)-(ind4-33) la guagua (poss3) (coll) amigo (inst)",
-            "él confiaría la guagua a sus amigos"
-          ],
-          [
-            "elfal-ke-fwi-y ti wawa ñi pu wenüy",
-            "confiar-(cf14)-(ipd8.edo6)-(ind4-33) la guagua (poss3) (coll) amigo",
-            "él confiaría a sus amigos la guagua"
-          ],
-          [
-            "illu-le-n serbesa mew",
-            "tener.ganas-(st28)-(ind1s3) cerveza (inst)",
-            "tengo ganas de [tomar] una cerveza"
-          ],
-          [
-            "ad-nu mew",
-            "forma-(neg) (inst)",
-            "sin razón"
-          ],
-          [
-            "ella mew",
-            "un.poco (inst)",
-            "al principio, en un rato"
           ]
         ]
       }
@@ -117,16 +67,6 @@
             "pod-küle-ke-y",
             "sucio-(st28)-(cf14)-(ind4-33)",
             "eso siempre está sucio"
-          ],
-          [
-            "küpa leli-ke-n pelikula",
-            "quiero mirar-(cf14)-(ind1s3) película",
-            "me gusta ver películas"
-          ],
-          [
-            "antü-küdaw-kiaw-ke-rke-fu-y",
-            "día-trabajo-(circ30)-(cf14)-(rep12)-(ipd8)-(ind4-33)",
-            "el solía trabajar como jornalero"
           ]
         ]
       }
@@ -142,54 +82,19 @@
         "explanation": "El sufijo -tu- indica que una situación se repite o se restaura.",
         "examples": [
           [
-            "nel-üm-tu-fi-n",
-            "soltarse-(ca34)-(re16)-(edo6)-(ind1s3)",
-            "Lo liberé de nuevo / le restauré su libertad"
-          ],
-          [
-            "nor-tu-y",
-            "derecho-(re16)-(ind4-33)",
-            "Él/eso se enderezó nuevamente / él retomó el camino correcto"
-          ],
-          [
-            "doy küme-l-ka-le-tu-n",
-            "mas bueno-(ca34)-(fac33)-(st28)-(re16)-(ind1s3)",
-            "Estoy mejor otra vez"
-          ],
-          [
-            "witra-tripa-tu-y",
-            "levantarse-salir-(re16)-(ind4-33)",
-            "Él se levantó y se fue [a casa]"
-          ],
-          [
             "utrüf-tuku-künu-me-tu-fi-yiñ",
             "lanzar-poner-(pfps32)-(th20)-(re16)-(edo6)-(ind4-1ns3-p2)",
             "nosotros lo echamos y lo dejamos por donde vino"
-          ],
-          [
-            "wiño-tu-ke-fu-yiñ",
-            "volver-(re16)-(cf14)-(ipd8)-(ind4-1ns3-p2)",
-            "nosotros siempre volvuanos [a casa] de nuevo"
           ]
         ]
       },
       {
-        "explanation": "Cuando el morfema -tu- se combina con el marcador de proximidad -pe-",
+        "explanation": "El morfema -tu- se combina con el marcador de proximidad -pe-",
         "examples": [
-          [
-            "amu-pe-tu-la-y",
-            "ir-(px13)-(re16)-(neg10)-(ind4-33)",
-            "Probablemente él volvió"
-          ],
           [
             "aku-pe-tu-a-fu-n",
             "llegar-(px13)-(re16)-(nrld9)-(ipd8)-(ind1s3)",
             "Puede que yo llegue (donde estaba antes)"
-          ],
-          [
-            "treka-ka-pe-tu-la-ya-y",
-            "caminar-(cont16)-(px13)-(re16)-(neg10)-(nrld9)-(ind4-33)",
-            "Puede que él todavía camine de nuevo"
           ]
         ]
       }
@@ -208,26 +113,6 @@
             "trutruka-tu-fi-ñ",
             "trutruca-(verb36)-(edo6)-(ind1s3)",
             "Toqué esa trutruca"
-          ],
-          [
-            "trutruka-tu-n",
-            "trutruca-(verb36)-(ind1s3)",
-            "Toqué la trutruca"
-          ],
-          [
-            "üy-tu-fi-ñ",
-            "nombre-(verb36)-(edo6)-(ind1s3)",
-            "Lo llamé por el nombre"
-          ]
-        ]
-      },
-      {
-        "explanation": "El verbalizador -tu- ocasionalmente ocurre como factitivo: ‘Hice un fuego con esa madera’",
-        "examples": [
-          [
-            "kütral-tu-fi-ñ ti mamüll",
-            "fuego-(verb36)-(edo6)-(ind1s3) la madera",
-            "Hice un fuego con esa madera"
           ]
         ]
       }
@@ -240,37 +125,67 @@
     "variations": ["küle"],
     "content": [
       {
-        "explanation": "Los sufijos -(kü)le- denotan un estado.",
+        "explanation": "El sufijo -le- denota un estado actual.",
         "examples": [
-          [
-            "pod-küle-y",
-            "sucio-(st28)-(ind4-33)",
-            "él está sucio"
-          ],
           [
             "müchay-ke pod-küle-w-üy",
             "luego-(distr) sucio-(st28)-(ref31)-(ind4-33)",
             "él se está ensuciando cada vez más"
-          ],
+          ]
+        ]
+      }
+    ]
+  },
+  "n|verb36-pvn4": {
+    "title": "sustantivo cuantitativo",
+    "color": "tan",
+    "fix": "post",
+    "variations": ["ün"],
+    "content": [
+      {
+        "explanation": "Indica cantidad o tamaño",
+        "examples": [
           [
-            "añid-küle-y",
-            "arder-(st28)-(ind4-33)",
-            "él ha sido quemado / está quemando"
-          ],
+            "küla doy fentre-n epu mew",
+            "tres mas mucho-(verb36-pvn4) dos (inst)",
+            "tres es un número mas alto que dos / tres es más que dos"
+          ]
+        ]
+      }
+    ]
+  },
+  "püle|ppos": {
+    "title": "postposicion",
+    "color": "yellowgreen",
+    "fix": "",
+    "variations": [],
+    "content": [
+      {
+        "explanation": "indica dirección",
+        "examples": [
           [
-            "añid-kon-küle-y",
-            "arder-entrar-(st28)-(ind4-33)",
-            "está quemando"
-          ],
+            "lafken püle",
+            "mar,lago (ppos)",
+            "la dirección del mar / en la dirección del mar / en la costa"
+          ]
+        ]
+      }
+
+    ]
+  },
+  "pu|loc": {
+    "title": "preposición",
+    "color": "darkseagreen",
+    "fix": "",
+    "variations": [],
+    "content": [
+      {
+        "explanation": "indica ubicación",
+        "examples": [
           [
-            "wiri-le-y",
-            "escribir-(st28)-(ind4-33)",
-            "está escrito"
-          ],
-          [
-            "wiri-kon-küle-y",
-            "escribir-entrar-(st28)-(ind4-33)",
-            "él está escribiendo"
+            "iñche müle-n pu waria",
+            "yo estar-(ind1s3) (loc) ciudad",
+            "yo estoy en el pueblo"
           ]
         ]
       }

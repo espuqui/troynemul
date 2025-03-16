@@ -60,11 +60,11 @@ export function applyFix(word, fix) {
   let outputWord = word
   if (fix !== undefined) {
     if (fix === "pre") {
-      outputWord = "-" + word
+      outputWord = word + "-"
     } else if (fix === "in") {
       outputWord = "-" + word + "-"
     } else if (fix === "post") {
-      outputWord = word + "-"
+      outputWord = "-" + word
     }
   }
   return outputWord

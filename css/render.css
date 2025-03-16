@@ -166,6 +166,13 @@ Estilos
 
 }
 
+.particleMissing {
+  text-decoration: gray underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
+  text-decoration-skip-ink: none;
+}
+
 .particleExamplesTitle {
   font-style: italic;
   color: aquamarine;

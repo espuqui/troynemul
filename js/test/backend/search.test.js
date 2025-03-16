@@ -1,7 +1,7 @@
 import {searchWord} from "../../src/backend/search.js";
 import {buildAliasMap} from "../../src/backend/parser.js";
 describe('searchTests', () => {
-  test('wordsAreFounds', () => {
+  test('wordsAreFound', () => {
     let data = {}
     data["mew|inst"] = {}
     data["mew|inst"]["variations"] = ["mu", "mo"]
@@ -37,15 +37,15 @@ describe('searchTests', () => {
     let expectedResults = []
     let expectedResults1 = {}
     expectedResults1.particleId = "mew|inst"
-    expectedResults1.summary = "-mew"
-    expectedResults1.variations = "(-mu, -mo)"
+    expectedResults1.summary = "mew-"
+    expectedResults1.variations = "(mu-, mo-)"
     expectedResults1.title = "sufijoinst"
     expectedResults1.color = "kallfü"
     expectedResults.push(expectedResults1)
 
     let expectedResults2 = {}
     expectedResults2.particleId = "me|conj"
-    expectedResults2.summary = "me-"
+    expectedResults2.summary = "-me"
     expectedResults2.variations = ""
     expectedResults2.title = "any2"
     expectedResults2.color = "karü"
