@@ -18,7 +18,7 @@ export function parseExample(mapuche, grammar) {
     if (grammarWord.startsWith("(")) {
       mixedWord = mapucheWord + "|" + grammarWord.replace(/[()]/g, "")
     } else {
-      mixedWord = mapucheWord + "*" + grammarWord.replace(".", " ")
+      mixedWord = mapucheWord + "*" + grammarWord.replaceAll(".", " ")
     }
 
     output.push(mixedWord)

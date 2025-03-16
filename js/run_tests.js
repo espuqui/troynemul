@@ -1,5 +1,10 @@
-import { runAllParserTests } from "./test/parser_test.js"
-import { runAllSearchTests } from "./test/search_test.js"
+import { runAllParserTests } from "./test/parser.test.js"
+import { runAllSearchTests } from "./test/search.test.js"
 
-runAllParserTests()
-runAllSearchTests()
+// runAllParserTests()
+// runAllSearchTests()
+
+
+test('first test',()=>{
+  expect(add()).toBe(5)
+})
