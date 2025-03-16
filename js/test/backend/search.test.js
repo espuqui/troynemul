@@ -1,5 +1,5 @@
-import {searchWord} from "../src/search.js";
-import {buildAliasMap} from "../src/parser.js";
+import {searchWord} from "../../src/backend/search.js";
+import {buildAliasMap} from "../../src/backend/parser.js";
 describe('searchTests', () => {
   test('wordsAreFounds', () => {
     let data = {}

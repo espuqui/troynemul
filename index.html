@@ -85,85 +85,10 @@
   </div>
 </div>
 
-<script type="module">
-  import {render, init, search, backHist, updateWinkaDungunExamples} from "./js/src/render.js";
 
 
-  window.render = render
-  window.search = search
-  window.back = backHist
-  window.winkaDungunExamples = false
-  window.updateExamples = updateWinkaDungunExamples
-  window.hist = []
+<script src="./js/src/index.js"></script>
+<script type="module" src="./js/src/render.js"></script>
 
-  switchSearch(false)
-  setWinkaDungunExamples(false)
-
-  window.addEventListener('load', function () {
-    fetch("./data/particles.json")
-      .then((res) => res.json())
-      .then((data) => {
-        init(data)
-      })
-  })
-
-</script>
-
-<script>
-  function back() {
-    window.backHist()
-  }
-
-  function switchSearch(visible) {
-    document.getElementById("searchWordInput").value = ""
-    document.getElementById("searchResultsWidget").hidden = !visible
-    document.getElementById("topWidgetSearching").hidden = !visible
-    document.getElementById("contentWidget").hidden = visible
-    document.getElementById("topWidgetResting").hidden = visible
-
-    if (visible) {
-      document.getElementById("searchWordInput").focus()
-      updateSearchList()
-    }
-
-  }
-
-  function updateSearchList() {
-
-    let searchBox = document.getElementById("searchWordInput")
-    let result = window.search(searchBox.value)
-    let renderedResult = ""
-
-    for (let r of result) {
-      let style = `text-decoration: ${r.color} underline;
-  text-decoration-thickness: 3px; text-underline-offset: 5px;  text-decoration-skip-ink: none;"`
-
-      renderedResult += `<div class="searchResultsRow" onclick="renderEvent('${r.particleId}')">
-      <div class="searchResultsCell">
-      <p>
-          <span style="${style}">${r.summary}</span>
-          <span class="searchVariations">${r.variations}</span>
-          <span class="searchTitle">${r.title}</span>
-      </p>
-      </div>
-    </div>`
-    }
-
-    document.getElementById("searchResultsWidget").innerHTML = renderedResult
-  }
-
-  function renderEvent(particleId) {
-    switchSearch(false)
-    window.render(particleId)
-  }
-
-  function setWinkaDungunExamples(value) {
-    window.winkaDungunExamples = value
-    document.getElementById("winkaDungunOff").hidden = value
-    document.getElementById("winkaDungunOn").hidden = !value
-    window.updateExamples()
-  }
-
-</script>
 </body>
 </html>

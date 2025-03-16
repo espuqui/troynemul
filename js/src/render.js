@@ -1,7 +1,29 @@
-import {parseExample} from "./parser.js";
-import {buildAliasMap} from "./parser.js";
-import {searchAdditionalExamples} from "./parser.js";
-import {applyFix, renderWordWithFixVariations, searchWord} from "./search.js";
+import {parseExample} from "./backend/parser.js";
+import {buildAliasMap} from "./backend/parser.js";
+import {searchAdditionalExamples} from "./backend/parser.js";
+import {applyFix, searchWord} from "./backend/search.js";
+
+preLoad()
+function preLoad() {
+
+  window.render = render
+  window.search = search
+  window.back = backHist
+  window.winkaDungunExamples = false
+  window.updateExamples = updateWinkaDungunExamples
+  window.hist = []
+
+  setWinkaDungunExamples(false)
+  switchSearch(false)
+
+  window.addEventListener('load', function () {
+    fetch("./data/particles.json")
+      .then((res) => res.json())
+      .then((data) => {
+        init(data)
+      })
+  })
+}
 
 export function init(data) {
   handleTooltips();
