@@ -35,25 +35,25 @@
       <div class="searchBarItemFill">
         <p class="particleTitle" id="particleTitle">[particleTitle]</p>
       </div>
-      <div class="searchIcon" id="navigationBackIconEnabled" onclick="back()">
+      <div class="searchIcon" id="navigationBackIconEnabled" onclick="backEvent()">
         <img src="img/back_active.svg" width="25px" height="25px" alt="">
       </div>
-      <div class="searchIcon" id="winkaDungunOff" onclick="setWinkaDungunExamples(true)">
+      <div class="searchIcon" id="winkaDungunOff" onclick="toggleWinkaExamplesEvent(true)">
         <img src="img/spain_flag_off.svg" width="25px" height="25px" alt="">
       </div>
-      <div class="searchIcon" id="winkaDungunOn" onclick="setWinkaDungunExamples(false)">
+      <div class="searchIcon" id="winkaDungunOn" onclick="toggleWinkaExamplesEvent(false)">
         <img src="img/spain_flag_on.svg" width="25px" height="25px" alt="">
       </div>
       <div class="searchIcon" id="navigationBackIconDisabled">
         <img src="img/back_inactive.svg" width="25px" height="25px" alt="">
       </div>
-      <div class="searchIcon" onclick="switchSearch(true)">
+      <div class="searchIcon" onclick="searchEvent(true)">
         <img src="img/search.svg" width="25px" height="25px" alt="">
       </div>
     </div>
 
     <div class="searchBarWhileSearching" id="topWidgetSearching">
-      <div class="searchIcon" onclick="switchSearch(false)">
+      <div class="searchIcon" onclick="searchEvent(false)">
         <img src="img/back_active.svg" width="25px" height="25px" alt="">
       </div>
       <div class="searchIcon">
@@ -62,10 +62,10 @@
       <div class="searchBarItemFill">
         <label for="searchWordInput"></label><input type="search" class="searchBox" id="searchWordInput"
                                                     placeholder="Buscar partícula..."
-                                                    onkeydown="updateSearchList();"
-                                                    onpaste="updateSearchList();"
-                                                    oninput="updateSearchList();"
-                                                    onchange="updateSearchList();">
+                                                    onkeydown="loadSearchEvent();"
+                                                    onpaste="loadSearchEvent();"
+                                                    oninput="loadSearchEvent();"
+                                                    onchange="loadSearchEvent();">
       </div>
       <div class="searchIcon">
       </div>
@@ -84,8 +84,6 @@
     </div>
   </div>
 </div>
-
-
 
 <script src="./js/src/index.js"></script>
 <script type="module" src="./js/src/render.js"></script>

@@ -3,29 +3,33 @@ import {buildAliasMap} from "./backend/parser.js";
 import {searchAdditionalExamples} from "./backend/parser.js";
 import {applyFix, searchWord} from "./backend/search.js";
 
-preLoad()
-function preLoad() {
+loadView()
 
+function functionMappings() {
   window.render = render
   window.search = search
-  window.back = backHist
+  window.backEvent = back
+  window.updateExamples = updateExamples
+}
+function loadView() {
+  functionMappings()
+
   window.winkaDungunExamples = false
-  window.updateExamples = updateWinkaDungunExamples
   window.hist = []
 
-  setWinkaDungunExamples(false)
-  switchSearch(false)
+  toggleWinkaExamplesEvent(false)
+  searchEvent(false)
 
   window.addEventListener('load', function () {
     fetch("./data/particles.json")
       .then((res) => res.json())
       .then((data) => {
-        init(data)
+        afterParseData(data)
       })
   })
 }
 
-export function init(data) {
+export function afterParseData(data) {
   handleTooltips();
   window.particleData = data
   window.aliasMap = buildAliasMap(data)
@@ -68,7 +72,7 @@ function forwardHist(uniqueParticleId) {
   window.hist.push(uniqueParticleId)
 }
 
-export function backHist() {
+export function back() {
   if (window.hist.length !== 0) {
     window.hist.pop()
   }
@@ -113,7 +117,7 @@ function renderFromParticleData(particleData, particleId) {
   for (let examples of relativeExamples) {
     relativeExampleList.innerHTML += renderMapu(examples[0], particleId) + "<br/>" + renderWinka(examples[1])
   }
-  updateWinkaDungunExamples()
+  updateExamples()
 }
 
 function renderParticleTitle(particleTitle, particleData, particleId) {
@@ -149,7 +153,7 @@ function renderWithSpanOnClickTooltip(text, tooltipText, spanClass) {
 }
 
 function renderWithSpanOnClickParticle(text, particleId, spanClass, color) {
-  return renderWithSpanOnClick(text, spanClass, `renderEvent('${particleId}')`,
+  return renderWithSpanOnClick(text, spanClass, `loadViewEvent('${particleId}')`,
                                `text-decoration: ${color} underline;
                                text-decoration-thickness: 3px;
                                text-underline-offset: 4px;
@@ -195,7 +199,7 @@ function renderWinka(word) {
   return html
 }
 
-export function updateWinkaDungunExamples() {
+export function updateExamples() {
   let enabled = window.winkaDungunExamples
 
   const elements = document.querySelectorAll(`.winkaExampleSpan`);

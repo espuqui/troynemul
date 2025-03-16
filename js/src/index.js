@@ -1,10 +1,10 @@
+// UI Events
 
-
-function back() {
-  window.backHist()
+function backEvent() {
+  window.backEvent()
 }
 
-function switchSearch(visible) {
+function searchEvent(visible) {
   document.getElementById("searchWordInput").value = ""
   document.getElementById("searchResultsWidget").hidden = !visible
   document.getElementById("topWidgetSearching").hidden = !visible
@@ -13,11 +13,11 @@ function switchSearch(visible) {
 
   if (visible) {
     document.getElementById("searchWordInput").focus()
-    updateSearchList()
+    loadSearchEvent()
   }
 }
 
-function updateSearchList() {
+function loadSearchEvent() {
 
   let searchBox = document.getElementById("searchWordInput")
   let result = window.search(searchBox.value)
@@ -27,7 +27,7 @@ function updateSearchList() {
     let style = `text-decoration: ${r.color} underline;
   text-decoration-thickness: 3px; text-underline-offset: 5px;  text-decoration-skip-ink: none;"`
 
-    renderedResult += `<div class="searchResultsRow" onclick="renderEvent('${r.particleId}')">
+    renderedResult += `<div class="searchResultsRow" onclick="loadViewEvent('${r.particleId}')">
       <div class="searchResultsCell">
       <p>
           <span style="${style}">${r.summary}</span>
@@ -41,12 +41,12 @@ function updateSearchList() {
   document.getElementById("searchResultsWidget").innerHTML = renderedResult
 }
 
-function renderEvent(particleId) {
-  switchSearch(false)
+function loadViewEvent(particleId) {
+  searchEvent(false)
   window.render(particleId)
 }
 
-function setWinkaDungunExamples(value) {
+function toggleWinkaExamplesEvent(value) {
   window.winkaDungunExamples = value
   document.getElementById("winkaDungunOff").hidden = value
   document.getElementById("winkaDungunOn").hidden = !value

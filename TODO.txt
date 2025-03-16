@@ -11,7 +11,7 @@ P0: Keep search bar on top [DONE]
 P1: Busqueda y particula siempre visible [DONE]
 P1: Prefix suffix infix none [DONE]
 P0: Particula actual en search bar y search bar style [DONE]
-P0: Go back [DONE]
+P0: Go backEvent [DONE]
 P0: Render search bar results [DONE]
 P0: Search results go to word [DONE]
 
