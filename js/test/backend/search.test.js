@@ -35,34 +35,36 @@ describe('searchTests', () => {
     let actualResults = searchWord("m", data, aliasMap)
 
     let expectedResults = []
+
     let expectedResults1 = {}
-    expectedResults1.particleId = "mew|inst"
-    expectedResults1.summary = "mew-"
-    expectedResults1.variations = "(mu-, mo-)"
-    expectedResults1.title = "sufijoinst"
-    expectedResults1.color = "kallfü"
+    expectedResults1.particleId = "ma|conj"
+    expectedResults1.summary = "ma"
+    expectedResults1.variations = ""
+    expectedResults1.title = "any3"
+    expectedResults1.color = "kadü"
     expectedResults.push(expectedResults1)
 
     let expectedResults2 = {}
-    expectedResults2.particleId = "me|conj"
-    expectedResults2.summary = "-me"
-    expectedResults2.variations = ""
-    expectedResults2.title = "any2"
-    expectedResults2.color = "karü"
+    expectedResults2.particleId = "mew|inst"
+    expectedResults2.summary = "mew-"
+    expectedResults2.variations = "(mu-, mo-)"
+    expectedResults2.title = "sufijoinst"
+    expectedResults2.color = "kallfü"
     expectedResults.push(expectedResults2)
 
     let expectedResults3 = {}
-    expectedResults3.particleId = "ma|conj"
-    expectedResults3.summary = "ma"
+    expectedResults3.particleId = "me|conj"
+    expectedResults3.summary = "-me"
     expectedResults3.variations = ""
-    expectedResults3.title = "any3"
-    expectedResults3.color = "kadü"
+    expectedResults3.title = "any2"
+    expectedResults3.color = "karü"
     expectedResults.push(expectedResults3)
 
-    expect(actualResults[0]).toStrictEqual(expectedResults[0])
+
     expect(actualResults[0]).toStrictEqual(expectedResults[0])
     expect(actualResults[1]).toStrictEqual(expectedResults[1])
     expect(actualResults[2]).toStrictEqual(expectedResults[2])
+    expect(actualResults[3]).toStrictEqual(expectedResults[3])
 
     let nullResults = searchWord("zz", data, aliasMap)
     expect(nullResults.length).toBe(0)

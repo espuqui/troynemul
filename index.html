@@ -35,9 +35,6 @@
       <div class="searchBarItemFill">
         <p class="particleTitle" id="particleTitle">[particleTitle]</p>
       </div>
-      <div class="searchIcon" id="navigationBackIconEnabled" onclick="backEvent()">
-        <img src="img/back_active.svg" width="25px" height="25px" alt="">
-      </div>
       <div class="searchIcon" id="winkaDungunOff" onclick="toggleWinkaExamplesEvent(true)">
         <img src="img/spain_flag_off.svg" width="25px" height="25px" alt="">
       </div>
@@ -47,7 +44,10 @@
       <div class="searchIcon" id="navigationBackIconDisabled">
         <img src="img/back_inactive.svg" width="25px" height="25px" alt="">
       </div>
-      <div class="searchIcon" onclick="searchEvent(true)">
+      <div class="searchIcon" id="navigationBackIconEnabled" onclick="backEvent()">
+        <img src="img/back_active.svg" width="25px" height="25px" alt="">
+      </div>
+      <div class="searchIcon" style="padding-right: 20pt" onclick="searchEvent(true)">
         <img src="img/search.svg" width="25px" height="25px" alt="">
       </div>
     </div>

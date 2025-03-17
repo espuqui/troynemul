@@ -28,12 +28,11 @@ P1: Render artifacts
 P1: Bug "/" shouldn't have tooltip
 
 Entries:
-  "tu|verb36": {
-    "title": "verbalizador",
-    "color": "orange",
-    "fix": "in",
+  "|": {
+    "title": "",
+    "color": "",
+    "fix": "",
     "variations": [],
     "content": [
-
     ]
   }

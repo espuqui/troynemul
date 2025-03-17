@@ -122,7 +122,9 @@
     "title": "estativo",
     "color": "yellow",
     "fix": "in",
-    "variations": ["küle"],
+    "variations": [
+      "küle"
+    ],
     "content": [
       {
         "explanation": "El sufijo -le- denota un estado actual.",
@@ -140,7 +142,9 @@
     "title": "sustantivo cuantitativo",
     "color": "tan",
     "fix": "post",
-    "variations": ["ün"],
+    "variations": [
+      "ün"
+    ],
     "content": [
       {
         "explanation": "Indica cantidad o tamaño",
@@ -170,7 +174,6 @@
           ]
         ]
       }
-
     ]
   },
   "pu|loc": {
@@ -190,5 +193,201 @@
         ]
       }
     ]
+  },
+  "pu|coll": {
+    "title": "colectivo",
+    "color": "dodgerblue",
+    "fix": "",
+    "variations": [],
+    "content": [
+      {
+        "explanation": "modifica un sustantivo para indicar un grupo",
+        "examples": [
+          [
+            "ñi pu che",
+            "(poss1s) (coll) persona",
+            "mi gente / mi familia"
+          ]
+        ]
+      }
+    ]
+  },
+  "ntu|gr": {
+    "title": "grupalizador",
+    "color": "mistyrose",
+    "fix": "post",
+    "variations": ["entu"],
+    "content":  [
+      {
+        "explanation": "presencia de varios elementos",
+        "examples": [
+          [
+            "rangi mamüll-entu",
+            "en.medio árbol-(gr)",
+            "en el medio de los árboles"
+          ]
+        ]
+      }
+    ]
+
+  },
+  "wen|rel": {
+    "title": "relacionador",
+    "color": "saddlebrown",
+    "fix": "post",
+    "variations": [],
+    "content":  [
+      {
+        "explanation": "dos o mas personas relacionadas entre si",
+        "examples": [
+          [
+            "kom wenüy-wen-nge-a-yiñ",
+            "todos amigo-(rel)-(verb36)-(nrld9)-(ind4-1ns3-p2)",
+            "todos seremos amigos"
+          ]
+        ]
+      }
+    ]
+  },
+  "em|ex": {
+    "title": "extinto",
+    "color": "chocolate",
+    "fix": "post",
+    "variations": ["-yem"],
+    "content":  [
+      {
+        "explanation": "indica que el sustantivo esta muerto",
+        "examples": [
+          [
+            "fey-ta chumngechi ñi la-n ñi chaw-em",
+            "este-el como (poss3) morir-(pvn4) (poss1s) papá-(ex)",
+            "es así como mi difunto papá murió"
+          ]
+        ]
+      }
+    ]
+  },
+  "rke|rep": {
+    "title": "reportativo",
+    "color": "slateblue",
+    "fix": "post",
+    "variations": ["ürke"],
+    "content":  [
+      {
+        "explanation": "sorpresa, no visto antes",
+        "examples": [
+          [
+            "trewa-rke-!",
+            "perro-(rep)-!",
+            "un perro! / tiene que haber sido un perro!"
+          ]
+        ]
+      }
+    ]
+
+  },
+  "ke|distr": {
+    "title": "distributivo",
+    "color": "cadetblue",
+    "fix": "post",
+    "variations": [],
+    "content":  [
+      {
+        "explanation": "indica que son muchas partes",
+        "examples": [
+          [
+            "pichi-ke ngül-üm-nie-y plata",
+            "pequeño-(distr) juntar-(ca34)-(prps32)-(ind4-33) plata",
+            "poco a poco el ido juntando plata"
+          ]
+        ]
+      }
+    ]
+
+  },
+  "we|temp": {
+    "title": "temporal",
+    "color": "gold",
+    "fix": "post",
+    "variations": [],
+    "content":  [
+      {
+        "explanation": "periodo que precede al momento",
+        "examples": [
+          [
+            "epu-we",
+            "dos-(temp)",
+            "pasado mañana / dos días despues"
+          ]
+        ]
+      },
+      {
+        "explanation": "con mew, periodo que antecede al momento",
+        "examples": [
+          [
+            "epu-we mew",
+            "dos-(temp) (inst)",
+            "hace dos días / dos días antes"
+          ]
+        ]
+      }
+    ]
+
+  },
+  "tu|adv": {
+    "title": "adverbializador",
+    "color": "darkkhaki",
+    "fix": "post",
+    "variations": [],
+    "content": [
+      {
+        "explanation": "convierte en adverbio",
+        "examples": [
+          [
+            "newen-tu",
+            "poder-(adv)",
+            "poderoso"
+          ]
+        ]
+      }
+    ]
+  },
+  "chi|adj": {
+    "title": "adjetivizador",
+    "color": "crimson",
+    "fix": "post",
+    "variations": [],
+    "content":  [
+      {
+        "explanation": "convierte un sustantivo en adjetivo",
+        "examples": [
+          [
+            "lang-üm-el-chi ufisha",
+            "morir-(ca34)-(ovn4)-(adj) oveja",
+            "oveja matada"
+          ]
+        ]
+      }
+    ]
+
+  },
+  "nge|verb36": {
+    "title": "verbalizador",
+    "color": "mediumvioletred",
+    "fix": "in",
+    "variations": [],
+    "content":  [
+      {
+        "explanation": "caracteristica permanente",
+        "examples": [
+          [
+            "rume küme wentru-nge-y",
+            "muy bueno hombre-(verb36)-(ind4-33)",
+            "él es un hombre muy bueno"
+          ]
+        ]
+      }
+    ]
+
   }
 }

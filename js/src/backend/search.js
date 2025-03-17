@@ -28,6 +28,12 @@ export function searchWord(partialWord, data, aliasMap) {
     }
   }
 
+  results.sort(function(resultA, resultB) {
+    if(resultA.particleId < resultB.particleId) { return -1; }
+    if(resultA.particleId > resultB.particleId) { return 1; }
+    return 0;
+  });
+
   return results
 }
 
