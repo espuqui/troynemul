@@ -253,7 +253,7 @@
     "title": "extinto",
     "color": "chocolate",
     "fix": "post",
-    "variations": ["-yem"],
+    "variations": ["yem"],
     "content":  [
       {
         "explanation": "indica que el sustantivo esta muerto",
@@ -389,5 +389,191 @@
       }
     ]
 
+  },
+  "tu|nverb36": {
+    "title": "verbalizador",
+    "color": "papayawhip",
+    "fix": "in",
+    "variations": ["ntu"],
+    "content": [
+      {
+        "explanation": "considerar que un objeto es also",
+        "examples": [
+          [
+            "küme-ntu",
+            "bueno-(nverb36)",
+            "creer que es bueno"
+          ],
+          [
+            "fane-ntu",
+            "pesado-(nverb36)",
+            "que se siente pesado"
+          ]
+        ]
+      }
+    ]
+  },
+  "l|verb36": {
+    "title": "verbalizador",
+    "color": "palegreen",
+    "fix": "in",
+    "variations": [],
+    "content":  [
+      {
+        "explanation": "darle a alguien algo",
+        "examples": [
+          [
+            "küla-l-fi-ñ engün mansana",
+            "tres-(verb36)-(edo6)-(ind1s3) ellos manazana",
+            "yo les dí tres manzanas"
+          ]
+        ]
+      }
+    ]
+  },
+  "ye|verb36": {
+    "title": "verbalizador",
+    "color": "gainsboro",
+    "fix": "in",
+    "variations": [],
+    "content":  [
+      {
+        "explanation": "indica relación",
+        "examples": [
+          [
+            "Xuan üñam-ye-fi-y Paulina",
+            "Juan amante-(verb36)-(edo6)-(ind4-33) Paulina",
+            "Juan tiene a Paulina de amante"
+          ]
+        ]
+      }
+    ]
+  },
+  "ñi|poss3": {
+    "title": "posesivo tercera persona",
+    "color": "paleturquoise",
+    "fix": "",
+    "variations": ["tañi"],
+    "content":  [
+      {
+        "explanation": "su (de ella/él)",
+        "examples": [
+          [
+            "fey müle-la-y fey ñi ruka mew",
+            "el/ella ser-(neg10)-(ind4-33) el/ella (poss3) casa (inst)",
+            "el/ella no está en su casa"
+          ]
+        ]
+      }
+    ]
+  },
+  "mi|poss2s": {
+    "title": "possesivo segunda persona",
+    "color": "lightcyan",
+    "fix": "",
+    "variations": ["tami"],
+    "content":  [
+      {
+        "explanation": "tuyo, tu (de ti)",
+        "examples": [
+          [
+            "mi fücha ruka",
+            "(poss2s) grande casa",
+            "tu casa grande"
+          ]
+        ]
+      }
+    ]
+
+  },
+  "ñi|poss1s": {
+    "title": "posesivo primera persona",
+    "color": "lavender",
+    "fix": "",
+    "variations": ["tañi"],
+    "content": [
+      {
+        "explanation": "tuyo, tu (de ti)",
+        "examples": [
+          [
+            "iñche ñi ruka",
+            "yo (poss1s) casa",
+            "mi casa"
+          ]
+        ]
+      }
+    ]
+  },
+  "yu|poss1d": {
+    "title": "posesivo primera persona dual",
+    "color": "pink",
+    "fix": "",
+    "variations": ["tayu"],
+    "content": [
+      {
+        "explanation": "nuestro², (de nosotros²)",
+        "examples": [
+          [
+            "iñchiw tayu chaw",
+            "nosotros² (poss1d) padre",
+            "nuestro² padre"
+          ]
+        ]
+      }
+    ]
+  },
+  "iñ|poss1p": {
+    "title": "posesivo primera persona plural",
+    "color": "plum",
+    "fix": "",
+    "variations": ["taiñ"],
+    "content": [
+      {
+        "explanation": "nuestro, (de nosotros)",
+        "examples": [
+          [
+            "iñchiñ taiñ kewün",
+            "nosotros (poss1p) lengua",
+            "nuestro idioma"
+          ]
+        ]
+      }
+    ]
+  },
+  "mu|poss2d": {
+    "title": "posesivo segunda persona dual",
+    "color": "thisle",
+    "fix": "",
+    "variations": ["tamu"],
+    "content": [
+      {
+        "explanation": "su², (de ustedes²)",
+        "examples": [
+          [
+            "eymu tamu troy-tu-ruka",
+            "ustedes² (poss2d) parte-(adv)-casa",
+            "el departamento de ustedes dos"
+          ]
+        ]
+      }
+    ]
+  },
+  "mün|poss2p": {
+    "title": "posesivo segunda persona plural",
+    "color": "tan",
+    "fix": "",
+    "variations": ["tamün"],
+    "content": [
+      {
+        "explanation": "su, (de ustedes)",
+        "examples": [
+          [
+            "tamün mapu mew",
+            "(poss2p) tierra (inst)",
+            "en la tierra de ustedes"
+          ]
+        ]
+      }
+    ]
   }
 }
