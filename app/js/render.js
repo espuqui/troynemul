@@ -2,6 +2,7 @@ import {parseExample} from "./backend/parser.js";
 import {buildAliasMap} from "./backend/parser.js";
 import {searchAdditionalExamples} from "./backend/parser.js";
 import {applyFix, searchWord} from "./backend/search.js";
+import particleData from "../data/particles.json" assert { type: 'json' }
 
 loadView()
 
@@ -21,11 +22,7 @@ function loadView() {
   searchEvent(false)
 
   window.addEventListener('load', function () {
-    fetch("./data/particles.json")
-      .then((res) => res.json())
-      .then((data) => {
-        afterParseData(data)
-      })
+    afterParseData(particleData)
   })
 }
 

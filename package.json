@@ -13,7 +13,7 @@
   "scripts": {
     "test": "jest",
     "start": "electron app/main.cjs",
-    "apk": "apkjs b & "
+    "apk": "apkjs b"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.26.9",
