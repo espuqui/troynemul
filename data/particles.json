@@ -216,8 +216,10 @@
     "title": "grupalizador",
     "color": "mistyrose",
     "fix": "post",
-    "variations": ["entu"],
-    "content":  [
+    "variations": [
+      "entu"
+    ],
+    "content": [
       {
         "explanation": "presencia de varios elementos",
         "examples": [
@@ -229,14 +231,13 @@
         ]
       }
     ]
-
   },
   "wen|rel": {
     "title": "relacionador",
     "color": "saddlebrown",
     "fix": "post",
     "variations": [],
-    "content":  [
+    "content": [
       {
         "explanation": "dos o mas personas relacionadas entre si",
         "examples": [
@@ -253,8 +254,10 @@
     "title": "extinto",
     "color": "chocolate",
     "fix": "post",
-    "variations": ["yem"],
-    "content":  [
+    "variations": [
+      "yem"
+    ],
+    "content": [
       {
         "explanation": "indica que el sustantivo esta muerto",
         "examples": [
@@ -271,8 +274,10 @@
     "title": "reportativo",
     "color": "slateblue",
     "fix": "post",
-    "variations": ["ürke"],
-    "content":  [
+    "variations": [
+      "ürke"
+    ],
+    "content": [
       {
         "explanation": "sorpresa, no visto antes",
         "examples": [
@@ -284,14 +289,13 @@
         ]
       }
     ]
-
   },
   "ke|distr": {
     "title": "distributivo",
     "color": "cadetblue",
     "fix": "post",
     "variations": [],
-    "content":  [
+    "content": [
       {
         "explanation": "indica que son muchas partes",
         "examples": [
@@ -303,14 +307,13 @@
         ]
       }
     ]
-
   },
   "we|temp": {
     "title": "temporal",
     "color": "gold",
     "fix": "post",
     "variations": [],
-    "content":  [
+    "content": [
       {
         "explanation": "periodo que precede al momento",
         "examples": [
@@ -332,7 +335,6 @@
         ]
       }
     ]
-
   },
   "tu|adv": {
     "title": "adverbializador",
@@ -357,7 +359,7 @@
     "color": "crimson",
     "fix": "post",
     "variations": [],
-    "content":  [
+    "content": [
       {
         "explanation": "convierte un sustantivo en adjetivo",
         "examples": [
@@ -369,14 +371,13 @@
         ]
       }
     ]
-
   },
   "nge|verb36": {
     "title": "verbalizador",
     "color": "mediumvioletred",
     "fix": "in",
     "variations": [],
-    "content":  [
+    "content": [
       {
         "explanation": "caracteristica permanente",
         "examples": [
@@ -388,13 +389,14 @@
         ]
       }
     ]
-
   },
   "tu|nverb36": {
     "title": "verbalizador",
     "color": "papayawhip",
     "fix": "in",
-    "variations": ["ntu"],
+    "variations": [
+      "ntu"
+    ],
     "content": [
       {
         "explanation": "considerar que un objeto es also",
@@ -418,7 +420,7 @@
     "color": "palegreen",
     "fix": "in",
     "variations": [],
-    "content":  [
+    "content": [
       {
         "explanation": "darle a alguien algo",
         "examples": [
@@ -436,7 +438,7 @@
     "color": "gainsboro",
     "fix": "in",
     "variations": [],
-    "content":  [
+    "content": [
       {
         "explanation": "indica relación",
         "examples": [
@@ -453,8 +455,10 @@
     "title": "posesivo tercera persona",
     "color": "paleturquoise",
     "fix": "",
-    "variations": ["tañi"],
-    "content":  [
+    "variations": [
+      "tañi"
+    ],
+    "content": [
       {
         "explanation": "su (de ella/él)",
         "examples": [
@@ -471,8 +475,10 @@
     "title": "possesivo segunda persona",
     "color": "lightcyan",
     "fix": "",
-    "variations": ["tami"],
-    "content":  [
+    "variations": [
+      "tami"
+    ],
+    "content": [
       {
         "explanation": "tuyo, tu (de ti)",
         "examples": [
@@ -484,13 +490,14 @@
         ]
       }
     ]
-
   },
   "ñi|poss1s": {
     "title": "posesivo primera persona",
     "color": "lavender",
     "fix": "",
-    "variations": ["tañi"],
+    "variations": [
+      "tañi"
+    ],
     "content": [
       {
         "explanation": "tuyo, tu (de ti)",
@@ -508,7 +515,9 @@
     "title": "posesivo primera persona dual",
     "color": "pink",
     "fix": "",
-    "variations": ["tayu"],
+    "variations": [
+      "tayu"
+    ],
     "content": [
       {
         "explanation": "nuestro², (de nosotros²)",
@@ -526,7 +535,9 @@
     "title": "posesivo primera persona plural",
     "color": "plum",
     "fix": "",
-    "variations": ["taiñ"],
+    "variations": [
+      "taiñ"
+    ],
     "content": [
       {
         "explanation": "nuestro, (de nosotros)",
@@ -544,7 +555,9 @@
     "title": "posesivo segunda persona dual",
     "color": "thisle",
     "fix": "",
-    "variations": ["tamu"],
+    "variations": [
+      "tamu"
+    ],
     "content": [
       {
         "explanation": "su², (de ustedes²)",
@@ -562,7 +575,9 @@
     "title": "posesivo segunda persona plural",
     "color": "tan",
     "fix": "",
-    "variations": ["tamün"],
+    "variations": [
+      "tamün"
+    ],
     "content": [
       {
         "explanation": "su, (de ustedes)",
@@ -571,6 +586,324 @@
             "tamün mapu mew",
             "(poss2p) tierra (inst)",
             "en la tierra de ustedes"
+          ]
+        ]
+      }
+    ]
+  },
+  "n|ind1s3": {
+    "title": "primera persona singular",
+    "color": "lime",
+    "fix": "post",
+    "variations": [],
+    "content": [
+      {
+        "explanation": "yo",
+        "examples": [
+          [
+            "iñche umaw-tu-n",
+            "yo dormir-(verb36)-(ind1s3)",
+            "yo dormí"
+          ]
+        ]
+      }
+    ]
+  },
+  "ymi|ind4-23-s2": {
+    "title": "segunda persona singular",
+    "color": "lime",
+    "fix": "post",
+    "variations": [],
+    "content": [
+      {
+        "explanation": "tu",
+        "examples": [
+          [
+            "amu-ymi",
+            "ir-(ind4-23-s2)",
+            "tu fuiste"
+          ]
+        ]
+      }
+    ]
+  },
+  "y|ind4-33": {
+    "title": "tercera persona singular",
+    "color": "lime",
+    "fix": "post",
+    "variations": [
+      "üy"
+    ],
+    "content": [
+      {
+        "explanation": "él/ella",
+        "examples": [
+          [
+            "wirar-üy",
+            "gritar-(ind4-33)",
+            "él/ella/ellos gritó/gritaron"
+          ]
+        ]
+      }
+    ]
+  },
+  "yngün|ind4-3ns3-p2": {
+    "title": "tercera persona plural",
+    "color": "lime",
+    "fix": "post",
+    "variations": [
+      "üyngün"
+    ],
+    "content": [
+      {
+        "explanation": "ellos",
+        "examples": [
+          [
+            "fey-engün küdaw-üyngün",
+            "el-ellos trabajo-(ind4-3ns3-p2)",
+            "ellos trabajaron"
+          ]
+        ]
+      }
+    ]
+  },
+  "le|cond4-33": {
+    "title": "hipotetico tercera persona",
+    "color": "yellow",
+    "fix": "post",
+    "variations": [],
+    "content": [
+      {
+        "explanation": "si eso...",
+        "examples": [
+          [
+            "mawün-le-, tripa-la-ya-n",
+            "lluvia-(cond4-33)-, salir-(neg10)-(nrld9)-(ind1s3)",
+            "si llueve, no saldré"
+          ]
+        ]
+      }
+    ]
+  },
+  "lmi|cond4-23-s2": {
+    "title": "hipotetico segunda persona singular",
+    "color": "yellow",
+    "fix": "post",
+    "variations": [],
+    "content": [
+      {
+        "explanation": "si tu",
+        "examples": [
+          [
+            "eymi petu i-lmi-, chilla-l-a-e-yu mi kawellu",
+            "tu todavía comer-(cond4-23-s2)-, silla-(ben27)-(nrld9)-(ido6)-(ind4-1ns3-d2-ds1) (poss2s) caballo",
+            "mientras tu vas a comer, yo ensillaré tu caballo para tí"
+          ]
+        ]
+      }
+    ]
+  },
+  "li|cond4-13-s2": {
+    "title": "hipotetico primera persona singular",
+    "color": "yellow",
+    "fix": "post",
+    "variations": [],
+    "content": [
+      {
+        "explanation": "si yo..",
+        "examples": [
+          [
+            "tunte kulli-li rume, mütewe nu",
+            "cuanto pagar-(cond4-13-s2) algo, mucho (neg10)",
+            "no importa cuando pague, no es suficiente"
+          ]
+        ]
+      }
+    ]
+  },
+  "chi|imp1s3": {
+    "title": "imperativo primera persona singular",
+    "color": "magenta",
+    "fix": "post",
+    "variations": [],
+    "content": [
+      {
+        "explanation": "yo!",
+        "examples": [
+          [
+            "entu-chi tüfa-!",
+            "sacar-(imp1s3) esto-!",
+            "déjame sacar esto!"
+          ]
+        ]
+      }
+    ]
+  },
+  "pe|imp33": {
+    "title": "imperativo tercera persona",
+    "color": "magenta",
+    "fix": "post",
+    "variations": [],
+    "content": [
+      {
+        "explanation": "ustedes!",
+        "examples": [
+          [
+            "i-pe mütem engün-!",
+            "comer-(imp33) solo ellos-!",
+            "déjalos comer!"
+          ]
+        ]
+      }
+    ]
+  },
+  "nu|neg10": {
+    "title": "negacion en hipotético",
+    "color": "red",
+    "fix": "post",
+    "variations": [
+      "no"
+    ],
+    "content": [
+      {
+        "explanation": "negacion en hipotetico",
+        "examples": [
+          [
+            "fey-engün aku-nu-fu-le-!",
+            "eso-ellos llegan-(neg10)-(ipd8)-(cond4-33)-!",
+            "si sólo ellos no hubieran llegado!"
+          ]
+        ]
+      }
+    ]
+  },
+  "ki|neg10": {
+    "title": "negacion en imperativo",
+    "color": "red",
+    "fix": "post",
+    "variations": [],
+    "content": [
+      {
+        "explanation": "no!",
+        "examples": [
+          [
+            "wirar-ki-l-nge-!",
+            "gritar-(neg10)-(cond4)-(imp2s3)-!",
+            "no grites!"
+          ]
+        ]
+      }
+    ]
+  },
+  "n|pvn4": {
+    "title": "infinitivo",
+    "color": "blue",
+    "fix": "post",
+    "variations": [
+      "ün"
+    ],
+    "content": [
+      {
+        "explanation": "evento no especificado",
+        "examples": [
+          [
+            "ramtu-e-yu chew ñi müle-n",
+            "preguntar-(ido6)-(ind4-1ns3-d2-ds1) donde (poss3) estar-(pvn4)",
+            "te pregunté donde vive él"
+          ]
+        ]
+      }
+    ]
+  },
+  "el|ovn4": {
+    "title": "participio pasivo",
+    "color": "pink",
+    "fix": "post",
+    "variations": [
+      ""
+    ],
+    "content": [
+      {
+        "explanation": "indica el agente del evento. realizado",
+        "examples": [
+          [
+            "tüfa ñi pi-el ñi ñuke",
+            "esto (poss3) decir-(ovn4) (poss1s) mamá",
+            "esto es lo que dijo mi mamá"
+          ]
+        ]
+      }
+    ]
+  },
+  "al|nrld9.ovn4": {
+    "title": "participio pasivo",
+    "color": "plum",
+    "fix": "post",
+    "variations": [
+      "ael"
+    ],
+    "content": [
+      {
+        "explanation": "contraccion de ael. no realizado",
+        "examples": [
+          [
+            "eymi mi iy-a-fel-chi iy-al ütrüf-entu-fi-n",
+            "tu (poss2s) comer-(nrld9)-(ipd8.ovn4)-(adj) comer-(nrld9.ovn4) tirar-sacar-(edo6)-(ind1s3)",
+            "Tuve que botar la comida que tu no te habías comido"
+          ]
+        ]
+      }
+    ]
+  },
+  "m|ivn4": {
+    "title": "instrumental locativo",
+    "color": "darkseagreen",
+    "fix": "post",
+    "variations": [],
+    "content": [
+      {
+        "explanation": "ocurre cuando hay mu",
+        "examples": [
+          [
+            "chüngar-mu-m",
+            "acuchillar-(plpf7)-(ivn4)",
+            "una cosa con la que uno acuchilló"
+          ]
+        ]
+      }
+    ]
+  },
+  "yem|cf5-ivn4": {
+    "title": "temporal",
+    "color": "powderblue",
+    "fix": "post",
+    "variations": [],
+    "content": [
+      {
+        "explanation": "caracteristica constante",
+        "examples": [
+          [
+            "che-le-yem rume küme che-nge-fu-y",
+            "persona-(st28)-(cf5-ivn4) muy buena persona-(verb36)-(ipd8)-(ind4-33)",
+            "cuando él esta sobrio, es un hombre muy bueno"
+          ]
+        ]
+      }
+    ]
+  },
+  "fiel|tvn4": {
+    "title": "verbo transitivo",
+    "color": "paleturquoise",
+    "fix": "post",
+    "variations": [],
+    "content": [
+      {
+        "explanation": "paciente del evento",
+        "examples": [
+          [
+            "kim-la-yu mi chem-pi-a-fiel",
+            "saber-(neg10)-(ind4-1ns3-d2) (poss2s) que-decir-(nrld10)-(tvn4)",
+            "nosotros² no sabemos que decirte"
           ]
         ]
       }

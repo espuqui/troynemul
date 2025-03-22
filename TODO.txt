@@ -28,11 +28,21 @@ P1: Render artifacts
 P1: Bug "/" shouldn't have tooltip
 
 Entries:
-  "|": {
-    "title": "",
-    "color": "",
-    "fix": "",
-    "variations": [],
-    "content": [
-    ]
-  }
+    "|": {
+      "title": "",
+      "color": "",
+      "fix": "post",
+      "variations": [],
+      "content": [
+        {
+          "explanation": "",
+          "examples": [
+            [
+              "",
+              "",
+              ""
+            ]
+          ]
+        }
+      ]
+    },
