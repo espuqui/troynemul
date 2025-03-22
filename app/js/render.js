@@ -4,7 +4,6 @@ import {searchAdditionalExamples} from "./backend/parser.js";
 import {applyFix, searchWord} from "./backend/search.js";
 import particleData from "../data/particles.json";
 
-alert("Holi")
 
 loadView()
 
