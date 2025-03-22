@@ -2,8 +2,6 @@ import {parseExample} from "./backend/parser.js";
 import {buildAliasMap} from "./backend/parser.js";
 import {searchAdditionalExamples} from "./backend/parser.js";
 import {applyFix, searchWord} from "./backend/search.js";
-import particleData from "../data/particles.json";
-
 
 loadView()
 
@@ -23,7 +21,26 @@ function loadView() {
   searchEvent(false)
 
   window.addEventListener('load', function () {
-    afterParseData(particleData)
+    // Mobile app
+    const isWebView = navigator.userAgent.includes('wv')
+    if (isWebView) {
+      let head = document.getElementsByTagName('head')[0];
+      let js = document.createElement("script");
+
+      js.type = "text/javascript";
+      js.src = "js/loadfromapk.js";
+      head.appendChild(js);
+      window.afterParseData = afterParseData
+    } else {
+      // For web
+      fetch("./data/particles.json")
+        .then((res) => res.json())
+        .then((data) => {
+          afterParseData(data)
+        }).catch((error) => {
+        alert(error)
+      });
+    }
   })
 }
 
@@ -35,8 +52,9 @@ export function afterParseData(data) {
   document.getElementById("mainDiv").hidden = false
   render("le|st28")
 }
+
 function handleTooltips() {
-  document.addEventListener('click', function(event) {
+  document.addEventListener('click', function (event) {
     let elements = document.getElementsByClassName("tooltip")
     for (let elem of elements) {
       if (elem === event.target) {
@@ -53,7 +71,7 @@ export function render(particleId) {
 
   // Prevenir recargar la misma palabra
   if (window.hist.length !== 0) {
-    let lastPart = window.hist.at(window.hist.length-1)
+    let lastPart = window.hist.at(window.hist.length - 1)
     let lastPartUniqueId = window.aliasMap.get(lastPart)
 
     if (lastPartUniqueId === uniqueParticleId) {
@@ -79,6 +97,7 @@ export function back() {
     render(window.hist.pop())
   }
 }
+
 export function updateForwardHist() {
   document.getElementById("navigationBackIconEnabled").hidden = (window.hist.length === 0)
   document.getElementById("navigationBackIconDisabled").hidden = (window.hist.length !== 0)
@@ -123,6 +142,7 @@ function renderParticleTitle(particleTitle, particleData, particleId) {
   particleTitle.style = `text-decoration: ${particleData.color} underline;
   text-decoration-thickness: 3px; text-underline-offset: 5px;  text-decoration-skip-ink: none;"`
 }
+
 function getWordTitle(particleData, wordId) {
   let wordTitle = applyFix(getMainWord(wordId), particleData.fix)
   if (particleData.variations.length > 0) {
@@ -147,7 +167,7 @@ function renderWithSpanOnClick(text, spanClass, code, styleDef) {
 }
 
 function renderWithSpanOnClickTooltip(text, tooltipText, spanClass) {
-    return `<span class="tooltip ${spanClass}">${text}<span>${tooltipText}</span></span>`
+  return `<span class="tooltip ${spanClass}">${text}<span>${tooltipText}</span></span>`
 }
 
 function renderWithSpanOnClickParticle(text, particleId, spanClass, color) {
@@ -171,7 +191,8 @@ function renderMapu(exampleParts, particleId) {
       let wordParts = examplePart.split("|")
       let currentWord = window.aliasMap.get(examplePart)
       if (currentWord === undefined) {
-        html += renderWithSpanOnClickTooltip(wordParts[0], "Falta: <br/> (" + examplePart  + ")", "particleMissing particleExample")
+        html += renderWithSpanOnClickTooltip(wordParts[0], "Falta: <br/> (" + examplePart + ")",
+                                             "particleMissing particleExample")
       } else {
         let color = window.particleData[currentWord].color
         if (window.aliasMap.get(examplePart) === particleId) {
