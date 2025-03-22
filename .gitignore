@@ -6,3 +6,5 @@ dist
 .cache
 .idea
 *.iml
+*.keystore
+*.apk

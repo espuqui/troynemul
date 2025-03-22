@@ -9,10 +9,11 @@
   ],
   "license": "MIT",
   "author": "Marcos Fuentes",
-  "main": "main.cjs",
+  "main": "app/main.cjs",
   "scripts": {
     "test": "jest",
-    "start": "electron ."
+    "start": "electron app/main.cjs",
+    "apk": "apkjs b & "
   },
   "devDependencies": {
     "@babel/preset-env": "^7.26.9",

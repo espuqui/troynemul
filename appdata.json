@@ -1,0 +1,12 @@
+{
+  "include": "app",
+  "output": "TroyDungun.apk",
+  "appinfo": {
+    "package": "cl.troydungun.test",
+    "appname": "Test",
+    "color": "#0066FF",
+    "versionCode": 1,
+    "versionName": "1.0",
+    "icon": "app/img/mapuche_flag.svg"
+  }
+}

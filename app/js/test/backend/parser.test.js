@@ -1,4 +1,4 @@
-import {buildAliasMap, searchAdditionalExamples, parseExample} from "../../src/backend/parser.js"
+import {buildAliasMap, searchAdditionalExamples, parseExample} from "../../backend/parser.js"
 
 describe('parserExamples', () => {
   test('ejemplosEstanAlineados', () => {

@@ -161,7 +161,7 @@ function renderWithSpanOnClickParticle(text, particleId, spanClass, color) {
 }
 
 function renderMapu(exampleParts, particleId) {
-  let html = '<img src="../../img/mapuche_flag.svg" width="10px" height="10px" alt="">'
+  let html = '<img src="img/mapuche_flag.svg" width="10px" height="10px" alt="">'
 
   html += " "
 
@@ -191,7 +191,7 @@ function renderMapu(exampleParts, particleId) {
 }
 
 function renderWinka(word) {
-  let html = '<span class="winkaExampleSpan"><img src="../../img/spain_flag.svg" width="10px" height="10px" alt="">'
+  let html = '<span class="winkaExampleSpan"><img src="img/spain_flag.svg" width="10px" height="10px" alt="">'
   html += " "
   html += renderWithSpan(word, "winkaExample")
   html += "<br /><br />"
