@@ -20,6 +20,15 @@ function loadView() {
   toggleWinkaExamplesEvent(false)
   searchEvent(false)
 
+  let dummySearch = document.getElementById("dummySearchForm")
+  dummySearch.addEventListener("submit", function(evt) {
+    evt.preventDefault();
+    document.activeElement.blur()
+    if (dummySearch.firstResult !== "") {
+      loadViewEvent(dummySearch.firstResult)
+    }
+  }, true);
+
   window.addEventListener('load', function () {
     // Mobile app
     const isWebView = navigator.userAgent.includes('wv')

@@ -60,12 +60,14 @@
         <img src="img/search.svg" width="15px" height="15px" alt="">
       </div>
       <div class="searchBarItemFill">
+        <form id="dummySearchForm">
         <label for="searchWordInput"></label><input type="search" class="searchBox" id="searchWordInput"
                                                     placeholder="Buscar partícula..."
                                                     onkeydown="loadSearchEvent();"
                                                     onpaste="loadSearchEvent();"
                                                     oninput="loadSearchEvent();"
                                                     onchange="loadSearchEvent();">
+        </form>
       </div>
       <div class="searchIcon">
       </div>

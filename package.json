@@ -13,7 +13,7 @@
   "scripts": {
     "test": "jest",
     "start": "electron app/main.cjs",
-    "apk": "apkjs b"
+    "apk": "apkjs b && apkjs s TroyDungun.apk && adb install TroyDungun.apk"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.26.9",
