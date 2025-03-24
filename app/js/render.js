@@ -15,6 +15,7 @@ function loadView() {
   functionMappings()
 
   window.winkaDungunExamples = false
+  window.hist = []
 
   toggleWinkaExamplesEvent(false)
   searchEvent(false)
@@ -52,10 +53,10 @@ function loadView() {
   })
 
   window.addEventListener('popstate', function(event) {
-    updateForwardHistButtons()
-    console.log(event.state)
+
     // Handle the state change
     if (event.state) {
+      window.hist.pop()
       // Access the state object using event.state
       // Update the UI based on the new state
       renderFromParticleData(window.particleData[event.state], event.state)
@@ -63,6 +64,7 @@ function loadView() {
       // Handle the case where there is no state (e.g., initial page load)
       renderHelp(true)
     }
+    updateForwardHistButtons()
   });
 }
 
@@ -98,7 +100,6 @@ function handleTooltips() {
 
 export function render(particleId) {
   let uniqueParticleId = window.aliasMap.get(particleId)
-  updateForwardHistButtons()
 
   if (particleId == null) {
     renderHelp(true)
@@ -107,6 +108,7 @@ export function render(particleId) {
   // Primera vez
   if (window.history.state == null) {
     window.history.pushState(uniqueParticleId, "")
+    window.hist.push(uniqueParticleId)
   }
 
   if (window.history.state != null) {
@@ -116,6 +118,7 @@ export function render(particleId) {
     // Misma palabra, solo agregarla al historial si diferente
     if (lastPartUniqueId !== uniqueParticleId) {
       window.history.pushState(uniqueParticleId, "")
+      window.hist.push(uniqueParticleId)
     }
   }
   updateForwardHistButtons()
@@ -123,8 +126,8 @@ export function render(particleId) {
 }
 
 export function updateForwardHistButtons() {
-  document.getElementById("navigationBackIconEnabled").hidden = (window.history.state === null)
-  document.getElementById("navigationBackIconDisabled").hidden = (window.history.state !== null)
+  document.getElementById("navigationBackIconEnabled").hidden = (window.hist.length === 1)
+  document.getElementById("navigationBackIconDisabled").hidden = (window.hist.length !== 1)
 }
 
 export function search(partialWord) {
