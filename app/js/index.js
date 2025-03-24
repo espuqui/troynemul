@@ -58,3 +58,11 @@ function toggleWinkaExamplesEvent(value) {
   document.getElementById("winkaDungunOn").hidden = !value
   window.updateExamples()
 }
+
+function toggleInfoEvent() {
+  window.renderHelp(true)
+}
+
+function backInfoEvent() {
+  window.renderHelp(false)
+}

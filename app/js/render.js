@@ -74,6 +74,8 @@ function renderHelp(visible)
   document.getElementById("topWidgetResting").hidden = visible
   document.getElementById("contentWidget").hidden = visible
   document.getElementById("helpWidget").hidden = !visible
+
+  document.getElementById("infoBackIconEnabled").hidden = window.history.state === null
 }
 
 export function afterParseData(data) {
