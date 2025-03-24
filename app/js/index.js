@@ -1,9 +1,5 @@
 // UI Events
 
-function backEvent() {
-  window.backEvent()
-}
-
 function searchEvent(visible) {
   document.getElementById("searchWordInput").value = ""
   document.getElementById("searchResultsWidget").hidden = !visible
@@ -11,9 +7,14 @@ function searchEvent(visible) {
   document.getElementById("contentWidget").hidden = visible
   document.getElementById("topWidgetResting").hidden = visible
 
+  document.getElementById("topWidgetHelp").hidden = true
+  document.getElementById("helpWidget").hidden = true
+
   if (visible) {
     document.getElementById("searchWordInput").focus()
     loadSearchEvent()
+  } else {
+    window.renderHelp(window.history.state === null)
   }
 }
 

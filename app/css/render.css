@@ -98,13 +98,13 @@ Estilos
 }
 
 .contentWidget {
-  padding-top: 50pt;
+  padding-top: 40pt;
   padding-left: 10px;
   padding-right: 10px;
 }
 
 .searchResultsWidget {
-  padding-top: 50pt;
+  padding-top: 40pt;
   display: table;
   width: 100%;
 }

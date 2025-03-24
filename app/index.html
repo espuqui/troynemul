@@ -27,11 +27,22 @@
 
 <div id="mainDiv" hidden="hidden">
   <div class="searchBarWidget">
+    <div class="searchBarWhileResting" id="topWidgetHelp">
+      <div class="searchIcon">
+        <img src="img/info.svg" width="25px" height="25px" alt="">
+      </div>
+      <div class="searchBarItemFill">
+        <p class="particleTitle">Inicio</p>
+      </div>
+      <div class="searchIcon" style="padding-right: 20pt" onclick="searchEvent(true)">
+        <img src="img/search.svg" width="25px" height="25px" alt="">
+      </div>
+    </div>
+
     <div class="searchBarWhileResting" id="topWidgetResting">
       <div class="searchIcon">
         <img src="img/mapuche_flag.svg" width="25px" height="25px" alt="">
       </div>
-
       <div class="searchBarItemFill">
         <p class="particleTitle" id="particleTitle">[particleTitle]</p>
       </div>
@@ -44,7 +55,7 @@
       <div class="searchIcon" id="navigationBackIconDisabled">
         <img src="img/back_inactive.svg" width="25px" height="25px" alt="">
       </div>
-      <div class="searchIcon" id="navigationBackIconEnabled" onclick="backEvent()">
+      <div class="searchIcon" id="navigationBackIconEnabled" onclick="window.history.back()">
         <img src="img/back_active.svg" width="25px" height="25px" alt="">
       </div>
       <div class="searchIcon" style="padding-right: 20pt" onclick="searchEvent(true)">
@@ -79,6 +90,11 @@
     <p id="particleContent">[particleContent]<br/>
     <p class="particleRelativeExamplesTitle">Ejemplos adicionales</p>
     <p id="relativeExampleList">[relativeExampleList]</p>
+  </div>
+
+  <div class="contentWidget" id="helpWidget">
+    <p class="particleContent">Mari mari kom pu chillkatufe.</br></br>
+      Comienza buscando una palabra en la lupa.</p>
   </div>
 
   <div class="searchResultsWidget" id="searchResultsWidget">

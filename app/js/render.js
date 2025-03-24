@@ -8,14 +8,13 @@ loadView()
 function functionMappings() {
   window.render = render
   window.search = search
-  window.backEvent = back
+  window.renderHelp = renderHelp
   window.updateExamples = updateExamples
 }
 function loadView() {
   functionMappings()
 
   window.winkaDungunExamples = false
-  window.hist = []
 
   toggleWinkaExamplesEvent(false)
   searchEvent(false)
@@ -51,6 +50,28 @@ function loadView() {
       });
     }
   })
+
+  window.addEventListener('popstate', function(event) {
+    updateForwardHistButtons()
+    console.log(event.state)
+    // Handle the state change
+    if (event.state) {
+      // Access the state object using event.state
+      // Update the UI based on the new state
+      renderFromParticleData(window.particleData[event.state], event.state)
+    } else {
+      // Handle the case where there is no state (e.g., initial page load)
+      renderHelp(true)
+    }
+  });
+}
+
+function renderHelp(visible)
+{
+  document.getElementById("topWidgetHelp").hidden = !visible
+  document.getElementById("topWidgetResting").hidden = visible
+  document.getElementById("contentWidget").hidden = visible
+  document.getElementById("helpWidget").hidden = !visible
 }
 
 export function afterParseData(data) {
@@ -59,7 +80,7 @@ export function afterParseData(data) {
   window.aliasMap = buildAliasMap(data)
 
   document.getElementById("mainDiv").hidden = false
-  render("le|st28")
+  render(null)
 }
 
 function handleTooltips() {
@@ -77,39 +98,33 @@ function handleTooltips() {
 
 export function render(particleId) {
   let uniqueParticleId = window.aliasMap.get(particleId)
+  updateForwardHistButtons()
 
-  // Prevenir recargar la misma palabra
-  if (window.hist.length !== 0) {
-    let lastPart = window.hist.at(window.hist.length - 1)
-    let lastPartUniqueId = window.aliasMap.get(lastPart)
-
-    if (lastPartUniqueId === uniqueParticleId) {
-      return
-    }
+  if (particleId == null) {
+    renderHelp(true)
+    return
+  }
+  // Primera vez
+  if (window.history.state == null) {
+    window.history.pushState(uniqueParticleId, "")
   }
 
-  forwardHist(uniqueParticleId)
+  if (window.history.state != null) {
+    let lastPart = window.history.state
+    let lastPartUniqueId = window.aliasMap.get(lastPart)
+
+    // Misma palabra, solo agregarla al historial si diferente
+    if (lastPartUniqueId !== uniqueParticleId) {
+      window.history.pushState(uniqueParticleId, "")
+    }
+  }
+  updateForwardHistButtons()
   renderFromParticleData(window.particleData[uniqueParticleId], uniqueParticleId)
 }
 
-function forwardHist(uniqueParticleId) {
-  updateForwardHist()
-  window.hist.push(uniqueParticleId)
-}
-
-export function back() {
-  if (window.hist.length !== 0) {
-    window.hist.pop()
-  }
-
-  if (window.hist.length !== 0) {
-    render(window.hist.pop())
-  }
-}
-
-export function updateForwardHist() {
-  document.getElementById("navigationBackIconEnabled").hidden = (window.hist.length === 0)
-  document.getElementById("navigationBackIconDisabled").hidden = (window.hist.length !== 0)
+export function updateForwardHistButtons() {
+  document.getElementById("navigationBackIconEnabled").hidden = (window.history.state === null)
+  document.getElementById("navigationBackIconDisabled").hidden = (window.history.state !== null)
 }
 
 export function search(partialWord) {
@@ -117,7 +132,7 @@ export function search(partialWord) {
 }
 
 function renderFromParticleData(particleData, particleId) {
-
+  renderHelp(false)
   const particleTitle = document.getElementById("particleTitle")
   const particleTypeTitle = document.getElementById("particleTypeTitle")
   const particleContent = document.getElementById("particleContent")
