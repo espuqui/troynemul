@@ -19,12 +19,10 @@ P1: History avoid duplicates [DONE]
 P1: Toggle Spanish show/hide [DONE]
 P1: Bug "." not removed [DONE]
 P1: Clean up/refactoring [DONE]
+P1: All particles, one example [DONE]
 
-P1: All particles, one example
 P1: Welcome page
 P1: Ancho tooltip de acuerdo al texto
-P1: Entry point with GET
-P1: Render artifacts
 P1: Bug "/" shouldn't have tooltip
 
 Entries:

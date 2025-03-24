@@ -4,7 +4,7 @@ Estilos
 
 .searchBarWidget {
   position: fixed;
-  height: 50pt;
+  height: 40pt;
   top: 0pt;
   left: 0pt;
   z-index: 100;
@@ -28,11 +28,18 @@ Estilos
   text-align: center;
 }
 
+.particleTitle {
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+}
+
 .searchBarItemFill {
   display: table-cell;
   vertical-align: middle;
   width: 100%;
-  height: 50pt;
 }
 
 .searchIcon {
@@ -41,8 +48,9 @@ Estilos
   background-color: #222222;
   text-align: center;
   width: 30pt;
-  padding-left: 10pt;
-  padding-right: 10pt;
+  height: 40pt;
+  padding-left: 8pt;
+  padding-right: 8pt;
 }
 
 .searchBox {
@@ -133,12 +141,6 @@ Estilos
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-
-.particleTitle {
-  color: white;
-  font-weight: bold;
-  font-size: larger;
 }
 
 .particleTypeTitle {
