@@ -199,10 +199,17 @@ Estilos
 
 .normalWordExample {
   cursor: pointer;
+  height: 28px;
 }
 
 .particleCurrent {
   font-weight: bold;
+}
+
+.sep {
+  display: block; /* makes it have a width */
+  content: ""; /* clears default height */
+  margin-top: 30px; /* change this to whatever height you want it */
 }
 
 .particleExample {

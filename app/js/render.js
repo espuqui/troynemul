@@ -49,7 +49,7 @@ function init() {
       js.type = "text/javascript";
       js.src = "js/loadfromapk.js";
       head.appendChild(js);
-      window.afterParseData = initView
+      window.initView = initView
     } else {
       // Web Mobile: Cargar JSON con Fetch
       fetch("./data/particles.json")
@@ -170,7 +170,6 @@ export function renderParticleContent(particleId) {
 }
 
 export function refreshBackButtonState() {
-  console.log(window.history.length)
   document.getElementById("navigationBackIconEnabled").hidden = (window.hist.length === 1)
   document.getElementById("navigationBackIconDisabled").hidden = (window.hist.length !== 1)
 }
@@ -290,7 +289,7 @@ function renderWinka(word) {
   let html = '<span class="winkaExampleSpan"><img src="img/spain_flag.svg" width="10px" height="10px" alt="">'
   html += " "
   html += renderWithSpan(word, "winkaExample")
-  html += "<br /><br />"
+  html += "<br  class='sep'/>"
   html += "</span>"
   return html
 }
