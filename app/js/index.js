@@ -49,7 +49,7 @@ function loadSearchEvent() {
 
 function loadViewEvent(particleId) {
   searchEvent(false)
-  window.render(particleId)
+  window.renderParticleContent(particleId)
 }
 
 function toggleWinkaExamplesEvent(value) {

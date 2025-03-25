@@ -86,7 +86,7 @@ function init() {
  * Funciones de UI
  */
 function uiFunctionMappings() {
-  window.render = render
+  window.renderParticleContent = renderParticleContent
   window.search = search
   window.renderHelp = renderHelp
   window.updateExamples = updateExamples
@@ -116,10 +116,14 @@ export function initView(data) {
   window.aliasMap = buildAliasMap(data)
   document.getElementById("mainDiv").hidden = false
 
-  // Carga
-  render(null)
+  // Carga contenido
+//  renderParticleContent(null)
+  renderParticleContent("mew|inst")
 }
 
+/**
+ * Activa tooltips para mostrar palabras en wingkadungun
+ */
 function handleTooltips() {
   document.addEventListener('click', function (event) {
     let elements = document.getElementsByClassName("tooltip")
@@ -133,9 +137,14 @@ function handleTooltips() {
   });
 }
 
-export function render(particleId) {
+/**
+ * Funcion principal para mostrar contenido
+ * @param particleId
+ */
+export function renderParticleContent(particleId) {
   let uniqueParticleId = window.aliasMap.get(particleId)
 
+  // Si particula es null mostrar ayuda
   if (particleId == null) {
     renderHelp(true)
     return
@@ -166,6 +175,11 @@ export function refreshBackButtonState() {
   document.getElementById("navigationBackIconDisabled").hidden = (window.hist.length !== 1)
 }
 
+/**
+ * Busca particulas
+ * @param partialWord
+ * @returns {[]} Una lista de palabras
+ */
 export function search(partialWord) {
   return searchWord(partialWord, window.particleData, window.aliasMap)
 }
