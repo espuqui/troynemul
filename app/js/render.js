@@ -3,71 +3,100 @@ import {buildAliasMap} from "./backend/parser.js";
 import {searchAdditionalExamples} from "./backend/parser.js";
 import {applyFix, searchWord} from "./backend/search.js";
 
-loadView()
+init()
 
-function functionMappings() {
-  window.render = render
-  window.search = search
-  window.renderHelp = renderHelp
-  window.updateExamples = updateExamples
-}
-function loadView() {
-  functionMappings()
+/**
+ * Carga applicacion
+ */
+function init() {
+  uiFunctionMappings()
 
+  // Ejemplos en winkaDungun desactivados
   window.winkaDungunExamples = false
+  // Mantiene una copia de historial
   window.hist = []
 
+  // Apagar botones de busqueda y ejemplos en winkaDungun
   toggleWinkaExamplesEvent(false)
   searchEvent(false)
+  handleTooltips();
 
-  let dummySearch = document.getElementById("dummySearchForm")
-  dummySearch.addEventListener("submit", function(evt) {
+  // Configurar busqueda
+  let searchForm = document.getElementById("searchForm")
+  searchForm.addEventListener("submit", function(evt) {
+    // Ocultar teclado al enviar
     evt.preventDefault();
     document.activeElement.blur()
-    if (dummySearch.firstResult !== "") {
-      loadViewEvent(dummySearch.firstResult)
+
+    // Si se apreta el boton de enviar busqueda, elegir el primer resultado
+    if (searchForm.firstResult !== "") {
+      loadViewEvent(searchForm.firstResult)
     }
   }, true);
 
+  // Configurar Web vs Mobile Android APK
   window.addEventListener('load', function () {
-    // Mobile app
+
+    // Si el navegador es WebView, entonces estamos en la app mobile
     const isWebView = navigator.userAgent.includes('wv')
+
     if (isWebView) {
+      // Mobile app: Hay que cargar el JSON con import, sino no funciona
       let head = document.getElementsByTagName('head')[0];
       let js = document.createElement("script");
 
+      // Cargamos el JSON dinamicamente
       js.type = "text/javascript";
       js.src = "js/loadfromapk.js";
       head.appendChild(js);
-      window.afterParseData = afterParseData
+      window.afterParseData = initView
     } else {
-      // For web
+      // Web Mobile: Cargar JSON con Fetch
       fetch("./data/particles.json")
         .then((res) => res.json())
         .then((data) => {
-          afterParseData(data)
+          initView(data)
         }).catch((error) => {
         alert(error)
       });
     }
   })
 
+  // Configurar ir atras en el historial
   window.addEventListener('popstate', function(event) {
 
-    // Handle the state change
-    if (event.state) {
+    if (window.hist.length > 0) {
       window.hist.pop()
-      // Access the state object using event.state
-      // Update the UI based on the new state
+    }
+
+    // State contiene la particula en el top del stack
+    if (event.state) {
+      // Cargar particula antrior
       renderFromParticleData(window.particleData[event.state], event.state)
     } else {
-      // Handle the case where there is no state (e.g., initial page load)
+      // Si volvemos al principio y no hay palabra inicial, mostrar ayuda
       renderHelp(true)
     }
-    updateForwardHistButtons()
+    // Recargar botones de estado
+    refreshBackButtonState()
   });
 }
 
+/**
+ * Funciones de UI
+ */
+function uiFunctionMappings() {
+  window.render = render
+  window.search = search
+  window.renderHelp = renderHelp
+  window.updateExamples = updateExamples
+}
+
+/**
+ * Muestra ayuda
+ *
+ * @param visible Si es que hay que mostrar ayuda
+ */
 function renderHelp(visible)
 {
   document.getElementById("topWidgetHelp").hidden = !visible
@@ -78,12 +107,16 @@ function renderHelp(visible)
   document.getElementById("infoBackIconEnabled").hidden = window.history.state === null
 }
 
-export function afterParseData(data) {
-  handleTooltips();
+/**
+ * Inicializa vista con datos
+ * @param data
+ */
+export function initView(data) {
   window.particleData = data
   window.aliasMap = buildAliasMap(data)
-
   document.getElementById("mainDiv").hidden = false
+
+  // Carga
   render(null)
 }
 
@@ -123,11 +156,12 @@ export function render(particleId) {
       window.hist.push(uniqueParticleId)
     }
   }
-  updateForwardHistButtons()
+  refreshBackButtonState()
   renderFromParticleData(window.particleData[uniqueParticleId], uniqueParticleId)
 }
 
-export function updateForwardHistButtons() {
+export function refreshBackButtonState() {
+  console.log(window.history.length)
   document.getElementById("navigationBackIconEnabled").hidden = (window.hist.length === 1)
   document.getElementById("navigationBackIconDisabled").hidden = (window.hist.length !== 1)
 }

@@ -22,13 +22,13 @@ function loadSearchEvent() {
 
   let searchBox = document.getElementById("searchWordInput")
   let result = window.search(searchBox.value)
-  let dummySearch = document.getElementById("dummySearchForm")
+  let searchForm = document.getElementById("searchForm")
   let renderedResult = ""
-  dummySearch.firstResult = ""
+  searchForm.firstResult = ""
 
   for (let r of result) {
-    if (dummySearch.firstResult === "" && searchBox.value !== "") {
-      dummySearch.firstResult = r.particleId
+    if (searchForm.firstResult === "" && searchBox.value !== "") {
+      searchForm.firstResult = r.particleId
     }
     let style = `text-decoration: ${r.color} underline;
   text-decoration-thickness: 3px; text-underline-offset: 5px;  text-decoration-skip-ink: none;"`
