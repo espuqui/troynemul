@@ -1,29 +1,13 @@
-P0: Split usages in parts [DONE]
-P0: Define what to render [DONE]
-P0: Render APIs [DONE]
-P0: Highlight word in the focus [DONE]
-P0: Colors in JSON instead of hash [DONE]
-P1: Create CSS properly [DONE]
-P1: color en definicion [DONE]
-P0: Hyperlinks in examples [DONE]
-P0: Multiple explanations [DONE]
-P0: Keep search bar on top [DONE]
-P1: Busqueda y particula siempre visible [DONE]
-P1: Prefix suffix infix none [DONE]
-P0: Particula actual en search bar y search bar style [DONE]
-P0: Go backEvent [DONE]
-P0: Render search bar results [DONE]
-P0: Search results go to word [DONE]
+Antes del release:
 
-P1: History avoid duplicates [DONE]
-P1: Toggle Spanish show/hide [DONE]
-P1: Bug "." not removed [DONE]
-P1: Clean up/refactoring [DONE]
-P1: All particles, one example [DONE]
-P1: Ancho tooltip de acuerdo al texto [DONE]
-P1: Back button [DONE]
+P0: Cambiar nombre a "Troy N'emül'" y repositorio nuevo.
+P0: Dominio troynemul.org
+P0: Pagina de bienvenida
+P0: Dos branches: main y test
+P0: Multigrafemario
+P0: Documentacion en español
+P0: Particulas conocidas, ejemplos propios.
 
-P1: Welcome page
 P1: Bug "/" shouldn't have tooltip
 
 Entries:
