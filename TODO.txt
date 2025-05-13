@@ -1,7 +1,7 @@
 Antes del release:
 
-P0: Cambiar nombre a "Troy N'emül'" y repositorio nuevo.
-P0: Dominio troynemul.org
+P0: Cambiar nombre a "Troy N'emül'" y repositorio nuevo [LISTO].
+P0: Dominio troynemul.org [LISTO]
 P0: Pagina de bienvenida
 P0: Dos branches: main y test
 P0: Multigrafemario

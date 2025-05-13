@@ -118,7 +118,7 @@ export function initView(data) {
 
   // Carga contenido
   renderParticleContent(null)
-//  renderParticleContent("mew|inst")
+  //renderParticleContent("mew|inst")
 }
 
 /**
@@ -193,11 +193,19 @@ function renderFromParticleData(particleData, particleId) {
   renderParticleTitle(particleTitle, particleData, particleId)
 
   particleTypeTitle.innerText = particleData.title
-  particleContent.innerText = ""
+  particleContent.innerHTML = ""
+  if (particleData.explanation !== undefined) {
+    particleContent.innerHTML = "<p class='particleContent'>" + particleData.explanation + "</p>"
+  }
   relativeExampleList.innerHTML = ""
 
   for (let content of particleData.content) {
-    particleContent.innerHTML += "<p class='particleContent'>" + content.explanation + "</p>"
+    if (content.subtitle !== undefined) {
+      particleContent.innerHTML += "<p class='particleSubTitle'>" + content.subtitle + "</p>"
+    }
+    if (content.explanation !== undefined) {
+      particleContent.innerHTML += "<p class='particleContent'>" + content.explanation + "</p>"
+    }
 
     for (let examples of content.examples) {
       let exampleParts = parseExample(examples[0], examples[1])

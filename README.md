@@ -1,2 +1,3 @@
-# gramatica_mapuche
-Gramatica Mapuche
+# Troy N'emül'
+
+Diccionario de particulas del idioma mapuche

@@ -149,6 +149,15 @@ Estilos
   border-bottom: solid;
   border-bottom-width: thin
 }
+.particleSubTitle {
+  color: lightgray;
+  border-bottom: solid;
+  border-bottom-width: thin
+}
+
+a {
+  color: darkcyan;
+}
 
 .particleContent {
   color: beige;
