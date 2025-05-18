@@ -1,12 +1,12 @@
 {
   "include": "app",
-  "output": "TroyDungun.apk",
+  "output": "TroyNemul.apk",
   "appinfo": {
-    "package": "cl.troydungun.test",
-    "appname": "TroyDungun",
+    "package": "org.troynemul.main",
+    "appname": "TroyNemul",
     "color": "#000000",
     "versionCode": 1,
     "versionName": "1.0",
-    "icon": "app/img/troydungun.svg"
+    "icon": "app/img/troynemul.svg"
   }
 }

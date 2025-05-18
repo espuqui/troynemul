@@ -15,6 +15,7 @@ Entries:
       "title": "",
       "color": "",
       "fix": "post",
+      "explanation": "",
       "variations": [],
       "content": [
         {
@@ -29,3 +30,4 @@ Entries:
         }
       ]
     },
+

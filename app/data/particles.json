@@ -12,14 +12,14 @@
         "explanation": "se una para para decir que se hace algo con una cosa (equivalente a <i>con</i>)",
         "examples": [
           [
-            "tranu mew wül-el-enew",
+            "Tranu mew wül-el-enew",
             "zapatilla (inst) dar/golpe-(cf14)-(ido6-ind1s3-ds1)",
-            "me pegó con una zapatilla"
+            "Me pegó con una zapatilla"
           ],
           [
-            "diwillün-ngeke-y kiñe wütrü mew",
+            "Diwillün-ngeke-y kiñe wütrü mew",
             "revolver-(pass23-cf14)-(ind4-33) una cuchara (inst)",
-            "se revuelve con una cuchara"
+            "Se revuelve con una cuchara"
           ]
         ]
       },
@@ -28,9 +28,186 @@
         "explanation": "se una para para decir en el lugar donde ocurre algo (equivalente a <i>con</i>)",
         "examples": [
           [
-            "tañi wen'uy müle-y tañi ruka mew",
+            "Tañi wenhuy müle-y tañi ruka mew",
             "(poss1s) amigo estar-(ind4-33) (poss1s) casa (inst)",
-            "mi amigo está en mi casa"
+            "Mi amigo está en mi casa"
+          ]
+        ]
+      },
+      {
+        "subtitle": "3. dirección <i>(a, para)</i>",
+        "explanation": "se una para para decir el lugar de donde o hacia donde ocurre algo.",
+        "examples": [
+          [
+            "Lelfün mew tuw-ün",
+            "campo (inst) origen,procedencia-(ind1s3)",
+            "Soy originiario del campo"
+          ],
+          [
+            "Iñche amu-a-n waria mew",
+            "yo ir-(nrld9)-(ind1s3) ciudad (inst)",
+            "Yo iré a la ciudad"
+          ]
+        ]
+      },
+      {
+        "explanation": "pero el lugar es un nombre propio, se puede omitir mew.",
+        "examples": [
+          [
+            "Santiaw tuw-ün",
+            "Santiago origen,procedencia-(ind1s3)",
+            "Soy originario de Santiago"
+          ],
+          [
+            "Fey amu-a-y Tralkawenu",
+            "ella ir-(nrld9)-(ind4-33) Talcahuano",
+            "Ella irá a Talcahuano"
+          ]
+        ]
+      },
+      {
+        "subtitle": "4. tiempo <i>(en)</i>",
+        "explanation": "se usa para decir en cuanto tiempo ocurrirá algo",
+        "examples": [
+          [
+            "Epu antü mew",
+            "dos dias (inst)",
+            "En dos dias"
+          ]
+        ]
+      },
+      {
+        "explanation": "pero no se se ocupa si es durante el mismo día",
+        "examples": [
+          [
+            "Punh wüla tüku-a-n ñi firma",
+            "noche después poner-(nrld9)-(ind1s3) (poss1s) firma",
+            "A la noche firmaré"
+          ]
+        ]
+      },
+      {
+        "subtitle": "4. causa <i>(por)</i>",
+        "explanation": "se usa para indicar causa o motivo",
+        "examples": [
+          [
+            "Petu witra-la-n rume wütre-le-n mew",
+            "todavía levantar-(neg10)-(ind1s3) muy frio-(st28)-(pvn4)-(inst)",
+            "Todavía no me levanto porque hace mucho frío"
+          ]
+        ]
+      }
+    ]
+  },
+  "n|ind1s3": {
+    "title": "modo indicativo [iñche] (yo)",
+    "color": "dodgerblue",
+    "fix": "post",
+    "explanation": "primera persona singular modo indicativo (yo). El modo indicativo sirve para decir hechos <b>verdaderos o seguros y expresar opiniones.</b></b>",
+    "variations": ["ün"],
+    "content": [
+      {
+        "examples": [
+          [
+            "Müle-n Konse mew",
+            "estoy-(ind1s3) Conce (inst)",
+            "Me encuentro en Concepción (Conce)"
+          ],
+          [
+            "Iñche ta Paskual Pichún pi-nge-n",
+            "yo Paskual Pichún el decir-(pass23)-(ind1s3)",
+            "Me llamo Paskual Pichún"
+          ]
+        ]
+      }
+    ]
+  },
+  "ymi|ind4-23-s2": {
+    "title": "infinitivo (hechos seguros) [eymi] (tú)",
+    "color": "dodgerblue",
+    "fix": "post",
+    "explanation": "segunda persona singular (tú). El modo indicativo sirve para decir hechos <b>verdaderos o seguros y expresar opiniones.</b>",
+    "variations": ["imi"],
+    "content": [
+      {
+        "explanation": "",
+        "examples": [
+          [
+            "Eymi Temuko tuw-imi",
+            "tu Temuco provenir-(ind4-23-s2)",
+            "Vienes de Temuco"
+          ],
+          [
+            "¿ Chew tuw-imi ?",
+            "¿ donde provenir-(ind4-23-s2) ?",
+            "¿ De dónde eres ?"
+          ]
+        ]
+      }
+    ]
+  },
+  "y|ind4-33": {
+    "title": "infinitivo (hechos seguros) [fey] (él, ella)",
+    "color": "dodgerblue",
+    "fix": "post",
+    "explanation": "tercera persona singular (tú). El modo indicativo sirve para decir hechos <b>verdaderos o seguros y expresar opiniones.</b>",
+    "variations": ["i"],
+    "content": [
+      {
+        "explanation": "",
+        "examples": [
+          [
+            "Tami chaw Chawrakawiñ tuw-i",
+            "(poss2s) papá Osorno provenir-(ind4-33)",
+            "Mi papá es Osornino"
+          ],
+          [
+            "Fey pi-nge-la-y Linkoyan",
+            "él decir-(pass23)-(neg10)-(ind4-33) Linkoyan",
+            "Él no se llama Lincoyán"
+          ]
+        ]
+      }
+    ]
+  },
+  "la|neg10": {
+    "title": "negación en infinitivo (no)",
+    "color": "red",
+    "fix": "in",
+    "explanation": "indica que la relación no se realizó en el modo indicativo. En este caso sirve para decir hechos <b>que no ocurrieron o su estado no es efectivo</b>",
+    "variations": [],
+    "content": [
+      {
+        "explanation": "",
+        "examples": [
+          [
+            "Juanita pi-nge-la-n",
+            "Juanita decir-(pass23)-(neg10)-(ind1s3)",
+            "No me llamo Juanita"
+          ],
+          [
+            "¿ Tuw-la-ymi Concepción waria mew ?",
+            "¿ provenir-(neg10)-(ind4-23-s2) Concepción waria (inst) ?",
+            "¿ No provienes de Concepción ?"
+          ]
+        ]
+      }
+    ]
+  },
+  "fe|": {
+    "title": "",
+    "color": "",
+    "fix": "post",
+    "explanation": "",
+    "variations": [],
+    "content": [
+      {
+        "explanation": "",
+        "examples": [
+          [
+            "",
+            "",
+            ""
           ]
         ]
       }
