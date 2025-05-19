@@ -123,7 +123,7 @@
     ]
   },
   "ymi|ind4-23-s2": {
-    "title": "infinitivo (hechos seguros) [eymi] (tú)",
+    "title": "modo indicativo [eymi] (tú)",
     "color": "dodgerblue",
     "fix": "post",
     "explanation": "segunda persona singular (tú). El modo indicativo sirve para decir hechos <b>verdaderos o seguros y expresar opiniones.</b>",
@@ -147,7 +147,7 @@
     ]
   },
   "y|ind4-33": {
-    "title": "infinitivo (hechos seguros) [fey] (él, ella)",
+    "title": "modo indicativo [fey] (él, ella)",
     "color": "dodgerblue",
     "fix": "post",
     "explanation": "tercera persona singular (tú). El modo indicativo sirve para decir hechos <b>verdaderos o seguros y expresar opiniones.</b>",
@@ -163,7 +163,7 @@
           ],
           [
             "Fey pi-nge-la-y Linkoyan",
-            "él decir-(pass23)-(neg10)-(ind4-33) Linkoyan",
+            "él decir-(pass23)-(neg10)-(ind4-33) Lincoyán",
             "Él no se llama Lincoyán"
           ]
         ]
@@ -171,7 +171,7 @@
     ]
   },
   "la|neg10": {
-    "title": "negación en infinitivo (no)",
+    "title": "negación en modo indicativo (no)",
     "color": "red",
     "fix": "in",
     "explanation": "indica que la relación no se realizó en el modo indicativo. En este caso sirve para decir hechos <b>que no ocurrieron o su estado no es efectivo</b>",
@@ -186,28 +186,43 @@
             "No me llamo Juanita"
           ],
           [
-            "¿ Tuw-la-ymi Concepción waria mew ?",
-            "¿ provenir-(neg10)-(ind4-23-s2) Concepción waria (inst) ?",
+            "¿ Tuw-la-ymi Concepción waria ?",
+            "¿ provenir-(neg10)-(ind4-23-s2) Concepción waria ?",
             "¿ No provienes de Concepción ?"
           ]
         ]
       }
     ]
   },
-  "fe|": {
-    "title": "",
-    "color": "",
+  "fe|nom": {
+    "title": "sustantivizador de oficios",
+    "color": "orange",
     "fix": "post",
-    "explanation": "",
+    "explanation": "Con este sufijo, se pueden formar sustantivos para indicar profesiones u oficios, a partir de verbos de acción. Equivale al sufijo -dor del español. La palabra terminada en -fe sirve tanto para mujer u hombre, no marca género. ",
     "variations": [],
     "content": [
       {
         "explanation": "",
         "examples": [
           [
-            "",
-            "",
-            ""
+            "Waria mew pu ruka-fe fewla dewma-ke-yngün ruka",
+            "ciudad (inst) (coll) casa-(nom) ahora hacer-(cf14)-(ind4-3ns3-p2) casa",
+            "En la ciudad los constructores ahora construyen casas"
+          ],
+          [
+            "Duamnie-nge-n kiñe ruka-fe ñi dewma-yal ruka",
+            "necesitar-(verb36)-(ind1s3) una casa-(nom) (poss3) construir-(ovn4) casa",
+            "Se necesita un constructor para construir casas"
+          ]
+        ]
+      },
+      {
+        "explanation": "Las palabras de oficios que provienen del castellano no llevan esta partícula",
+        "examples": [
+          [
+            "Tati mediku ngülam-tu-eyew pütrem-tu-welaya-imi Jacinta",
+            "El medico consejo-(verb36)-(ind4-33-ds1) cigarro-(verb36)-(ps19-neg10-nrld9)-(ind4-23-s2) Jacinta",
+            "El médico le aconsejó a Jacinta que debe dejar de fumar"
           ]
         ]
       }
