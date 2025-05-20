@@ -104,7 +104,9 @@
     "color": "dodgerblue",
     "fix": "post",
     "explanation": "primera persona singular modo indicativo (yo). El modo indicativo sirve para decir hechos <b>verdaderos o seguros y expresar opiniones.</b></b>",
-    "variations": ["ün"],
+    "variations": [
+      "ün"
+    ],
     "content": [
       {
         "examples": [
@@ -127,7 +129,9 @@
     "color": "dodgerblue",
     "fix": "post",
     "explanation": "segunda persona singular (tú). El modo indicativo sirve para decir hechos <b>verdaderos o seguros y expresar opiniones.</b>",
-    "variations": ["imi"],
+    "variations": [
+      "imi"
+    ],
     "content": [
       {
         "explanation": "",
@@ -151,7 +155,9 @@
     "color": "dodgerblue",
     "fix": "post",
     "explanation": "tercera persona singular (tú). El modo indicativo sirve para decir hechos <b>verdaderos o seguros y expresar opiniones.</b>",
-    "variations": ["i"],
+    "variations": [
+      "i"
+    ],
     "content": [
       {
         "explanation": "",
@@ -210,6 +216,11 @@
             "En la ciudad los constructores ahora construyen casas"
           ],
           [
+            "Iñche ta ad-künu-fe-nge-n",
+            "Yo => forma,aspecto,estructura,armonía-(pfps32)-(nom)-(verb36)-(ind1s3)",
+            "Yo soy informático"
+          ],
+          [
             "Duamnie-nge-n kiñe ruka-fe ñi dewma-yal ruka",
             "necesitar-(verb36)-(ind1s3) una casa-(nom) (poss3) construir-(ovn4) casa",
             "Se necesita un constructor para construir casas"
@@ -223,6 +234,25 @@
             "Tati mediku ngülam-tu-eyew pütrem-tu-welaya-imi Jacinta",
             "El medico consejo-(verb36)-(ind4-33-ds1) cigarro-(verb36)-(ps19-neg10-nrld9)-(ind4-23-s2) Jacinta",
             "El médico le aconsejó a Jacinta que debe dejar de fumar"
+          ]
+        ]
+      }
+    ]
+  },
+  "nge|verb36": {
+    "title": "sufijo de voz pasiva (soy ..-ado)",
+    "color": "yellow",
+    "fix": "in",
+    "explanation": "Indica que la persona a la que se refiere el verbo sufre o recibe la acción. ",
+    "variations": [ ],
+    "content": [
+      {
+        "explanation": "Quién realiza la acción no se menciona al usar el sufijo <b>nge</b>",
+        "examples": [
+          [
+            "Wew-nge-la-yaiñ",
+            "ganar-(verb36)-(neg10)-(nrld9-ind4-1ns3-p2)",
+            "No nos vencerán"
           ]
         ]
       }
