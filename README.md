@@ -36,7 +36,6 @@ Las entradas estan en formato JSON, donde cada una es:
     * 2: Traducción interpretada en español. Sin reglas.
 
 ```json
-{
   "particula|tipo": {
     "title": "Titulo",
     "color": "red",
@@ -50,13 +49,12 @@ Las entradas estan en formato JSON, donde cada una es:
           [
             "nemul1-nemul2-nemul3 nemul4 nemul5",
             "palabra1-palabra2-(tipo1) (tipo2) palabra5",
-            "Significado interpretado en español"
+            "Significado interpretado en wingkadungun"
           ]
         ]
       }
     ]
   }
-}
 ```
 
 

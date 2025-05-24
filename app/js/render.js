@@ -117,8 +117,8 @@ export function initView(data) {
   document.getElementById("mainDiv").hidden = false
 
   // Carga contenido
-  renderParticleContent(null)
-  //renderParticleContent("la|neg10")
+  //renderParticleContent(null)
+  renderParticleContent("yem|ex")
 }
 
 /**
@@ -273,16 +273,17 @@ function renderMapu(exampleParts, particleId) {
       html += renderWithSpanOnClickTooltip(wordParts[0], wordParts[1], "normalWordExample")
     } else if (examplePart.includes("|")) {
       let wordParts = examplePart.split("|")
-      let currentWord = window.aliasMap.get(examplePart)
+      let examplePartToLookup = examplePart.toLowerCase()
+      let currentWord = window.aliasMap.get(examplePartToLookup)
       if (currentWord === undefined) {
-        html += renderWithSpanOnClickTooltip(wordParts[0], "Falta: <br/> (" + examplePart + ")",
+        html += renderWithSpanOnClickTooltip(wordParts[0], "Falta: <br/> (" + examplePartToLookup + ")",
                                              "particleMissing particleExample")
       } else {
         let color = window.particleData[currentWord].color
         if (window.aliasMap.get(examplePart) === particleId) {
-          html += renderWithSpanOnClickParticle(wordParts[0], examplePart, "particleExample particleCurrent", color)
+          html += renderWithSpanOnClickParticle(wordParts[0], examplePartToLookup, "particleExample particleCurrent", color)
         } else {
-          html += renderWithSpanOnClickParticle(wordParts[0], examplePart, "particleExample", color)
+          html += renderWithSpanOnClickParticle(wordParts[0], examplePartToLookup, "particleExample", color)
         }
       }
     } else if (examplePart === " ") {
