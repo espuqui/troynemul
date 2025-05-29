@@ -87,13 +87,13 @@
         ]
       },
       {
-        "subtitle": "4. causa <i>(por)</i>",
-        "explanation": "se usa para indicar causa o motivo",
+        "subtitle": "4. causa <i>(porque)</i>",
+        "explanation": "se usa para decir <i>porque</i> (indicar causa o motivo). Para responder una pregunta hecha con <i>chumngelu?</i>.",
         "examples": [
           [
-            "Petu witra-la-n rume wütre-le-n mew",
-            "todavía levantar-(neg10)-(ind1s3) muy frio-(st28)-(pvn4)-(inst)",
-            "Todavía no me levanto porque hace mucho frío"
+            "¿ Chumngelu petu witra-la-ymi ? Petu witra-la-n rume wütre-le-n mew",
+            "¿ Por.qué todavía levantar-(neg10)-(ind4-23-s2) ? Todavía levantar-(neg10)-(ind1s3) muy frio-(st28)-(pvn4)-(inst)",
+            "¿ Por qué todavía no te levantas ? Todavía no me levanto porque hace mucho frío"
           ]
         ]
       }
@@ -222,7 +222,7 @@
           ],
           [
             "Duamnie-nge-n kiñe ruka-fe ñi dewma-yal ruka",
-            "necesitar-(verb36)-(ind1s3) una casa-(nom) (poss3) construir-(ovn4) casa",
+            "necesitar-(verb36)-(ind1s3) una casa-(nom) (poss3s) construir-(ovn4) casa",
             "Se necesita un constructor para construir casas"
           ]
         ]
@@ -260,6 +260,16 @@
             "Me dicen Calfucura"
           ]
         ]
+      },
+      {
+        "explanation": "Conjugado según la persona que corresponda más la unión de un número",
+        "examples": [
+          [
+            "Tañi reñma mew kayu che-nge-iñ",
+            "(poss1s) familia (inst) seis persona-(verb36)-(ind4-1ns3-p2)",
+            "en mi familia somos seis personas"
+          ]
+        ]
       }
     ]
   },
@@ -295,6 +305,28 @@
             "Fey ñi ñuke",
             "El (poss3s) papá",
             "Su mamá"
+          ]
+        ]
+      }
+    ]
+  },
+  "tami|poss2s": {
+    "title": "posesivo [eymi] (mi)",
+    "color": "pink",
+    "explanation": "Posesivo de eymi. Equivale a decir mi en wingkadungun.",
+    "variations": [ "mi" ],
+    "content": [
+      {
+        "examples": [
+          [
+            "Tami ñawe",
+            "(poss2s) hija.de.un.hombre",
+            "Tu hija (de un hombre)"
+          ],
+          [
+            "Tami inan deya Relmu pi-nge-y",
+            "(poss2s) menor.en.una.sucesión hermana.de.un.hombre Relmu decir-(verb36)-(ind4-33)",
+            "Tu hermana (de un hombre) menor se llama Relmu"
           ]
         ]
       }

@@ -117,8 +117,8 @@ export function initView(data) {
   document.getElementById("mainDiv").hidden = false
 
   // Carga contenido
-  //renderParticleContent(null)
-  renderParticleContent("yem|ex")
+  renderParticleContent(null)
+  //renderParticleContent("yem|ex")
 }
 
 /**
