@@ -176,12 +176,51 @@
       }
     ]
   },
+  "y engu|ind4-3ns3-d2": {
+    "title": "indicativo [fey] (ellos², ellas²)",
+    "color": "dodgerblue",
+    "fix": "post",
+    "variations": [
+      "*y", "*engu"
+    ],
+    "explanation": "tercera persona dual (ustedes²). El modo indicativo sirve para decir hechos <b>verdaderos o seguros y expresar opiniones.</b>",
+    "content": [
+      {
+        "examples": [
+          [
+            "fey engu aku-y engu",
+            "Ellos² ellos² llegar-(ind4-3ns3-d2) (ind4-3ns3-d2)",
+            "Ellos² llegaron"
+          ]
+        ]
+      }
+    ]
+  },
+  "y engün|ind4-3ns3-p2": {
+    "title": "indicativo [fey] (ellos, ellas)",
+    "color": "dodgerblue",
+    "fix": "post",
+    "variations": [
+      "*y", "*engün"
+    ],
+    "explanation": "tercera persona plural (ustedes). El modo indicativo sirve para decir hechos <b>verdaderos o seguros y expresar opiniones.</b>",
+    "content": [
+      {
+        "examples": [
+          [
+            "fey engün aku-y engün",
+            "Ellos ellos llegar-(ind4-3ns3-p2) (ind4-3ns3-p2)",
+            "Ellos llegaron"
+          ]
+        ]
+      }
+    ]
+  },
   "la|neg10": {
     "title": "negación en indicativo (no)",
     "color": "red",
     "fix": "in",
     "explanation": "indica que la relación no se realizó en el modo indicativo. En este caso sirve para decir hechos <b>que no ocurrieron o su estado no es efectivo</b>",
-    "variations": [],
     "content": [
       {
         "explanation": "",
@@ -265,7 +304,7 @@
         "explanation": "Conjugado según la persona que corresponda más la unión de un número",
         "examples": [
           [
-            "Tañi reñma mew kayu che-nge-iñ",
+            "Tañi reñma mew kayu che-nge-iñ",
             "(poss1s) familia (inst) seis persona-(verb36)-(ind4-1ns3-p2)",
             "en mi familia somos seis personas"
           ]

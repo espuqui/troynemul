@@ -31,6 +31,9 @@ describe('aliasMap', () => {
     data["a|conj"]["variations"] = ["ya"]
     data["b|conj"] = {}
     data["b|conj"]["variations"] = []
+    data["e|conj"] = {}
+    data["d|conj2"] = {}
+    data["d|conj2"]["variations"] = ["*ya", "a"]
 
     let aliasMap = buildAliasMap(data)
 
@@ -47,6 +50,12 @@ describe('aliasMap', () => {
     expect(aliasMap.get("ya|conj")).toBe("a|conj")
 
     expect(aliasMap.get("b|conj")).toBe("b|conj")
+
+    expect(aliasMap.get("e|conj")).toBe("e|conj")
+    expect(aliasMap.get("d|conj2")).toBe("d|conj2")
+    expect(aliasMap.get("ya|conj2")).toBe("d|conj2")
+    expect(aliasMap.get("a|conj2")).toBe("d|conj2")
+
   })
 
 })

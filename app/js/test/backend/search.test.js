@@ -15,7 +15,7 @@ describe('searchTests', () => {
     data["le|adv"]["color"] = "kelü"
     data["le|adv"]["fix"] = "in"
     data["li|conj"] = {}
-    data["li|conj"]["variations"] = ["ya"]
+    data["li|conj"]["variations"] = ["ya", "*ye"]
     data["li|conj"]["title"] = "any1"
     data["li|conj"]["color"] = "chod"
     data["li|conj"]["fix"] = "in"
@@ -29,6 +29,11 @@ describe('searchTests', () => {
     data["ma|conj"]["title"] = "any3"
     data["ma|conj"]["color"] = "kadü"
     data["ma|conj"]["fix"] = undefined
+    data["mo|conj"] = {}
+    data["mo|conj"]["variations"] = undefined
+    data["mo|conj"]["title"] = "any4"
+    data["mo|conj"]["color"] = "katü"
+    data["mo|conj"]["fix"] = "post"
 
     let aliasMap = buildAliasMap(data)
 
@@ -60,11 +65,19 @@ describe('searchTests', () => {
     expectedResults3.color = "karü"
     expectedResults.push(expectedResults3)
 
+    let expectedResults4 = {}
+    expectedResults4.particleId = "mo|conj"
+    expectedResults4.summary = "-mo"
+    expectedResults4.variations = ""
+    expectedResults4.title = "any4"
+    expectedResults4.color = "katü"
+    expectedResults.push(expectedResults4)
 
     expect(actualResults[0]).toStrictEqual(expectedResults[0])
     expect(actualResults[1]).toStrictEqual(expectedResults[1])
     expect(actualResults[2]).toStrictEqual(expectedResults[2])
     expect(actualResults[3]).toStrictEqual(expectedResults[3])
+    expect(actualResults[4]).toStrictEqual(expectedResults[4])
 
     let nullResults = searchWord("zz", data, aliasMap)
     expect(nullResults.length).toBe(0)

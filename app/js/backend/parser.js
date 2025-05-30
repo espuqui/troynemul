@@ -41,9 +41,12 @@ export function buildAliasMap(data) {
   for (let key in data) {
     result.set(key, key)
     let type = key.split("|")[1]
-    for (let variation of data[key].variations) {
-      let variationKey = variation + "|" + type
-      result.set(variationKey, key)
+    if (data[key].variations !== undefined) {
+      for (let rawVariation of data[key].variations) {
+        let variation = rawVariation.replaceAll('*', '')
+        let variationKey = variation + "|" + type
+        result.set(variationKey, key)
+      }
     }
   }
   return result

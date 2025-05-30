@@ -229,8 +229,11 @@ function renderParticleTitle(particleTitle, particleData, particleId) {
 
 function getWordTitle(particleData, wordId) {
   let wordTitle = applyFix(getMainWord(wordId), particleData.fix)
-  if (particleData.variations.length > 0) {
+  if (particleData.variations !== undefined && particleData.variations.length > 0) {
     for (let otherWord of particleData.variations) {
+      if (otherWord.startsWith('*')) {
+        continue
+      }
       wordTitle += ", "
       wordTitle += applyFix(otherWord, particleData.fix)
     }

@@ -45,21 +45,28 @@ export function renderWordWithFix(data, entryWord) {
 
 export function renderWordWithFixVariations(data, entryWord) {
   let value = data[entryWord]
-  if (value.variations.length === 0) {
+  if (value.variations === undefined || value.variations.length === 0) {
     return ""
   }
 
-  let results = "("
+  let results = ""
   let first = true
   for (let v of value.variations) {
+    if (v.startsWith('*')) {
+      continue
+    }
     if (!first) {
       results += ", "
     } else {
+      results = "("
       first = false
     }
     results += applyFix(v, value.fix)
   }
-  return results + ")"
+  if (!first) {
+    results += ")"
+  }
+  return results
 }
 
 export function applyFix(word, fix) {
