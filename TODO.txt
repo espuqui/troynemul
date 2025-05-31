@@ -31,9 +31,3 @@ Entries:
       ]
     },
 
-
-
-Maintenability
-
-[] Multiple HTML
-[] Single CSS
