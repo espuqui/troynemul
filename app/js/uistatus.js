@@ -10,7 +10,7 @@ export class UIStatus {
 
     // Estado inicial botones
     this.winkaDungunExamples = false;
-    this.currentView = Views.HELP
+    this.currentView = Views.SEARCH
 
     // Copia de historial
     this.hist = []
@@ -41,6 +41,10 @@ export class UIStatus {
 
     this.currentView = Views.HELP
     this.checkIfUpdateUI(forceUpdate)
+  }
+
+  toggleDropDown() {
+ //   document.getElementById("threeDots").hidden = false
   }
 
   toggleContent(value, forceUpdate = false) {

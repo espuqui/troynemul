@@ -38,8 +38,11 @@
       <div class="searchIcon" id="infoBackIconEnabled" onclick="window.uistatus.backFromInfo(true)">
         <img src="img/back_active.svg" width="25px" height="25px" alt="">
       </div>
-      <div class="searchIcon" style="padding-right: 20pt" onclick="window.uistatus.searchEvent(true)">
+      <div class="searchIcon"  onclick="window.uistatus.searchEvent(true)">
         <img src="img/search.svg" width="25px" height="25px" alt="">
+      </div>
+      <div class="threeDotIcon" onclick="window.uistatus.toggleDropDown() ">
+        <img src="img/three_dots_on.svg" width="25px" height="25px" alt="">
       </div>
     </div>
 
@@ -50,9 +53,6 @@
       </div>
       <div class="searchBarItemFill">
         <p class="particleTitle" id="particleTitle">[particleTitle]</p>
-      </div>
-      <div class="searchIcon" id="infoButton" onclick="window.uistatus.toggleRenderHelp(true, true);">
-        <img src="img/info_on.svg" width="25px" height="25px" alt="">
       </div>
       <div class="searchIcon" id="winkaDungunOff" onclick="window.uistatus.toggleWinkaExamplesEvent(true, true)">
         <img src="img/spain_flag_off.svg" width="25px" height="25px" alt="">
@@ -66,16 +66,24 @@
       <div class="searchIcon" id="navigationBackIconEnabled" onclick="window.history.back()">
         <img src="img/back_active.svg" width="25px" height="25px" alt="">
       </div>
-      <div class="searchIcon" style="padding-right: 20pt" onclick="window.uistatus.searchEvent(true)">
+      <div class="searchIcon" onclick="window.uistatus.searchEvent(true)">
         <img src="img/search.svg" width="25px" height="25px" alt="">
+      </div>
+      <div class="threeDotIcon" onclick="window.uistatus.toggleDropDown() ">
+        <img src="img/three_dots_on.svg" width="25px" height="25px" alt="">
       </div>
     </div>
 
     <!-- Vista de busqueda -->
     <div class="searchBarWhileSearching" id="topWidgetSearching">
-      <div class="searchIcon" onclick="window.uistatus.backFromSearch(true)">
+      <div class="searchIcon" id="searchBackIconEnabled"  onclick="window.uistatus.backFromSearch(true)">
         <img src="img/back_active.svg" width="25px" height="25px" alt="">
       </div>
+      <div class="searchIcon" id="searchBackIconDisabled">
+        <img src="img/back_inactive.svg" width="25px" height="25px" alt="">
+      </div>
+
+
       <div class="searchIcon">
         <img src="img/search.svg" width="15px" height="15px" alt="">
       </div>
@@ -91,6 +99,30 @@
       </div>
       <div class="searchIcon">
       </div>
+    </div>
+  </div>
+
+  <!-- three dot menu -->
+  <div id="threeDots" class="dropdown">
+    <div class="dropdown-content">
+      <div class="dropdown-item-row">
+        <div class="dropdown-icon" id="infoButton">
+          <img src="img/info_on.svg" width="25px" height="25px" alt="">
+        </div>
+        <div class="dropdown-text" onclick="window.uistatus.toggleRenderHelp(true, true);">
+          Ayuda
+        </div>
+      </div>
+      <!--
+      <div class="dropdown-item-row">
+        <div class="dropdown-icon" id="infoButton2" onclick="window.uistatus.toggleRenderHelp(true, true);">
+          <img src="img/info_on.svg" width="25px" height="25px" alt="">
+        </div>
+        <div class="dropdown-text" onclick="window.uistatus.toggleRenderHelp(true, true);">
+          Ayuda y otros
+        </div>
+      </div>
+      -->
     </div>
   </div>
 

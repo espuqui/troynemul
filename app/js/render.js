@@ -1,8 +1,8 @@
-import {parseExample} from "./backend/parser.js";
-import {buildAliasMap} from "./backend/parser.js";
-import {searchAdditionalExamples} from "./backend/parser.js";
-import {applyFix, searchWord} from "./backend/search.js";
-import {UIStatus, Views} from "./uistatus.js";
+import {buildAliasMap, parseExample, searchAdditionalExamples} from "./backend/parser.js";
+import {applyFix} from "./backend/search.js";
+import {search, loadSearchEvent} from "./search.js";
+import {UIStatus} from "./uistatus.js";
+import {updateUI} from "./updateui.js";
 
 const startWord = null
 
@@ -18,56 +18,6 @@ function uiFunctionMappings() {
 }
 
 init()
-
-/**
- * Carga applicacion
- */
-
-function updateUI() {
-  let uistatus = window.uistatus
-
-  // Hide all
-  document.getElementById("searchWordInput").value = ""
-  document.getElementById("searchResultsWidget").hidden = true
-  document.getElementById("topWidgetSearching").hidden = true
-  document.getElementById("topWidgetHelp").hidden = true
-  document.getElementById("topWidgetResting").hidden = true
-  document.getElementById("contentWidget").hidden = true
-  document.getElementById("helpWidget").hidden = true
-  document.getElementById("infoBackIconEnabled").hidden = true
-
-  // Update buttons
-  document.getElementById("winkaDungunOff").hidden = true
-  document.getElementById("winkaDungunOn").hidden = true
-
-  // Set state
-  if (uistatus.currentView === Views.HELP) {
-    document.getElementById("topWidgetHelp").hidden = false
-    document.getElementById("helpWidget").hidden = false
-    document.getElementById("infoBackIconEnabled").hidden = window.history.state === null
-
-  }
-
-  if (uistatus.currentView === Views.SEARCH) {
-    document.getElementById("searchWordInput").value = ""
-    document.getElementById("searchResultsWidget").hidden = false
-    document.getElementById("topWidgetSearching").hidden = false
-
-    document.getElementById("searchWordInput").focus()
-    loadSearchEvent()
-  }
-
-  if (uistatus.currentView === Views.CONTENT) {
-    document.getElementById("contentWidget").hidden = false
-    document.getElementById("topWidgetResting").hidden = false
-    document.getElementById("winkaDungunOff").hidden = uistatus.winkaDungunExamples
-    document.getElementById("winkaDungunOn").hidden = !uistatus.winkaDungunExamples
-    document.getElementById("navigationBackIconEnabled").hidden = (window.uistatus.hist.length === 1)
-    document.getElementById("navigationBackIconDisabled").hidden = (window.uistatus.hist.length !== 1)
-
-    window.updateExamples()
-  }
-}
 
 function init() {
   uiFunctionMappings()
@@ -158,6 +108,16 @@ function handleTooltips() {
         elem.children[0].style.visibility = 'hidden'
       }
     }
+
+    let elementsthreedots = document.getElementById("threeDots")
+
+    if (event.target.parentNode.className !== "threeDotIcon") {
+      if (!elementsthreedots.contains(event.target)) {
+        document.getElementById("threeDots").hidden = true
+      }
+    } else {
+      document.getElementById("threeDots").hidden = document.getElementById("threeDots").hidden === false;
+    }
   });
 }
 
@@ -170,7 +130,7 @@ export function renderParticleContent(particleId) {
 
   // Si particula es null mostrar ayuda
   if (particleId == null) {
-    window.uistatus.toggleRenderHelp(true)
+    window.uistatus.searchEvent()
     window.uistatus.updateUI()
     return
   }
@@ -335,42 +295,4 @@ export function updateExamples() {
   elements.forEach(element => {
     element.hidden = !enabled
   });
-}
-
-/**
- * Busca particulas
- * @param partialWord
- * @returns {[]} Una lista de palabras
- */
-export function search(partialWord) {
-  return searchWord(partialWord, window.particleData, window.aliasMap)
-}
-
-function loadSearchEvent() {
-
-  let searchBox = document.getElementById("searchWordInput")
-  let result = window.search(searchBox.value)
-  let searchForm = document.getElementById("searchForm")
-  let renderedResult = ""
-  searchForm.firstResult = ""
-
-  for (let r of result) {
-    if (searchForm.firstResult === "" && searchBox.value !== "") {
-      searchForm.firstResult = r.particleId
-    }
-    let style = `text-decoration: ${r.color} underline;
-  text-decoration-thickness: 3px; text-underline-offset: 5px;  text-decoration-skip-ink: none;"`
-
-    renderedResult += `<div class="searchResultsRow" onclick="window.renderParticleContent('${r.particleId}')">
-      <div class="searchResultsCell">
-      <p>
-          <span style="${style}">${r.summary}</span>
-          <span class="searchVariations">${r.variations}</span>
-          <span class="searchTitle">${r.title}</span>
-      </p>
-      </div>
-    </div>`
-  }
-
-  document.getElementById("searchResultsWidget").innerHTML = renderedResult
 }

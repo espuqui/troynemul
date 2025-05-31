@@ -53,6 +53,18 @@ Estilos
   padding-right: 8pt;
 }
 
+.threeDotIcon {
+  display: table-cell;
+  vertical-align: middle;
+  background-color: #222222;
+  text-align: center;
+  width: 10pt;
+  height: 40pt;
+  padding-left: 0pt;
+  padding-right: 10pt;
+}
+
+
 .searchBox {
   background-color: #222222;
   border-style: solid;
@@ -280,4 +292,56 @@ a {
 }
 
 .winkaExampleSpan {
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  top: 50px;
+  right: 0.4em;
+  z-index: 200;
+}
+
+.dropdown-content {
+  display: table;
+  position: fixed;
+  top: 40pt;
+  right: 0pt;
+  background-color:  #222222;
+  min-width: 200px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 101;
+}
+
+.dropdown-item-row {
+  color: white;
+  padding: 0px 0px;
+  text-decoration: none;
+
+  display: table-row;
+  vertical-align: middle;
+  text-align: left;
+  horiz-align: left;
+}
+
+
+.dropdown-icon {
+  display: table-cell;
+  vertical-align: middle;
+
+  text-align: left;
+  width: 30pt;
+  height: 40pt;
+  padding-left: 10pt;
+  padding-right: 0pt;
+}
+
+.dropdown-text {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+  height: 40pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
 }
