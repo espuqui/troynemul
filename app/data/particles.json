@@ -18,7 +18,7 @@
           ],
           [
             "Diwillün-ngeke-y kiñe wütrü mew",
-            "revolver-(pass23-cf14)-(ind4-33) una cuchara (inst)",
+            "revolver-(pass-cf14)-(ind4-33) una cuchara (inst)",
             "Se revuelve con una cuchara"
           ]
         ]
@@ -92,7 +92,7 @@
         "examples": [
           [
             "¿ Chumngelu petu witra-la-ymi ? Petu witra-la-n rume wütre-le-n mew",
-            "¿ Por.qué todavía levantar-(neg10)-(ind4-23-s2) ? Todavía levantar-(neg10)-(ind1s3) muy frio-(st28)-(pvn4)-(inst)",
+            "¿ Por.qué todavía levantar-(neg)-(ind4-23-s2) ? Todavía levantar-(neg)-(ind1s3) muy frio-(st28)-(pvn4)-(inst)",
             "¿ Por qué todavía no te levantas ? Todavía no me levanto porque hace mucho frío"
           ]
         ]
@@ -117,7 +117,7 @@
           ],
           [
             "Iñche ta Paskual Pichún pi-nge-n",
-            "yo Paskual Pichún el decir-(pass23)-(ind1s3)",
+            "yo Paskual Pichún el decir-(pass)-(ind1s3)",
             "Me llamo Paskual Pichún"
           ]
         ]
@@ -169,7 +169,7 @@
           ],
           [
             "Fey pi-nge-la-y Linkoyan",
-            "él decir-(pass23)-(neg10)-(ind4-33) Lincoyán",
+            "él decir-(pass)-(neg)-(ind4-33) Lincoyán",
             "Él no se llama Lincoyán"
           ]
         ]
@@ -216,7 +216,87 @@
       }
     ]
   },
-  "la|neg10": {
+  "iñchiñ|com": {
+    "title": "asociativo [iñche + pu che] (con)",
+    "color": "aqua",
+    "explanation": "Denota acompañamiento, equivale a <i>con</i> en wingkadungun. Hay que tomar en cuenta el numero de personas resultante de la asociación.",
+    "variations": [ ],
+    "content": [
+      {
+        "examples": [
+          [
+            "Müle-n tañi reñma iñchiñ",
+            "estar-(ind1s3) (poss1s) familia (com)",
+            "Vivo con mi familia"
+          ],
+          [
+            "Müle-n tañi ñuke ka ñukentu iñchiñ",
+            "estar-(ind1s3) (poss1s) mamá y tía.materna (com)",
+            "Vivo con mi mamá y mi tía (materna)"
+          ]
+        ]
+      }
+    ]
+  },
+  "iñchiw|com": {
+    "title": "asociativo [iñche + kiñe che] (con)",
+    "color": "aqua",
+    "explanation": "Denota acompañamiento, equivale a <i>con</i> en wingkadungun. Hay que tomar en cuenta el numero de personas resultante de la asociación.",
+    "variations": [ ],
+    "content": [
+      {
+        "examples": [
+          [
+            "Iñche müle-n tañi afkadi iñchiw",
+            "yo estar-(ind1s3) (poss1s) pareja (com)",
+            "Vivo con mi pareja"
+          ]
+        ]
+      }
+    ]
+  },
+  "emu|com": {
+    "title": "asociativo [eymi + kiñe che] (con)",
+    "color": "aqua",
+    "explanation": "Denota acompañamiento, equivale a <i>con</i> en wingkadungun. Hay que tomar en cuenta el numero de personas resultante de la asociación. Se ocupa en preguntas cuando se refiere a eymi.",
+    "variations": [ ],
+    "content": [
+      {
+        "explanation": "Se presume que la otra persona está con una persona más.",
+        "examples": [
+          [
+            "¿ Iney emu müle-ymi ?",
+            "¿ quién (com) estar-(ind4-23-s2) ?",
+            "¿ Con quién vives ?"
+          ]
+        ]
+      }
+    ]
+  },
+  "emün|com": {
+    "title": "asociativo [eymi + pu che] (con)",
+    "color": "aqua",
+    "explanation": "Denota acompañamiento, equivale a <i>con</i> en wingkadungun. Hay que tomar en cuenta el numero de personas resultante de la asociación. Se ocupa en preguntas cuando se refiere a eymi.",
+    "variations": [ ],
+    "content": [
+      {
+        "explanation": "Se presume que la otra persona está con varias personas más.",
+        "examples": [
+          [
+            "¿ Iney emün müle-ymi ?",
+            "¿ quién (com) estar-(ind4-23-s2) ?",
+            "¿ Con quiénes vives ?"
+          ],
+          [
+            "Eymi lamngen, ¿ iney emün müle-ymi Konsepsion mew ?",
+            "Tu hermana, ¿ quien (com) estar-(ind4-23-s2) Concepción (inst) ?",
+            "Y tu hermana, con quien viven en Concepción ?"
+          ]
+        ]
+      }
+    ]
+  },
+  "la|neg": {
     "title": "negación en indicativo (no)",
     "color": "red",
     "fix": "in",
@@ -227,12 +307,12 @@
         "examples": [
           [
             "Juanita pi-nge-la-n",
-            "Juanita decir-(pass23)-(neg10)-(ind1s3)",
+            "Juanita decir-(pass)-(neg)-(ind1s3)",
             "No me llamo Juanita"
           ],
           [
             "¿ Tuw-la-ymi Concepción waria ?",
-            "¿ provenir-(neg10)-(ind4-23-s2) Concepción waria ?",
+            "¿ provenir-(neg)-(ind4-23-s2) Concepción waria ?",
             "¿ No provienes de Concepción ?"
           ]
         ]
@@ -256,12 +336,12 @@
           ],
           [
             "Iñche ta ad-künu-fe-nge-n",
-            "Yo => forma,aspecto,estructura,armonía-(pfps32)-(nom)-(verb36)-(ind1s3)",
+            "Yo => forma,aspecto,estructura,armonía-(pfps32)-(nom)-(verb)-(ind1s3)",
             "Yo soy informático"
           ],
           [
             "Duamnie-nge-n kiñe ruka-fe ñi dewma-yal ruka",
-            "necesitar-(pass23)-(ind1s3) una casa-(nom) (poss3s) construir-(ovn4) casa",
+            "necesitar-(pass)-(ind1s3) una casa-(nom) (poss3s) construir-(ovn4) casa",
             "Se necesita un constructor para construir casas"
           ]
         ]
@@ -271,14 +351,14 @@
         "examples": [
           [
             "Tati mediku ngülam-tu-eyew pütrem-tu-welaya-imi Jacinta",
-            "El medico consejo-(verb36)-(ind4-33-ds1) cigarro-(verb36)-(ps19-neg10-nrld9)-(ind4-23-s2) Jacinta",
+            "El medico consejo-(verb)-(ind4-33-ds1) cigarro-(verb)-(ps19-neg-nrld9)-(ind4-23-s2) Jacinta",
             "El médico le aconsejó a Jacinta que debe dejar de fumar"
           ]
         ]
       }
     ]
   },
-  "nge|pass23": {
+  "nge|pass": {
     "title": "voz pasiva",
     "color": "yellow",
     "fix": "in",
@@ -289,19 +369,19 @@
         "examples": [
           [
             "Wew-nge-la-ya-iñ",
-            "ganar-(pass23)-(neg10)-(nrld9)-(ind4-1ns3-p2)",
+            "ganar-(pass)-(neg)-(nrld9)-(ind4-1ns3-p2)",
             "No nos vencerán"
           ],
           [
             "Kallfükura pi-nge-y",
-            "Calfucura decir-(pass23)-(ind4-33)",
+            "Calfucura decir-(pass)-(ind4-33)",
             "Me dicen Calfucura"
           ]
         ]
       }
     ]
   },
-  "nge|verb36": {
+  "nge|verb": {
     "title": "verbalizador (estar..ado)",
     "color": "lime",
     "fix": "in",
@@ -312,12 +392,12 @@
         "examples": [
           [
             "Kure-nge-n iñche",
-            "esposa-(verb36)-(ind1s3) yo",
+            "esposa-(verb)-(ind1s3) yo",
             "Estoy casado (un hombre)"
           ],
           [
             "Nor-che-nge-a-iñ",
-            "correcto-persona-(verb36)-(nrld9)-(ind4-1ns3-p2)",
+            "correcto-persona-(verb)-(nrld9)-(ind4-1ns3-p2)",
             "Seremos personas correctas"
           ]
         ]
@@ -327,7 +407,7 @@
         "examples": [
           [
             "Tañi reñma mew kayu che-nge-iñ",
-            "(poss1s) familia (inst) seis persona-(verb36)-(ind4-1ns3-p2)",
+            "(poss1s) familia (inst) seis persona-(verb)-(ind4-1ns3-p2)",
             "En mi familia somos seis personas"
           ]
         ]
@@ -349,7 +429,7 @@
           ],
           [
             "Iñche ñi chuchu yem , Klarita pi-nge-fu-y",
-            "Yo (poss1s) abuela.materna (ex) , Clarita decir-(pass23)-(ipd8)-(ind4-33)",
+            "Yo (poss1s) abuela.materna (ex) , Clarita decir-(pass)-(ipd8)-(ind4-33)",
             "Mi finada abuela por parte de mamá se llamaba Clarita"
           ]
         ]
@@ -386,7 +466,7 @@
           ],
           [
             "Tami inan deya Relmu pi-nge-y",
-            "(poss2s) menor.en.una.sucesión hermana.de.un.hombre Relmu decir-(pass23)-(ind4-33)",
+            "(poss2s) menor.en.una.sucesión hermana.de.un.hombre Relmu decir-(pass)-(ind4-33)",
             "Tu hermana (de un hombre) menor se llama Relmu"
           ]
         ]
@@ -446,12 +526,12 @@
         "examples": [
           [
             "Tami ñuke yem Clorinda pi-nge-fu-y",
-            "(poss2s) mamá (ex) Clorinda decir-(pass23)-(ipd8)-(ind4-33)",
+            "(poss2s) mamá (ex) Clorinda decir-(pass)-(ipd8)-(ind4-33)",
             "Tu difunta madre se llamaba Clorinda"
           ],
           [
             "Tañi lhaku yem Rodo pi-nge-fu-y welu kim-pa-la-fiñ",
-            "(poss1s) abuelo (ex) Rodo decir-(pass23)-(ipd8)-(ind4-33) pero conocer-(Hh17)-(neg10)-(edo6-ind1s3)",
+            "(poss1s) abuelo (ex) Rodo decir-(pass)-(ipd8)-(ind4-33) pero conocer-(Hh17)-(neg)-(edo6-ind1s3)",
             "Mi difunto abuelo paterno se llamaba Rodo pero no lo alcance a conocer"
           ]
         ]

@@ -215,8 +215,14 @@ function renderFromParticleData(particleData, particleId) {
 
   let relativeExamples = searchAdditionalExamples(particleId, window.particleData, window.aliasMap)
 
-  for (let examples of relativeExamples) {
-    relativeExampleList.innerHTML += renderMapu(examples[0], particleId) + "<br/>" + renderWinka(examples[1])
+  const relatedExamplesTitle = document.getElementById("relatedExamplesTitle")
+  if (relativeExamples.length === 0) {
+    relatedExamplesTitle.hidden = true
+  } else {
+    relatedExamplesTitle.hidden = false
+    for (let examples of relativeExamples) {
+      relativeExampleList.innerHTML += renderMapu(examples[0], particleId) + "<br/>" + renderWinka(examples[1])
+    }
   }
   updateExamples()
 }
