@@ -118,7 +118,7 @@
           [
             "Iñche ta Paskual Pichún pi-nge-n",
             "yo Paskual Pichún el decir-(pass)-(ind1s3)",
-            "Me llamo Paskual Pichún"
+            "Me llamo Pascual Pichún"
           ]
         ]
       }
@@ -181,7 +181,8 @@
     "color": "dodgerblue",
     "fix": "post",
     "variations": [
-      "*y", "*engu"
+      "*y",
+      "*engu"
     ],
     "explanation": "tercera persona dual (ustedes²). El modo indicativo sirve para decir hechos <b>verdaderos o seguros y expresar opiniones.</b>",
     "content": [
@@ -201,7 +202,8 @@
     "color": "dodgerblue",
     "fix": "post",
     "variations": [
-      "*y", "*engün"
+      "*y",
+      "*engün"
     ],
     "explanation": "tercera persona plural (ustedes). El modo indicativo sirve para decir hechos <b>verdaderos o seguros y expresar opiniones.</b>",
     "content": [
@@ -220,7 +222,7 @@
     "title": "asociativo [iñche + pu che] (con)",
     "color": "aqua",
     "explanation": "Denota acompañamiento, equivale a <i>con</i> en wingkadungun. Hay que tomar en cuenta el numero de personas resultante de la asociación.",
-    "variations": [ ],
+    "variations": [],
     "content": [
       {
         "examples": [
@@ -242,7 +244,7 @@
     "title": "asociativo [iñche + kiñe che] (con)",
     "color": "aqua",
     "explanation": "Denota acompañamiento, equivale a <i>con</i> en wingkadungun. Hay que tomar en cuenta el numero de personas resultante de la asociación.",
-    "variations": [ ],
+    "variations": [],
     "content": [
       {
         "examples": [
@@ -259,7 +261,7 @@
     "title": "asociativo [eymi + kiñe che] (con)",
     "color": "aqua",
     "explanation": "Denota acompañamiento, equivale a <i>con</i> en wingkadungun. Hay que tomar en cuenta el numero de personas resultante de la asociación. Se ocupa en preguntas cuando se refiere a eymi.",
-    "variations": [ ],
+    "variations": [],
     "content": [
       {
         "explanation": "Se presume que la otra persona está con una persona más.",
@@ -277,7 +279,7 @@
     "title": "asociativo [eymi + pu che] (con)",
     "color": "aqua",
     "explanation": "Denota acompañamiento, equivale a <i>con</i> en wingkadungun. Hay que tomar en cuenta el numero de personas resultante de la asociación. Se ocupa en preguntas cuando se refiere a eymi.",
-    "variations": [ ],
+    "variations": [],
     "content": [
       {
         "explanation": "Se presume que la otra persona está con varias personas más.",
@@ -291,6 +293,55 @@
             "Eymi lamngen, ¿ iney emün müle-ymi Konsepsion mew ?",
             "Tu hermana, ¿ quien (com) estar-(ind4-23-s2) Concepción (inst) ?",
             "Y tu hermana, con quien viven en Concepción ?"
+          ]
+        ]
+      }
+    ]
+  },
+  "tule|tr-st": {
+    "title": "caracteristica, llevar puesto",
+    "color": "chocolate",
+    "fix": "in",
+    "explanation": "Se refiere a una caracteristica, que tengo o uso (una parte del cuerpo o accesorio)",
+    "variations": [],
+    "content": [
+      {
+        "explanation": "Para indicar características de partes del cuerpo",
+        "examples": [
+          [
+            "Lig longko-tule-n",
+            "blanco pelo-(tr-st)-(ind1s3)",
+            "Tengo el pelo cano"
+          ],
+          [
+            "Fütra longko-tule-la-n",
+            "grande cabeza-(tr-st)-(neg)-(ind1s3)",
+            "No soy cabezón"
+          ],
+          [
+            "Liftra longko-tule-n",
+            "calvo cabeza-(tr-st)-(ind1s3)",
+            "Tengo la cabeza calva"
+          ],
+          [
+            "¿ Chem ad-tule-y ñi longko ?",
+            "¿ Cómo forma-(tr-st)-(ind4-33) (poss3s) cabello.pelo ?",
+            "¿ Como lleva el pelo ?"
+          ]
+        ]
+      },
+      {
+        "explanation": "Para indicar que ropa o accessorios llevan puestas las personas",
+        "examples": [
+          [
+            "Kürü chimpiru-tule-ymi",
+            "negro sombrero-(tr-st)-(ind4-23-s2)",
+            "Llevas puesto un sombrero negro"
+          ],
+          [
+            "Koñoll iwüd-pelh-tule-n iñche",
+            "morado envolver-cuello-(tr-st)-(ind1s3) yo",
+            "Yo estoy usando una bufanda morada"
           ]
         ]
       }
@@ -363,7 +414,7 @@
     "color": "yellow",
     "fix": "in",
     "explanation": "Indica que la persona a la que se refiere el verbo sufre o recibe la acción de alguien que no se menciona en la frase",
-    "variations": [ ],
+    "variations": [],
     "content": [
       {
         "examples": [
@@ -382,11 +433,11 @@
     ]
   },
   "nge|verb": {
-    "title": "verbalizador (estar..ado)",
+    "title": "verbalizador (estar, ser)",
     "color": "lime",
     "fix": "in",
-    "explanation": "Indica una caracteristica propia o permanente",
-    "variations": [ ],
+    "explanation": "Indica una caracteristica propia o permanente. Su conjugación depende de quién exprese la característica.",
+    "variations": [],
     "content": [
       {
         "examples": [
@@ -399,6 +450,26 @@
             "Nor-che-nge-a-iñ",
             "correcto-persona-(verb)-(nrld9)-(ind4-1ns3-p2)",
             "Seremos personas correctas"
+          ],
+          [
+            "Üllcha domo-nge-ymi",
+            "Joven.mujer mujer-(verb)-(ind4-23-s2)",
+            "Eres una mujer joven"
+          ],
+          [
+            "Püchi witran che-nge-n",
+            "pequeño estar.de.pie persona-(verb)-(ind1s3)",
+            "Soy una persona baja"
+          ],
+          [
+            "Iñche püchi wentru-nge-n",
+            "Yo pequeño hombre-(verb)-(ind1s3)",
+            "Yo soy un niño"
+          ],
+          [
+            "¿ Chum-nge-ymi eymi ?",
+            "¿ cómo-(verb)-(ind4-23-s2) tu ?",
+            "¿ Cómo eres tú ?"
           ]
         ]
       },
@@ -417,8 +488,10 @@
   "tañi|poss1s": {
     "title": "posesivo [iñche] (mi)",
     "color": "pink",
-    "explanation": "Posesivo de iñche. Equivale a decir mi en wingkadungun.",
-    "variations": [ "ñi" ],
+    "explanation": "Posesivo de iñche. Equivale a decir <i>mi</i> en wingkadungun.",
+    "variations": [
+      "ñi"
+    ],
     "content": [
       {
         "examples": [
@@ -454,8 +527,10 @@
   "tami|poss2s": {
     "title": "posesivo [eymi] (mi)",
     "color": "pink",
-    "explanation": "Posesivo de eymi. Equivale a decir mi en wingkadungun.",
-    "variations": [ "mi" ],
+    "explanation": "Posesivo de eymi. Equivale a decir <i>tu</i> en wingkadungun.",
+    "variations": [
+      "mi"
+    ],
     "content": [
       {
         "examples": [
@@ -477,7 +552,9 @@
     "title": "posesivo [fey] (su)",
     "color": "hotpink",
     "explanation": "Posesivo de fey. Equivale a decir su en wingkadungun.",
-    "variations": [ "ñi" ],
+    "variations": [
+      "ñi"
+    ],
     "content": [
       {
         "examples": [
@@ -510,7 +587,9 @@
     "color": "saddlebrown",
     "explanation": "Indica que a la persona o cosa que se le agrega está muerto o ya no funciona.",
     "fix": "post",
-    "variations": [ "em"],
+    "variations": [
+      "em"
+    ],
     "content": [
       {
         "examples": [
@@ -522,7 +601,7 @@
         ]
       },
       {
-        "explanation" : "Para dar información de un familiar fallecido, como por ejemplo su nombre, debemos utilizar el sufijo -fu- en el verbo, el cual sirve para indicar que la acción ocurrió en el pasado.",
+        "explanation": "Para dar información de un familiar fallecido, como por ejemplo su nombre, debemos utilizar el sufijo -fu- en el verbo, el cual sirve para indicar que la acción ocurrió en el pasado.",
         "examples": [
           [
             "Tami ñuke yem Clorinda pi-nge-fu-y",
