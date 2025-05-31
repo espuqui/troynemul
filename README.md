@@ -41,7 +41,7 @@ Las entradas estan en formato JSON, donde cada una es:
     "color": "red",
     "fix": "pre",
     "explanation": "Una explicacion",
-    "variations": [ "variaciondeparticula"],
+    "variations": [ ],
     "content": [
       {
         "explanation": "explicacion de la sección",

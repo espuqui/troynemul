@@ -261,7 +261,7 @@
           ],
           [
             "Duamnie-nge-n kiñe ruka-fe ñi dewma-yal ruka",
-            "necesitar-(verb36)-(ind1s3) una casa-(nom) (poss3s) construir-(ovn4) casa",
+            "necesitar-(pass23)-(ind1s3) una casa-(nom) (poss3s) construir-(ovn4) casa",
             "Se necesita un constructor para construir casas"
           ]
         ]
@@ -278,25 +278,47 @@
       }
     ]
   },
-  "nge|verb36": {
-    "title": "voz pasiva [→ iñche] (soy ..-ado)",
+  "nge|pass23": {
+    "title": "voz pasiva",
     "color": "yellow",
     "fix": "in",
-    "explanation": "Indica que la persona a la que se refiere el verbo sufre o recibe la acción. ",
+    "explanation": "Indica que la persona a la que se refiere el verbo sufre o recibe la acción de alguien que no se menciona en la frase",
     "variations": [ ],
     "content": [
       {
-        "explanation": "Quién realiza la acción no se menciona al usar el sufijo <b>nge</b>",
         "examples": [
           [
             "Wew-nge-la-ya-iñ",
-            "ganar-(verb36)-(neg10)-(nrld9)-(ind4-1ns3-p2)",
+            "ganar-(pass23)-(neg10)-(nrld9)-(ind4-1ns3-p2)",
             "No nos vencerán"
           ],
           [
             "Kallfükura pi-nge-y",
-            "Calfucura decir-(verb36)-(ind4-33)",
+            "Calfucura decir-(pass23)-(ind4-33)",
             "Me dicen Calfucura"
+          ]
+        ]
+      }
+    ]
+  },
+  "nge|verb36": {
+    "title": "verbalizador (estar..ado)",
+    "color": "lime",
+    "fix": "in",
+    "explanation": "Indica una caracteristica propia o permanente",
+    "variations": [ ],
+    "content": [
+      {
+        "examples": [
+          [
+            "Kure-nge-n iñche",
+            "esposa-(verb36)-(ind1s3) yo",
+            "Estoy casado (un hombre)"
+          ],
+          [
+            "Nor-che-nge-a-iñ",
+            "correcto-persona-(verb36)-(nrld9)-(ind4-1ns3-p2)",
+            "Seremos personas correctas"
           ]
         ]
       },
@@ -306,7 +328,7 @@
           [
             "Tañi reñma mew kayu che-nge-iñ",
             "(poss1s) familia (inst) seis persona-(verb36)-(ind4-1ns3-p2)",
-            "en mi familia somos seis personas"
+            "En mi familia somos seis personas"
           ]
         ]
       }
@@ -327,7 +349,7 @@
           ],
           [
             "Iñche ñi chuchu yem , Klarita pi-nge-fu-y",
-            "Yo (poss1s) abuela.materna (ex) , Clarita decir-(verb36)-(ipd8)-(ind4-33)",
+            "Yo (poss1s) abuela.materna (ex) , Clarita decir-(pass23)-(ipd8)-(ind4-33)",
             "Mi finada abuela por parte de mamá se llamaba Clarita"
           ]
         ]
@@ -364,7 +386,7 @@
           ],
           [
             "Tami inan deya Relmu pi-nge-y",
-            "(poss2s) menor.en.una.sucesión hermana.de.un.hombre Relmu decir-(verb36)-(ind4-33)",
+            "(poss2s) menor.en.una.sucesión hermana.de.un.hombre Relmu decir-(pass23)-(ind4-33)",
             "Tu hermana (de un hombre) menor se llama Relmu"
           ]
         ]
@@ -424,12 +446,12 @@
         "examples": [
           [
             "Tami ñuke yem Clorinda pi-nge-fu-y",
-            "(poss2s) mamá (ex) Clorinda decir-(ex)-(ipd8)-(ind4-33)",
+            "(poss2s) mamá (ex) Clorinda decir-(pass23)-(ipd8)-(ind4-33)",
             "Tu difunta madre se llamaba Clorinda"
           ],
           [
             "Tañi lhaku yem Rodo pi-nge-fu-y welu kim-pa-la-fiñ",
-            "(poss1s) abuelo (ex) Rodo decir-(verb36)-(ipd8)-(ind4-33) pero conocer-(Hh17)-(neg10)-(edo6-ind1s3)",
+            "(poss1s) abuelo (ex) Rodo decir-(pass23)-(ipd8)-(ind4-33) pero conocer-(Hh17)-(neg10)-(edo6-ind1s3)",
             "Mi difunto abuelo paterno se llamaba Rodo pero no lo alcance a conocer"
           ]
         ]
