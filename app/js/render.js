@@ -5,6 +5,18 @@ import {applyFix, searchWord} from "./backend/search.js";
 import {UIStatus, Views} from "./uistatus.js";
 
 const startWord = null
+
+
+/**
+ * Funciones de UI
+ */
+function uiFunctionMappings() {
+  window.renderParticleContent = renderParticleContent
+  window.search = search
+  window.updateExamples = updateExamples
+  window.loadSearchEvent = loadSearchEvent
+}
+
 init()
 
 /**
@@ -34,7 +46,7 @@ function updateUI() {
     document.getElementById("helpWidget").hidden = false
     document.getElementById("infoBackIconEnabled").hidden = window.history.state === null
 
- }
+  }
 
   if (uistatus.currentView === Views.SEARCH) {
     document.getElementById("searchWordInput").value = ""
@@ -64,7 +76,7 @@ function init() {
 
   // Configurar busqueda
   let searchForm = document.getElementById("searchForm")
-  searchForm.addEventListener("submit", function(evt) {
+  searchForm.addEventListener("submit", function (evt) {
     // Ocultar teclado al enviar
     evt.preventDefault();
     document.activeElement.blur()
@@ -104,7 +116,7 @@ function init() {
   })
 
   // Configurar ir atras en el historial
-  window.addEventListener('popstate', function(event) {
+  window.addEventListener('popstate', function (event) {
     window.uistatus.popHistory()
 
     // State contiene la particula en el top del stack
@@ -119,17 +131,6 @@ function init() {
     updateUI()
   });
 }
-
-/**
- * Funciones de UI
- */
-function uiFunctionMappings() {
-  window.renderParticleContent = renderParticleContent
-  window.search = search
-  window.updateExamples = updateExamples
-  window.loadSearchEvent = loadSearchEvent
-}
-
 
 /**
  * Inicializa vista con datos
@@ -313,7 +314,8 @@ function renderMapu(exampleParts, particleId) {
       } else {
         let color = window.particleData[currentWord].color
         if (window.aliasMap.get(examplePart) === particleId) {
-          html += renderWithSpanOnClickParticle(wordParts[0], examplePartToLookup, "particleExample particleCurrent", color)
+          html += renderWithSpanOnClickParticle(wordParts[0], examplePartToLookup, "particleExample particleCurrent",
+                                                color)
         } else {
           html += renderWithSpanOnClickParticle(wordParts[0], examplePartToLookup, "particleExample", color)
         }
