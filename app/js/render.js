@@ -198,15 +198,6 @@ export function renderParticleContent(particleId) {
   window.uistatus.updateUI()
 }
 
-/**
- * Busca particulas
- * @param partialWord
- * @returns {[]} Una lista de palabras
- */
-export function search(partialWord) {
-  return searchWord(partialWord, window.particleData, window.aliasMap)
-}
-
 function renderFromParticleData(particleData, particleId) {
 
   const particleTitle = document.getElementById("particleTitle")
@@ -344,6 +335,15 @@ export function updateExamples() {
   elements.forEach(element => {
     element.hidden = !enabled
   });
+}
+
+/**
+ * Busca particulas
+ * @param partialWord
+ * @returns {[]} Una lista de palabras
+ */
+export function search(partialWord) {
+  return searchWord(partialWord, window.particleData, window.aliasMap)
 }
 
 function loadSearchEvent() {
