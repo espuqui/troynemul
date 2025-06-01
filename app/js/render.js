@@ -74,8 +74,7 @@ function init() {
       // Cargar particula antrior
       renderFromParticleData(window.particleData[event.state], event.state)
     } else {
-      // Si volvemos al principio y no hay palabra inicial, mostrar ayuda
-      window.uistatus.toggleRenderHelp(true)
+      // Si volvemos al principio y no hay palabra inicial, espera antes de salir
     }
 
     updateUI()
