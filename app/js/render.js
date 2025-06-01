@@ -111,7 +111,7 @@ function handleTooltips() {
 
     let elementsthreedots = document.getElementById("threeDots")
 
-    if (event.target.parentNode.className !== "threeDotIcon") {
+    if (event.target.parentNode === null ||  event.target.parentNode.className !== "threeDotIcon") {
       if (!elementsthreedots.contains(event.target)) {
         document.getElementById("threeDots").hidden = true
       }
