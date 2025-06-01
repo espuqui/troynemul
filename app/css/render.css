@@ -109,6 +109,11 @@ Estilos
 
 }
 
+.mainBody {
+  overflow-x: hidden;
+  width: 95%;
+}
+
 .contentWidget {
   padding-top: 40pt;
   padding-left: 10px;
