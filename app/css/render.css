@@ -306,9 +306,9 @@ a {
   display: table;
   position: fixed;
   top: 40pt;
-  right: 0pt;
+  right: 10pt;
   background-color:  #222222;
-  min-width: 200px;
+  min-width: 100px;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 101;
@@ -329,12 +329,11 @@ a {
 .dropdown-icon {
   display: table-cell;
   vertical-align: middle;
-
   text-align: left;
   width: 30pt;
   height: 40pt;
-  padding-left: 10pt;
-  padding-right: 0pt;
+  padding-left: 5pt;
+  padding-right: 5pt;
 }
 
 .dropdown-text {
@@ -342,6 +341,7 @@ a {
   vertical-align: middle;
   text-align: left;
   height: 40pt;
-  padding-left: 0pt;
-  padding-right: 0pt;
+  padding-left: 10pt;
+  padding-right: 10pt;
+
 }

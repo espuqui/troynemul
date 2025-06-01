@@ -10,6 +10,7 @@ export class UIStatus {
 
     // Estado inicial botones
     this.winkaDungunExamples = false;
+    this.underscore = true;
     this.currentView = Views.SEARCH
 
     // Copia de historial
@@ -43,12 +44,13 @@ export class UIStatus {
     this.checkIfUpdateUI(forceUpdate)
   }
 
-  toggleDropDown() {
- //   document.getElementById("threeDots").hidden = false
-  }
-
   toggleContent(value, forceUpdate = false) {
     this.currentView = Views.CONTENT
+    this.checkIfUpdateUI(forceUpdate)
+  }
+
+  toggleUnderscore(forceUpdate = false) {
+    this.underscore = !this.underscore;
     this.checkIfUpdateUI(forceUpdate)
   }
 

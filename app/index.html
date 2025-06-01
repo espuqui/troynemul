@@ -41,7 +41,7 @@
       <div class="searchIcon"  onclick="window.uistatus.searchEvent(true)">
         <img src="img/search.svg" width="25px" height="25px" alt="">
       </div>
-      <div class="threeDotIcon" onclick="window.uistatus.toggleDropDown() ">
+      <div class="threeDotIcon">
         <img src="img/three_dots_on.svg" width="25px" height="25px" alt="">
       </div>
     </div>
@@ -69,7 +69,7 @@
       <div class="searchIcon" onclick="window.uistatus.searchEvent(true)">
         <img src="img/search.svg" width="25px" height="25px" alt="">
       </div>
-      <div class="threeDotIcon" onclick="window.uistatus.toggleDropDown() ">
+      <div class="threeDotIcon">
         <img src="img/three_dots_on.svg" width="25px" height="25px" alt="">
       </div>
     </div>
@@ -105,24 +105,22 @@
   <!-- three dot menu -->
   <div id="threeDots" class="dropdown">
     <div class="dropdown-content">
-      <div class="dropdown-item-row">
-        <div class="dropdown-icon" id="infoButton">
-          <img src="img/info_on.svg" width="25px" height="25px" alt="">
+      <div class="dropdown-item-row" onclick="window.uistatus.toggleUnderscore(true)">
+        <div class="dropdown-text">
+          Subrayar partículas
         </div>
-        <div class="dropdown-text" onclick="window.uistatus.toggleRenderHelp(true, true);">
+        <div class="dropdown-icon" id="underscoreOn">
+          <img src="img/toggle_on.svg" width="40px" height="40px" alt="">
+        </div>
+        <div class="dropdown-icon" id="underscoreOff">
+          <img src="img/toggle_off.svg" width="40px" height="40px" alt="">
+        </div>
+      </div>
+      <div class="dropdown-item-row" onclick="window.uistatus.toggleRenderHelp(true, true);">
+        <div class="dropdown-text">
           Ayuda
         </div>
       </div>
-      <!--
-      <div class="dropdown-item-row">
-        <div class="dropdown-icon" id="infoButton2" onclick="window.uistatus.toggleRenderHelp(true, true);">
-          <img src="img/info_on.svg" width="25px" height="25px" alt="">
-        </div>
-        <div class="dropdown-text" onclick="window.uistatus.toggleRenderHelp(true, true);">
-          Ayuda y otros
-        </div>
-      </div>
-      -->
     </div>
   </div>
 

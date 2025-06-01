@@ -18,6 +18,23 @@ export function updateUI() {
   document.getElementById("searchBackIconEnabled").hidden = true
   document.getElementById("searchBackIconDisabled").hidden = true
 
+  document.getElementById("underscoreOn").hidden = !uistatus.underscore
+  document.getElementById("underscoreOff").hidden = uistatus.underscore
+
+  if (!uistatus.underscore) {
+    const elements = document.getElementsByClassName("particleExample");
+
+    for (let elem of elements) {
+      elem.style.textDecorationLine = "none"
+    }
+  } else {
+    const elements = document.getElementsByClassName("particleExample");
+
+    for (let elem of elements) {
+      elem.style.textDecorationLine = "underline"
+    }
+  }
+
   // Update buttons
   document.getElementById("winkaDungunOff").hidden = true
   document.getElementById("winkaDungunOn").hidden = true
