@@ -1,7 +1,7 @@
 import {buildAliasMap, parseExample, searchAdditionalExamples} from "./backend/parser.js";
 import {applyFix} from "./backend/search.js";
 import {search, loadSearchEvent} from "./search.js";
-import {UIStatus} from "./uistatus.js";
+import {UIStatus, Views} from "./uistatus.js";
 import {updateUI} from "./updateui.js";
 
 const startWord = null
@@ -67,14 +67,24 @@ function init() {
 
   // Configurar ir atras en el historial
   window.addEventListener('popstate', function (event) {
-    window.uistatus.popHistory()
+
+
+    if (window.uistatus.currentView === Views.SEARCH) {
+      window.uistatus.toggleContent(true, true)
+      return
+    }
+
+    if (window.uistatus.currentView === Views.HELP) {
+      window.uistatus.toggleContent(true, true)
+      return
+    }
 
     // State contiene la particula en el top del stack
-    if (event.state) {
-      // Cargar particula antrior
-      renderFromParticleData(window.particleData[event.state], event.state)
+    window.uistatus.popHistory()
+    if (window.uistatus.currentWord === null) {
+      window.uistatus.searchEvent()
     } else {
-      // Si volvemos al principio y no hay palabra inicial, espera antes de salir
+      renderFromParticleData(window.particleData[window.uistatus.currentWord], window.uistatus.currentWord)
     }
 
     updateUI()
@@ -127,6 +137,7 @@ function handleTooltips() {
 export function renderParticleContent(particleId) {
   let uniqueParticleId = window.aliasMap.get(particleId)
 
+
   // Si particula es null mostrar ayuda
   if (particleId == null) {
     window.uistatus.searchEvent()
@@ -136,21 +147,9 @@ export function renderParticleContent(particleId) {
 
   window.uistatus.toggleContent(true)
 
-  // Primera vez
-  if (window.history.state == null) {
-    window.history.pushState(uniqueParticleId, "")
+  // Misma palabra, solo agregarla al historial si diferente
+  if (window.uistatus.currentWord !== uniqueParticleId) {
     window.uistatus.pushHistory(uniqueParticleId)
-  }
-
-  if (window.history.state != null) {
-    let lastPart = window.history.state
-    let lastPartUniqueId = window.aliasMap.get(lastPart)
-
-    // Misma palabra, solo agregarla al historial si diferente
-    if (lastPartUniqueId !== uniqueParticleId) {
-      window.history.pushState(uniqueParticleId, "")
-      window.uistatus.pushHistory(uniqueParticleId)
-    }
   }
 
   renderFromParticleData(window.particleData[uniqueParticleId], uniqueParticleId)

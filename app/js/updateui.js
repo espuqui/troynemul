@@ -16,7 +16,6 @@ export function updateUI() {
   document.getElementById("helpWidget").hidden = true
   document.getElementById("infoBackIconEnabled").hidden = true
   document.getElementById("searchBackIconEnabled").hidden = true
-  document.getElementById("searchBackIconDisabled").hidden = true
 
   document.getElementById("underscoreOn").hidden = !uistatus.underscore
   document.getElementById("underscoreOff").hidden = uistatus.underscore
@@ -45,7 +44,7 @@ export function updateUI() {
   if (uistatus.currentView === Views.HELP) {
     document.getElementById("topWidgetHelp").hidden = false
     document.getElementById("helpWidget").hidden = false
-    document.getElementById("infoBackIconEnabled").hidden = window.history.state === null
+    document.getElementById("infoBackIconEnabled").hidden = !uistatus.hasHistoryForBackInHelpOrSearch()
 
 
   }
@@ -55,8 +54,7 @@ export function updateUI() {
     document.getElementById("searchResultsWidget").hidden = false
     document.getElementById("topWidgetSearching").hidden = false
     document.getElementById("searchWordInput").focus()
-    document.getElementById("searchBackIconEnabled").hidden = (window.uistatus.hist.length === 0)
-    document.getElementById("searchBackIconDisabled").hidden = (window.uistatus.hist.length > 0)
+    document.getElementById("searchBackIconEnabled").hidden = !uistatus.hasHistoryForBackInHelpOrSearch()
 
     loadSearchEvent()
   }
@@ -66,8 +64,8 @@ export function updateUI() {
     document.getElementById("topWidgetResting").hidden = false
     document.getElementById("winkaDungunOff").hidden = uistatus.winkaDungunExamples
     document.getElementById("winkaDungunOn").hidden = !uistatus.winkaDungunExamples
-    document.getElementById("navigationBackIconEnabled").hidden = (window.uistatus.hist.length === 1)
-    document.getElementById("navigationBackIconDisabled").hidden = (window.uistatus.hist.length > 1)
+    document.getElementById("navigationBackIconEnabled").hidden =  !uistatus.hasHistory()
+    document.getElementById("navigationBackIconDisabled").hidden =  uistatus.hasHistory()
 
     window.updateExamples()
   }

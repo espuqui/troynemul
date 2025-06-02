@@ -12,6 +12,7 @@ export class UIStatus {
     this.winkaDungunExamples = false;
     this.underscore = true;
     this.currentView = Views.SEARCH
+    this.currentWord = null
 
     // Copia de historial
     this.hist = []
@@ -19,13 +20,26 @@ export class UIStatus {
   }
 
   popHistory() {
+    this.hist.pop()
     if (this.hist.length > 0) {
-      this.hist.pop()
+      this.currentWord = this.hist.at(this.hist.length - 1)
+    } else {
+      this.currentWord = null
     }
   }
 
   pushHistory(word) {
+    window.history.pushState(word, "")
+    this.currentWord = word
     this.hist.push(word)
+  }
+
+  hasHistory() {
+    return this.hist.length > 1
+  }
+
+  hasHistoryForBackInHelpOrSearch() {
+    return this.hist.length > 0
   }
 
   searchEvent(forceUpdate = false) {
@@ -39,7 +53,6 @@ export class UIStatus {
   }
 
   toggleRenderHelp(value, forceUpdate = false) {
-
     this.currentView = Views.HELP
     this.checkIfUpdateUI(forceUpdate)
   }
@@ -61,20 +74,12 @@ export class UIStatus {
   }
 
   backFromSearch(forceUpdate = false) {
-    if (window.history.state === null) {
-      this.currentView = Views.HELP
-    } else {
-      this.currentView = Views.CONTENT
-    }
+    this.currentView = Views.CONTENT
     this.checkIfUpdateUI(forceUpdate)
   }
 
   backFromInfo(forceUpdate = false) {
-    if (window.history.state === null) {
-      this.currentView = Views.HELP
-    } else {
-      this.currentView = Views.CONTENT
-    }
+    this.currentView = Views.CONTENT
     this.checkIfUpdateUI(forceUpdate)
   }
 
