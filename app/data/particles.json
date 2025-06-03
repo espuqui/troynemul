@@ -616,5 +616,43 @@
         ]
       }
     ]
+  },
+  "ke|distr": {
+    "title": "pluralizador distributivo (varios)",
+    "color": "firebrick",
+    "fix": "post",
+    "explanation": "Pluraliza adjetivos, adverbios y numerales. No especifica la cantidad de cosas. Así, puede modificar a sustantivos que se refieren a personas, animales y objetos. <br /> <br/> La pluralización se entiende como compuesta por varias partes diferentes y desunidas. A diferencia de <i>pu</i> que la pluralización corresponde a un colectivo. ",
+    "variations": [],
+    "content": [
+      {
+        "examples": [
+          [
+            "Lig-ke ketro wirawira",
+            "blanco-(distr) truncado/cortado pantalón",
+            "Shorts blancos"
+          ],
+          [
+            "Kolü-ke makuñ",
+            "rojo-(distr) mantas",
+            "Mantas rojas"
+          ],
+          [
+            "Fill-ke wirawira",
+            "cada-(distr) pantalón",
+            "Todo tipo de pantalones diferentes"
+          ]
+        ]
+      },
+      {
+        "explanation": "Se puede usar en conjunto con <i>pu</i>.",
+        "examples": [
+          [
+            "Pu küme-ke che",
+            "(coll) bueno-(distr) persona",
+            "Las personas buenas"
+          ]
+        ]
+      }
+    ]
   }
 }

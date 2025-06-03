@@ -39,7 +39,7 @@ Las entradas estan en formato JSON, donde cada una es:
   "particula|tipo": {
     "title": "Titulo",
     "color": "red",
-    "fix": "pre",
+    "fix": "post",
     "explanation": "Una explicacion",
     "variations": [ ],
     "content": [
