@@ -351,7 +351,7 @@
     "title": "negación en indicativo (no)",
     "color": "red",
     "fix": "in",
-    "explanation": "indica que la relación no se realizó en el modo indicativo. En este caso sirve para decir hechos <b>que no ocurrieron o su estado no es efectivo</b>",
+    "explanation": "El sufijo <i>-la</i> se usa para decir que algo no pasó, no existe, no es cierto o no está ocurriendo. Es decir, niega un hecho concreto. Funciona como el <i>no</i> en español, pero va pegado al verbo.",
     "content": [
       {
         "explanation": "",
@@ -618,38 +618,87 @@
     ]
   },
   "ke|distr": {
-    "title": "pluralizador distributivo (varios)",
+    "title": "sufijo pluralizador distributivo (varios y distintos)",
     "color": "firebrick",
     "fix": "post",
-    "explanation": "Pluraliza adjetivos, adverbios y numerales. No especifica la cantidad de cosas. Así, puede modificar a sustantivos que se refieren a personas, animales y objetos. <br /> <br/> La pluralización se entiende como compuesta por varias partes diferentes y desunidas. A diferencia de <i>pu</i> que la pluralización corresponde a un colectivo. ",
+    "explanation": "El sufijo -ke se usa en mapudungun para hablar de varios elementos, pero no de cualquier manera. No indica simplemente que hay <i>muchos</i> (como lo hace <i>pu</i>), sino que lo que se menciona está compuesto por partes distintas, una por una, o que la acción o cualidad se repite en diferentes casos.",
     "variations": [],
     "content": [
       {
         "examples": [
           [
+            "Püchi-ke ngülam",
+            "pequeño-(distr) consejo",
+            "Pequeños consejos (uno por uno, distintos)"
+          ],
+          [
+            "Epu-ke tripantu",
+            "dos-(distr) año",
+            "cada dos años / en grupos de dos años"
+          ],
+          [
             "Lig-ke ketro wirawira",
             "blanco-(distr) truncado/cortado pantalón",
-            "Shorts blancos"
+            "Shorts blancos (cada uno por separado)"
           ],
           [
             "Kolü-ke makuñ",
             "rojo-(distr) mantas",
-            "Mantas rojas"
+            "Mantas rojas (cada manta es distinta)"
           ],
           [
             "Fill-ke wirawira",
             "cada-(distr) pantalón",
-            "Todo tipo de pantalones diferentes"
+            "Todo tipo de pantalones (pero diferentes)"
           ]
         ]
       },
       {
-        "explanation": "Se puede usar en conjunto con <i>pu</i>.",
+        "explanation": "Se puede usar en conjunto con <i>pu</i>, grupo donde cada uno tiene una característica",
         "examples": [
           [
             "Pu küme-ke che",
             "(coll) bueno-(distr) persona",
-            "Las personas buenas"
+            "Las personas buenas (cada una buena)"
+          ]
+        ]
+      }
+    ]
+  },
+  "chi|adj": {
+    "title": "adjetivizador",
+    "color": "blue",
+    "fix": "post",
+    "explanation": "El sufijo <i>-chi</i> se añade a los demostrativos cuando se usan para modificar un sustantivo, es decir, cuando no están solos, sino que acompañan a un sustantivo para señalarlo mejor.",
+    "variations": [ ],
+    "content": [
+      {
+        "explanation": "Por ejemplo, con <i>-chi</i>, decimos la cosa exacta que estamos viendo o de la que hablamos. El -chi convierte el demostrativo en una especie de adjetivo, como <i>este</i>, <i>esa</i>, <i>aquel</i> en español.",
+          "examples": [
+          [
+            "Tüfa-chi ruka",
+            "Ésta-(adj) casa",
+            "Ésta casa"
+          ],
+          [
+            "Tüfey-chi pichi-wentru",
+            "Ése-(adj) pequeño-hombre",
+            "Ese niño"
+          ]
+        ]
+      },
+      {
+        "explanation": "Sin <i>-chi</i>, el demostrativo no modifica directamente al sustantivo. Se usa como pronombre, o sea, cuando el sustantivo no se nombra o cuando se refiere a algo más general.",
+        "examples": [
+          [
+            "Tüfa tañi ruka",
+            "Ésta (poss1s) casa",
+            "Ésta es mi casa"
+          ],
+          [
+            "Tüye tami chaw",
+            "Aquel (poss2s) papá",
+            "Ese de más allá es mi papá"
           ]
         ]
       }
