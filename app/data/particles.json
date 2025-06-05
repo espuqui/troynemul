@@ -666,7 +666,7 @@
     ]
   },
   "chi|adj": {
-    "title": "adjetivizador",
+    "title": "adjetivizador de demostrativos",
     "color": "blue",
     "fix": "post",
     "explanation": "El sufijo <i>-chi</i> se añade a los demostrativos cuando se usan para modificar un sustantivo, es decir, cuando no están solos, sino que acompañan a un sustantivo para señalarlo mejor.",
