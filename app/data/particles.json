@@ -116,9 +116,9 @@
             "Me encuentro en Concepción (Conce)"
           ],
           [
-            "Iñche ta Paskual Pichún pi-nge-n",
-            "yo Paskual Pichún el decir-(pass)-(ind1s3)",
-            "Me llamo Pascual Pichún"
+            "Iñche ta Paskual Koña pi-nge-n",
+            "yo Paskual Coña el decir-(pass)-(ind1s3)",
+            "Me llamo Pascual Coña"
           ]
         ]
       }
@@ -156,7 +156,7 @@
     "fix": "post",
     "explanation": "tercera persona singular (tú). El modo indicativo sirve para decir hechos <b>verdaderos o seguros y expresar opiniones.</b>",
     "variations": [
-      "i"
+      "i", "üy"
     ],
     "content": [
       {
@@ -699,6 +699,75 @@
             "Tüye tami chaw",
             "Aquel (poss2s) papá",
             "Ese de más allá es mi papá"
+          ]
+        ]
+      }
+    ]
+  },
+  "le|st": {
+    "title": "estado en curso",
+    "color": "mediumspringgreen",
+    "fix": "post",
+    "variations": [ "küle" ],
+    "content": [
+      {
+        "explanation": "Se usa junto a algunos verbos para expresar que alguien o algo está en un estado resultado de una acción anterior, o que está ocurriendo un evento en este momento. <br><br> En los siguientes casos, la persona o cosa ya pasó por una acción y ahora está en ese estado.",
+        "examples": [
+
+          [
+            "Püra-le-y",
+            "subir-(st)-(ind4-33)",
+            "Está arriba / está subiendo"
+          ],
+          [
+            "Pire-le-y",
+            "nevar-(st)-(ind4-33)",
+            "Está nevado / está nevando"
+          ],
+          [
+            "Arof-küle-ymi",
+            "sudar-(st)-(ind4-23-s2)",
+            "Estás transpirado / está transpirando"
+          ],
+          [
+            "Dew küpa-le-y engün",
+            "Ya venir-(st)-(ind4-3ns3-p2) (ind4-3ns3-p2)",
+            "Ya vienen ellos"
+          ]
+        ]
+      },
+      {
+        "explanation": "Cuando se usa con ciertos adverbios, puede mostrar que algo está cambiando poco a poco.",
+        "examples": [
+          [
+            "pod-küle-w-üy",
+            "sucio-(st)-(ref)-(ind4-33)",
+            "Se está ensuciando cada vez más"
+          ]
+        ]
+      },
+      {
+        "explanation": "Estado permanente vs. temporal. Se puede contrastar con otro sufijo (-nge-) que indica una característica permanente:",
+        "examples": [
+          [
+            "mawünh-küle-y",
+            "llover-(st)-(ind4-33)",
+            "Está lloviendo"
+          ],
+          [
+            "mawünh-nge-y",
+            "llover-(verb)-(ind4-33)",
+            "Es lluvioso"
+          ]
+        ]
+      },
+      {
+        "explanation": "Indica donde están las cosas",
+        "examples": [
+          [
+            "Miñche-mesa-le-ymi",
+            "debajo-mesa-(st)-(ind4-23-s2)",
+            "Estás debajo de la mesa"
           ]
         ]
       }
