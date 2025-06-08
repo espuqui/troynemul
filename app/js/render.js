@@ -15,9 +15,22 @@ function uiFunctionMappings() {
   window.search = search
   window.updateExamples = updateExamples
   window.loadSearchEvent = loadSearchEvent
+  window.openURL = openURL;
 }
 
 init()
+
+function isAndroid() {
+  return navigator.userAgent.includes('wv')
+}
+
+function openURL(url) {
+  if (isAndroid()) {
+    Android.openURL(url)
+  } else {
+    window.open(url)
+  }
+}
 
 function init() {
   uiFunctionMappings()
@@ -41,9 +54,8 @@ function init() {
   window.addEventListener('load', function () {
 
     // Si el navegador es WebView, entonces estamos en la app mobile
-    const isWebView = navigator.userAgent.includes('wv')
 
-    if (isWebView) {
+    if (isAndroid()) {
       // Mobile app: Hay que cargar el JSON con import, sino no funciona
       let head = document.getElementsByTagName('head')[0];
       let js = document.createElement("script");
