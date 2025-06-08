@@ -6,8 +6,11 @@
    height="48"
    width="48"
    version="1.1"
-   sodipodi:docname="troydungun.svg"
+   sodipodi:docname="icon.svg"
    inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   inkscape:export-filename="icon.png"
+   inkscape:export-xdpi="3072"
+   inkscape:export-ydpi="3072"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +28,7 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="true"
      inkscape:zoom="6.0693332"
-     inkscape:cx="15.817224"
+     inkscape:cx="15.652461"
      inkscape:cy="22.407733"
      inkscape:window-width="1648"
      inkscape:window-height="979"
@@ -51,74 +54,67 @@
   <desc
      id="desc1">Book 1 Streamline Icon: https://streamlinehq.com</desc>
   <rect
-     style="fill:#000000;stroke-width:0.985125"
-     id="rect1"
-     width="27.786407"
-     height="39.320385"
-     x="14.097088"
-     y="4.1941772" />
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:1.0021"
+     id="rect2"
+     width="48.110722"
+     height="47.818001"
+     x="0.16476324"
+     y="0.16476257" />
   <rect
-     style="fill:#000000;stroke-width:0.652087"
-     id="rect1-8"
-     width="12.174757"
-     height="39.320385"
-     x="6.3203883"
-     y="4.4563107" />
-  <path
-     id="Rectangle 1096"
-     stroke="#000000"
-     stroke-linecap="round"
-     stroke-linejoin="round"
-     d="m 37.8479,44.4957 c 2.551,-0.2182 4.4766,-2.1972 4.6643,-4.7506 C 42.7496,36.517 43,31.3657 43,24 43,16.6343 42.7496,11.483 42.5122,8.25492 42.3245,5.70149 40.399,3.72252 37.8479,3.5043 34.9089,3.25287 30.3696,3 24,3 17.6305,3 13.0912,3.25286 10.1521,3.50429 7.60108,3.72251 5.67556,5.70148 5.48781,8.25491 5.25045,11.483 5,16.6343 5,24 5,31.3657 5.25044,36.517 5.48779,39.7451 5.67554,42.2985 7.60107,44.2775 10.1521,44.4957 13.0912,44.7471 17.6304,45 24,45 c 6.3696,0 10.9088,-0.2529 13.8479,-0.5043 z"
-     stroke-width="3" />
+     style="fill:#000000;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:0.979288;stroke-opacity:0"
+     id="rect2-0"
+     width="47.018673"
+     height="46.725952"
+     x="0.57128763"
+     y="0.53701609" />
   <path
      id="Vector 1022-0"
      stroke="#000000"
      stroke-linecap="round"
      stroke-linejoin="round"
-     d="M 12.48401,27.660052 H 25.059682"
+     d="m 17.23,26.301938 h 8.005595"
      stroke-width="3"
      inkscape:label="Vector 1022"
-     style="fill:none;fill-opacity:1;stroke:#ce0000;stroke-width:5.11853;stroke-dasharray:none;stroke-opacity:1" />
+     style="fill:none;fill-opacity:1;stroke:#ce0000;stroke-width:3.23005;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="Vector 1022-4-0"
      stroke="#000000"
      stroke-linecap="round"
      stroke-linejoin="round"
-     d="M 12.440968,7.6456305 H 28.460229"
+     d="M 17.202599,13.781767 H 27.400363"
      stroke-width="3"
      inkscape:label="Vector 1022"
-     style="fill:none;fill-opacity:1;stroke:#74aadd;stroke-width:5;stroke-dasharray:none;stroke-opacity:1" />
+     style="fill:none;fill-opacity:1;stroke:#74aadd;stroke-width:3.15526;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="Vector 1023-00"
      stroke="#000000"
      stroke-linecap="round"
      stroke-linejoin="round"
-     d="M 12.387349,17.616507 H 18.93104"
+     d="M 17.168466,20.019123 H 21.33414"
      stroke-width="3.13298"
-     style="stroke:#008000;stroke-width:5;stroke-dasharray:none;stroke-opacity:1" />
+     style="stroke:#008000;stroke-width:3.15526;stroke-dasharray:none;stroke-opacity:1" />
   <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.6311"
      id="rect8"
-     width="3.4705987"
-     height="3.4437528"
-     x="46.061245"
-     y="-4.9089065"
-     transform="rotate(45)" />
+     width="2.1902943"
+     height="2.1733518"
+     x="41.996113"
+     y="-3.1856401"
+     transform="matrix(0.71326251,0.70089699,-0.71326251,0.70089699,0,0)" />
   <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.6311"
      id="rect8-7"
-     width="3.4705987"
-     height="3.4437528"
-     x="46.258099"
-     y="6.7888455"
-     transform="rotate(45)" />
+     width="2.1902943"
+     height="2.1733518"
+     x="42.12035"
+     y="4.1968088"
+     transform="matrix(0.71326251,0.70089699,-0.71326251,0.70089699,0,0)" />
   <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.6311"
      id="rect8-1"
-     width="3.4705987"
-     height="3.4437528"
-     x="51.952408"
-     y="1.1286592"
-     transform="rotate(45)" />
+     width="2.1902943"
+     height="2.1733518"
+     x="45.714027"
+     y="0.62466657"
+     transform="matrix(0.71326251,0.70089699,-0.71326251,0.70089699,0,0)" />
 </svg>

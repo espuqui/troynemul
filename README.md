@@ -66,3 +66,6 @@ No dudes en mandar ideas de que mas se podría agregar a la aplicación, no dude
 1. ¿Qué le falta a la aplicación para mejorar su uso?
 2. ¿Están las letras muy chicas? muy grandes? o mejor configurarlas?1. Mostrar resultados en distintos grafemarios (azumchefe, unificado, . Hacer ejercicios, tipo completa la particula.
 
+### Otros software
+Lo que está en el directorio android es parte del proyecto apkjs. https://github.com/bruneo32/apkjs que tiene licencia MIT.
+
