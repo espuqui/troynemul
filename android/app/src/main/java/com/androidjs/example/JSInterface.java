@@ -7,7 +7,8 @@ import android.webkit.JavascriptInterface;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.Toast;
-
+import android.content.Intent;
+import android.net.Uri;
 
 public class JSInterface {
 
@@ -38,6 +39,12 @@ public class JSInterface {
 	@JavascriptInterface
 	public String getLocale() {
 		return activity.getResources().getConfiguration().locale.toString();
+	}
+
+	@JavascriptInterface
+	public void openURL(String url) {
+	  Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+	  activity.startActivity(browserIntent);
 	}
 
 	// MESSAGES
