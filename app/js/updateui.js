@@ -17,10 +17,10 @@ export function updateUI() {
   document.getElementById("infoBackIconEnabled").hidden = true
   document.getElementById("searchBackIconEnabled").hidden = true
 
-  document.getElementById("underscoreOn").hidden = !uistatus.underscore
-  document.getElementById("underscoreOff").hidden = uistatus.underscore
+  document.getElementById("underscoreOn").hidden = !uistatus.underscoreEnabled
+  document.getElementById("underscoreOff").hidden = uistatus.underscoreEnabled
 
-  if (!uistatus.underscore) {
+  if (!uistatus.underscoreEnabled) {
     const elements = document.getElementsByClassName("particleExample");
 
     for (let elem of elements) {

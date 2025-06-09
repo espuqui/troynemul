@@ -11,6 +11,8 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.os.Build;
+import android.content.Context;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -124,7 +126,12 @@ public class MainActivity extends AppCompatActivity {
 			webSettings.setAllowFileAccessFromFileURLs(true);
 			webSettings.setMediaPlaybackRequiresUserGesture(false);
 			webSettings.setAllowContentAccess(true);
-			webSettings.setDomStorageEnabled(true);
+      webSettings.setDomStorageEnabled(true);
+      webSettings.setDatabaseEnabled(true);
+      if (Build.VERSION.SDK_INT < Build.VERSION_CODES.KITKAT) {
+          String databasePath = this.getApplicationContext().getDir("databases", Context.MODE_PRIVATE).getPath();
+          webSettings.setDatabasePath(databasePath);
+      }
 			webSettings.setSupportMultipleWindows(true);
 			webSettings.setPluginState(WebSettings.PluginState.ON);
 			webSettings.setPluginState(WebSettings.PluginState.ON_DEMAND);

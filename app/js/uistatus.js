@@ -10,13 +10,36 @@ export class UIStatus {
 
     // Estado inicial botones
     this.winkaDungunExamples = false;
-    this.underscore = true;
+    this.underscoreEnabled = true;
     this.currentView = Views.SEARCH
     this.currentWord = null
+
+    this.loadStatusFromSession()
 
     // Copia de historial
     this.hist = []
     this.updateUI = updateUI
+  }
+
+  loadStatusFromSession() {
+    // Default value
+    this.underscoreEnabled = this.loadBooleanOrDefault("underscoreEnabled", true);
+  }
+
+  saveStatusToSession() {
+    this.saveBoolean("underscoreEnabled", this.underscoreEnabled)
+  }
+
+  loadBooleanOrDefault(key, defaultValue) {
+    let valueString = localStorage.getItem(key)
+    if (valueString !== null) {
+      return valueString === "true"
+    }
+    return defaultValue
+  }
+
+  saveBoolean(key, value) {
+    localStorage.setItem(key, value ? "true" : "false")
   }
 
   popHistory() {
@@ -63,7 +86,8 @@ export class UIStatus {
   }
 
   toggleUnderscore(forceUpdate = false) {
-    this.underscore = !this.underscore;
+    this.underscoreEnabled = !this.underscoreEnabled;
+    this.saveStatusToSession()
     this.checkIfUpdateUI(forceUpdate)
   }
 
