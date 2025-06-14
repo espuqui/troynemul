@@ -227,12 +227,12 @@
       {
         "examples": [
           [
-            "Müle-n tañi reñma iñchiñ",
+            "Müle-n tañi reñma iñchiñ",
             "estar-(ind1s3) (poss1s) familia (com)",
             "Vivo con mi familia"
           ],
           [
-            "Müle-n tañi ñuke ka ñukentu iñchiñ",
+            "Müle-n tañi ñuke ka ñukentu iñchiñ",
             "estar-(ind1s3) (poss1s) mamá y tía.materna (com)",
             "Vivo con mi mamá y mi tía (materna)"
           ]
@@ -249,7 +249,7 @@
       {
         "examples": [
           [
-            "Iñche müle-n tañi afkadi iñchiw",
+            "Iñche müle-n tañi afkadi iñchiw",
             "yo estar-(ind1s3) (poss1s) pareja (com)",
             "Vivo con mi pareja"
           ]
@@ -267,7 +267,7 @@
         "explanation": "Se presume que la otra persona está con una persona más.",
         "examples": [
           [
-            "¿ Iney emu müle-ymi ?",
+            "¿ Iney emu müle-ymi ?",
             "¿ quién (com) estar-(ind4-23-s2) ?",
             "¿ Con quién vives ?"
           ]
@@ -285,12 +285,12 @@
         "explanation": "Se presume que la otra persona está con varias personas más.",
         "examples": [
           [
-            "¿ Iney emün müle-ymi ?",
+            "¿ Iney emün müle-ymi ?",
             "¿ quién (com) estar-(ind4-23-s2) ?",
             "¿ Con quiénes vives ?"
           ],
           [
-            "Eymi lamngen, ¿ iney emün müle-ymi Konsepsion mew ?",
+            "Eymi lamngen, ¿ iney emün müle-ymi Konsepsion mew ?",
             "Tu hermana, ¿ quien (com) estar-(ind4-23-s2) Concepción (inst) ?",
             "Y tu hermana, con quien viven en Concepción ?"
           ]
@@ -339,7 +339,7 @@
             "Llevas puesto un sombrero negro"
           ],
           [
-            "Koñoll iwüd-pel'-tule-n iñche",
+            "Koñoll iwüd-pel'-tule-n iñche",
             "morado envolver-cuello-(tr-st)-(ind1s3) yo",
             "Yo estoy usando una bufanda morada"
           ]
@@ -401,7 +401,7 @@
         "explanation": "Las palabras de oficios que provienen del castellano no llevan esta partícula",
         "examples": [
           [
-            "Tati mediku ngülam-tu-eyew pütrem-tu-welaya-imi Jacinta",
+            "Tati mediku ngülam-tu-eyew pütrem-tu-welaya-imi Jacinta",
             "El medico consejo-(verb)-(ind4-33-ds1) cigarro-(verb)-(ps19-neg-nrld9)-(ind4-23-s2) Jacinta",
             "El médico le aconsejó a Jacinta que debe dejar de fumar"
           ]
@@ -424,7 +424,7 @@
             "No nos vencerán"
           ],
           [
-            "Kallfükura pi-nge-y",
+            "Kallfükura pi-nge-y",
             "Calfucura decir-(pass)-(ind4-33)",
             "Me dicen Calfucura"
           ]
@@ -452,17 +452,17 @@
             "Seremos personas correctas"
           ],
           [
-            "Üllcha domo-nge-ymi",
+            "üllcha domo-nge-ymi",
             "Joven.mujer mujer-(verb)-(ind4-23-s2)",
             "Eres una mujer joven"
           ],
           [
-            "Püchi witran che-nge-n",
+            "Püchi witran che-nge-n",
             "pequeño estar.de.pie persona-(verb)-(ind1s3)",
             "Soy una persona baja"
           ],
           [
-            "Iñche püchi wentru-nge-n",
+            "Iñche püchi wentru-nge-n",
             "Yo pequeño hombre-(verb)-(ind1s3)",
             "Yo soy un niño"
           ],
@@ -477,7 +477,7 @@
         "explanation": "Conjugado según la persona que corresponda más la unión de un número",
         "examples": [
           [
-            "Tañi reñma mew kayu che-nge-iñ",
+            "Tañi reñma mew kayu che-nge-iñ tañi ñuke",
             "(poss1s) familia (inst) seis persona-(verb)-(ind4-1ns3-p2)",
             "En mi familia somos seis personas"
           ]
@@ -642,7 +642,7 @@
             "Shorts blancos (cada uno por separado)"
           ],
           [
-            "Kolü-ke makuñ",
+            "Kolü-ke makuñ",
             "rojo-(distr) mantas",
             "Mantas rojas (cada manta es distinta)"
           ],
@@ -696,7 +696,7 @@
             "Ésta es mi casa"
           ],
           [
-            "Tüye tami chaw",
+            "Tüye tami chaw",
             "Aquel (poss2s) papá",
             "Ese de más allá es mi papá"
           ]
