@@ -1,7 +1,7 @@
 /**
  * Carga applicacion
  */
-import {Views} from "./uistatus.js";
+import {Grafemarios, Views} from "./uistatus.js";
 
 export function updateUI() {
   let uistatus = window.uistatus
@@ -69,4 +69,15 @@ export function updateUI() {
 
     window.updateExamples()
   }
+
+  document.getElementById("grafemario_unq").hidden = uistatus.currentGrafemario !== Grafemarios.UNIFICADO_QUOTES
+  document.getElementById("grafemario_unq_off").hidden = uistatus.currentGrafemario === Grafemarios.UNIFICADO_QUOTES
+  document.getElementById("grafemario_un").hidden = uistatus.currentGrafemario !== Grafemarios.UNIFICADO
+  document.getElementById("grafemario_un_off").hidden = uistatus.currentGrafemario === Grafemarios.UNIFICADO
+  document.getElementById("grafemario_un_").hidden = uistatus.currentGrafemario !== Grafemarios.UNIFICADO_UNDERSCORE
+  document.getElementById("grafemario_un__off").hidden = uistatus.currentGrafemario === Grafemarios.UNIFICADO_UNDERSCORE
+  document.getElementById("grafemario_az").hidden = uistatus.currentGrafemario !== Grafemarios.AZUMCHEFE
+  document.getElementById("grafemario_az_off").hidden = uistatus.currentGrafemario === Grafemarios.AZUMCHEFE
+  document.getElementById("grafemario_ra").hidden = uistatus.currentGrafemario !== Grafemarios.RAGUILEO
+  document.getElementById("grafemario_ra_off").hidden = uistatus.currentGrafemario === Grafemarios.RAGUILEO
 }

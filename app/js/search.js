@@ -24,16 +24,27 @@ export function loadSearchEvent() {
     let style = `text-decoration: ${r.color} underline;
   text-decoration-thickness: 3px; text-underline-offset: 5px;  text-decoration-skip-ink: none;"`
 
+    let summary = c(r.summary)
+    let variations = c(r.variations)
+    let title = t(r.title)
     renderedResult += `<div class="searchResultsRow" onclick="window.renderParticleContent('${r.particleId}')">
       <div class="searchResultsCell">
       <p>
-          <span style="${style}">${r.summary}</span>
-          <span class="searchVariations">${r.variations}</span>
-          <span class="searchTitle">${r.title}</span>
+          <span style="${style}">${summary}</span>
+          <span class="searchVariations">${variations}</span>
+          <span class="searchTitle">${title}</span>
       </p>
       </div>
     </div>`
   }
 
   document.getElementById("searchResultsWidget").innerHTML = renderedResult
+}
+
+function c(text) {
+  return window.uistatus.convertText(text)
+}
+
+function t(text) {
+  return window.uistatus.convertPhrase(text)
 }

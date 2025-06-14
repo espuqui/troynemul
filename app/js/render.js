@@ -132,7 +132,7 @@ function handleTooltips() {
 
     let elementsthreedots = document.getElementById("threeDots")
 
-    if (event.target.parentNode === null ||  event.target.parentNode.className !== "threeDotIcon") {
+    if (event.target.parentNode === null || event.target.parentNode.className !== "threeDotIcon") {
       if (!elementsthreedots.contains(event.target)) {
         document.getElementById("threeDots").hidden = true
       }
@@ -168,6 +168,14 @@ export function renderParticleContent(particleId) {
   window.uistatus.updateUI()
 }
 
+function c(text) {
+  return window.uistatus.convertText(text)
+}
+
+function t(text) {
+  return window.uistatus.convertPhrase(text)
+}
+
 function renderFromParticleData(particleData, particleId) {
 
   const particleTitle = document.getElementById("particleTitle")
@@ -180,16 +188,16 @@ function renderFromParticleData(particleData, particleId) {
   particleTypeTitle.innerText = particleData.title
   particleContent.innerHTML = ""
   if (particleData.explanation !== undefined) {
-    particleContent.innerHTML = "<p class='particleContent'>" + particleData.explanation + "</p>"
+    particleContent.innerHTML = "<p class='particleContent'>" + t(particleData.explanation) + "</p>"
   }
   relativeExampleList.innerHTML = ""
 
   for (let content of particleData.content) {
     if (content.subtitle !== undefined) {
-      particleContent.innerHTML += "<p class='particleSubTitle'>" + content.subtitle + "</p>"
+      particleContent.innerHTML += "<p class='particleSubTitle'>" + t(content.subtitle) + "</p>"
     }
     if (content.explanation !== undefined) {
-      particleContent.innerHTML += "<p class='particleContent'>" + content.explanation + "</p>"
+      particleContent.innerHTML += "<p class='particleContent'>" + t(content.explanation) + "</p>"
     }
 
     for (let examples of content.examples) {
@@ -264,21 +272,21 @@ function renderMapu(exampleParts, particleId) {
   for (let examplePart of exampleParts) {
     if (examplePart.includes("*")) {
       let wordParts = examplePart.split("*")
-      html += renderWithSpanOnClickTooltip(wordParts[0], wordParts[1], "normalWordExample")
+      html += renderWithSpanOnClickTooltip(c(wordParts[0]), wordParts[1], "normalWordExample")
     } else if (examplePart.includes("|")) {
       let wordParts = examplePart.split("|")
       let examplePartToLookup = examplePart.toLowerCase()
       let currentWord = window.aliasMap.get(examplePartToLookup)
       if (currentWord === undefined) {
-        html += renderWithSpanOnClickTooltip(wordParts[0], "Falta: <br/> (" + examplePartToLookup + ")",
+        html += renderWithSpanOnClickTooltip(c(wordParts[0]), "Falta: <br/> (" + examplePartToLookup + ")",
                                              "particleMissing particleExample")
       } else {
         let color = window.particleData[currentWord].color
         if (window.aliasMap.get(examplePart) === particleId) {
-          html += renderWithSpanOnClickParticle(wordParts[0], examplePartToLookup, "particleExample particleCurrent",
+          html += renderWithSpanOnClickParticle(c(wordParts[0]), examplePartToLookup, "particleExample particleCurrent",
                                                 color)
         } else {
-          html += renderWithSpanOnClickParticle(wordParts[0], examplePartToLookup, "particleExample", color)
+          html += renderWithSpanOnClickParticle(c(wordParts[0]), examplePartToLookup, "particleExample", color)
         }
       }
     } else if (examplePart === " ") {

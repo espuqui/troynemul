@@ -100,7 +100,7 @@
     ]
   },
   "n|ind1s3": {
-    "title": "indicativo [iñche] (yo)",
+    "title": "indicativo [{iñche}] (yo)",
     "color": "dodgerblue",
     "fix": "post",
     "explanation": "primera persona singular modo indicativo (yo). El modo indicativo sirve para decir hechos <b>verdaderos o seguros y expresar opiniones.</b></b>",
@@ -747,7 +747,7 @@
         ]
       },
       {
-        "explanation": "Estado permanente vs. temporal. Se puede contrastar con otro sufijo (-nge-) que indica una característica permanente:",
+        "explanation": "Estado permanente vs. temporal. Se puede contrastar con otro sufijo (-{nge}-) que indica una característica permanente:",
         "examples": [
           [
             "mawünh-küle-y",

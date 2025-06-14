@@ -1,7 +1,18 @@
+import {AlphabetConverter, NoopAlphabetConverter} from "./backend/alphabet_converter.js";
+import {MAPUDUNGUN_RAGUILEO_PHONETIC_MAP, MAPUDUNGUN_UNIFICADO_PHONETIC_MAP} from "./backend/alphabet_definitions.js";
+
 export const Views = {
   HELP: 'help',
   SEARCH: 'search',
   CONTENT: 'content',
+};
+
+export const Grafemarios = {
+  AZUMCHEFE: 'az',
+  RAGUILEO: 'ra',
+  UNIFICADO: 'un',
+  UNIFICADO_QUOTES: 'unq',
+  UNIFICADO_UNDERSCORE: 'un_',
 };
 
 export class UIStatus {
@@ -13,6 +24,8 @@ export class UIStatus {
     this.underscoreEnabled = true;
     this.currentView = Views.SEARCH
     this.currentWord = null
+    this.currentGrafemario = Grafemarios.UNIFICADO_QUOTES
+    this.alphabetConverter = new NoopAlphabetConverter()
 
     this.loadStatusFromSession()
 
@@ -24,10 +37,13 @@ export class UIStatus {
   loadStatusFromSession() {
     // Default value
     this.underscoreEnabled = this.loadBooleanOrDefault("underscoreEnabled", true);
+    this.currentGrafemario = this.loadStringOrDefault("grafemario", Grafemarios.UNIFICADO_QUOTES);
+    this.refreshGrafemario()
   }
 
   saveStatusToSession() {
     this.saveBoolean("underscoreEnabled", this.underscoreEnabled)
+    this.saveString("grafemario", this.currentGrafemario)
   }
 
   loadBooleanOrDefault(key, defaultValue) {
@@ -38,8 +54,30 @@ export class UIStatus {
     return defaultValue
   }
 
+  loadStringOrDefault(key, defaultValue) {
+    let valueString = localStorage.getItem(key)
+    if (valueString !== null) {
+      return valueString
+    }
+    return defaultValue
+  }
+
+  convertText(text) {
+    return this.alphabetConverter.convertText(text)
+  }
+
+  convertPhrase(text) {
+    return text.replace(/\{([^}]+)\}/g, (match, content) => {
+      return this.convertText(content);
+    });
+  }
+
   saveBoolean(key, value) {
     localStorage.setItem(key, value ? "true" : "false")
+  }
+
+  saveString(key, value) {
+    localStorage.setItem(key, value)
   }
 
   popHistory() {
@@ -105,6 +143,52 @@ export class UIStatus {
   backFromInfo(forceUpdate = false) {
     this.currentView = Views.CONTENT
     this.checkIfUpdateUI(forceUpdate)
+  }
+
+  reloadContent() {
+    window.renderParticleContent(this.currentWord)
+  }
+
+  refreshGrafemario() {
+    if (this.currentGrafemario === Grafemarios.UNIFICADO_QUOTES) {
+      this.alphabetConverter = new NoopAlphabetConverter()
+    }
+    if (this.currentGrafemario === Grafemarios.UNIFICADO) {
+      this.alphabetConverter =  new AlphabetConverter(MAPUDUNGUN_UNIFICADO_PHONETIC_MAP, MAPUDUNGUN_RAGUILEO_PHONETIC_MAP)
+    }
+  }
+  toggleUnq() {
+    this.currentGrafemario = Grafemarios.UNIFICADO_QUOTES
+    this.refreshGrafemario()
+    this.saveStatusToSession()
+    this.updateUI()
+    this.reloadContent()
+  }
+
+  toggleUn() {
+    this.currentGrafemario = Grafemarios.UNIFICADO
+    this.refreshGrafemario()
+    this.saveStatusToSession()
+    this.updateUI()
+    this.reloadContent()
+  }
+
+  toggleUn_() {
+    // TODO: Load from start
+    this.currentGrafemario = Grafemarios.UNIFICADO_UNDERSCORE
+    this.refreshGrafemario()
+  }
+
+  toggleAz() {
+    // TODO: Load from start
+    this.currentGrafemario = Grafemarios.AZUMCHEFE
+    this.refreshGrafemario()
+  }
+
+  toggleRa() {
+    // TODO: Load from start
+    this.currentGrafemario = Grafemarios.RAGUILEO
+    this.refreshGrafemario()
   }
 
   updateUI() {

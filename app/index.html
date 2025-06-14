@@ -38,7 +38,7 @@
       <div class="searchIcon" id="infoBackIconEnabled" onclick="window.uistatus.backFromInfo(true)">
         <img src="img/back_active.svg" width="25px" height="25px" alt="">
       </div>
-      <div class="searchIcon"  onclick="window.uistatus.searchEvent(true)">
+      <div class="searchIcon" onclick="window.uistatus.searchEvent(true)">
         <img src="img/search.svg" width="25px" height="25px" alt="">
       </div>
       <div class="threeDotIcon">
@@ -76,7 +76,7 @@
 
     <!-- Vista de busqueda -->
     <div class="searchBarWhileSearching" id="topWidgetSearching">
-      <div class="searchIcon" id="searchBackIconEnabled"  onclick="window.uistatus.backFromSearch(true)">
+      <div class="searchIcon" id="searchBackIconEnabled" onclick="window.uistatus.backFromSearch(true)">
         <img src="img/back_active.svg" width="25px" height="25px" alt="">
       </div>
       <div class="searchIcon">
@@ -84,11 +84,11 @@
       </div>
       <div class="searchBarItemFill">
         <form id="searchForm">
-        <label for="searchWordInput"></label><input type="search" class="searchBox" id="searchWordInput"
-                                                    placeholder="Buscar partícula..."
-                                                    onkeydown="window.loadSearchEvent();"
-                                                    onpaste="window.loadSearchEvent();"
-                                                    oninput="window.loadSearchEvent();">
+          <label for="searchWordInput"></label><input type="search" class="searchBox" id="searchWordInput"
+                                                      placeholder="Buscar partícula..."
+                                                      onkeydown="window.loadSearchEvent();"
+                                                      onpaste="window.loadSearchEvent();"
+                                                      oninput="window.loadSearchEvent();">
         </form>
       </div>
       <div class="searchIcon">
@@ -101,7 +101,7 @@
     <div class="dropdown-content">
       <div class="dropdown-item-row" onclick="window.uistatus.toggleUnderscore(true)">
         <div class="dropdown-text">
-          Subrayar partículas
+          Subrayar
         </div>
         <div class="dropdown-icon" id="underscoreOn">
           <img src="img/toggle_on.svg" width="40px" height="40px" alt="">
@@ -110,9 +110,51 @@
           <img src="img/toggle_off.svg" width="40px" height="40px" alt="">
         </div>
       </div>
+      <div class="dropdown-item-row">
+        <div class="dropdown-text">
+          Grafemario
+        </div>
+        <div class="dropdown-item-row">
+          <div class="dropdown-icon-graf" id="grafemario_unq">
+            <img src="img/grafemarios/unq.svg" width="50px" height="50px" alt="">
+          </div>
+          <div class="dropdown-icon-graf" id="grafemario_unq_off"  onclick="window.uistatus.toggleUnq()">
+            <img src="img/grafemarios_off/unq.svg" width="50px" height="50px" alt="">
+          </div>
+          <div class="dropdown-icon-graf" id="grafemario_un">
+            <img src="img/grafemarios/un.svg" width="50px" height="50px" alt="">
+          </div>
+          <div class="dropdown-icon-graf" id="grafemario_un_off" onclick="window.uistatus.toggleUn()">
+            <img src="img/grafemarios_off/un.svg" width="50px" height="50px" alt="">
+          </div>
+          <div class="dropdown-icon-graf" id="grafemario_un_">
+            <img src="img/grafemarios/un_.svg" width="50px" height="50px" alt="">
+          </div>
+          <div class="dropdown-icon-graf" id="grafemario_un__off" onclick="window.uistatus.toggleUn_()">
+            <img src="img/grafemarios_off/un_.svg" width="50px" height="50px" alt="">
+          </div>
+          <div class="dropdown-icon-graf" id="grafemario_az">
+            <img src="img/grafemarios/az.svg" width="50px" height="50px" alt="">
+          </div>
+          <div class="dropdown-icon-graf" id="grafemario_az_off" onclick="window.uistatus.toggleAz()">
+            <img src="img/grafemarios_off/az.svg" width="50px" height="50px" alt="">
+          </div>
+          <div class="dropdown-icon-graf" id="grafemario_ra">
+            <img src="img/grafemarios/ra.svg" width="50px" height="50px" alt="">
+          </div>
+          <div class="dropdown-icon-graf" id="grafemario_ra_off" onclick="window.uistatus.toggleRa()">
+            <img src="img/grafemarios_off/ra.svg" width="50px" height="50px" alt="">
+          </div>
+        </div>
+      </div>
       <div class="dropdown-item-row" onclick="window.uistatus.toggleRenderHelp(true, true);">
         <div class="dropdown-text">
           Ayuda
+        </div>
+      </div>
+      <div class="dropdown-item-row" onclick="window.uistatus.toggleRenderHelp(true, true);">
+        <div class="dropdown-text">
+          ¿Küme elün?
         </div>
       </div>
     </div>
@@ -151,9 +193,11 @@
       Si eres chillkatufe, kimelfe, hablante nativo y encontraste un error, quieres agregar más ejemplos o tienes
       ideas de que mas se podría agregar a la aplicación, no dudes en mandar sugerencias
       <a href="javascript:window.openURL('https://github.com/espuqui/troynemul/issues')">aquí</a> o mandar un cambio
-      directamente en los  <a href="javascript:window.openURL('https://github.com/espuqui/troynemul/blob/main/app/data/particles.json')">archivos fuente</a>.
+      directamente en los <a
+      href="javascript:window.openURL('https://github.com/espuqui/troynemul/blob/main/app/data/particles.json')">archivos
+      fuente</a>.
       Por favor no copiar ejemplos de libros ya que estos pueden estar sujetos a copyright.
-    <br/><br/>
+      <br/><br/>
     </p>
     <p class="particleSubTitle"><b>Por ejemplo:</b>
     <p class="particleContent">
@@ -165,10 +209,11 @@
       2. Hacer ejercicios, tipo completa la particula.<br/><br/>
 
       <br/>
-      Todo el código fuente se encuentra <a href="javascript:window.openURL('https://github.com/espuqui/troynemul')">aqui</a> y
+      Todo el código fuente se encuentra <a href="javascript:window.openURL('https://github.com/espuqui/troynemul')">aqui</a>
+      y
       es código abierto con la licencia MIT. Si sabes programar y quieres aportar al código, puedes mandar
-    un pull request directamente en el código fuente. Es solo JS/HTML.
-    <br/><br/>
+      un pull request directamente en el código fuente. Es solo JS/HTML.
+      <br/><br/>
     </p>
   </div>
 

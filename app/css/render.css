@@ -323,7 +323,6 @@ a {
   color: white;
   padding: 0px 0px;
   text-decoration: none;
-
   display: table-row;
   vertical-align: middle;
   text-align: left;
@@ -339,6 +338,16 @@ a {
   height: 40pt;
   padding-left: 5pt;
   padding-right: 5pt;
+}
+
+.dropdown-icon-graf {
+  display:  table-cell;
+  vertical-align: middle;
+  text-align: left;
+  width: 40pt;
+  height: 40pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
 }
 
 .dropdown-text {
