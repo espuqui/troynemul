@@ -185,7 +185,7 @@ function renderFromParticleData(particleData, particleId) {
 
   renderParticleTitle(particleTitle, particleData, particleId)
 
-  particleTypeTitle.innerText = particleData.title
+  particleTypeTitle.innerText = t(particleData.title)
   particleContent.innerHTML = ""
   if (particleData.explanation !== undefined) {
     particleContent.innerHTML = "<p class='particleContent'>" + t(particleData.explanation) + "</p>"
@@ -221,7 +221,7 @@ function renderFromParticleData(particleData, particleId) {
 }
 
 function renderParticleTitle(particleTitle, particleData, particleId) {
-  particleTitle.innerText = getWordTitle(particleData, particleId)
+  particleTitle.innerText = c(getWordTitle(particleData, particleId))
   particleTitle.style = `text-decoration: ${particleData.color} underline;
   text-decoration-thickness: 3px; text-underline-offset: 5px;  text-decoration-skip-ink: none;"`
 }

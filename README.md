@@ -21,6 +21,7 @@ Por favor no copiar ejemplos de libros ya que estos pueden estar sujetos a copyr
 
 Las entradas estan en formato JSON, donde cada una es:
 
+* todas las palabras en mapudungun van en grafemario unificado con comillas (i.e.: ant'u)
 * particula: Nombre de la particula, por ejemplo, "mew"
 * title: Titulo principal
 * tipo: Tipo de particula
@@ -34,6 +35,7 @@ Las entradas estan en formato JSON, donde cada una es:
     * 0: Frase en mapudungun.
     * 1: Frase en español. Debe tener los mismos elementos que 0. Las particulas se ponen con paréntesis y su entrada va a ser "nemul|tipo". Los sustantivos van así nomas.
     * 2: Traducción interpretada en español. Sin reglas.
+* las palabras en mapudungun que van en explanation hay que ponerlas con corchetes {} para que el conversor de grafemarios la tome en cuenta.
 
 ```json
   "particula|tipo": {
@@ -44,7 +46,7 @@ Las entradas estan en formato JSON, donde cada una es:
     "variations": [ ],
     "content": [
       {
-        "explanation": "explicacion de la sección",
+        "explanation": "explicacion de la sección palabra en {mapudungun}",
         "examples": [
           [
             "nemul1-nemul2-nemul3 nemul4 nemul5",

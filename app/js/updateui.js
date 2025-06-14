@@ -3,6 +3,7 @@
  */
 import {Grafemarios, Views} from "./uistatus.js";
 
+let originalHelpText = null
 export function updateUI() {
   let uistatus = window.uistatus
 
@@ -46,6 +47,14 @@ export function updateUI() {
     document.getElementById("helpWidget").hidden = false
     document.getElementById("infoBackIconEnabled").hidden = !uistatus.hasHistoryForBackInHelpOrSearch()
 
+    let helpWidgetElement = document.getElementById("helpWidget")
+    if (originalHelpText === null) {
+      originalHelpText = helpWidgetElement.innerHTML
+    }
+
+    helpWidgetElement.innerHTML = uistatus.convertPhrase(originalHelpText)
+
+
 
   }
 
@@ -72,8 +81,6 @@ export function updateUI() {
 
   document.getElementById("grafemario_unq").hidden = uistatus.currentGrafemario !== Grafemarios.UNIFICADO_QUOTES
   document.getElementById("grafemario_unq_off").hidden = uistatus.currentGrafemario === Grafemarios.UNIFICADO_QUOTES
-  document.getElementById("grafemario_un").hidden = uistatus.currentGrafemario !== Grafemarios.UNIFICADO
-  document.getElementById("grafemario_un_off").hidden = uistatus.currentGrafemario === Grafemarios.UNIFICADO
   document.getElementById("grafemario_un_").hidden = uistatus.currentGrafemario !== Grafemarios.UNIFICADO_UNDERSCORE
   document.getElementById("grafemario_un__off").hidden = uistatus.currentGrafemario === Grafemarios.UNIFICADO_UNDERSCORE
   document.getElementById("grafemario_az").hidden = uistatus.currentGrafemario !== Grafemarios.AZUMCHEFE

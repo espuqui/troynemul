@@ -28,7 +28,7 @@
         "explanation": "se una para para decir en el lugar donde ocurre algo (equivalente a <i>con</i>)",
         "examples": [
           [
-            "Tañi wenhuy müle-y tañi ruka mew",
+            "Tañi wen'uy müle-y tañi ruka mew",
             "(poss1s) amigo estar-(ind4-33) (poss1s) casa (inst)",
             "Mi amigo está en mi casa"
           ]
@@ -80,7 +80,7 @@
         "explanation": "pero no se se ocupa si es durante el mismo día",
         "examples": [
           [
-            "Punh wüla tüku-a-n ñi firma",
+            "Pun' wüla tüku-a-n ñi firma",
             "noche después poner-(nrld9)-(ind1s3) (poss1s) firma",
             "A la noche firmaré"
           ]
@@ -88,7 +88,7 @@
       },
       {
         "subtitle": "4. causa <i>(porque)</i>",
-        "explanation": "se usa para decir <i>porque</i> (indicar causa o motivo). Para responder una pregunta hecha con <i>chumngelu?</i>.",
+        "explanation": "se usa para decir <i>porque</i> (indicar causa o motivo). Para responder una pregunta hecha con <i>{chumngelu?}</i>.",
         "examples": [
           [
             "¿ Chumngelu petu witra-la-ymi ? Petu witra-la-n rume wütre-le-n mew",
@@ -125,7 +125,7 @@
     ]
   },
   "ymi|ind4-23-s2": {
-    "title": "indicativo [eymi] (tú)",
+    "title": "indicativo [{eymi}] (tú)",
     "color": "dodgerblue",
     "fix": "post",
     "explanation": "segunda persona singular (tú). El modo indicativo sirve para decir hechos <b>verdaderos o seguros y expresar opiniones.</b>",
@@ -151,7 +151,7 @@
     ]
   },
   "y|ind4-33": {
-    "title": "indicativo [fey] (él, ella)",
+    "title": "indicativo [{fey}] (él, ella)",
     "color": "dodgerblue",
     "fix": "post",
     "explanation": "tercera persona singular (tú). El modo indicativo sirve para decir hechos <b>verdaderos o seguros y expresar opiniones.</b>",
@@ -177,7 +177,7 @@
     ]
   },
   "y engu|ind4-3ns3-d2": {
-    "title": "indicativo [fey] (ellos², ellas²)",
+    "title": "indicativo [{fey}] (ellos², ellas²)",
     "color": "dodgerblue",
     "fix": "post",
     "variations": [
@@ -198,7 +198,7 @@
     ]
   },
   "y engün|ind4-3ns3-p2": {
-    "title": "indicativo [fey] (ellos, ellas)",
+    "title": "indicativo [{fey}] (ellos, ellas)",
     "color": "dodgerblue",
     "fix": "post",
     "variations": [
@@ -219,9 +219,9 @@
     ]
   },
   "iñchiñ|com": {
-    "title": "asociativo [iñche + pu che] (con)",
+    "title": "asociativo [{iñche + pu che}] (con)",
     "color": "aqua",
-    "explanation": "Denota acompañamiento, equivale a <i>con</i> en wingkadungun. Hay que tomar en cuenta el numero de personas resultante de la asociación.",
+    "explanation": "Denota acompañamiento, equivale a <i>con</i> en {wingkadungun}. Hay que tomar en cuenta el numero de personas resultante de la asociación.",
     "variations": [],
     "content": [
       {
@@ -241,9 +241,9 @@
     ]
   },
   "iñchiw|com": {
-    "title": "asociativo [iñche + kiñe che] (con)",
+    "title": "asociativo [{iñche + kiñe che}] (con)",
     "color": "aqua",
-    "explanation": "Denota acompañamiento, equivale a <i>con</i> en wingkadungun. Hay que tomar en cuenta el numero de personas resultante de la asociación.",
+    "explanation": "Denota acompañamiento, equivale a <i>con</i> en {wingkadungun}. Hay que tomar en cuenta el numero de personas resultante de la asociación.",
     "variations": [],
     "content": [
       {
@@ -258,9 +258,9 @@
     ]
   },
   "emu|com": {
-    "title": "asociativo [eymi + kiñe che] (con)",
+    "title": "asociativo [{eymi + kiñe che}] (con)",
     "color": "aqua",
-    "explanation": "Denota acompañamiento, equivale a <i>con</i> en wingkadungun. Hay que tomar en cuenta el numero de personas resultante de la asociación. Se ocupa en preguntas cuando se refiere a eymi.",
+    "explanation": "Denota acompañamiento, equivale a <i>con</i> en {wingkadungun}. Hay que tomar en cuenta el numero de personas resultante de la asociación. Se ocupa en preguntas cuando se refiere a {eymi}.",
     "variations": [],
     "content": [
       {
@@ -276,9 +276,9 @@
     ]
   },
   "emün|com": {
-    "title": "asociativo [eymi + pu che] (con)",
+    "title": "asociativo [{eymi + pu che}] (con)",
     "color": "aqua",
-    "explanation": "Denota acompañamiento, equivale a <i>con</i> en wingkadungun. Hay que tomar en cuenta el numero de personas resultante de la asociación. Se ocupa en preguntas cuando se refiere a eymi.",
+    "explanation": "Denota acompañamiento, equivale a <i>con</i> en {wingkadungun}. Hay que tomar en cuenta el numero de personas resultante de la asociación. Se ocupa en preguntas cuando se refiere a {eymi}.",
     "variations": [],
     "content": [
       {
@@ -339,7 +339,7 @@
             "Llevas puesto un sombrero negro"
           ],
           [
-            "Koñoll iwüd-pelh-tule-n iñche",
+            "Koñoll iwüd-pel'-tule-n iñche",
             "morado envolver-cuello-(tr-st)-(ind1s3) yo",
             "Yo estoy usando una bufanda morada"
           ]
@@ -351,7 +351,7 @@
     "title": "negación en indicativo (no)",
     "color": "red",
     "fix": "in",
-    "explanation": "El sufijo <i>-la</i> se usa para decir que algo no pasó, no existe, no es cierto o no está ocurriendo. Es decir, niega un hecho concreto. Funciona como el <i>no</i> en español, pero va pegado al verbo.",
+    "explanation": "El sufijo <i>{-la}</i> se usa para decir que algo no pasó, no existe, no es cierto o no está ocurriendo. Es decir, niega un hecho concreto. Funciona como el <i>no</i> en español, pero va pegado al verbo.",
     "content": [
       {
         "explanation": "",
@@ -374,7 +374,7 @@
     "title": "oficios",
     "color": "orange",
     "fix": "post",
-    "explanation": "Con este sufijo, se pueden formar sustantivos para indicar profesiones u oficios, a partir de verbos de acción. Equivale al sufijo -dor del wingkadungun. La palabra terminada en -fe sirve tanto para mujer u hombre, no marca género. ",
+    "explanation": "Con este sufijo, se pueden formar sustantivos para indicar profesiones u oficios, a partir de verbos de acción. Equivale al sufijo -dor del {wingkadungun}. La palabra terminada en -fe sirve tanto para mujer u hombre, no marca género. ",
     "variations": [],
     "content": [
       {
@@ -486,9 +486,9 @@
     ]
   },
   "tañi|poss1s": {
-    "title": "posesivo [iñche] (mi)",
+    "title": "posesivo [{iñche}] (mi)",
     "color": "pink",
-    "explanation": "Posesivo de iñche. Equivale a decir <i>mi</i> en wingkadungun.",
+    "explanation": "Posesivo de {iñche}. Equivale a decir <i>mi</i> en {wingkadungun}.",
     "variations": [
       "ñi"
     ],
@@ -508,7 +508,7 @@
         ]
       },
       {
-        "explanation": "el posesivo de fey también es tañi, usamos iñche tañi/ñi o fey tañi/ñi para evitar confusión.",
+        "explanation": "el posesivo de {fey} también es {tañi}, usamos {iñche tañi/ñi} o {fey tañi/ñi} para evitar confusión.",
         "examples": [
           [
             "Iñche ñi ñuke",
@@ -525,9 +525,9 @@
     ]
   },
   "tami|poss2s": {
-    "title": "posesivo [eymi] (mi)",
+    "title": "posesivo [{eymi}] (mi)",
     "color": "pink",
-    "explanation": "Posesivo de eymi. Equivale a decir <i>tu</i> en wingkadungun.",
+    "explanation": "Posesivo de {eymi}. Equivale a decir <i>tu</i> en {wingkadungun}.",
     "variations": [
       "mi"
     ],
@@ -549,9 +549,9 @@
     ]
   },
   "tañi|poss3s": {
-    "title": "posesivo [fey] (su)",
+    "title": "posesivo [{fey}] (su)",
     "color": "hotpink",
-    "explanation": "Posesivo de fey. Equivale a decir su en wingkadungun.",
+    "explanation": "Posesivo de {fey}. Equivale a decir su en {wingkadungun}.",
     "variations": [
       "ñi"
     ],
@@ -566,7 +566,7 @@
         ]
       },
       {
-        "explanation": "el posesivo de fey también es tañi, usamos iñche tañi/ñi o fey tañi/ñi para evitar confusión.",
+        "explanation": "el posesivo de {fey} también es {tañi}, usamos {iñche tañi/ñi} o {fey tañi/ñi} para evitar confusión.",
         "examples": [
           [
             "Iñche ñi ñuke",
@@ -583,7 +583,7 @@
     ]
   },
   "yem|ex": {
-    "title": "fallecido",
+    "title": "nostalgia, fallecido",
     "color": "saddlebrown",
     "explanation": "Indica que a la persona o cosa que se le agrega está muerto o ya no funciona.",
     "fix": "post",
@@ -601,7 +601,7 @@
         ]
       },
       {
-        "explanation": "Para dar información de un familiar fallecido, como por ejemplo su nombre, debemos utilizar el sufijo -fu- en el verbo, el cual sirve para indicar que la acción ocurrió en el pasado.",
+        "explanation": "Para dar información de un familiar fallecido, como por ejemplo su nombre, debemos utilizar el sufijo {-fu-} en el verbo, el cual sirve para indicar que la acción ocurrió en el pasado.",
         "examples": [
           [
             "Tami ñuke yem Clorinda pi-nge-fu-y",
@@ -609,7 +609,7 @@
             "Tu difunta madre se llamaba Clorinda"
           ],
           [
-            "Tañi lhaku yem Rodo pi-nge-fu-y welu kim-pa-la-fiñ",
+            "Tañi l'aku yem Rodo pi-nge-fu-y welu kim-pa-la-fiñ",
             "(poss1s) abuelo (ex) Rodo decir-(pass)-(ipd8)-(ind4-33) pero conocer-(Hh17)-(neg)-(edo6-ind1s3)",
             "Mi difunto abuelo paterno se llamaba Rodo pero no lo alcance a conocer"
           ]
@@ -621,7 +621,7 @@
     "title": "sufijo pluralizador distributivo (varios y distintos)",
     "color": "firebrick",
     "fix": "post",
-    "explanation": "El sufijo -ke se usa en mapudungun para hablar de varios elementos, pero no de cualquier manera. No indica simplemente que hay <i>muchos</i> (como lo hace <i>pu</i>), sino que lo que se menciona está compuesto por partes distintas, una por una, o que la acción o cualidad se repite en diferentes casos.",
+    "explanation": "El sufijo {-ke} se usa en mapudungun para hablar de varios elementos, pero no de cualquier manera. No indica simplemente que hay <i>muchos</i> (como lo hace <i>pu</i>), sino que lo que se menciona está compuesto por partes distintas, una por una, o que la acción o cualidad se repite en diferentes casos.",
     "variations": [],
     "content": [
       {
@@ -654,7 +654,7 @@
         ]
       },
       {
-        "explanation": "Se puede usar en conjunto con <i>pu</i>, grupo donde cada uno tiene una característica",
+        "explanation": "Se puede usar en conjunto con <i>{pu}</i>, grupo donde cada uno tiene una característica",
         "examples": [
           [
             "Pu küme-ke che",
@@ -669,11 +669,11 @@
     "title": "adjetivizador de demostrativos",
     "color": "blue",
     "fix": "post",
-    "explanation": "El sufijo <i>-chi</i> se añade a los demostrativos cuando se usan para modificar un sustantivo, es decir, cuando no están solos, sino que acompañan a un sustantivo para señalarlo mejor.",
+    "explanation": "El sufijo <i>{-chi}</i> se añade a los demostrativos cuando se usan para modificar un sustantivo, es decir, cuando no están solos, sino que acompañan a un sustantivo para señalarlo mejor.",
     "variations": [ ],
     "content": [
       {
-        "explanation": "Por ejemplo, con <i>-chi</i>, decimos la cosa exacta que estamos viendo o de la que hablamos. El -chi convierte el demostrativo en una especie de adjetivo, como <i>este</i>, <i>esa</i>, <i>aquel</i> en español.",
+        "explanation": "Por ejemplo, con <i>{-chi}</i>, decimos la cosa exacta que estamos viendo o de la que hablamos. El {-chi} convierte el demostrativo en una especie de adjetivo, como <i>este</i>, <i>esa</i>, <i>aquel</i> en español.",
           "examples": [
           [
             "Tüfa-chi ruka",
@@ -688,7 +688,7 @@
         ]
       },
       {
-        "explanation": "Sin <i>-chi</i>, el demostrativo no modifica directamente al sustantivo. Se usa como pronombre, o sea, cuando el sustantivo no se nombra o cuando se refiere a algo más general.",
+        "explanation": "Sin <i>{-chi}</i>, el demostrativo no modifica directamente al sustantivo. Se usa como pronombre, o sea, cuando el sustantivo no se nombra o cuando se refiere a algo más general.",
         "examples": [
           [
             "Tüfa tañi ruka",
@@ -750,12 +750,12 @@
         "explanation": "Estado permanente vs. temporal. Se puede contrastar con otro sufijo (-{nge}-) que indica una característica permanente:",
         "examples": [
           [
-            "mawünh-küle-y",
+            "mawün'-küle-y",
             "llover-(st)-(ind4-33)",
             "Está lloviendo"
           ],
           [
-            "mawünh-nge-y",
+            "mawün'-nge-y",
             "llover-(verb)-(ind4-33)",
             "Es lluvioso"
           ]

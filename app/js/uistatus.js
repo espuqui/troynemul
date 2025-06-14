@@ -1,5 +1,9 @@
 import {AlphabetConverter, NoopAlphabetConverter} from "./backend/alphabet_converter.js";
-import {MAPUDUNGUN_RAGUILEO_PHONETIC_MAP, MAPUDUNGUN_UNIFICADO_PHONETIC_MAP} from "./backend/alphabet_definitions.js";
+import {
+  MAPUDUNGUN_AZUMCHEFE_PHONETIC_MAP, MAPUDUNGUN_RAGUILEO_PHONETIC_MAP,
+  MAPUDUNGUN_UNIFICADO_QUOTES_PHONETIC_MAP,
+  MAPUDUNGUN_UNIFICADO_UNDERSCORE_PHONETIC_MAP
+} from "./backend/alphabet_definitions.js";
 
 export const Views = {
   HELP: 'help',
@@ -10,7 +14,6 @@ export const Views = {
 export const Grafemarios = {
   AZUMCHEFE: 'az',
   RAGUILEO: 'ra',
-  UNIFICADO: 'un',
   UNIFICADO_QUOTES: 'unq',
   UNIFICADO_UNDERSCORE: 'un_',
 };
@@ -153,42 +156,44 @@ export class UIStatus {
     if (this.currentGrafemario === Grafemarios.UNIFICADO_QUOTES) {
       this.alphabetConverter = new NoopAlphabetConverter()
     }
-    if (this.currentGrafemario === Grafemarios.UNIFICADO) {
-      this.alphabetConverter =  new AlphabetConverter(MAPUDUNGUN_UNIFICADO_PHONETIC_MAP, MAPUDUNGUN_RAGUILEO_PHONETIC_MAP)
+    if (this.currentGrafemario === Grafemarios.UNIFICADO_UNDERSCORE) {
+      this.alphabetConverter = new AlphabetConverter(MAPUDUNGUN_UNIFICADO_QUOTES_PHONETIC_MAP,
+                                                     MAPUDUNGUN_UNIFICADO_UNDERSCORE_PHONETIC_MAP)
+    }
+
+    if (this.currentGrafemario === Grafemarios.AZUMCHEFE) {
+      this.alphabetConverter = new AlphabetConverter(MAPUDUNGUN_UNIFICADO_QUOTES_PHONETIC_MAP,
+                                                     MAPUDUNGUN_AZUMCHEFE_PHONETIC_MAP)
+    }
+
+    if (this.currentGrafemario === Grafemarios.RAGUILEO) {
+      this.alphabetConverter = new AlphabetConverter(MAPUDUNGUN_UNIFICADO_QUOTES_PHONETIC_MAP,
+                                                     MAPUDUNGUN_RAGUILEO_PHONETIC_MAP)
     }
   }
-  toggleUnq() {
-    this.currentGrafemario = Grafemarios.UNIFICADO_QUOTES
+
+  updateGrafemarioEvent(grafemario) {
+    this.currentGrafemario = grafemario
     this.refreshGrafemario()
     this.saveStatusToSession()
     this.updateUI()
     this.reloadContent()
   }
 
-  toggleUn() {
-    this.currentGrafemario = Grafemarios.UNIFICADO
-    this.refreshGrafemario()
-    this.saveStatusToSession()
-    this.updateUI()
-    this.reloadContent()
+  toggleUnq() {
+    this.updateGrafemarioEvent(Grafemarios.UNIFICADO_QUOTES)
   }
 
   toggleUn_() {
-    // TODO: Load from start
-    this.currentGrafemario = Grafemarios.UNIFICADO_UNDERSCORE
-    this.refreshGrafemario()
+    this.updateGrafemarioEvent(Grafemarios.UNIFICADO_UNDERSCORE)
   }
 
   toggleAz() {
-    // TODO: Load from start
-    this.currentGrafemario = Grafemarios.AZUMCHEFE
-    this.refreshGrafemario()
+    this.updateGrafemarioEvent(Grafemarios.AZUMCHEFE)
   }
 
   toggleRa() {
-    // TODO: Load from start
-    this.currentGrafemario = Grafemarios.RAGUILEO
-    this.refreshGrafemario()
+    this.updateGrafemarioEvent(Grafemarios.RAGUILEO)
   }
 
   updateUI() {

@@ -1,51 +1,13 @@
 /**
- * Nombres de grafemarios
- */
-export const AlphabetNames = Object.freeze({
-                                             AZUMCHEFE: "Azümchefe",
-                                             UNIFICADO: "Unificado",
-                                             RAGUILEO: "Raguileo",
-                                             UNIFICADO_QUOTES: "Unificado con apóstrofes",
-                                           });
-
-
-/**
  * Formato: https://es.wikipedia.org/wiki/Escritura_del_mapuche
  */
-export const MAPUDUNGUN_UNIFICADO_PHONETIC_MAP = [
-  "a",  // /a/
-  "ch", // /t͡ʃ/
-  "d",  // /θ/
-  "e",  // /e/
-  "f",  // /f/
-  "g",  // /ɣ/
-  "i",  // /i/
-  "y",  // /i̯̯ /
-  "k",  // /k/
-  "l",  // /l/
-  "ḻ",  // /l̪/
-  "ll", // /ʎ/
-  "m",  // /m/
-  "n",  // /n/
-  "ṉ",  // /n̪/
-  "ñ",  // /ɲ/
-  "ng", // /ŋ/
-  "o",  // /o/
-  "p",  // /p/
-  "r",  // /ɻ/
-  "s",  // /s/
-  "sh", // [ʃ]
-  "t",  // /t/
-  "ṯ",  // /t̪/
-  "tr", // /ʈ͡ʂ/
-  "u",  // /u/
-  "w",  // /u̯ /
-  "ü",  // /ɨ/
-  "w",  // /w/
-  "y",  // /j/
-]
 
-export const MAPUDUNGUN_UNIFICADO_QUOTE_PHONETIC_MAP = [
+/**
+ * Unificado con comillas para representar labiodentales.
+ *
+ * i.e.: L'aku, Fot'um.
+ */
+export const MAPUDUNGUN_UNIFICADO_QUOTES_PHONETIC_MAP = [
   "a",  // /a/
   "ch", // /t͡ʃ/
   "d",  // /θ/
@@ -78,6 +40,47 @@ export const MAPUDUNGUN_UNIFICADO_QUOTE_PHONETIC_MAP = [
   "y",  // /j/
 ]
 
+/**
+ * Unificado con letras subrayadas para representar labiodentales.
+ *
+ * i.e.: Ḻaku, Foṯum.
+ */
+export const MAPUDUNGUN_UNIFICADO_UNDERSCORE_PHONETIC_MAP = [
+  "a",  // /a/
+  "ch", // /t͡ʃ/
+  "d",  // /θ/
+  "e",  // /e/
+  "f",  // /f/
+  "g",  // /ɣ/
+  "i",  // /i/
+  "y",  // /i̯̯ /
+  "k",  // /k/
+  "l",  // /l/
+  "ḻ",  // /l̪/
+  "ll", // /ʎ/
+  "m",  // /m/
+  "n",  // /n/
+  "ṉ",  // /n̪/
+  "ñ",  // /ɲ/
+  "ng", // /ŋ/
+  "o",  // /o/
+  "p",  // /p/
+  "r",  // /ɻ/
+  "s",  // /s/
+  "sh", // [ʃ]
+  "t",  // /t/
+  "ṯ",  // /t̪/
+  "tr", // /ʈ͡ʂ/
+  "u",  // /u/
+  "w",  // /u̯ /
+  "ü",  // /ɨ/
+  "w",  // /w/
+  "y",  // /j/
+]
+
+/**
+ * Azumchefe
+ */
 export const MAPUDUNGUN_AZUMCHEFE_PHONETIC_MAP = [
   "a",  // /a/
   "ch", // /t͡ʃ/
@@ -111,7 +114,9 @@ export const MAPUDUNGUN_AZUMCHEFE_PHONETIC_MAP = [
   "i",  // /j/
 ];
 
-
+/**
+ * Raguileo
+ */
 export const MAPUDUNGUN_RAGUILEO_PHONETIC_MAP = [
   "a",  // /a/
   "c",  // /t͡ʃ/
@@ -145,9 +150,3 @@ export const MAPUDUNGUN_RAGUILEO_PHONETIC_MAP = [
   "y",  // /j/
 ];
 
-export const AlphabetPhoneticMap = Object.freeze({
-                                                   AZUMCHEFE: MAPUDUNGUN_AZUMCHEFE_PHONETIC_MAP,
-                                                   UNIFICADO: MAPUDUNGUN_UNIFICADO_PHONETIC_MAP,
-                                                   RAGUILEO: MAPUDUNGUN_RAGUILEO_PHONETIC_MAP,
-                                                   UNIFICADO_QUOTES: MAPUDUNGUN_UNIFICADO_QUOTE_PHONETIC_MAP,
-                                                 });

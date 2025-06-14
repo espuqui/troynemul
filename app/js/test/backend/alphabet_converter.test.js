@@ -1,13 +1,16 @@
 import {AlphabetConverter, GraphemeEntry, MARK_LOWERCASE, MARK_UPPERCASE} from "../../backend/alphabet_converter.js"
 import {
-  MAPUDUNGUN_AZUMCHEFE_PHONETIC_MAP, MAPUDUNGUN_RAGUILEO_PHONETIC_MAP, MAPUDUNGUN_UNIFICADO_PHONETIC_MAP
+  MAPUDUNGUN_AZUMCHEFE_PHONETIC_MAP,
+  MAPUDUNGUN_RAGUILEO_PHONETIC_MAP,
+  MAPUDUNGUN_UNIFICADO_QUOTES_PHONETIC_MAP,
+  MAPUDUNGUN_UNIFICADO_UNDERSCORE_PHONETIC_MAP
 } from "../../backend/alphabet_definitions.js";
 
 
 describe('convertGrafemario', () => {
   test('convertUnificadoToAzumchefe', () => {
 
-    let converter = new AlphabetConverter(MAPUDUNGUN_UNIFICADO_PHONETIC_MAP, MAPUDUNGUN_AZUMCHEFE_PHONETIC_MAP)
+    let converter = new AlphabetConverter(MAPUDUNGUN_UNIFICADO_UNDERSCORE_PHONETIC_MAP, MAPUDUNGUN_AZUMCHEFE_PHONETIC_MAP)
 
     // Estos no pasan
 
@@ -26,7 +29,7 @@ describe('convertGrafemario', () => {
   })
 
   test('convertUnificadoToRaguileo', () => {
-    let converter = new AlphabetConverter(MAPUDUNGUN_UNIFICADO_PHONETIC_MAP, MAPUDUNGUN_RAGUILEO_PHONETIC_MAP)
+    let converter = new AlphabetConverter(MAPUDUNGUN_UNIFICADO_UNDERSCORE_PHONETIC_MAP, MAPUDUNGUN_RAGUILEO_PHONETIC_MAP)
 
     expect(converter.convertText("Feyti")).toStrictEqual("Feyti")
     expect(converter.convertText(
@@ -38,7 +41,7 @@ describe('convertGrafemario', () => {
 
   test('convertRaguileoToUnificado', () => {
 
-    let converter = new AlphabetConverter(MAPUDUNGUN_RAGUILEO_PHONETIC_MAP, MAPUDUNGUN_UNIFICADO_PHONETIC_MAP)
+    let converter = new AlphabetConverter(MAPUDUNGUN_RAGUILEO_PHONETIC_MAP, MAPUDUNGUN_UNIFICADO_UNDERSCORE_PHONETIC_MAP)
 
     expect(converter.convertText("Feyti")).toStrictEqual("Feyti")
     expect(
