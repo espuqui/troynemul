@@ -79,6 +79,18 @@ export function updateUI() {
     window.updateExamples()
   }
 
+  document.getElementById("pichi_fontsize_on").hidden = !uistatus.fontsizesmall
+  document.getElementById("pichi_fontsize_off").hidden =  uistatus.fontsizesmall
+  document.getElementById("futra_fontsize_on").hidden =  uistatus.fontsizesmall
+  document.getElementById("futra_fontsize_off").hidden =  !uistatus.fontsizesmall
+
+  let mainbody = document.getElementById("mainDiv")
+  if (uistatus.fontsizesmall) {
+    mainbody.style.fontSize = "100%"
+  } else {
+    mainbody.style.fontSize = "120%"
+  }
+
   document.getElementById("grafemario_unq").hidden = uistatus.currentGrafemario !== Grafemarios.UNIFICADO_QUOTES
   document.getElementById("grafemario_unq_off").hidden = uistatus.currentGrafemario === Grafemarios.UNIFICADO_QUOTES
   document.getElementById("grafemario_un_").hidden = uistatus.currentGrafemario !== Grafemarios.UNIFICADO_UNDERSCORE
@@ -87,4 +99,6 @@ export function updateUI() {
   document.getElementById("grafemario_az_off").hidden = uistatus.currentGrafemario === Grafemarios.AZUMCHEFE
   document.getElementById("grafemario_ra").hidden = uistatus.currentGrafemario !== Grafemarios.RAGUILEO
   document.getElementById("grafemario_ra_off").hidden = uistatus.currentGrafemario === Grafemarios.RAGUILEO
+
+
 }

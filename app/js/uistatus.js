@@ -29,6 +29,7 @@ export class UIStatus {
     this.currentWord = null
     this.currentGrafemario = Grafemarios.UNIFICADO_QUOTES
     this.alphabetConverter = new NoopAlphabetConverter()
+    this.fontsizesmall = true;
 
     this.loadStatusFromSession()
 
@@ -41,12 +42,14 @@ export class UIStatus {
     // Default value
     this.underscoreEnabled = this.loadBooleanOrDefault("underscoreEnabled", true);
     this.currentGrafemario = this.loadStringOrDefault("grafemario", Grafemarios.UNIFICADO_QUOTES);
+    this.fontsizesmall = this.loadBooleanOrDefault("fontsizesmall", true);
     this.refreshGrafemario()
   }
 
   saveStatusToSession() {
     this.saveBoolean("underscoreEnabled", this.underscoreEnabled)
     this.saveString("grafemario", this.currentGrafemario)
+    this.saveBoolean("fontsizesmall", this.fontsizesmall)
   }
 
   loadBooleanOrDefault(key, defaultValue) {
@@ -197,6 +200,12 @@ export class UIStatus {
   }
 
   updateUI() {
+    this.updateUI()
+  }
+
+  toggleSmallFont(value) {
+    this.fontsizesmall = value
+    this.saveStatusToSession()
     this.updateUI()
   }
 }

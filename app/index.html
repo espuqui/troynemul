@@ -25,7 +25,7 @@
 
 <body class="mainBody">
 
-<div id="mainDiv" hidden="hidden">
+<div id="mainDiv" hidden="hidden" class="mainDiv">
   <div class="searchBarWidget">
     <!-- Vista de inicio -->
     <div class="searchBarWhileResting" id="topWidgetHelp">
@@ -96,63 +96,6 @@
     </div>
   </div>
 
-  <!-- three dot menu -->
-  <div id="threeDots" class="dropdown">
-    <div class="dropdown-content">
-      <div class="dropdown-item-row" onclick="window.uistatus.toggleUnderscore(true)">
-        <div class="dropdown-text">
-          Subrayar
-        </div>
-        <div class="dropdown-icon" id="underscoreOn">
-          <img src="img/toggle_on.svg" width="40px" height="40px" alt="">
-        </div>
-        <div class="dropdown-icon" id="underscoreOff">
-          <img src="img/toggle_off.svg" width="40px" height="40px" alt="">
-        </div>
-      </div>
-      <div class="dropdown-item-row">
-        <div class="dropdown-text">
-          Grafemario
-        </div>
-        <div class="dropdown-item-row">
-          <div class="dropdown-icon-graf" id="grafemario_unq">
-            <img src="img/grafemarios/unq.svg" width="50px" height="50px" alt="">
-          </div>
-          <div class="dropdown-icon-graf" id="grafemario_unq_off"  onclick="window.uistatus.toggleUnq()">
-            <img src="img/grafemarios_off/unq.svg" width="50px" height="50px" alt="">
-          </div>
-          <div class="dropdown-icon-graf" id="grafemario_un_">
-            <img src="img/grafemarios/un_.svg" width="50px" height="50px" alt="">
-          </div>
-          <div class="dropdown-icon-graf" id="grafemario_un__off" onclick="window.uistatus.toggleUn_()">
-            <img src="img/grafemarios_off/un_.svg" width="50px" height="50px" alt="">
-          </div>
-          <div class="dropdown-icon-graf" id="grafemario_az">
-            <img src="img/grafemarios/az.svg" width="50px" height="50px" alt="">
-          </div>
-          <div class="dropdown-icon-graf" id="grafemario_az_off" onclick="window.uistatus.toggleAz()">
-            <img src="img/grafemarios_off/az.svg" width="50px" height="50px" alt="">
-          </div>
-          <div class="dropdown-icon-graf" id="grafemario_ra">
-            <img src="img/grafemarios/ra.svg" width="50px" height="50px" alt="">
-          </div>
-          <div class="dropdown-icon-graf" id="grafemario_ra_off" onclick="window.uistatus.toggleRa()">
-            <img src="img/grafemarios_off/ra.svg" width="50px" height="50px" alt="">
-          </div>
-        </div>
-      </div>
-      <div class="dropdown-item-row" onclick="window.uistatus.toggleRenderHelp(true, true);">
-        <div class="dropdown-text">
-          Ayuda
-        </div>
-      </div>
-      <div class="dropdown-item-row" onclick="window.uistatus.toggleRenderHelp(true, true);">
-        <div class="dropdown-text">
-          ¿Küme elün?
-        </div>
-      </div>
-    </div>
-  </div>
 
   <div class="contentWidget" id="contentWidget">
     <p class="particleTypeTitle" id="particleTypeTitle">[particleTypeTitle]</p>
@@ -213,6 +156,97 @@
 
   <div class="searchResultsWidget" id="searchResultsWidget">
     <div class="searchResultsRow">
+    </div>
+  </div>
+</div>
+
+<!-- three dot menu -->
+<div id="threeDots" class="dropdown" hidden="hidden">
+  <div class="dropdown-content">
+    <div class="dropdown-item-row" onclick="window.uistatus.toggleUnderscore(true)">
+      <div class="dropdown-text">
+        Subrayar
+      </div>
+      <div class="dropdown-icon" id="underscoreOn">
+        <img src="img/toggle_on.svg" width="40px" height="40px" alt="">
+      </div>
+      <div class="dropdown-icon" id="underscoreOff">
+        <img src="img/toggle_off.svg" width="40px" height="40px" alt="">
+      </div>
+    </div>
+    <div class="dropdown-item-row">
+      <div class="dropdown-text">
+        Tamaño letra
+      </div>
+      <div class="dropdown-item-row">
+        <div class="dropdown-icon-graf" id="pichi_fontsize_on">
+          <img src="img/pichifontsize_on.svg" width="50px" height="50px" alt="">
+        </div>
+        <div class="dropdown-icon-graf" id="pichi_fontsize_off" onclick="window.uistatus.toggleSmallFont(true)">
+          <img src="img/pichifontsize_off.svg" width="50px" height="50px" alt="">
+        </div>
+        <div class="dropdown-icon-graf" id="futra_fontsize_on">
+          <img src="img/futrafontsize_on.svg" width="50px" height="50px" alt="">
+        </div>
+        <div class="dropdown-icon-graf" id="futra_fontsize_off" onclick="window.uistatus.toggleSmallFont(false)">
+          <img src="img/futrafontsize_off.svg" width="50px" height="50px" alt="">
+        </div>
+        <div class="dropdown-text">
+        </div>
+        <div class="dropdown-text">
+        </div>
+        <div class="dropdown-text">
+        </div>
+        <div class="dropdown-text">
+        </div>
+      </div>
+    </div>
+    <div class="dropdown-item-row">
+      <div class="dropdown-text">
+        Grafemario
+      </div>
+      <div class="dropdown-item-row">
+        <div class="dropdown-icon-graf" id="grafemario_unq">
+          <img src="img/grafemarios/unq.svg" width="50px" height="50px" alt="">
+        </div>
+        <div class="dropdown-icon-graf" id="grafemario_unq_off" onclick="window.uistatus.toggleUnq()">
+          <img src="img/grafemarios_off/unq.svg" width="50px" height="50px" alt="">
+        </div>
+        <div class="dropdown-icon-graf" id="grafemario_un_">
+          <img src="img/grafemarios/un_.svg" width="50px" height="50px" alt="">
+        </div>
+        <div class="dropdown-icon-graf" id="grafemario_un__off" onclick="window.uistatus.toggleUn_()">
+          <img src="img/grafemarios_off/un_.svg" width="50px" height="50px" alt="">
+        </div>
+        <div class="dropdown-icon-graf" id="grafemario_az">
+          <img src="img/grafemarios/az.svg" width="50px" height="50px" alt="">
+        </div>
+        <div class="dropdown-icon-graf" id="grafemario_az_off" onclick="window.uistatus.toggleAz()">
+          <img src="img/grafemarios_off/az.svg" width="50px" height="50px" alt="">
+        </div>
+        <div class="dropdown-icon-graf" id="grafemario_ra">
+          <img src="img/grafemarios/ra.svg" width="50px" height="50px" alt="">
+        </div>
+        <div class="dropdown-icon-graf" id="grafemario_ra_off" onclick="window.uistatus.toggleRa()">
+          <img src="img/grafemarios_off/ra.svg" width="50px" height="50px" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="dropdown-item-row" onclick="window.uistatus.toggleRenderHelp(true, true);">
+      <div class="dropdown-text">
+        Ayuda
+      </div>
+      <div class="dropdown-text">
+
+      </div>
+    </div>
+    <div class="dropdown-item-row" onclick="window.uistatus.toggleRenderHelp(true, true);">
+      <div class="dropdown-text">
+        ¿Küme elün?
+      </div>
+      <div class="dropdown-text">
+
+      </div>
     </div>
   </div>
 </div>

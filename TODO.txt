@@ -1,13 +1,9 @@
 Antes del release:
 
-P0: Cambiar nombre a "Troy N'emül'" y repositorio nuevo [LISTO].
-P0: Dominio troynemul.org [LISTO]
-P0: Dos branches: main y test [LISTO]
-P0: Pagina de bienvenida [REQUIERE UPDATES]
-P0: Multigrafemario [NO INICIADO]
+P0: Feedback x palabra y por error
+P0: Splash screen
 P0: Particulas conocidas, ejemplos propios [EN PROCESO]
-P0: Documentacion en español [NO INICIADO]
-
+P1: Package name
 P1: Bug "/" shouldn't have tooltip
 
 Entries:
@@ -31,3 +27,11 @@ Entries:
       ]
     },
 
+// Listo
+P0: Cambiar nombre a "Troy N'emül'" y repositorio nuevo [LISTO].
+P0: Dominio troynemul.org [LISTO]
+P0: Dos branches: main y test [LISTO]
+P0: Pagina de bienvenida [REQUIERE UPDATES]
+P0: Multigrafemario [LISTO]
+P0: Documentacion en español [LISTO]
+P0: Tamaño letra [LISTO]
