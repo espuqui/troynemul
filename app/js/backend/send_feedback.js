@@ -1,4 +1,4 @@
-const FEEDBACK_URL = "https:/feedback.troynemul.org/postFeedback"
+const FEEDBACK_URL = 'https://feedback.troynemul.org/postFeedback/'
 
 const HEADERS = {
   'Content-Type': 'application/json',
