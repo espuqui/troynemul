@@ -9,6 +9,16 @@ import android.webkit.WebView;
 import android.widget.Toast;
 import android.content.Intent;
 import android.net.Uri;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.StringWriter;
+import java.io.PrintWriter;
 
 public class JSInterface {
 
@@ -57,6 +67,77 @@ public class JSInterface {
 	public void showMessage(String title, String message) {
 		activity.showMessage(title, message);
 	}
+
+	@JavascriptInterface
+	public int sendPostRequest(String sourceURL, String requestBody) {
+        HttpURLConnection connection = null;
+
+        try {
+            // 1. Create a URL object
+            URL url = new URL(sourceURL);
+
+            // 2. Open a connection to the URL
+            connection = (HttpURLConnection) url.openConnection();
+            connection.setRequestMethod("POST");
+
+            // 4. Set headers using setRequestProperty()
+            connection.setRequestProperty("Content-Type", "application/json"); // Example: Content-Type header
+            connection.setRequestProperty("X-Api-Key", "marichiweuamulepetainweichan"); // Example: Authorization header
+
+            // 5. Set timeouts (optional, but good practice)
+            connection.setReadTimeout(5000); // 15 seconds read timeout
+            connection.setConnectTimeout(5000); // 15 seconds connection timeout
+
+             // 8. Get the OutputStream and write the request body
+             OutputStream os = connection.getOutputStream();
+             OutputStreamWriter osw = new OutputStreamWriter(os, "UTF-8");
+             osw.write(requestBody);
+             osw.flush();
+             osw.close();
+             os.close();
+
+            connection.connect();
+
+            // 6. Get the response code
+            int responseCode = connection.getResponseCode();
+            //System.out.println("Response Code: " + responseCode);
+
+            // 7. Read the response (for a GET request)
+            if (responseCode == HttpURLConnection.HTTP_OK) { // Check if the request was successful
+                InputStream inputStream = connection.getInputStream();
+                BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+                String line;
+                StringBuilder response = new StringBuilder();
+
+                while ((line = reader.readLine()) != null) {
+                    response.append(line);
+                }
+
+                reader.close();
+                inputStream.close();
+
+                return responseCode;
+            } else {
+                return responseCode;
+            }
+
+        } catch (Exception e) {
+        } finally {
+            // 8. Disconnect the connection
+            if (connection != null) {
+                connection.disconnect();
+            }
+        }
+        return -1;
+	}
+
+  private String getStackStrace(Exception e) {
+      StringWriter sw = new StringWriter();
+      PrintWriter pw = new PrintWriter(sw);
+      e.printStackTrace(pw);
+      String sStackTrace = sw.toString(); // stack trace as a string
+      return sStackTrace;
+  }
 
 	@JavascriptInterface
 	public void showError(String title, String message) {

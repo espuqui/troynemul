@@ -1,6 +1,8 @@
 import {AlphabetConverter, NoopAlphabetConverter} from "./backend/alphabet_converter.js";
 import {sendWordFeedback} from "./backend/send_feedback.js";
 
+const VERSION = '06/22/2025_TEST'
+
 import {
   MAPUDUNGUN_AZUMCHEFE_PHONETIC_MAP, MAPUDUNGUN_RAGUILEO_PHONETIC_MAP,
   MAPUDUNGUN_UNIFICADO_QUOTES_PHONETIC_MAP,
@@ -218,6 +220,6 @@ export class UIStatus {
   }
 
   sendFeedback() {
-    sendWordFeedback(this.currentWord)
+    sendWordFeedback(this.currentWord, this.currentGrafemario, VERSION)
   }
 }

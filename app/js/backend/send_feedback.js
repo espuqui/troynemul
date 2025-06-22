@@ -2,19 +2,29 @@ const FEEDBACK_URL = 'https://feedback.troynemul.org/postFeedback/'
 
 const HEADERS = {
   'Content-Type': 'application/json',
-  'x-api-key': 'marichiweuamulepetainweichan'
+  'X-Api-Key': 'marichiweuamulepetainweichan'
 };
-export function sendWordFeedback(word)
-{
+
+function callbackPostRequest(responseCode) {
+  alert(responseCode)
+}
+
+export function sendWordFeedback(word, grafemario, version) {
   const data = {
     name: 'Kuanita',
     land: 'Wallmapu',
     comment: 'Mari, mari',
-    version: 'abc',
-    grafemario: 'ra',
-    word: word
+    version: version,
+    grafemario: grafemario,
+    platform: isAndroid() ? "android" : "web",
+    word: word == null ? "" : word
   };
   const body = JSON.stringify(data);
+
+  sendPostRequest(FEEDBACK_URL, body, callbackPostRequest)
+}
+
+function sendPostRequest(url, body, callbackPostRequest) {
 
   const options = {
     method: 'POST',
@@ -22,19 +32,17 @@ export function sendWordFeedback(word)
     body: body
   };
 
-  fetch(FEEDBACK_URL, options)
+  fetch(url, options)
     .then(response => {
       if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+        callbackPostRequest(response.status)
       }
-      return response.json(); // Or response.text() depending on the expected response type
-    })
-    .then(data => {
-      console.log('Success:', data);
-    })
-    .catch(error => {
-      console.error('Error:', error);
+      callbackPostRequest(response.status)
     });
+}
 
+
+function isAndroid() {
+  return navigator.userAgent.includes('wv')
 }
 
