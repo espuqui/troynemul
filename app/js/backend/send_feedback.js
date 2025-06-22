@@ -6,14 +6,13 @@ const HEADERS = {
 };
 export function sendWordFeedback(word)
 {
-
-  //"name": "Kuanita",   "land": "wallmapu", "comment": "mari, mari",  "version": "1232",  "grafemario": "ra" }'
   const data = {
     name: 'Kuanita',
     land: 'Wallmapu',
     comment: 'Mari, mari',
     version: 'abc',
-    grafemario: 'ra'
+    grafemario: 'ra',
+    word: word
   };
   const body = JSON.stringify(data);
 
