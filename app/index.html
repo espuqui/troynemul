@@ -29,22 +29,22 @@
   <div class="searchBarWidget" id="searchBarWidget">
     <!-- Vista de inicio -->
     <div class="searchBarWhileResting" id="topWidgetHelp">
-      <div class="searchIcon" id="iconInfoBar">
+      <div class="icon" id="iconInfoBar">
         <img src="img/info.svg" width="25px" height="25px" alt="">
       </div>
       <div class="searchBarItemFill" id="textInfoBar">
         <p class="particleTitle">Inicio</p>
       </div>
-      <div class="searchIcon" id="iconFeedbackBar">
+      <div class="icon" id="iconFeedbackBar">
         <img src="img/piru.svg" width="25px" height="25px" alt="">
       </div>
       <div class="searchBarItemFill" id="textFeedbackBar">
         <p class="particleTitle">¿ Pefimi kiñe piru ?</p>
       </div>
-      <div class="searchIcon" id="infoBackIconEnabled" onclick="window.uistatus.backFromInfo(true)">
+      <div class="icon" id="infoBackIconEnabled" onclick="window.uistatus.backFromInfo(true)">
         <img src="img/back_active.svg" width="25px" height="25px" alt="">
       </div>
-      <div class="searchIcon" onclick="window.uistatus.searchEvent(true)">
+      <div class="icon" onclick="window.uistatus.searchEvent(true)">
         <img src="img/search.svg" width="25px" height="25px" alt="">
       </div>
       <div class="threeDotIcon">
@@ -54,25 +54,25 @@
 
     <!-- Vista de contenido -->
     <div class="searchBarWhileResting" id="topWidgetResting">
-      <div class="searchIcon">
+      <div class="icon">
         <img src="img/mapuche_flag.svg" width="25px" height="25px" alt="">
       </div>
       <div class="searchBarItemFill">
         <p class="particleTitle" id="particleTitle">[particleTitle]</p>
       </div>
-      <div class="searchIcon" id="winkaDungunOff" onclick="window.uistatus.toggleWinkaExamplesEvent(true, true)">
+      <div class="icon" id="winkaDungunOff" onclick="window.uistatus.toggleWinkaExamplesEvent(true, true)">
         <img src="img/spain_flag_off.svg" width="25px" height="25px" alt="">
       </div>
-      <div class="searchIcon" id="winkaDungunOn" onclick="window.uistatus.toggleWinkaExamplesEvent(false, true)">
+      <div class="icon" id="winkaDungunOn" onclick="window.uistatus.toggleWinkaExamplesEvent(false, true)">
         <img src="img/spain_flag_on.svg" width="25px" height="25px" alt="">
       </div>
-      <div class="searchIcon" id="navigationBackIconDisabled">
+      <div class="icon" id="navigationBackIconDisabled">
         <img src="img/back_inactive.svg" width="25px" height="25px" alt="">
       </div>
-      <div class="searchIcon" id="navigationBackIconEnabled" onclick="window.history.back()">
+      <div class="icon" id="navigationBackIconEnabled" onclick="window.history.back()">
         <img src="img/back_active.svg" width="25px" height="25px" alt="">
       </div>
-      <div class="searchIcon" onclick="window.uistatus.searchEvent(true)">
+      <div class="icon" onclick="window.uistatus.searchEvent(true)">
         <img src="img/search.svg" width="25px" height="25px" alt="">
       </div>
       <div class="threeDotIcon">
@@ -82,10 +82,10 @@
 
     <!-- Vista de busqueda -->
     <div class="searchBarWhileSearching" id="topWidgetSearching">
-      <div class="searchIcon" id="searchBackIconEnabled" onclick="window.uistatus.backFromSearch(true)">
+      <div class="icon" id="searchBackIconEnabled" onclick="window.uistatus.backFromSearch(true)">
         <img src="img/back_active.svg" width="25px" height="25px" alt="">
       </div>
-      <div class="searchIcon">
+      <div class="icon">
         <img src="img/search.svg" width="15px" height="15px" alt="">
       </div>
       <div class="searchBarItemFill">
@@ -97,7 +97,7 @@
                                                       oninput="window.loadSearchEvent();">
         </form>
       </div>
-      <div class="searchIcon">
+      <div class="icon">
       </div>
     </div>
   </div>
@@ -108,17 +108,16 @@
     <p id="particleContent">[particleContent]<br/>
     <p class="particleRelativeExamplesTitle" id="relatedExamplesTitle">Ejemplos relacionados</p>
     <p id="relativeExampleList">[relativeExampleList]</p>
-    <div class="errorWidgetOutside" onclick="window.uistatus.toggleFeedback(true, true)">
-      <div id="errorWidget" class="errorWidget">
 
-        <div class="piruSearchIcon">
+    <div class="buttonWidgetOutside" onclick="window.uistatus.toggleFeedback(true, true)">
+      <div id="buttonWidget" class="buttonWidget">
+        <div class="buttonIcon">
           <img src="img/piru.svg" width="25px" height="25px" alt="">
         </div>
-        <div class="piruButtonFill">
+        <div class="buttonFill">
           <p class="buttonTitle">¿ Pefimi kiñe piru ?</p>
         </div>
-        <div class="piruSearchIcon">
-
+        <div class="buttonIcon">
         </div>
       </div>
     </div>
@@ -178,11 +177,24 @@
 
   <div class="contentWidget" id="feedbackWidget">
     <p class="particleTypeTitle"><b>{Mari mari kom pu chillkatufe!}</b>
+    <div class="buttonWidgetOutside" onclick="window.uistatus.sendFeedback()">
+      <div id="feedbackSubmitButton" class="buttonWidget">
+        <div class="buttonIcon">
+          <img src="img/piru.svg" width="25px" height="25px" alt="">
+        </div>
+        <div class="buttonFill">
+          <p class="buttonTitle">Enviar</p>
+        </div>
+        <div class="buttonIcon">
+        </div>
+      </div>
+    </div>
   </div>
   <div class="searchResultsWidget" id="searchResultsWidget">
     <div class="searchResultsRow">
     </div>
   </div>
+
 </div>
 
 <!-- three dot menu -->
@@ -204,17 +216,17 @@
         Tamaño letra
       </div>
       <div class="dropdown-item-row">
-        <div class="dropdown-icon-graf" id="futra_fontsize_on">
-          <img src="img/futrafontsize_on.svg" width="50px" height="50px" alt="">
-        </div>
-        <div class="dropdown-icon-graf" id="futra_fontsize_off" onclick="window.uistatus.toggleSmallFont(false)">
-          <img src="img/futrafontsize_off.svg" width="50px" height="50px" alt="">
-        </div>
         <div class="dropdown-icon-graf" id="pichi_fontsize_on">
           <img src="img/pichifontsize_on.svg" width="50px" height="50px" alt="">
         </div>
         <div class="dropdown-icon-graf" id="pichi_fontsize_off" onclick="window.uistatus.toggleSmallFont(true)">
           <img src="img/pichifontsize_off.svg" width="50px" height="50px" alt="">
+        </div>
+        <div class="dropdown-icon-graf" id="futra_fontsize_on">
+          <img src="img/futrafontsize_on.svg" width="50px" height="50px" alt="">
+        </div>
+        <div class="dropdown-icon-graf" id="futra_fontsize_off" onclick="window.uistatus.toggleSmallFont(false)">
+          <img src="img/futrafontsize_off.svg" width="50px" height="50px" alt="">
         </div>
         <div class="dropdown-text">
         </div>

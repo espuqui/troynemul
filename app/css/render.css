@@ -36,12 +36,12 @@ Estilos
   font-size: larger;
 }
 
-.errorWidgetOutside {
+.buttonWidgetOutside {
   background-color: #333;
   text-align: center;
 }
 
-.errorWidget {
+.buttonWidget {
   background-color: #333;
   display: table;
   margin:auto;
@@ -53,7 +53,7 @@ Estilos
   width: max-content;
 }
 
-.piruSearchIcon {
+.buttonIcon {
   display: table-cell;
   vertical-align: middle;
   background-color: #333;
@@ -63,7 +63,7 @@ Estilos
   padding-left: 8pt;
   padding-right: 8pt;
 }
-.piruButtonFill {
+.buttonFill {
   display: table-cell;
   vertical-align: middle;
   text-align: left;
@@ -84,7 +84,7 @@ Estilos
   width: 100%;
 }
 
-.searchIcon {
+.icon {
   display: table-cell;
   vertical-align: middle;
   background-color: #222222;

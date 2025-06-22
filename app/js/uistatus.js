@@ -1,4 +1,6 @@
 import {AlphabetConverter, NoopAlphabetConverter} from "./backend/alphabet_converter.js";
+import {sendWordFeedback} from "./backend/send_feedback.js";
+
 import {
   MAPUDUNGUN_AZUMCHEFE_PHONETIC_MAP, MAPUDUNGUN_RAGUILEO_PHONETIC_MAP,
   MAPUDUNGUN_UNIFICADO_QUOTES_PHONETIC_MAP,
@@ -30,7 +32,7 @@ export class UIStatus {
     this.currentWord = null
     this.currentGrafemario = Grafemarios.UNIFICADO_QUOTES
     this.alphabetConverter = new NoopAlphabetConverter()
-    this.fontsizesmall = false;
+    this.fontsizesmall = true;
 
     this.loadStatusFromSession()
 
@@ -43,7 +45,7 @@ export class UIStatus {
     // Default value
     this.underscoreEnabled = this.loadBooleanOrDefault("underscoreEnabled", true);
     this.currentGrafemario = this.loadStringOrDefault("grafemario", Grafemarios.UNIFICADO_QUOTES);
-    this.fontsizesmall = this.loadBooleanOrDefault("fontsizesmall", false);
+    this.fontsizesmall = this.loadBooleanOrDefault("fontsizesmall", true);
     this.refreshGrafemario()
   }
 
@@ -213,5 +215,9 @@ export class UIStatus {
     this.fontsizesmall = value
     this.saveStatusToSession()
     this.updateUI()
+  }
+
+  sendFeedback() {
+    sendWordFeedback(this.currentWord)
   }
 }
