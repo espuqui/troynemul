@@ -36,6 +36,48 @@ Estilos
   font-size: larger;
 }
 
+.errorWidgetOutside {
+  background-color: #333;
+  text-align: center;
+}
+
+.errorWidget {
+  background-color: #333;
+  display: table;
+  margin:auto;
+}
+
+.buttonSpace {
+  background-color: #333;
+  display: table-cell;
+  width: max-content;
+}
+
+.piruSearchIcon {
+  display: table-cell;
+  vertical-align: middle;
+  background-color: #333;
+  text-align: center;
+  width: 30pt;
+  height: 30pt;
+  padding-left: 8pt;
+  padding-right: 8pt;
+}
+.piruButtonFill {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+  background-color: #333;
+}
+
+.buttonTitle {
+  vertical-align: middle;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+  font-size: large;
+}
+
 .searchBarItemFill {
   display: table-cell;
   vertical-align: middle;

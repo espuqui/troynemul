@@ -9,6 +9,7 @@ export const Views = {
   HELP: 'help',
   SEARCH: 'search',
   CONTENT: 'content',
+  FEEDBACK: 'feedback',
 };
 
 export const Grafemarios = {
@@ -25,11 +26,11 @@ export class UIStatus {
     // Estado inicial botones
     this.winkaDungunExamples = false;
     this.underscoreEnabled = true;
-    this.currentView = Views.SEARCH
+    this.currentView = Views.FEEDBACK
     this.currentWord = null
     this.currentGrafemario = Grafemarios.UNIFICADO_QUOTES
     this.alphabetConverter = new NoopAlphabetConverter()
-    this.fontsizesmall = true;
+    this.fontsizesmall = false;
 
     this.loadStatusFromSession()
 
@@ -42,7 +43,7 @@ export class UIStatus {
     // Default value
     this.underscoreEnabled = this.loadBooleanOrDefault("underscoreEnabled", true);
     this.currentGrafemario = this.loadStringOrDefault("grafemario", Grafemarios.UNIFICADO_QUOTES);
-    this.fontsizesmall = this.loadBooleanOrDefault("fontsizesmall", true);
+    this.fontsizesmall = this.loadBooleanOrDefault("fontsizesmall", false);
     this.refreshGrafemario()
   }
 
@@ -126,6 +127,11 @@ export class UIStatus {
 
   toggleContent(value, forceUpdate = false) {
     this.currentView = Views.CONTENT
+    this.checkIfUpdateUI(forceUpdate)
+  }
+
+  toggleFeedback(value, forceUpdate = false) {
+    this.currentView = Views.FEEDBACK
     this.checkIfUpdateUI(forceUpdate)
   }
 

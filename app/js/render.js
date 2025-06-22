@@ -149,6 +149,9 @@ function handleTooltips() {
 export function renderParticleContent(particleId) {
   let uniqueParticleId = window.aliasMap.get(particleId)
 
+/*  window.uistatus.toggleFeedback(false)
+  window.uistatus.updateUI()
+  return*/
 
   // Si particula es null mostrar ayuda
   if (particleId == null) {

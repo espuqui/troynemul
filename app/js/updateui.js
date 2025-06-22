@@ -4,6 +4,7 @@
 import {Grafemarios, Views} from "./uistatus.js";
 
 let originalHelpText = null
+let originalFeedbackText = null
 export function updateUI() {
   let uistatus = window.uistatus
 
@@ -15,8 +16,14 @@ export function updateUI() {
   document.getElementById("topWidgetResting").hidden = true
   document.getElementById("contentWidget").hidden = true
   document.getElementById("helpWidget").hidden = true
+  document.getElementById("feedbackWidget").hidden = true
   document.getElementById("infoBackIconEnabled").hidden = true
   document.getElementById("searchBackIconEnabled").hidden = true
+
+  document.getElementById("iconInfoBar").hidden = true
+  document.getElementById("textInfoBar").hidden = true
+  document.getElementById("iconFeedbackBar").hidden = true
+  document.getElementById("textFeedbackBar").hidden = true
 
   document.getElementById("underscoreOn").hidden = !uistatus.underscoreEnabled
   document.getElementById("underscoreOff").hidden = uistatus.underscoreEnabled
@@ -47,15 +54,15 @@ export function updateUI() {
     document.getElementById("helpWidget").hidden = false
     document.getElementById("infoBackIconEnabled").hidden = !uistatus.hasHistoryForBackInHelpOrSearch()
 
+    document.getElementById("iconInfoBar").hidden = false
+    document.getElementById("textInfoBar").hidden = false
+
     let helpWidgetElement = document.getElementById("helpWidget")
     if (originalHelpText === null) {
       originalHelpText = helpWidgetElement.innerHTML
     }
 
     helpWidgetElement.innerHTML = uistatus.convertPhrase(originalHelpText)
-
-
-
   }
 
   if (uistatus.currentView === Views.SEARCH) {
@@ -77,6 +84,22 @@ export function updateUI() {
     document.getElementById("navigationBackIconDisabled").hidden =  uistatus.hasHistory()
 
     window.updateExamples()
+  }
+
+  if (uistatus.currentView === Views.FEEDBACK) {
+    document.getElementById("iconFeedbackBar").hidden = false
+    document.getElementById("textFeedbackBar").hidden = false
+
+    document.getElementById("feedbackWidget").hidden = false
+    document.getElementById("topWidgetHelp").hidden = false
+    document.getElementById("infoBackIconEnabled").hidden = !uistatus.hasHistoryForBackInHelpOrSearch()
+
+    let feedbackWidgetElement = document.getElementById("feedbackWidget")
+    if (originalFeedbackText === null) {
+      originalFeedbackText = feedbackWidgetElement.innerHTML
+    }
+
+    feedbackWidgetElement.innerHTML = uistatus.convertPhrase(originalFeedbackText)
   }
 
   document.getElementById("pichi_fontsize_on").hidden = !uistatus.fontsizesmall

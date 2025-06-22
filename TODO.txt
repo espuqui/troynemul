@@ -35,3 +35,14 @@ P0: Pagina de bienvenida [REQUIERE UPDATES]
 P0: Multigrafemario [LISTO]
 P0: Documentacion en español [LISTO]
 P0: Tamaño letra [LISTO]
+
+
+{
+  "name": "Kuanita",
+  "land": "wallmapu",
+  "message": "I really enjoyed this story!!",
+  "word": "mew|inst",
+  "comment": "mari, mari",
+  "version": "1232",
+  "grafemario": "ra"
+}
