@@ -1,9 +1,10 @@
 Antes del release:
 
-P0: Feedback x palabra y por error
-P0: Piru pequeño
 P0: Splash screen
+P0: Ayuda final
 P0: Particulas conocidas, ejemplos propios [EN PROCESO]
+
+
 P1: Package name
 P1: Bug "/" shouldn't have tooltip
 
@@ -36,14 +37,6 @@ P0: Pagina de bienvenida [REQUIERE UPDATES]
 P0: Multigrafemario [LISTO]
 P0: Documentacion en español [LISTO]
 P0: Tamaño letra [LISTO]
+P0: Feedback x palabra y por error [LISTO]
+P0: Piru pequeño [LISTO]
 
-
-{
-  "name": "Kuanita",
-  "land": "wallmapu",
-  "message": "I really enjoyed this story!!",
-  "word": "mew|inst",
-  "comment": "mari, mari",
-  "version": "1232",
-  "grafemario": "ra"
-}

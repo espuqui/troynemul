@@ -24,6 +24,10 @@ export function updateUI() {
   document.getElementById("textInfoBar").hidden = true
   document.getElementById("iconFeedbackBar").hidden = true
   document.getElementById("textFeedbackBar").hidden = true
+  document.getElementById("feedbackSuccessWidget").hidden = true
+  document.getElementById("feedbackFormWidget").hidden = true
+
+  document.getElementById("errorSendingFeedbackMessage").hidden = true
 
   document.getElementById("underscoreOn").hidden = !uistatus.underscoreEnabled
   document.getElementById("underscoreOff").hidden = uistatus.underscoreEnabled
@@ -89,13 +93,14 @@ export function updateUI() {
   if (uistatus.currentView === Views.FEEDBACK) {
     document.getElementById("iconFeedbackBar").hidden = false
     document.getElementById("textFeedbackBar").hidden = false
-
+    document.getElementById("feedbackFormWidget").hidden = false
     document.getElementById("feedbackWidget").hidden = false
     document.getElementById("topWidgetHelp").hidden = false
     document.getElementById("infoBackIconEnabled").hidden = !uistatus.hasHistoryForBackInHelpOrSearch()
 
     let feedbackWord = document.getElementById("feedbackWord")
-    feedbackWord.defaultValue = uistatus.convertText(uistatus.currentWord.split("|")[0])
+    feedbackWord.defaultValue = uistatus.currentWord == null ? "" : uistatus.convertText(
+      uistatus.currentWord.split("|")[0])
 
 
     let feedbackWidgetElement = document.getElementById("feedbackWidget")

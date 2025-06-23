@@ -85,6 +85,11 @@ Estilos
   background-color: #333;
 }
 
+.errorSendingFeedbackMessage {
+  text-align: center;
+  color: #ff9f5a;
+}
+
 .buttonTitle {
   vertical-align: middle;
   color: white;

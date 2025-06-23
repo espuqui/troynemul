@@ -5,11 +5,7 @@ const HEADERS = {
   'X-Api-Key': 'marichiweuamulepetainweichan'
 };
 
-function callbackPostRequest(responseCode) {
-  alert(responseCode)
-}
-
-export function sendWordFeedback(word, comment, name, land, grafemario, version) {
+export function sendWordFeedback(word, comment, name, land, grafemario, version, callback) {
   const data = {
     name: name,
     land: land,
@@ -21,7 +17,7 @@ export function sendWordFeedback(word, comment, name, land, grafemario, version)
   };
   const body = JSON.stringify(data);
 
-  sendPostRequest(FEEDBACK_URL, body, callbackPostRequest)
+  sendPostRequest(FEEDBACK_URL, body, callback)
 }
 
 function sendPostRequest(url, body, callbackPostRequest) {
@@ -38,7 +34,10 @@ function sendPostRequest(url, body, callbackPostRequest) {
         callbackPostRequest(response.status)
       }
       callbackPostRequest(response.status)
-    });
+    }).catch(error => {
+      callbackPostRequest(-1)
+    }
+  )
 }
 
 
