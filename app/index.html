@@ -109,19 +109,13 @@
     <p class="particleRelativeExamplesTitle" id="relatedExamplesTitle">Ejemplos relacionados</p>
     <p id="relativeExampleList">[relativeExampleList]</p>
 
-    <div class="buttonWidgetOutside" onclick="window.uistatus.toggleFeedback(true, true)">
-      <div id="buttonWidget" class="buttonWidget">
-        <div class="buttonIcon">
-          <img src="img/piru.svg" width="25px" height="25px" alt="">
+    <div class="buttonWidgetEmpty" >
+        <div class="buttonSpaceEmpty">
         </div>
-        <div class="buttonFill">
-          <p class="buttonTitle">¿ Pefimi kiñe piru ?</p>
+        <div class="reportPiruIcon" onclick="window.uistatus.toggleFeedback(true, true)">
+            <img src="img/piru.svg" width="25px" height="25px" alt="">
         </div>
-        <div class="buttonIcon">
-        </div>
-      </div>
     </div>
-
     <p></p>
   </div>
 
@@ -146,7 +140,7 @@
     </p>
     <p class="particleSubTitle"><b>Nota</b></p>
     <p class="particleContent">
-      Soy un {chillkatufe}</a> de {mapudungun} e estoy haciendo herramienta para facilitar el
+      Soy un {chillkatufe} de {mapudungun} e estoy haciendo herramienta para facilitar el
       aprendizaje de la gramática del {mapudungun}.<br/><br/>
       Si eres {chillkatufe}, {kimelfe}, hablante nativo y encontraste un error, quieres agregar más ejemplos o tienes
       ideas de que mas se podría agregar a la aplicación, no dudes en mandar sugerencias
@@ -176,16 +170,51 @@
   </div>
 
   <div class="contentWidget" id="feedbackWidget">
-    <p class="particleTypeTitle"><b>{Mari mari kom pu chillkatufe!}</b>
+    <p class="particleTypeTitle"><b>Reportar errores o dar feedback</b>
+    <p class="particleContent">
+      Si has encontrado un error, quieres sugerir mas contenido o agregar mas ejemplos, completa el siguiente formulario
+    y lo agregaremos en una nueva versión:</p>
+    <form id="feedbackForm">
+    <table style="width: 100%">
+      <tr>
+        <td>
+          <label for="feedbackWord">Partícula/Palabra:</label>
+        </td>
+        <td>
+          <input class="inputBox" type="text" id="feedbackWord" maxlength="20">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="feedbackComment">Comentario:</label>
+        </td>
+        <td>
+          <textarea id="feedbackComment" class="textArea" name="w3review" rows="15" cols="50" maxlength="500"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="feedbackName">Üy (opcional):</label>
+        </td>
+        <td>
+          <input class="inputBox" type="text" id="feedbackName" maxlength="50">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="feedbackLand">Tüwün (opcional):</label>
+        </td>
+        <td>
+          <input class="inputBox" type="text" id="feedbackLand" maxlength="50">
+        </td>
+      </tr>
+    </table>
+    </form>
+    <p></p>
     <div class="buttonWidgetOutside" onclick="window.uistatus.sendFeedback()">
       <div id="feedbackSubmitButton" class="buttonWidget">
-        <div class="buttonIcon">
-          <img src="img/piru.svg" width="25px" height="25px" alt="">
-        </div>
         <div class="buttonFill">
           <p class="buttonTitle">Enviar</p>
-        </div>
-        <div class="buttonIcon">
         </div>
       </div>
     </div>
@@ -272,14 +301,6 @@
     <div class="dropdown-item-row" onclick="window.uistatus.toggleRenderHelp(true, true);">
       <div class="dropdown-text">
         Ayuda
-      </div>
-      <div class="dropdown-text">
-
-      </div>
-    </div>
-    <div class="dropdown-item-row" onclick="window.uistatus.toggleRenderHelp(true, true);">
-      <div class="dropdown-text">
-        ¿Küme elün?
       </div>
       <div class="dropdown-text">
 

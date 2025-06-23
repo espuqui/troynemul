@@ -86,6 +86,7 @@ fieldset {
 
 textarea {
   resize: vertical;
+  font-family: Helvetica, sans-serif;
 }
 
 /* ==========================================================================

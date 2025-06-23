@@ -1,6 +1,7 @@
 Antes del release:
 
 P0: Feedback x palabra y por error
+P0: Piru pequeño
 P0: Splash screen
 P0: Particulas conocidas, ejemplos propios [EN PROCESO]
 P1: Package name

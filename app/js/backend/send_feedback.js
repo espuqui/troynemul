@@ -9,11 +9,11 @@ function callbackPostRequest(responseCode) {
   alert(responseCode)
 }
 
-export function sendWordFeedback(word, grafemario, version) {
+export function sendWordFeedback(word, comment, name, land, grafemario, version) {
   const data = {
-    name: 'Kuanita',
-    land: 'Wallmapu',
-    comment: 'Mari, mari',
+    name: name,
+    land: land,
+    comment: comment,
     version: version,
     grafemario: grafemario,
     platform: isAndroid() ? "android" : "web",

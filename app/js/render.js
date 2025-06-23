@@ -4,7 +4,7 @@ import {search, loadSearchEvent} from "./search.js";
 import {UIStatus, Views} from "./uistatus.js";
 import {updateUI} from "./updateui.js";
 
-const startWord = null
+const startWord = "chi|adj"
 
 
 /**
@@ -149,11 +149,11 @@ function handleTooltips() {
 export function renderParticleContent(particleId) {
   let uniqueParticleId = window.aliasMap.get(particleId)
 
-  /*
+/*
   window.uistatus.toggleFeedback(false)
   window.uistatus.updateUI()
-  return*/
-
+  return
+*/
   // Si particula es null mostrar ayuda
   if (particleId == null) {
     window.uistatus.searchEvent()

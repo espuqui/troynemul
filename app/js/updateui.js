@@ -94,6 +94,10 @@ export function updateUI() {
     document.getElementById("topWidgetHelp").hidden = false
     document.getElementById("infoBackIconEnabled").hidden = !uistatus.hasHistoryForBackInHelpOrSearch()
 
+    let feedbackWord = document.getElementById("feedbackWord")
+    feedbackWord.defaultValue = uistatus.convertText(uistatus.currentWord.split("|")[0])
+
+
     let feedbackWidgetElement = document.getElementById("feedbackWidget")
     if (originalFeedbackText === null) {
       originalFeedbackText = feedbackWidgetElement.innerHTML

@@ -220,6 +220,10 @@ export class UIStatus {
   }
 
   sendFeedback() {
-    sendWordFeedback(this.currentWord, this.currentGrafemario, VERSION)
+    let word = document.getElementById("feedbackWord").value
+    let comment = document.getElementById("feedbackComment").value
+    let name = document.getElementById("feedbackName").value
+    let land = document.getElementById("feedbackLand").value
+    sendWordFeedback(word, comment, name, land, this.currentGrafemario, VERSION)
   }
 }
