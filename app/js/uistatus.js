@@ -254,7 +254,7 @@ export class UIStatus {
     wordCount++
     feedbackMap.set(word, wordCount)
 
-    if (wordCount > 2) {
+    if (wordCount > 10) {
       showError("Ya enviaste muchos comentarios para esta palabra. " +
                   "Abre y cierra la app e intenta de nuevo")
       return false
