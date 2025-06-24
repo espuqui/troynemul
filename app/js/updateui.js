@@ -97,7 +97,8 @@ export function updateUI() {
     document.getElementById("feedbackWidget").hidden = false
     document.getElementById("topWidgetHelp").hidden = false
     document.getElementById("infoBackIconEnabled").hidden = !uistatus.hasHistoryForBackInHelpOrSearch()
-    
+
+    document.getElementById("feedbackComment").value = ""
     document.getElementById("feedbackName").defaultValue = uistatus.userName
     document.getElementById("feedbackLand").defaultValue = uistatus.userLocation
 

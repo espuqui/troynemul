@@ -2,6 +2,7 @@ import {AlphabetConverter, NoopAlphabetConverter} from "./backend/alphabet_conve
 import {sendWordFeedback} from "./backend/send_feedback.js";
 
 const VERSION = '06/22/2025_TEST'
+const feedbackMap = new Map();
 
 import {
   MAPUDUNGUN_AZUMCHEFE_PHONETIC_MAP, MAPUDUNGUN_RAGUILEO_PHONETIC_MAP,
@@ -245,6 +246,20 @@ export class UIStatus {
   }
 
   validateForm(word, comment, name, land) {
+    if (!feedbackMap.has(word)) {
+      feedbackMap.set(word, 0)
+    }
+
+    let wordCount = feedbackMap.get(word)
+    wordCount++
+    feedbackMap.set(word, wordCount)
+
+    if (wordCount > 2) {
+      showError("Ya enviaste muchos comentarios para esta palabra. " +
+                  "Abre y cierra la app e intenta de nuevo")
+      return false
+    }
+
     if (word.length === 0) {
       showError("Palabra/Partícula no puede estar vacía")
       return false
