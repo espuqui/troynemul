@@ -4,7 +4,7 @@
 import {Grafemarios, Views} from "./uistatus.js";
 
 let originalHelpText = null
-let originalFeedbackText = null
+
 export function updateUI() {
   let uistatus = window.uistatus
 
@@ -97,18 +97,13 @@ export function updateUI() {
     document.getElementById("feedbackWidget").hidden = false
     document.getElementById("topWidgetHelp").hidden = false
     document.getElementById("infoBackIconEnabled").hidden = !uistatus.hasHistoryForBackInHelpOrSearch()
+    
+    document.getElementById("feedbackName").defaultValue = uistatus.userName
+    document.getElementById("feedbackLand").defaultValue = uistatus.userLocation
 
     let feedbackWord = document.getElementById("feedbackWord")
     feedbackWord.defaultValue = uistatus.currentWord == null ? "" : uistatus.convertText(
       uistatus.currentWord.split("|")[0])
-
-
-    let feedbackWidgetElement = document.getElementById("feedbackWidget")
-    if (originalFeedbackText === null) {
-      originalFeedbackText = feedbackWidgetElement.innerHTML
-    }
-
-    feedbackWidgetElement.innerHTML = uistatus.convertPhrase(originalFeedbackText)
   }
 
   document.getElementById("pichi_fontsize_on").hidden = !uistatus.fontsizesmall

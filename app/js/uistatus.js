@@ -35,6 +35,8 @@ export class UIStatus {
     this.currentGrafemario = Grafemarios.UNIFICADO_QUOTES
     this.alphabetConverter = new NoopAlphabetConverter()
     this.fontsizesmall = true;
+    this.userName = ""
+    this.userLocation = ""
 
     this.loadStatusFromSession()
 
@@ -48,12 +50,17 @@ export class UIStatus {
     this.underscoreEnabled = this.loadBooleanOrDefault("underscoreEnabled", true);
     this.currentGrafemario = this.loadStringOrDefault("grafemario", Grafemarios.UNIFICADO_QUOTES);
     this.fontsizesmall = this.loadBooleanOrDefault("fontsizesmall", true);
+    this.userName = this.loadStringOrDefault("userName", "");
+    this.userLocation = this.loadStringOrDefault("userLocation", "");
+
     this.refreshGrafemario()
   }
 
   saveStatusToSession() {
     this.saveBoolean("underscoreEnabled", this.underscoreEnabled)
     this.saveString("grafemario", this.currentGrafemario)
+    this.saveString("userName", this.userName)
+    this.saveString("userLocation", this.userLocation)
     this.saveBoolean("fontsizesmall", this.fontsizesmall)
   }
 
@@ -225,15 +232,54 @@ export class UIStatus {
     let comment = document.getElementById("feedbackComment").value
     let name = document.getElementById("feedbackName").value
     let land = document.getElementById("feedbackLand").value
-    sendWordFeedback(word, comment, name, land, this.currentGrafemario, VERSION, callbackSendFeedback)
+
+    if (this.validateForm(word, comment, name, land)) {
+      this.userName = name
+      this.userLocation = land
+
+
+      this.saveStatusToSession()
+
+      sendWordFeedback(word, comment, name, land, this.currentGrafemario, VERSION, callbackSendFeedback)
+    }
+  }
+
+  validateForm(word, comment, name, land) {
+    if (word.length === 0) {
+      showError("Palabra/Partícula no puede estar vacía")
+      return false
+    }
+    if (comment.length <= 10) {
+      showError("Comentario muy corto, debe tener al menos 10 letras")
+      return false
+    }
+
+    if (name.length === 0) {
+      showError("Nombre no puede estar vacío")
+      return false
+    }
+
+    if (land.length === 0) {
+      showError("Procedencia no puede estar vacía")
+      return false
+    }
+
+    return true
+
   }
 }
+
 
 function callbackSendFeedback(responseCode) {
   if (responseCode === 200) {
     document.getElementById("feedbackSuccessWidget").hidden = false
     document.getElementById("feedbackFormWidget").hidden = true
   } else {
-    document.getElementById("errorSendingFeedbackMessage").hidden = false
+    showError("Error enviando feedback, inténtalo mas tarde")
   }
+}
+
+function showError(errorMessage) {
+  document.getElementById("errorSendingFeedbackMessage").hidden = false
+  document.getElementById("errorSendingFeedbackMessageText").innerText = errorMessage
 }
