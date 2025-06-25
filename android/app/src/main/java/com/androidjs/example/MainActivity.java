@@ -11,8 +11,11 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.EditText;
 import android.widget.Toast;
+import androidx.core.splashscreen.SplashScreen;
 import android.os.Build;
 import android.content.Context;
+import android.graphics.Color;
+import android.os.Handler;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,18 +30,30 @@ public class MainActivity extends AppCompatActivity {
 	public static boolean canGoBack = true;
 	public static boolean updateTitle = true;
 	public static String msgTitle = null;
+	private boolean keepSplashScreen = true;
+	private final int SPLASH_SCREEN_DELAY = 500; // Delay in milliseconds
+
 
 	@SuppressWarnings("deprecation")
 	@SuppressLint({"SetJavaScriptEnabled"})
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+  	final SplashScreen splashScreen = SplashScreen.installSplashScreen(this);
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+
+     splashScreen.setKeepOnScreenCondition(() -> keepSplashScreen);
+
+          new Handler().postDelayed(() -> {
+              keepSplashScreen = false;
+          }, SPLASH_SCREEN_DELAY);
+
 		getSupportActionBar().hide();
 
 		try {
 			// Get webview & errorLabel
 			webView = findViewById(R.id.webview0);
+			webView.setBackgroundColor(Color.parseColor("#000000"));
 
 			webView.setWebViewClient(new WebViewClient() {
 				@Override
