@@ -1,9 +1,6 @@
 Antes del release:
 
-P0: Splash screen
 P0: Particulas conocidas, ejemplos propios [EN PROCESO]
-
-
 P1: Package name
 P1: Bug "/" shouldn't have tooltip
 
@@ -40,3 +37,4 @@ P0: Feedback x palabra y por error [LISTO]
 P0: Piru pequeño [LISTO]
 P0: Revisar que los formularios no esten vacios [DONE]
 P0: Ayuda final [DONE]
+P0: Splash screen
