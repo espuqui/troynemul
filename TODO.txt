@@ -2,6 +2,7 @@ Antes del release:
 
 P0: Particulas conocidas, ejemplos propios [EN PROCESO]
 P1: Package name
+P1: Bug. Busqueda con otras particulas
 P1: Bug "/" shouldn't have tooltip
 
 Entries:

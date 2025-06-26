@@ -88,6 +88,7 @@ export function updateUI() {
     document.getElementById("navigationBackIconDisabled").hidden =  uistatus.hasHistory()
 
     window.updateExamples()
+    document.getElementById("mainDiv").scrollTop = 0
   }
 
   if (uistatus.currentView === Views.FEEDBACK) {

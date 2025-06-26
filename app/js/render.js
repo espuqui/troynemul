@@ -130,14 +130,11 @@ function handleTooltips() {
       }
     }
 
-    let elementsthreedots = document.getElementById("threeDots")
-
-    if (event.target.parentNode === null || event.target.parentNode.className !== "threeDotIcon") {
-      if (!elementsthreedots.contains(event.target)) {
-        document.getElementById("threeDots").hidden = true
-      }
-    } else {
+    if (event.target.className === "threeDotIcon" ||
+      (event.target.parentNode !== null && event.target.parentNode.className === "threeDotIcon")) {
       document.getElementById("threeDots").hidden = document.getElementById("threeDots").hidden === false;
+    } else {
+      document.getElementById("threeDots").hidden = true
     }
   });
 }
