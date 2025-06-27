@@ -81,13 +81,11 @@ function init() {
   window.addEventListener('popstate', function (event) {
 
 
-    if (window.uistatus.currentView === Views.SEARCH) {
+    if (window.uistatus.currentView === Views.SEARCH ||
+      window.uistatus.currentView === Views.HELP ||
+      window.uistatus.currentView === Views.FEEDBACK) {
       window.uistatus.toggleContent(true, true)
-      return
-    }
-
-    if (window.uistatus.currentView === Views.HELP) {
-      window.uistatus.toggleContent(true, true)
+      window.uistatus.popHistory()
       return
     }
 
@@ -151,7 +149,7 @@ export function renderParticleContent(particleId) {
      window.uistatus.updateUI()
      return
  */
-  // Si particula es null mostrar ayuda
+  // Si particula es null mostrar busqueda
   if (particleId == null) {
     window.uistatus.searchEvent()
     window.uistatus.updateUI()

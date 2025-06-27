@@ -1,9 +1,13 @@
 Antes del release:
 
 P0: Particulas conocidas, ejemplos propios [EN PROCESO]
-P1: Package name
+P0: Package name
+
+Post release:
+
 P1: Bug. Busqueda con otras particulas
 P1: Bug "/" shouldn't have tooltip
+P1: Bug forward
 
 Entries:
     "|": {
@@ -25,17 +29,3 @@ Entries:
         }
       ]
     },
-
-// Listo
-P0: Cambiar nombre a "Troy N'emül'" y repositorio nuevo [LISTO].
-P0: Dominio troynemul.org [LISTO]
-P0: Dos branches: main y test [LISTO]
-P0: Pagina de bienvenida [REQUIERE UPDATES]
-P0: Multigrafemario [LISTO]
-P0: Documentacion en español [LISTO]
-P0: Tamaño letra [LISTO]
-P0: Feedback x palabra y por error [LISTO]
-P0: Piru pequeño [LISTO]
-P0: Revisar que los formularios no esten vacios [DONE]
-P0: Ayuda final [DONE]
-P0: Splash screen

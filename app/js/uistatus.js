@@ -134,6 +134,7 @@ export class UIStatus {
 
   toggleRenderHelp(value, forceUpdate = false) {
     this.currentView = Views.HELP
+    window.uistatus.pushHistory(null)
     this.checkIfUpdateUI(forceUpdate)
   }
 
@@ -144,6 +145,7 @@ export class UIStatus {
 
   toggleFeedback(value, forceUpdate = false) {
     this.currentView = Views.FEEDBACK
+    window.uistatus.pushHistory(this.currentWord)
     this.checkIfUpdateUI(forceUpdate)
   }
 
