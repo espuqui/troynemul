@@ -139,7 +139,7 @@ export class UIStatus {
 
   toggleRenderHelp(value, forceUpdate = false) {
     this.currentView = Views.HELP
-    this.pushHistory(null)
+    this.pushHistory(this.currentWord)
     this.checkIfUpdateUI(forceUpdate)
   }
 

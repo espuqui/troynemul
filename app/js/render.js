@@ -81,6 +81,11 @@ function init() {
   window.addEventListener('popstate', function (event) {
 
 
+    if (window.uistatus.currentView !== Views.SEARCH) {
+      // State contiene la particula en el top del stack
+      window.uistatus.popHistory()
+    }
+
     if (window.uistatus.currentView === Views.SEARCH ||
       window.uistatus.currentView === Views.HELP ||
       window.uistatus.currentView === Views.FEEDBACK) {
