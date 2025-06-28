@@ -1,4 +1,4 @@
-package com.androidjs.example;
+package org.troynemul.app;
 
 import android.app.Activity;
 import android.content.Context;

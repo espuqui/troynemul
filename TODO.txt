@@ -1,9 +1,6 @@
 Antes del release:
 
 P0: Particulas conocidas, ejemplos propios [EN PROCESO]
-P0: Package name
-P0: Arreglar navegacion
-P0: Bug forward / backwards
 
 Post release:
 
@@ -31,3 +28,6 @@ Entries:
     },
 
 P0: Bug. Busqueda con otros grafemarios
+P0: Arreglar navegacion
+P0: Bug forward / backwards
+P0: Package name
