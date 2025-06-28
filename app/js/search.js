@@ -12,7 +12,7 @@ export function search(partialWord) {
 export function loadSearchEvent() {
 
   let searchBox = document.getElementById("searchWordInput")
-  let result = window.search(searchBox.value)
+  let result = window.search(window.uistatus.convertTextReverse(searchBox.value))
   let searchForm = document.getElementById("searchForm")
   let renderedResult = ""
   searchForm.firstResult = ""

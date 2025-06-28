@@ -218,7 +218,7 @@
       }
     ]
   },
-  "iñchiñ|com": {
+  "iñchiñ|com": {
     "title": "asociativo [{iñche + pu che}] (con)",
     "color": "aqua",
     "explanation": "Denota acompañamiento, equivale a <i>con</i> en {wingkadungun}. Hay que tomar en cuenta el numero de personas resultante de la asociación.",
@@ -227,12 +227,12 @@
       {
         "examples": [
           [
-            "Müle-n tañi reñma iñchiñ",
+            "Müle-n tañi reñma iñchiñ",
             "estar-(ind1s3) (poss1s) familia (com)",
             "Vivo con mi familia"
           ],
           [
-            "Müle-n tañi ñuke ka ñukentu iñchiñ",
+            "Müle-n tañi ñuke ka ñukentu iñchiñ",
             "estar-(ind1s3) (poss1s) mamá y tía.materna (com)",
             "Vivo con mi mamá y mi tía (materna)"
           ]
@@ -240,7 +240,7 @@
       }
     ]
   },
-  "iñchiw|com": {
+  "iñchiw|com": {
     "title": "asociativo [{iñche + kiñe che}] (con)",
     "color": "aqua",
     "explanation": "Denota acompañamiento, equivale a <i>con</i> en {wingkadungun}. Hay que tomar en cuenta el numero de personas resultante de la asociación.",
@@ -249,7 +249,7 @@
       {
         "examples": [
           [
-            "Iñche müle-n tañi afkadi iñchiw",
+            "Iñche müle-n tañi afkadi iñchiw",
             "yo estar-(ind1s3) (poss1s) pareja (com)",
             "Vivo con mi pareja"
           ]
@@ -339,7 +339,7 @@
             "Llevas puesto un sombrero negro"
           ],
           [
-            "Koñoll iwüd-pel'-tule-n iñche",
+            "Koñoll iwüd-pel'-tule-n iñche",
             "morado envolver-cuello-(tr-st)-(ind1s3) yo",
             "Yo estoy usando una bufanda morada"
           ]
@@ -462,7 +462,7 @@
             "Soy una persona baja"
           ],
           [
-            "Iñche püchi wentru-nge-n",
+            "Iñche püchi wentru-nge-n",
             "Yo pequeño hombre-(verb)-(ind1s3)",
             "Yo soy un niño"
           ],
@@ -477,7 +477,7 @@
         "explanation": "Conjugado según la persona que corresponda más la unión de un número",
         "examples": [
           [
-            "Tañi reñma mew kayu che-nge-iñ tañi ñuke",
+            "Tañi reñma mew kayu che-nge-iñ tañi ñuke",
             "(poss1s) familia (inst) seis persona-(verb)-(ind4-1ns3-p2)",
             "En mi familia somos seis personas"
           ]
@@ -511,7 +511,7 @@
         "explanation": "el posesivo de {fey} también es {tañi}, usamos {iñche tañi/ñi} o {fey tañi/ñi} para evitar confusión.",
         "examples": [
           [
-            "Iñche ñi ñuke",
+            "Iñche ñi ñuke",
             "Yo (poss1s) mamá",
             "Mi mamá"
           ],
@@ -569,7 +569,7 @@
         "explanation": "el posesivo de {fey} también es {tañi}, usamos {iñche tañi/ñi} o {fey tañi/ñi} para evitar confusión.",
         "examples": [
           [
-            "Iñche ñi ñuke",
+            "Iñche ñi ñuke",
             "Yo (poss1s) mamá",
             "Mi mamá"
           ],
@@ -642,7 +642,7 @@
             "Shorts blancos (cada uno por separado)"
           ],
           [
-            "Kolü-ke makuñ",
+            "Kolü-ke makuñ",
             "rojo-(distr) mantas",
             "Mantas rojas (cada manta es distinta)"
           ],
@@ -674,7 +674,7 @@
     "content": [
       {
         "explanation": "Por ejemplo, con <i>{-chi}</i>, decimos la cosa exacta que estamos viendo o de la que hablamos. El {-chi} convierte el demostrativo en una especie de adjetivo, como <i>este</i>, <i>esa</i>, <i>aquel</i> en español.",
-          "examples": [
+        "examples": [
           [
             "Tüfa-chi ruka",
             "Ésta-(adj) casa",
@@ -765,7 +765,7 @@
         "explanation": "Indica donde están las cosas",
         "examples": [
           [
-            "Miñche-mesa-le-ymi",
+            "Miñche-mesa-le-ymi",
             "debajo-mesa-(st)-(ind4-23-s2)",
             "Estás debajo de la mesa"
           ]

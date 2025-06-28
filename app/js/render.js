@@ -85,7 +85,6 @@ function init() {
       window.uistatus.currentView === Views.HELP ||
       window.uistatus.currentView === Views.FEEDBACK) {
       window.uistatus.toggleContent(true, true)
-      window.uistatus.popHistory()
       return
     }
 

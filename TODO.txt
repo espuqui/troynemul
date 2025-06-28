@@ -2,12 +2,12 @@ Antes del release:
 
 P0: Particulas conocidas, ejemplos propios [EN PROCESO]
 P0: Package name
+P0: Arreglar navegacion
+P0: Bug forward / backwards
 
 Post release:
 
-P1: Bug. Busqueda con otras particulas
 P1: Bug "/" shouldn't have tooltip
-P1: Bug forward
 
 Entries:
     "|": {
@@ -29,3 +29,5 @@ Entries:
         }
       ]
     },
+
+P0: Bug. Busqueda con otros grafemarios

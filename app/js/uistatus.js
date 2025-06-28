@@ -35,6 +35,7 @@ export class UIStatus {
     this.currentWord = null
     this.currentGrafemario = Grafemarios.UNIFICADO_QUOTES
     this.alphabetConverter = new NoopAlphabetConverter()
+    this.alphabetConverterReverse = new NoopAlphabetConverter()
     this.fontsizesmall = true;
     this.userName = ""
     this.userLocation = ""
@@ -83,6 +84,10 @@ export class UIStatus {
 
   convertText(text) {
     return this.alphabetConverter.convertText(text)
+  }
+
+  convertTextReverse(text) {
+    return this.alphabetConverterReverse.convertText(text)
   }
 
   convertPhrase(text) {
@@ -134,7 +139,6 @@ export class UIStatus {
 
   toggleRenderHelp(value, forceUpdate = false) {
     this.currentView = Views.HELP
-    window.uistatus.pushHistory(null)
     this.checkIfUpdateUI(forceUpdate)
   }
 
@@ -145,7 +149,6 @@ export class UIStatus {
 
   toggleFeedback(value, forceUpdate = false) {
     this.currentView = Views.FEEDBACK
-    window.uistatus.pushHistory(this.currentWord)
     this.checkIfUpdateUI(forceUpdate)
   }
 
@@ -178,20 +181,30 @@ export class UIStatus {
   refreshGrafemario() {
     if (this.currentGrafemario === Grafemarios.UNIFICADO_QUOTES) {
       this.alphabetConverter = new NoopAlphabetConverter()
+      this.alphabetConverterReverse = new NoopAlphabetConverter()
     }
     if (this.currentGrafemario === Grafemarios.UNIFICADO_UNDERSCORE) {
       this.alphabetConverter = new AlphabetConverter(MAPUDUNGUN_UNIFICADO_QUOTES_PHONETIC_MAP,
                                                      MAPUDUNGUN_UNIFICADO_UNDERSCORE_PHONETIC_MAP)
+
+      this.alphabetConverterReverse = new AlphabetConverter(MAPUDUNGUN_UNIFICADO_UNDERSCORE_PHONETIC_MAP,
+                                                           MAPUDUNGUN_UNIFICADO_QUOTES_PHONETIC_MAP)
     }
 
     if (this.currentGrafemario === Grafemarios.AZUMCHEFE) {
       this.alphabetConverter = new AlphabetConverter(MAPUDUNGUN_UNIFICADO_QUOTES_PHONETIC_MAP,
                                                      MAPUDUNGUN_AZUMCHEFE_PHONETIC_MAP)
+
+      this.alphabetConverterReverse = new AlphabetConverter(MAPUDUNGUN_AZUMCHEFE_PHONETIC_MAP,
+                                                            MAPUDUNGUN_UNIFICADO_QUOTES_PHONETIC_MAP)
     }
 
     if (this.currentGrafemario === Grafemarios.RAGUILEO) {
       this.alphabetConverter = new AlphabetConverter(MAPUDUNGUN_UNIFICADO_QUOTES_PHONETIC_MAP,
                                                      MAPUDUNGUN_RAGUILEO_PHONETIC_MAP)
+
+      this.alphabetConverterReverse = new AlphabetConverter(MAPUDUNGUN_RAGUILEO_PHONETIC_MAP,
+                                                            MAPUDUNGUN_UNIFICADO_QUOTES_PHONETIC_MAP)
     }
   }
 
