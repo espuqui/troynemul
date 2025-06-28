@@ -93,8 +93,6 @@ function init() {
       return
     }
 
-    // State contiene la particula en el top del stack
-    window.uistatus.popHistory()
     if (window.uistatus.currentWord === null) {
       window.uistatus.searchEvent()
     } else {
