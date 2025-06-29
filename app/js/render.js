@@ -173,6 +173,13 @@ function c(text) {
   return window.uistatus.convertText(text)
 }
 
+function h(text) {
+  return text.replace(/\[([^\]]+)\]/g, (match, content) => {
+    return renderParticle(content, content)
+  });
+}
+
+
 function t(text) {
   return window.uistatus.convertPhrase(text)
 }
@@ -189,7 +196,7 @@ function renderFromParticleData(particleData, particleId) {
   particleTypeTitle.innerText = t(particleData.title)
   particleContent.innerHTML = ""
   if (particleData.explanation !== undefined) {
-    particleContent.innerHTML = "<p class='particleContent'>" + t(particleData.explanation) + "</p>"
+    particleContent.innerHTML = "<p class='particleContent'>" + t(h(particleData.explanation)) + "</p>"
   }
   relativeExampleList.innerHTML = ""
 
@@ -198,7 +205,7 @@ function renderFromParticleData(particleData, particleId) {
       particleContent.innerHTML += "<p class='particleSubTitle'>" + t(content.subtitle) + "</p>"
     }
     if (content.explanation !== undefined) {
-      particleContent.innerHTML += "<p class='particleContent'>" + t(content.explanation) + "</p>"
+      particleContent.innerHTML += "<p class='particleContent'>" + t(h(content.explanation)) + "</p>"
     }
 
     for (let examples of content.examples) {
@@ -275,26 +282,32 @@ function renderMapu(exampleParts, particleId) {
       let wordParts = examplePart.split("*")
       html += renderWithSpanOnClickTooltip(c(wordParts[0]), wordParts[1], "normalWordExample")
     } else if (examplePart.includes("|")) {
-      let wordParts = examplePart.split("|")
-      let examplePartToLookup = examplePart.toLowerCase()
-      let currentWord = window.aliasMap.get(examplePartToLookup)
-      if (currentWord === undefined) {
-        html += renderWithSpanOnClickTooltip(c(wordParts[0]), "Falta: <br/> (" + examplePartToLookup + ")",
-                                             "particleMissing particleExample")
-      } else {
-        let color = window.particleData[currentWord].color
-        if (window.aliasMap.get(examplePart) === particleId) {
-          html += renderWithSpanOnClickParticle(c(wordParts[0]), examplePartToLookup, "particleExample particleCurrent",
-                                                color)
-        } else {
-          html += renderWithSpanOnClickParticle(c(wordParts[0]), examplePartToLookup, "particleExample", color)
-        }
-      }
+      html += renderParticle(examplePart, particleId)
     } else if (examplePart === " ") {
       html += " "
     }
   }
 
+  return html
+}
+
+function renderParticle(examplePart, particleId) {
+  let html = ""
+  let wordParts = examplePart.split("|")
+  let examplePartToLookup = examplePart.toLowerCase()
+  let currentWord = window.aliasMap.get(examplePartToLookup)
+  if (currentWord === undefined) {
+    html += renderWithSpanOnClickTooltip(c(wordParts[0]), "Falta: <br/> (" + examplePartToLookup + ")",
+                                         "particleMissing particleExample")
+  } else {
+    let color = window.particleData[currentWord].color
+    if (window.aliasMap.get(examplePart) === particleId) {
+      html += renderWithSpanOnClickParticle(c(wordParts[0]), examplePartToLookup, "particleExample particleCurrent",
+                                            color)
+    } else {
+      html += renderWithSpanOnClickParticle(c(wordParts[0]), examplePartToLookup, "particleExample", color)
+    }
+  }
   return html
 }
 
