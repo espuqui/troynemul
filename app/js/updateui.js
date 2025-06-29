@@ -61,6 +61,10 @@ export function updateUI() {
     document.getElementById("iconInfoBar").hidden = false
     document.getElementById("textInfoBar").hidden = false
 
+    document.getElementById("versionText").innerText = "Versión: " + uistatus.getVersion() +
+      "\nParticulas: " + uistatus.getParticlesTotal() +
+      "\nEjemplos: " + uistatus.getExamplesTotal()
+
     let helpWidgetElement = document.getElementById("helpWidget")
     if (originalHelpText === null) {
       originalHelpText = helpWidgetElement.innerHTML

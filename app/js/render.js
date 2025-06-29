@@ -110,6 +110,7 @@ function init() {
 export function initView(data) {
   window.particleData = data
   window.aliasMap = buildAliasMap(data)
+  window.uistatus.setDataStats(data)
   document.getElementById("mainDiv").hidden = false
 
   // Carga contenido

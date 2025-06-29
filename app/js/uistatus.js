@@ -39,6 +39,8 @@ export class UIStatus {
     this.fontsizesmall = true;
     this.userName = ""
     this.userLocation = ""
+    this.particlesTotal = 0
+    this.examplesTotal = 0
 
     this.loadStatusFromSession()
 
@@ -299,6 +301,30 @@ export class UIStatus {
 
     return true
 
+  }
+
+  setDataStats(data) {
+    this.particlesTotal = 0
+    this.examplesTotal = 0
+
+    for (let key in data) {
+      this.particlesTotal++
+      for (let content of data[key].content) {
+        this.examplesTotal += content.examples.length
+      }
+    }
+  }
+
+  getVersion() {
+    return VERSION
+  }
+
+  getParticlesTotal() {
+    return this.particlesTotal
+  }
+
+  getExamplesTotal() {
+    return this.examplesTotal
   }
 }
 
