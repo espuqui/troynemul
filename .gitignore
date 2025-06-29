@@ -5,6 +5,7 @@ node_modules
 dist
 .cache
 .idea
+google_play
 *.iml
 *.keystore
 *.apk
