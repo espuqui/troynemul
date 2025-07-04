@@ -351,6 +351,10 @@ a {
   height: 28px;
 }
 
+.normalWordInline {
+  cursor: pointer;
+}
+
 .particleCurrent {
   font-weight: bold;
 }
@@ -371,6 +375,14 @@ a {
 
 .winkaExample {
   font-style: italic;
+  color: white;
+}
+
+.particleRelatedTitle {
+  font-style: italic;
+  color: springgreen;
+  border-bottom: solid;
+  border-bottom-width: thin
 }
 
 .flagSpan {

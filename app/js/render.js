@@ -126,7 +126,7 @@ function handleTooltips() {
     for (let elem of elements) {
       if (elem === event.target) {
         let tooltipDiv = elem.children[0]
-        tooltipDiv.style.visibility =  'visible'
+        tooltipDiv.style.visibility = 'visible'
         tooltipDiv.style.left = "-10px"
 
         let wordHalfWidth = Math.round(tooltipDiv.parentNode.getBoundingClientRect().width / 2)
@@ -186,8 +186,13 @@ function h(text) {
     }
 
     let output = parseExample(parts[0], parts[1])
+    let wingkadungun = ""
 
-    return renderMapuInline(output, window.uistatus.currentWord)
+    if (parts.length > 2) {
+      wingkadungun += " <span class='winkaExample'>(" + parts[2] + ")</span>"
+    }
+
+    return renderMapuInline(output, window.uistatus.currentWord) + wingkadungun
   });
 }
 
@@ -224,6 +229,18 @@ function renderFromParticleData(particleData, particleId) {
       let exampleParts = parseExample(examples[0], examples[1])
       particleContent.innerHTML += renderMapuWithFlag(exampleParts, particleId) + "<br/>" + renderWinka(examples[2])
     }
+  }
+
+  if (particleData.related !== undefined) {
+    particleContent.innerHTML += "<p class='particleRelatedTitle'>Partículas similares </p>"
+    for (let i in particleData.related) {
+      if (i !== "0") {
+        particleContent.innerHTML += ", "
+      }
+      particleContent.innerHTML += renderParticle(particleData.related[i], "")
+    }
+    particleContent.innerHTML += "<br /><br />"
+
   }
 
   let relativeExamples = searchAdditionalExamples(particleId, window.particleData, window.aliasMap)
@@ -291,16 +308,20 @@ function renderMapuWithFlag(exampleParts, particleId) {
 }
 
 function renderMapuInline(exampleParts, particleId) {
-  return "<i style='color: #FFFFFF'>" + renderMapu(exampleParts, particleId) + "</i>"
+  return "<i style='color: #FFFFFF'>" + renderMapuWithStyle(exampleParts, particleId, "normalWordInline") + "</i>"
 }
+
 function renderMapu(exampleParts, particleId) {
+  return renderMapuWithStyle(exampleParts, particleId, "normalWordExample")
+}
+function renderMapuWithStyle(exampleParts, particleId, style) {
 
   let html = ""
 
   for (let examplePart of exampleParts) {
     if (examplePart.includes("*")) {
       let wordParts = examplePart.split("*")
-      html += renderWithSpanOnClickTooltip(c(wordParts[0]), wordParts[1], "normalWordExample")
+      html += renderWithSpanOnClickTooltip(c(wordParts[0]), wordParts[1], style)
     } else if (examplePart.includes("|")) {
       html += renderParticle(examplePart, particleId)
     } else if (examplePart === " ") {

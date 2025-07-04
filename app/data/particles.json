@@ -221,8 +221,9 @@
   "iñchiñ|com": {
     "title": "asociativo [{iñche + pu che}] (con)",
     "color": "aqua",
-    "explanation": "Denota acompañamiento, equivale a <i>con</i> en {wingkadungun}. Hay que tomar en cuenta el numero de personas resultante de la asociación.",
+    "explanation": "Indica que uno está acompañado de más de dos personas. Equivale a decir <i>con</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [iñche amu-n|yo ir-(ind1s3)|yo fui] y queremos decir con quien más fuimos, agregamos {iñchiw} al final. Entonces queda: [iñche amu-n tañi reñma iñchiñ|yo ir-(ind1s3) (poss1s) familia (com)|yo fui con mi familia].",
     "variations": [],
+    "related": [ "iñchiw|com", "emu|com", "emün|com"],
     "content": [
       {
         "examples": [
