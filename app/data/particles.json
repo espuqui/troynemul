@@ -51,7 +51,7 @@
         ]
       },
       {
-        "explanation": "pero el lugar es un nombre propio, se puede omitir [mew|inst].",
+        "explanation": "pero el lugar es un nombre propio, se puede omitir [mew|(inst)].",
         "examples": [
           [
             "Santiaw tuw-ün",
@@ -374,7 +374,7 @@
     "title": "oficio",
     "color": "orange",
     "fix": "post",
-    "explanation": "Con este sufijo, se pueden formar sustantivos para indicar profesiones u oficios, a partir de verbos de acción. Equivale al sufijo -dor del {wingkadungun}. La palabra terminada en [fe|nom] sirve tanto para mujer u hombre, no marca género. ",
+    "explanation": "Con este sufijo, se pueden formar sustantivos para indicar profesiones u oficios, a partir de verbos de acción. Equivale al sufijo -dor del {wingkadungun}. La palabra terminada en [fe|(nom)] sirve tanto para mujer u hombre, no marca género.",
     "variations": [],
     "content": [
       {
@@ -508,7 +508,7 @@
         ]
       },
       {
-        "explanation": "el posesivo de {fey} también es [tañi|poss3s], usamos {iñche} [tañi|poss1s] o {fey} [tañi|poss3s] para evitar confusión.",
+        "explanation": "el posesivo de {fey} también es [tañi|(poss3s)], usamos {iñche} [tañi|(poss1s)] o {fey} [tañi|poss3s] para evitar confusión.",
         "examples": [
           [
             "Iñche ñi ñuke",
@@ -566,7 +566,7 @@
         ]
       },
       {
-        "explanation": "el posesivo de {fey} también es {tañi}, usamos {iñche} [tañi|poss1s] o {fey} [tañi|poss3s] para evitar confusión.",
+        "explanation": "el posesivo de {fey} también es {tañi}, usamos [iñche tañi|yo (poss1s)] o [fey tañi|el/ella (poss3s)] para evitar confusión.",
         "examples": [
           [
             "Iñche ñi ñuke",
@@ -601,7 +601,7 @@
         ]
       },
       {
-        "explanation": "Para dar información de un familiar fallecido, como por ejemplo su nombre, debemos utilizar el sufijo [fu|ind] en el verbo, el cual sirve para indicar que la acción ocurrió en el pasado.",
+        "explanation": "Para dar información de un familiar fallecido, como por ejemplo su nombre, debemos utilizar el sufijo [fu|(ind)] en el verbo, el cual sirve para indicar que la acción ocurrió en el pasado.",
         "examples": [
           [
             "Tami ñuke yem Clorinda pi-nge-fu-y",
@@ -621,7 +621,7 @@
     "title": "sufijo pluralizador distributivo (varios y distintos)",
     "color": "firebrick",
     "fix": "post",
-    "explanation": "El sufijo [ke|distr] se usa en mapudungun para hablar de varios elementos, pero no de cualquier manera. No indica simplemente que hay <i>muchos</i> (como lo hace [pu|coll], sino que lo que se menciona está compuesto por partes distintas, una por una, o que la acción o cualidad se repite en diferentes casos.",
+    "explanation": "El sufijo [ke|distr] se usa en mapudungun para hablar de varios elementos, pero no de cualquier manera. No indica simplemente que hay <i>muchos</i> (como lo hace [pu|(coll)], sino que lo que se menciona está compuesto por partes distintas, una por una, o que la acción o cualidad se repite en diferentes casos.",
     "variations": [],
     "content": [
       {
@@ -654,7 +654,7 @@
         ]
       },
       {
-        "explanation": "Se puede usar en conjunto con [pu|coll], grupo donde cada uno tiene una característica",
+        "explanation": "Se puede usar en conjunto con [pu|(coll)], grupo donde cada uno tiene una característica",
         "examples": [
           [
             "Pu küme-ke che",
@@ -669,11 +669,11 @@
     "title": "adjetivizador de demostrativos",
     "color": "blue",
     "fix": "post",
-    "explanation": "El sufijo [chi|adj] se añade a los demostrativos cuando se usan para modificar un sustantivo, es decir, cuando no están solos, sino que acompañan a un sustantivo para señalarlo mejor.",
+    "explanation": "El sufijo [chi|(adj)] se añade a los demostrativos cuando se usan para modificar un sustantivo, es decir, cuando no están solos, sino que acompañan a un sustantivo para señalarlo mejor.",
     "variations": [ ],
     "content": [
       {
-        "explanation": "Por ejemplo, con [chi|adj], decimos la cosa exacta que estamos viendo o de la que hablamos. El [chi|adj] convierte el demostrativo en una especie de adjetivo, como <i>este</i>, <i>esa</i>, <i>aquel</i> en español.",
+        "explanation": "Por ejemplo, con [chi|(adj)], decimos la cosa exacta que estamos viendo o de la que hablamos. El [chi|(adj)] convierte el demostrativo en una especie de adjetivo, como <i>este</i>, <i>esa</i>, <i>aquel</i> en español.",
         "examples": [
           [
             "Tüfa-chi ruka",
@@ -688,7 +688,7 @@
         ]
       },
       {
-        "explanation": "Sin [chi|adj], el demostrativo no modifica directamente al sustantivo. Se usa como pronombre, o sea, cuando el sustantivo no se nombra o cuando se refiere a algo más general.",
+        "explanation": "Sin [chi|(adj)], el demostrativo no modifica directamente al sustantivo. Se usa como pronombre, o sea, cuando el sustantivo no se nombra o cuando se refiere a algo más general.",
         "examples": [
           [
             "Tüfa tañi ruka",
@@ -747,7 +747,7 @@
         ]
       },
       {
-        "explanation": "Estado permanente vs. temporal. Se puede contrastar con otro sufijo [nge|verb] que indica una característica permanente:",
+        "explanation": "Estado permanente vs. temporal. Se puede contrastar con otro sufijo [nge|(verb)] que indica una característica permanente:",
         "examples": [
           [
             "mawün'-küle-y",

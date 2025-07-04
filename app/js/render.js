@@ -176,7 +176,14 @@ function c(text) {
 
 function h(text) {
   return text.replace(/\[([^\]]+)\]/g, (match, content) => {
-    return renderParticle(content, content)
+    let parts = match.slice(1, -1).split("|")
+    if (parts.length < 2) {
+      alert("Error parsing inline example")
+    }
+
+    let output = parseExample(parts[0], parts[1])
+
+    return renderMapuInline(output, window.uistatus.currentWord)
   });
 }
 
@@ -211,7 +218,7 @@ function renderFromParticleData(particleData, particleId) {
 
     for (let examples of content.examples) {
       let exampleParts = parseExample(examples[0], examples[1])
-      particleContent.innerHTML += renderMapu(exampleParts, particleId) + "<br/>" + renderWinka(examples[2])
+      particleContent.innerHTML += renderMapuWithFlag(exampleParts, particleId) + "<br/>" + renderWinka(examples[2])
     }
   }
 
@@ -223,7 +230,7 @@ function renderFromParticleData(particleData, particleId) {
   } else {
     relatedExamplesTitle.hidden = false
     for (let examples of relativeExamples) {
-      relativeExampleList.innerHTML += renderMapu(examples[0], particleId) + "<br/>" + renderWinka(examples[1])
+      relativeExampleList.innerHTML += renderMapuWithFlag(examples[0], particleId) + "<br/>" + renderWinka(examples[1])
     }
   }
   updateExamples()
@@ -273,10 +280,18 @@ function renderWithSpanOnClickParticle(text, particleId, spanClass, color) {
                                text-decoration-skip-ink: none;`)
 }
 
-function renderMapu(exampleParts, particleId) {
-  let html = '<img src="img/mapuche_flag.svg" width="10px" height="10px" alt="">'
 
-  html += " "
+function renderMapuWithFlag(exampleParts, particleId) {
+  let html = '<img src="img/mapuche_flag.svg" width="10px" height="10px" alt=""> '
+  return html + renderMapu(exampleParts, particleId)
+}
+
+function renderMapuInline(exampleParts, particleId) {
+  return "<i style='color: #FFFFFF'>" + renderMapu(exampleParts, particleId) + "</i>"
+}
+function renderMapu(exampleParts, particleId) {
+
+  let html = ""
 
   for (let examplePart of exampleParts) {
     if (examplePart.includes("*")) {
