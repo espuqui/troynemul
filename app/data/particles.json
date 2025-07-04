@@ -221,7 +221,7 @@
   "iñchiñ|com": {
     "title": "asociativo [{iñche + pu che}] (con)",
     "color": "aqua",
-    "explanation": "Indica que uno está acompañado de más de dos personas. Equivale a decir <i>con</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [iñche amu-n|yo ir-(ind1s3)|yo fui] y queremos decir con quien más fuimos, agregamos {iñchiw} al final. Entonces queda: [iñche amu-n tañi reñma iñchiñ|yo ir-(ind1s3) (poss1s) familia (com)|yo fui con mi familia].",
+    "explanation": "Indica que uno está acompañado de más de dos personas. Equivale a decir <i>con</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [iñche amu-n|yo ir-(ind1s3)|yo fui] y queremos decir con quien más fuimos, agregamos <i>{iñchiñ}</i> al final. Entonces queda: [iñche amu-n tañi reñma iñchiñ|yo ir-(ind1s3) (poss1s) familia (com)|yo fui con mi familia].",
     "variations": [],
     "related": [ "iñchiw|com", "emu|com", "emün|com"],
     "content": [
@@ -244,8 +244,9 @@
   "iñchiw|com": {
     "title": "asociativo [{iñche + kiñe che}] (con)",
     "color": "aqua",
-    "explanation": "Denota acompañamiento, equivale a <i>con</i> en {wingkadungun}. Hay que tomar en cuenta el numero de personas resultante de la asociación.",
+    "explanation": "Indica que uno está acompañado de una persona más. Equivale a decir <i>con</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [iñche amu-n|yo ir-(ind1s3)|yo fui] y queremos decir que fuimos con una persona más, agregamos <i>{iñchiw}</i> al final. Entonces queda: [iñche amu-n tañi ñuke iñchiw|yo ir-(ind1s3) (poss1s) mamá (com)|yo fui con mi mamá].",
     "variations": [],
+    "related": [ "iñchiñ|com", "emu|com", "emün|com"],
     "content": [
       {
         "examples": [
@@ -261,8 +262,9 @@
   "emu|com": {
     "title": "asociativo [{eymi + kiñe che}] (con)",
     "color": "aqua",
-    "explanation": "Denota acompañamiento, equivale a <i>con</i> en {wingkadungun}. Hay que tomar en cuenta el numero de personas resultante de la asociación. Se ocupa en preguntas cuando se refiere a {eymi}.",
+    "explanation": "Indica que {eymi} (tú) estás acompañado de una persona más. Equivale a decir <i>con</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [eymi amu-ymi|tu ir-(ind4-23-s2)|tu fuiste] y queremos decir que tú fuiste con una persona más, agregamos <i>{emu}</i> al final. Entonces queda: [eymi amu-ymi tami ñuke emu|tu ir-(ind4-23-s2) (poss2s) mamá (com)|tu fuiste con tu mamá].",
     "variations": [],
+    "related": [ "iñchiñ|com", "iñchiw|com", "emün|com"],
     "content": [
       {
         "explanation": "Se presume que la otra persona está con una persona más.",
@@ -279,8 +281,9 @@
   "emün|com": {
     "title": "asociativo [{eymi + pu che}] (con)",
     "color": "aqua",
-    "explanation": "Denota acompañamiento, equivale a <i>con</i> en {wingkadungun}. Hay que tomar en cuenta el numero de personas resultante de la asociación. Se ocupa en preguntas cuando se refiere a {eymi}.",
+    "explanation": "Indica que {eymi} (tú) estás acompañado de varias personas más. Equivale a decir <i>con</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [eymi amu-ymi|tu ir-(ind4-23-s2)|tu fuiste] y queremos decir que tú fuiste con mas de una persona, agregamos <i>{emün}</i> al final. Entonces queda: [eymi amu-ymi tami reñma emün|tu ir-(ind4-23-s2) (poss2s) familia (com)|tu fuiste con tu familia].",
     "variations": [],
+    "related": [ "iñchiñ|com", "iñchiw|com", "emu|com"],
     "content": [
       {
         "explanation": "Se presume que la otra persona está con varias personas más.",
@@ -291,7 +294,7 @@
             "¿ Con quiénes vives ?"
           ],
           [
-            "Eymi lamngen, ¿ iney emün müle-ymi Konsepsion mew ?",
+            "Eymi lamngen, ¿ Iney emün müle-ymi Konsepsion mew ?",
             "Tu hermana, ¿ quien (com) estar-(ind4-23-s2) Concepción (inst) ?",
             "Y tu hermana, con quien viven en Concepción ?"
           ]
