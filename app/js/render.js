@@ -125,7 +125,16 @@ function handleTooltips() {
     let elements = document.getElementsByClassName("tooltip")
     for (let elem of elements) {
       if (elem === event.target) {
-        elem.children[0].style.visibility = 'visible'
+        let tooltipDiv = elem.children[0]
+        tooltipDiv.style.visibility =  'visible'
+        tooltipDiv.style.left = "-10px"
+
+        let wordHalfWidth = Math.round(tooltipDiv.parentNode.getBoundingClientRect().width / 2)
+        let toolTipHalfWidth = Math.round(tooltipDiv.getBoundingClientRect().width / 2)
+
+        let centerWidth = -toolTipHalfWidth + wordHalfWidth
+        tooltipDiv.style.left = centerWidth + "px"
+
       } else {
         elem.children[0].style.visibility = 'hidden'
       }
