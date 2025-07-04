@@ -27,7 +27,7 @@ export function loadSearchEvent() {
     let summary = c(r.summary)
     let variations = c(r.variations)
     let title = t(r.title)
-    renderedResult += `<div class="searchResultsRow" onclick="window.renderParticleContent('${r.particleId}')">
+    renderedResult += `<div class="searchResultsRow" onclick="window.uistatus.rememberSearchStatus(); window.renderParticleContent('${r.particleId}')">
       <div class="searchResultsCell">
       <p>
           <span style="${style}">${summary}</span>

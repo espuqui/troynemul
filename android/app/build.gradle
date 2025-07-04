@@ -3,10 +3,11 @@ plugins {
 }
 
 android {
-    compileSdkVersion 31
+    compileSdkVersion 35
 
     defaultConfig {
-        applicationId "com.androidjs.example"
+        applicationId "org.troynemul.app"
+        namespace("org.troynemul.app")
         minSdk 21
         targetSdkVersion 35
         versionCode 5

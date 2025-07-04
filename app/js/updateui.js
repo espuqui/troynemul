@@ -77,10 +77,12 @@ export function updateUI() {
     document.getElementById("searchWordInput").value = ""
     document.getElementById("searchResultsWidget").hidden = false
     document.getElementById("topWidgetSearching").hidden = false
+    document.getElementById("searchWordInput").value = uistatus.searchWidgetWord
     document.getElementById("searchWordInput").focus()
     document.getElementById("searchBackIconEnabled").hidden = !uistatus.hasHistoryForBackInHelpOrSearch()
 
     loadSearchEvent()
+    document.getElementById("mainDiv").scrollTop = uistatus.searchWidgetScroll
   }
 
   if (uistatus.currentView === Views.CONTENT) {

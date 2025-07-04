@@ -41,6 +41,9 @@ export class UIStatus {
     this.userLocation = ""
     this.particlesTotal = 0
     this.examplesTotal = 0
+    this.searchWidgetScroll = 0
+    this.searchWidgetWord = ""
+
 
     this.loadStatusFromSession()
 
@@ -325,6 +328,11 @@ export class UIStatus {
 
   getExamplesTotal() {
     return this.examplesTotal
+  }
+
+  rememberSearchStatus() {
+    this.searchWidgetScroll = document.getElementById("mainDiv").scrollTop
+    this.searchWidgetWord = document.getElementById("searchWordInput").value
   }
 }
 

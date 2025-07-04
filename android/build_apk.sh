@@ -8,7 +8,7 @@ KEYSTORE_PASSWD=`cat release.passwd`
 gradle :app:assembleRelease
 
 # Firmar
-$ANDROID_SDK_ROOT/build-tools/34.0.0/apksigner sign \
+$ANDROID_SDK_ROOT/build-tools/35.0.0/apksigner sign \
  --ks-key-alias alias_name --ks release.keystore \
  --ks-pass pass:$KEYSTORE_PASSWD --key-pass pass:$KEYSTORE_PASSWD \
  app/build/outputs/apk/release/app-release-unsigned.apk
