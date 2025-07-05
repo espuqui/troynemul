@@ -156,7 +156,8 @@
     "fix": "post",
     "explanation": "tercera persona singular (tú). El modo indicativo sirve para decir hechos <b>verdaderos o seguros y expresar opiniones.</b>",
     "variations": [
-      "i", "üy"
+      "i",
+      "üy"
     ],
     "content": [
       {
@@ -223,7 +224,11 @@
     "color": "aqua",
     "explanation": "Indica que uno está acompañado de más de dos personas. Equivale a decir <i>con</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [iñche amu-n|yo ir-(ind1s3)|yo fui] y queremos decir con quien más fuimos, agregamos <i>{iñchiñ}</i> al final. Entonces queda: [iñche amu-n tañi reñma iñchiñ|yo ir-(ind1s3) (poss1s) familia (com)|yo fui con mi familia].",
     "variations": [],
-    "related": [ "iñchiw|com", "emu|com", "emün|com"],
+    "related": [
+      "iñchiw|com",
+      "emu|com",
+      "emün|com"
+    ],
     "content": [
       {
         "examples": [
@@ -246,7 +251,11 @@
     "color": "aqua",
     "explanation": "Indica que uno está acompañado de una persona más. Equivale a decir <i>con</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [iñche amu-n|yo ir-(ind1s3)|yo fui] y queremos decir que fuimos con una persona más, agregamos <i>{iñchiw}</i> al final. Entonces queda: [iñche amu-n tañi ñuke iñchiw|yo ir-(ind1s3) (poss1s) mamá (com)|yo fui con mi mamá].",
     "variations": [],
-    "related": [ "iñchiñ|com", "emu|com", "emün|com"],
+    "related": [
+      "iñchiñ|com",
+      "emu|com",
+      "emün|com"
+    ],
     "content": [
       {
         "examples": [
@@ -264,7 +273,11 @@
     "color": "aqua",
     "explanation": "Indica que {eymi} (tú) estás acompañado de una persona más. Equivale a decir <i>con</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [eymi amu-ymi|tu ir-(ind4-23-s2)|tu fuiste] y queremos decir que tú fuiste con una persona más, agregamos <i>{emu}</i> al final. Entonces queda: [eymi amu-ymi tami ñuke emu|tu ir-(ind4-23-s2) (poss2s) mamá (com)|tu fuiste con tu mamá].",
     "variations": [],
-    "related": [ "iñchiñ|com", "iñchiw|com", "emün|com"],
+    "related": [
+      "iñchiñ|com",
+      "iñchiw|com",
+      "emün|com"
+    ],
     "content": [
       {
         "explanation": "Se presume que la otra persona está con una persona más.",
@@ -283,7 +296,11 @@
     "color": "aqua",
     "explanation": "Indica que {eymi} (tú) estás acompañado de varias personas más. Equivale a decir <i>con</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [eymi amu-ymi|tu ir-(ind4-23-s2)|tu fuiste] y queremos decir que tú fuiste con mas de una persona, agregamos <i>{emün}</i> al final. Entonces queda: [eymi amu-ymi tami reñma emün|tu ir-(ind4-23-s2) (poss2s) familia (com)|tu fuiste con tu familia].",
     "variations": [],
-    "related": [ "iñchiñ|com", "iñchiw|com", "emu|com"],
+    "related": [
+      "iñchiñ|com",
+      "iñchiw|com",
+      "emu|com"
+    ],
     "content": [
       {
         "explanation": "Se presume que la otra persona está con varias personas más.",
@@ -378,21 +395,31 @@
     "title": "oficio",
     "color": "orange",
     "fix": "post",
-    "explanation": "Con este sufijo, se pueden formar sustantivos para indicar profesiones u oficios, a partir de verbos de acción. Equivale al sufijo -dor del {wingkadungun}. La palabra terminada en [fe|(nom)] sirve tanto para mujer u hombre, no marca género.",
+    "explanation": "Con este sufijo se pueden formar sustantivos para indicar profesiones, oficios o algo a que se dedica alguien. Se forman a partir de verbos de acción. Equivale al sufijo -dor del {wingkadungun}. La palabra terminada en [fe|(nom)] sirve tanto para mujer u hombre, no marca género.<br /><br />Por ejemplo, a partir de [ruka|casa|casa], podemos formar [ruka-fe|casa-(nom)|constructor].",
     "variations": [],
     "content": [
       {
         "explanation": "",
         "examples": [
           [
+            "Ülkantu-fe",
+            "cantar-(nom)",
+            "Cantante"
+          ],
+          [
+            "Weicha-fe",
+            "luchar-(nom)",
+            "Guerrero"
+          ],
+          [
+            "Lawen-tu-che-fe",
+            "remedio-(verb)-persona-(nom)",
+            "persona que se dedica a sanar usando lawen"
+          ],
+          [
             "Waria mew pu ruka-fe fewla dewma-ke-yngün ruka",
             "ciudad (inst) (coll) casa-(nom) ahora hacer-(cf14)-(ind4-3ns3-p2) casa",
             "En la ciudad los constructores ahora construyen casas"
-          ],
-          [
-            "Iñche ta ad-künu-fe-nge-n",
-            "Yo => forma,aspecto,estructura,armonía-(pfps32)-(nom)-(verb)-(ind1s3)",
-            "Yo soy informático"
           ],
           [
             "Duamnie-nge-n kiñe ruka-fe ñi dewma-yal ruka",
@@ -405,9 +432,49 @@
         "explanation": "Las palabras de oficios que provienen del castellano no llevan esta partícula",
         "examples": [
           [
-            "Tati mediku ngülam-tu-eyew pütrem-tu-welaya-imi Jacinta",
-            "El medico consejo-(verb)-(ind4-33-ds1) cigarro-(verb)-(ps19-neg-nrld9)-(ind4-23-s2) Jacinta",
-            "El médico le aconsejó a Jacinta que debe dejar de fumar"
+            "Mediku",
+            "medico",
+            "Médico"
+          ],
+          [
+            "Tati mediku ngülam-tu-eyew pütrem-tu-welaya-imi Herminia",
+            "El medico consejo-(verb)-(ind4-33-ds1) cigarro-(verb)-(ps19-neg-nrld9)-(ind4-23-s2) Herminia",
+            "El médico le aconsejó a Herminia que debe dejar de fumar"
+          ]
+        ]
+      },
+      {
+        "explanation": "Sin embargo, se pueden formar neologismos dada la versatilidad del {mapudungun}",
+        "examples": [
+          [
+            "Ingka-che-fe",
+            "defender-persona-(nom)",
+            "Abogado"
+          ],
+          [
+            "Pe-rakiduam-fe",
+            "Ver-pensamiento-(nom)",
+            "Psicólogo"
+          ],
+          [
+            "Adkünu-fe",
+            "Poner.en.orden-(nom)",
+            "Informático"
+          ],
+          [
+            "Entu-dungu-fe",
+            "sacar-palabras-(nom)",
+            "Periodista"
+          ],
+          [
+            "Dapi-kutran-fe",
+            "arrancar-enfermedad-(nom)",
+            "Enfermero/a"
+          ],
+          [
+            "Iñche ta ad-künu-fe-nge-n",
+            "Yo => forma,aspecto,estructura,armonía-(pfps32)-(nom)-(verb)-(ind1s3)",
+            "Yo soy informático"
           ]
         ]
       }
@@ -674,7 +741,7 @@
     "color": "blue",
     "fix": "post",
     "explanation": "El sufijo [chi|(adj)] se añade a los demostrativos cuando se usan para modificar un sustantivo, es decir, cuando no están solos, sino que acompañan a un sustantivo para señalarlo mejor.",
-    "variations": [ ],
+    "variations": [],
     "content": [
       {
         "explanation": "Por ejemplo, con [chi|(adj)], decimos la cosa exacta que estamos viendo o de la que hablamos. El [chi|(adj)] convierte el demostrativo en una especie de adjetivo, como <i>este</i>, <i>esa</i>, <i>aquel</i> en español.",
@@ -712,12 +779,13 @@
     "title": "estado en curso",
     "color": "mediumspringgreen",
     "fix": "post",
-    "variations": [ "küle" ],
+    "variations": [
+      "küle"
+    ],
     "content": [
       {
         "explanation": "Se usa junto a algunos verbos para expresar que alguien o algo está en un estado resultado de una acción anterior, o que está ocurriendo un evento en este momento. <br><br> En los siguientes casos, la persona o cosa ya pasó por una acción y ahora está en ese estado.",
         "examples": [
-
           [
             "Püra-le-y",
             "subir-(st)-(ind4-33)",
