@@ -20,6 +20,47 @@ describe('parserExamples', () => {
   })
 })
 
+describe('parseAll', () => {
+  test('listMissingWords', () => {
+
+    async function loadData() {
+      const {default: data} = await import('../../../data/particles.json', {with: {type: 'json'}});
+      return data
+    }
+    loadData().then(data => {
+
+      let missing = new Set()
+      let aliasMap = buildAliasMap(data)
+
+      for (const particleInData in data) {
+        const contents = data[particleInData];
+
+        for (let content of contents.content) {
+          for (let example of content.examples) {
+            let exampleParts = parseExample(example[0], example[1])
+            for (let examplePart of exampleParts) {
+              if (examplePart.includes("|")) {
+                let examplePartToLookup = examplePart.toLowerCase()
+                let currentWord = aliasMap.get(examplePartToLookup)
+                if (currentWord === undefined) {
+                  missing.add(examplePartToLookup)
+                }
+              }
+            }
+          }
+        }
+      }
+
+      let m = ""
+      const missingSorted = Array.from(missing);
+      missingSorted.sort()
+      for (let missedWord of missingSorted) {
+        m = m + missedWord + "\n"
+      }
+      console.log(m)
+    })
+  })
+})
 describe('aliasMap', () => {
   test('aliasMapGeneratedCorrectly', () => {
     let data = {}

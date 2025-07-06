@@ -250,7 +250,7 @@
           ],
           [
             "Iñche amu-a-n waria mew",
-            "yo ir-(nrld9)-(ind1s3) ciudad (inst)",
+            "yo ir-(nrld)-(ind1s3) ciudad (inst)",
             "Yo iré a la ciudad"
           ]
         ]
@@ -265,7 +265,7 @@
           ],
           [
             "Fey amu-a-y Tralkawenu",
-            "ella ir-(nrld9)-(ind4-33) Talcahuano",
+            "ella ir-(nrld)-(ind4-33) Talcahuano",
             "Ella irá a Talcahuano"
           ]
         ]
@@ -286,7 +286,7 @@
         "examples": [
           [
             "Pun' wüla tüku-a-n ñi firma",
-            "noche después poner-(nrld9)-(ind1s3) (poss1s) firma",
+            "noche después poner-(nrld)-(ind1s3) (poss1s) firma",
             "A la noche firmaré"
           ]
         ]
@@ -662,7 +662,7 @@
           ],
           [
             "Tati mediku ngülam-tu-eyew pütrem-tu-welaya-imi Herminia",
-            "El medico consejo-(verb)-(ind4-33-ds1) cigarro-(verb)-(ps19-neg-nrld9)-(ind4-23-s2) Herminia",
+            "El medico consejo-(verb)-(ind4-33-ds1) cigarro-(verb)-(ps19-neg-nrld)-(ind4-23-s2) Herminia",
             "El médico le aconsejó a Herminia dejar de fumar"
           ]
         ]
@@ -680,7 +680,7 @@
         "examples": [
           [
             "Wew-nge-la-ya-iñ",
-            "ganar-(pass)-(neg)-(nrld9)-(ind4-1ns3-p2)",
+            "ganar-(pass)-(neg)-(nrld)-(ind4-1ns3-p2)",
             "No nos vencerán"
           ],
           [
@@ -708,7 +708,7 @@
           ],
           [
             "Nor-che-nge-a-iñ",
-            "correcto-persona-(verb)-(nrld9)-(ind4-1ns3-p2)",
+            "correcto-persona-(verb)-(nrld)-(ind4-1ns3-p2)",
             "Seremos personas correctas"
           ],
           [
@@ -762,7 +762,7 @@
           ],
           [
             "Iñche ñi chuchu yem , Klarita pi-nge-fu-y",
-            "Yo (poss1s) abuela.materna (ex) , Clarita decir-(pass)-(ipd8)-(ind4-33)",
+            "Yo (poss1s) abuela.materna (ex) , Clarita decir-(pass)-(ipd)-(ind4-33)",
             "Mi finada abuela por parte de mamá se llamaba Clarita"
           ]
         ]
@@ -861,12 +861,12 @@
           ],
           [
             "Tami ñuke yem Clorinda pi-nge-fu-y",
-            "(poss2s) mamá (ex) Clorinda decir-(pass)-(ipd8)-(ind4-33)",
+            "(poss2s) mamá (ex) Clorinda decir-(pass)-(ipd)-(ind4-33)",
             "Tu difunta madre se llamaba Clorinda"
           ],
           [
             "Tañi l'aku yem Rodo pi-nge-fu-y welu kim-pa-la-fiñ",
-            "(poss1s) abuelo (ex) Rodo decir-(pass)-(ipd8)-(ind4-33) pero conocer-(hh)-(neg)-(ind1s3)",
+            "(poss1s) abuelo (ex) Rodo decir-(pass)-(ipd)-(ind4-33) pero conocer-(hh)-(neg)-(ind1s3)",
             "Mi abuelo paterno fallecido se llamaba Rodo pero no lo alcancé a conocer"
           ]
         ]
@@ -1074,7 +1074,7 @@
           ],
           [
             "Kutran-küle-y ti pichiche",
-            "enfermar-(st)-(ind4-33) (det) niño",
+            "enfermar-(st)-(ind4-33) el niño",
             "El niño está enfermo"
           ],
           [
@@ -1242,8 +1242,8 @@
         "explanation": "En combinación con el futuro -a- expresa un resultado hipotético frustrado o temido",
         "examples": [
           [
-            "Chumngechi kim-a-fu-yiñ?",
-            "cómo saber-(nrld)-(ipd)-(ind4-1ns3-p2)?",
+            "Chumngechi kim-a-fu-yiñ ?",
+            "cómo saber-(nrld)-(ipd)-(ind4-1ns3-p2) ?",
             "¿Cómo íbamos a saber?"
           ],
           [
@@ -1262,8 +1262,8 @@
             "Debía haber ido (pero no fue)"
           ],
           [
-            "Iglesia mew amu-fal-fu-y, welu amu-la-y",
-            "iglesia (inst) ir-(force)-(ipd)-(ind4-33), pero ir-(neg)-(ind4-33)",
+            "Iglesia mew amu-fal-fu-y , welu amu-la-y",
+            "iglesia (inst) ir-(force)-(ipd)-(ind4-33) , pero ir-(neg)-(ind4-33)",
             "Debía ir a la iglesia, pero no fue"
           ]
         ]
@@ -1360,7 +1360,114 @@
         ]
       }
     ]
+  },
+  "ke|cf": {
+    "title": "acción habitual / rasgo constante",
+    "color": "goldenrod",
+    "fix": "post",
+    "variations": [],
+    "explanation": "El sufijo <i>-ke</i> indica que una acción se realiza <b>habitualmente</b>, de forma continua, como parte de una rutina o costumbre. También puede marcar características constantes del sujeto o expresar que algo ocurre <b>regularmente</b> o como <b>regla general</b>. Se coloca entre la raíz verbal y la terminación personal. Cuando se combina con el sufijo negativo <i>-la</i>, indica una acción que <b>no se hace habitualmente</b>.<br><br>Se traduce como ‘suelo’, ‘habitualmente’, ‘normalmente’, ‘cada día’, ‘siempre’, o incluso como ‘nunca’ si se combina con negación. Es útil para hablar de rutinas diarias, hábitos, reglas culturales o generalizaciones.",
+    "related": [
+      "fu|ipd",
+      "ye|cf",
+      "la|neg"
+    ],
+    "content": [
+      {
+        "explanation": "Describe acciones habituales, rutinas o repeticiones frecuentes",
+        "examples": [
+          [
+            "Kücha-foro-ke-n",
+            "lavar los.dientes-(cf)-(ind1s3)",
+            "Suelo lavarme los dientes"
+          ],
+          [
+            "Amu-ke-n tañi waria mew",
+            "ir-(cf)-(ind1s3) (poss1s) ciudad (inst)",
+            "Voy habitualmente a mi pueblo"
+          ],
+          [
+            "Faw umawtu-ke-y",
+            "aquí dormir-(cf)-(ind4-33)",
+            "Duerme aquí habitualmente"
+          ],
+          [
+            "Treka-ke-y ñi küdaw mew",
+            "caminar-(cf)-(ind4-33) (poss3s) trabajo (inst)",
+            "Suele caminar a su trabajo"
+          ]
+        ]
+      },
+      {
+        "explanation": "Puede usarse con negación para expresar que una acción no es habitual",
+        "examples": [
+          [
+            "Chillkatu-ke-la-n",
+            "estudiar-(cf)-(neg)-(ind1s3)",
+            "No suelo estudiar"
+          ],
+          [
+            "Amu-ke-la-y ñi waria mew",
+            "ir-(cf)-(neg)-(ind4-33) (poss3s) ciudad (inst)",
+            "No suele ir a su pueblo"
+          ],
+          [
+            "Fey-pi-ke-la-y",
+            "así-decir-(cf)-(neg)-(ind4-33)",
+            "Así no se dice (habitualmente)"
+          ]
+        ]
+      },
+      {
+        "explanation": "Permite agregar matices de frecuencia como ‘algunas veces’ con adverbios como <i>kiñe-ke mew</i>",
+        "examples": [
+          [
+            "Kiñeke mew chillkatu-ke-n",
+            "algunas veces estudiar-(cf)-(ind1s3)",
+            "A veces estudio"
+          ],
+          [
+            "Kiñeke mew trek-a-ke-y ñi küdaw mew",
+            "algunas veces caminar-(nrld)-(cf)-(ind4-33) (poss3s) trabajo (inst)",
+            "A veces camina a su trabajo"
+          ]
+        ]
+      },
+      {
+        "explanation": "Puede expresar normas o rasgos constantes de una persona, lugar o situación",
+        "examples": [
+          [
+            "Po-küle-ke-y",
+            "sucio-(st)-(cf)-(ind4-33)",
+            "Siempre está sucio"
+          ],
+          [
+            "Umañ-pa-ke-la-y ta witran",
+            "quedarse-hh-(cf)-(neg)-(ind4-33) el visitante",
+            "Un visitante no suele quedarse aquí"
+          ],
+          [
+            "Dallütu-meke-ke-la-y",
+            "quejarse-(intensivo)-(cf)-(neg)-(ind4-33)",
+            "No se queja nunca"
+          ]
+        ]
+      },
+      {
+        "explanation": "También puede indicar acciones repetidas en el pasado o rasgos en relatos",
+        "examples": [
+          [
+            "Küpa leli-ke-n pelikula",
+            "desear ver-(cf)-(ind1s3) película",
+            "Me gusta ver películas (regularmente)"
+          ],
+          [
+            "Tripa-ke-fu-n",
+            "salir-(cf)-(ipd)-(ind1s3)",
+            "Solía salir / salía antes"
+          ]
+        ]
+      }
+    ]
   }
-
-
 }
