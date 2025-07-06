@@ -425,49 +425,109 @@
     ]
   },
   "tule|tr-st": {
-    "title": "caracteristica, llevar puesto",
+    "title": "característica, forma, llevar puesto",
     "color": "chocolate",
     "fix": "in",
-    "explanation": "Se refiere a una caracteristica, que tengo o uso (una parte del cuerpo o accesorio)",
+    "explanation": "El sufijo <i>-tule</i> (también conjugado como <i>-tulen</i>, etc.) indica una característica visible, natural o adquirida, principalmente relacionada con partes del cuerpo (como cabello u ojos), o con accesorios (como ropa). Puede expresar forma, color, estado o el hecho de ‘llevar algo puesto’. También puede aparecer en construcciones para expresar hábitos o condiciones habituales.<br><br>Se conjuga según la persona, y puede combinarse con marcadores como <i>allwe</i> para atenuar la expresión (por ejemplo, ‘medianamente canoso’). La negación se expresa con el sufijo <i>-la</i> colocado antes de la terminación personal.",
     "variations": [],
+    "related": [
+      "le|st",
+      "nge|verb",
+      "ad|form"
+    ],
     "content": [
       {
-        "explanation": "Para indicar características de partes del cuerpo",
+        "explanation": "Características del cabello u otras partes del cuerpo",
         "examples": [
           [
             "Lig longko-tule-n",
             "blanco pelo-(tr-st)-(ind1s3)",
-            "Tengo el pelo cano"
+            "Tengo el cabello blanco (cano)"
           ],
           [
-            "Fütra longko-tule-la-n",
-            "grande cabeza-(tr-st)-(neg)-(ind1s3)",
-            "No soy cabezón"
+            "Fütrake longko-tule-n",
+            "largo cabello-(tr-st)-(ind1s3)",
+            "Tengo el cabello largo"
           ],
           [
-            "Liftra longko-tule-n",
-            "calvo cabeza-(tr-st)-(ind1s3)",
-            "Tengo la cabeza calva"
+            "Karü nge-tule-y",
+            "verde ojo-(tr-st)-(ind4-33)",
+            "Tiene ojos verdes"
           ],
           [
-            "¿ Chem ad-tule-y ñi longko ?",
-            "¿ Cómo forma-(tr-st)-(ind4-33) (poss3s) cabello.pelo ?",
-            "¿ Como lleva el pelo ?"
+            "Liftra longko-tule-la-n",
+            "calvo cabello-(tr-st)-(neg)-(ind1s3)",
+            "No estoy pelado/a"
+          ],
+          [
+            "Allwe lig longko-tule-n",
+            "algo blanco cabello-(tr-st)-(ind1s3)",
+            "Tengo el cabello medianamente cano"
           ]
         ]
       },
       {
-        "explanation": "Para indicar que ropa o accessorios llevan puestas las personas",
+        "explanation": "Accesorios o vestimenta que se lleva puesta",
         "examples": [
           [
             "Kürü chimpiru-tule-ymi",
             "negro sombrero-(tr-st)-(ind4-23-s2)",
-            "Llevas puesto un sombrero negro"
+            "Llevas un sombrero negro"
           ],
           [
-            "Koñoll iwüd-pel'-tule-n iñche",
-            "morado envolver-cuello-(tr-st)-(ind1s3) yo",
-            "Yo estoy usando una bufanda morada"
+            "Koñoll iwüdpel'-tule-n",
+            "morado bufanda-(tr-st)-(ind1s3)",
+            "Estoy usando una bufanda morada"
+          ]
+        ]
+      },
+      {
+        "explanation": "Preguntas y negaciones sobre aspecto físico o forma",
+        "examples": [
+          [
+            "¿Chem ad-tule-y ñi longko?",
+            "¿cómo forma-(tr-st)-(ind4-33) (poss3s) cabello?",
+            "¿Cómo es su cabello?"
+          ],
+          [
+            "Lig longko-tule-la-n",
+            "blanco cabello-(tr-st)-(neg)-(ind1s3)",
+            "No tengo el cabello cano"
+          ]
+        ]
+      },
+      {
+        "explanation": "Conjugación según persona",
+        "examples": [
+          [
+            "Lig longko-tule-n",
+            "blanco cabello-(tr-st)-(ind1s3)",
+            "Tengo el cabello blanco"
+          ],
+          [
+            "Lig longko-tule-ymi",
+            "blanco cabello-(tr-st)-(ind4-23-s2)",
+            "Tienes el cabello blanco"
+          ],
+          [
+            "Lig longko-tule-y",
+            "blanco cabello-(tr-st)-(ind4-33)",
+            "Tiene el cabello blanco"
+          ]
+        ]
+      },
+      {
+        "explanation": "Uso en expresiones habituales o estados de costumbre",
+        "examples": [
+          [
+            "Wim-tule-n ñi lef-el",
+            "acostumbrarse-(tr-st)-(ind1s3) (poss1s) correr-(ovn4)",
+            "Estoy acostumbrado a correr"
+          ],
+          [
+            "Wim-tule-n ñi kishu-le-ke-n",
+            "acostumbrarse-(tr-st)-(ind1s3) (poss1s) estar.solo-(st)-(cf14)-(pvn4)",
+            "Estoy acostumbrado a estar solo"
           ]
         ]
       }
@@ -986,15 +1046,21 @@
     ]
   },
   "le|st": {
-    "title": "estado en curso",
+    "title": "estado actual / en curso",
     "color": "mediumspringgreen",
     "fix": "post",
     "variations": [
       "küle"
     ],
+    "explanation": "El sufijo <i>-le</i> (o <i>-küle</i> si se agrega tras una consonante) indica que algo o alguien está en un estado actual o en un proceso en curso. Puede marcar que una acción está ocurriendo ahora, que alguien está en una condición resultante de un evento anterior, o que algo parece estar en cierto estado. También puede expresar hábitos, capacidad residual, direcciones de movimiento y apariencia.<br><br>Es uno de los sufijos más versátiles del mapudungun para expresar el <b>aspecto estativo o progresivo</b>. Se usa tanto con verbos de acción como con verbos de estado o cambio, y se opone frecuentemente al sufijo <i>-nge</i>, que expresa cualidades permanentes.",
+    "related": [
+      "nge|verb",
+      "tule|tr-st",
+      "lu|svn4"
+    ],
     "content": [
       {
-        "explanation": "Se usa junto a algunos verbos para expresar que alguien o algo está en un estado resultado de una acción anterior, o que está ocurriendo un evento en este momento. <br><br> En los siguientes casos, la persona o cosa ya pasó por una acción y ahora está en ese estado.",
+        "explanation": "Estado resultante o actual de una acción (ocasionalmente progresiva)",
         "examples": [
           [
             "Püra-le-y",
@@ -1007,49 +1073,134 @@
             "Está nevado / está nevando"
           ],
           [
-            "Arof-küle-ymi",
-            "sudar-(st)-(ind4-23-s2)",
-            "Estás transpirado / está transpirando"
+            "Kutran-küle-y ti pichiche",
+            "enfermar-(st)-(ind4-33) (det) niño",
+            "El niño está enfermo"
           ],
           [
-            "Dew küpa-le-y engün",
-            "Ya venir-(st)-(ind4-3ns3-p2) (ind4-3ns3-p2)",
-            "Ya vienen ellos"
+            "Üyew küdaw-küle-y tañi chaw",
+            "allí trabajar-(st)-(ind4-33) (poss1s) padre",
+            "Mi papá está trabajando allá"
           ]
         ]
       },
       {
-        "explanation": "Cuando se usa con ciertos adverbios, puede mostrar que algo está cambiando poco a poco.",
+        "explanation": "Marcador de proceso en curso o estado observable",
         "examples": [
           [
-            "pod-küle-w-üy",
+            "Weyel-küle-y",
+            "nadar-(st)-(ind4-33)",
+            "Está nadando"
+          ],
+          [
+            "Allkütu-le-y",
+            "escuchar-(st)-(ind4-33)",
+            "Está escuchando"
+          ],
+          [
+            "Ülkantu-le-y",
+            "cantar-(st)-(ind4-33)",
+            "Está cantando"
+          ]
+        ]
+      },
+      {
+        "explanation": "Cambio gradual de estado (con reflexivo o adverbios)",
+        "examples": [
+          [
+            "Po-küle-w-üy",
             "sucio-(st)-(ref)-(ind4-33)",
             "Se está ensuciando cada vez más"
+          ],
+          [
+            "Müchayke po-küle-w-üy",
+            "pronto sucio-(st)-(ref)-(ind4-33)",
+            "Se está ensuciando pronto / cada vez más sucio"
           ]
         ]
       },
       {
-        "explanation": "Estado permanente vs. temporal. Se puede contrastar con otro sufijo [nge|(verb)] que indica una característica permanente:",
+        "explanation": "Diferencia entre estado temporal (-le) y cualidad permanente (-nge)",
         "examples": [
           [
-            "mawün'-küle-y",
+            "Mawün'-küle-y",
             "llover-(st)-(ind4-33)",
             "Está lloviendo"
           ],
           [
-            "mawün'-nge-y",
+            "Mawün'-nge-y",
             "llover-(verb)-(ind4-33)",
-            "Es lluvioso"
+            "Es lluvioso (clima)"
+          ],
+          [
+            "Kuntro-le-y",
+            "cojear-(st)-(ind4-33)",
+            "Está cojeando (ahora)"
+          ],
+          [
+            "Kuntro-nge-y",
+            "cojear-(verb)-(ind4-33)",
+            "Es cojo (de nacimiento o permanente)"
           ]
         ]
       },
       {
-        "explanation": "Indica donde están las cosas",
+        "explanation": "Ubicación o posición actual de personas o cosas",
         "examples": [
           [
             "Miñche-mesa-le-ymi",
             "debajo-mesa-(st)-(ind4-23-s2)",
             "Estás debajo de la mesa"
+          ],
+          [
+            "Tati trewa inafül-küle-y anümka mew",
+            "el perro cerca-(st)-(ind4-33) árbol (inst)",
+            "El perro está cerca del árbol"
+          ]
+        ]
+      },
+      {
+        "explanation": "Expresiones de apariencia, similitud o posibilidad",
+        "examples": [
+          [
+            "Achiwall-küle-y",
+            "pollo-(st)-(ind4-33)",
+            "Parece un pollo"
+          ],
+          [
+            "Mawün-küle-lu-le-y",
+            "llover-(st)-(svn)-(st)-(ind4-33)",
+            "Parece que está lloviendo"
+          ]
+        ]
+      },
+      {
+        "explanation": "Capacidad residual o aún disponible",
+        "examples": [
+          [
+            "Püñen-küle-n",
+            "hijo/a-(st)-(ind1s3)",
+            "Todavía puedo tener hijos"
+          ],
+          [
+            "Inche pu-le-n tüfa-chi küdaw-mew",
+            "yo llegar-(st)-(ind1s3) ese-(adj) trabajo-(inst)",
+            "Todavía soy capaz de hacer ese trabajo"
+          ]
+        ]
+      },
+      {
+        "explanation": "Expresiones habituales o de repetición en relatos",
+        "examples": [
+          [
+            "Küpa-le-y engün",
+            "venir-(st)-(ind4-3ns3-p2) (com)",
+            "Ellos ya vienen / están viniendo"
+          ],
+          [
+            "Tripa-küle-n",
+            "salir-(st)-(ind1s3)",
+            "Estoy saliendo (habitualmente / en ese momento)"
           ]
         ]
       }
