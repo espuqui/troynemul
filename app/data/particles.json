@@ -504,8 +504,7 @@
     "variations": [],
     "related": [
       "we|nom",
-      "fal|nom",
-      "enten|nom"
+      "fal|nom"
     ],
     "content": [
       {
@@ -784,26 +783,22 @@
     ]
   },
   "yem|ex": {
-    "title": "nostalgia, fallecido",
+    "title": "pasado, fallecido, que ya no está",
     "color": "saddlebrown",
-    "explanation": "Indica que a la persona o cosa que se le agrega está muerto o ya no funciona.",
     "fix": "post",
     "variations": [
       "em"
     ],
+    "explanation": "El sufijo <i>-yem</i> (o su variante <i>-em</i>) indica que algo o alguien ya no está presente, ya sea porque ha fallecido, desaparecido o dejado de funcionar. Se coloca al final de sustantivos, especialmente de personas, y equivale a decir <i>difunto, finado, ex-</i> o <i>anterior</i> en {wingkadungun}.<br /><br />En el caso de personas, es obligatorio cuando se menciona a alguien que ha fallecido, en especial familiares. Cuando se informa su nombre, se combina con el sufijo verbal <i>-fu</i> para indicar una acción completada en el pasado (por ejemplo: <i>pi-nge-fu-y</i>, ‘se llamaba’).<br /><br />Con cosas inanimadas o abstractas, expresa que algo pertenece al pasado o ha perdido vigencia (por ejemplo, una antigua casa, trabajo anterior, tiempo ido).",
     "content": [
       {
+        "explanation": "Uso con nombres de familiares fallecidos",
         "examples": [
           [
             "Tañi chaw yem",
             "(poss1s) padre (ex)",
             "Mi difunto padre"
-          ]
-        ]
-      },
-      {
-        "explanation": "Para dar información de un familiar fallecido, como por ejemplo su nombre, debemos utilizar el sufijo [fu|(ind)] en el verbo, el cual sirve para indicar que la acción ocurrió en el pasado.",
-        "examples": [
+          ],
           [
             "Tami ñuke yem Clorinda pi-nge-fu-y",
             "(poss2s) mamá (ex) Clorinda decir-(pass)-(ipd8)-(ind4-33)",
@@ -811,8 +806,58 @@
           ],
           [
             "Tañi l'aku yem Rodo pi-nge-fu-y welu kim-pa-la-fiñ",
-            "(poss1s) abuelo (ex) Rodo decir-(pass)-(ipd8)-(ind4-33) pero conocer-(Hh17)-(neg)-(edo6-ind1s3)",
-            "Mi difunto abuelo paterno se llamaba Rodo pero no lo alcance a conocer"
+            "(poss1s) abuelo (ex) Rodo decir-(pass)-(ipd8)-(ind4-33) pero conocer-(hh)-(neg)-(ind1s3)",
+            "Mi abuelo paterno fallecido se llamaba Rodo pero no lo alcancé a conocer"
+          ]
+        ]
+      },
+      {
+        "explanation": "Uso con objetos, ideas o lugares que ya no existen o dejaron de usarse",
+        "examples": [
+          [
+            "Tañi mapu yem",
+            "(poss1s) tierra (ex)",
+            "Mi antiguo territorio / mi tierra de antes"
+          ],
+          [
+            "Küdaw yem",
+            "trabajo (ex)",
+            "Trabajo anterior / trabajo que ya no tengo"
+          ],
+          [
+            "Kuifi yem",
+            "antiguo (ex)",
+            "Tiempo pasado / lo de antes"
+          ]
+        ]
+      },
+      {
+        "explanation": "Para marcar respeto o nostalgia por personas fallecidas, a veces también se añade el marcador <i>ero</i>",
+        "examples": [
+          [
+            "Kuifi lay tañi chaw yem",
+            "hace.tiempo morir (poss1s) padre (ex)",
+            "Hace tiempo falleció mi padre"
+          ],
+          [
+            "Tañi ñuke yem küme piwke-nge-fu-y",
+            "(poss1s) mamá (ex) buen corazón-(verb)-(ipd)-(ind4-33)",
+            "Mi madre fallecida era una buena persona"
+          ]
+        ]
+      },
+      {
+        "explanation": "Empleo de formas negativas para indicar que no se conoció a un familiar",
+        "examples": [
+          [
+            "Kim-la-fiñ ñi ñuke",
+            "conocer-(neg)-(ind1s3) (poss1s) madre",
+            "No conocí a mi madre"
+          ],
+          [
+            "Iñche kim-pa-la-fiñ tañi l'aku yem",
+            "yo conocer-(hh)-(neg)-(ind1s3) (poss1s) abuelo.paterno (ex)",
+            "No alcancé a conocer a mi abuelo paterno"
           ]
         ]
       }
@@ -1009,5 +1054,100 @@
         ]
       }
     ]
+  },
+  "fu|ipd": {
+    "title": "sufijo impedido / contraexpectación",
+    "color": "indianred",
+    "fix": "post",
+    "explanation": "El sufijo <i>-fu</i> indica que una acción fue interrumpida, impedida o que no tuvo el resultado esperado. Muchas veces puede traducirse como ‘había...’, ‘quería... pero...’, o ‘no se pudo...’. Su significado va más allá del pasado: señala una ruptura en lo que normalmente se esperaría. Por eso, también puede usarse en deseos que no se cumplieron, hipótesis no realizadas, deberes no efectuados, o acciones que no resultaron como se pensaba.<br><br>Siempre deja implícito un <b>“pero”</b>, incluso si no se dice explícitamente. Se puede combinar con otros sufijos como <i>-a</i> (acción no realizada), <i>-ke</i> (continuativo), o <i>-fal</i> (deber, obligación), para expresar diferentes matices de posibilidad frustrada, consejo no seguido o intención no cumplida.",
+    "variations": [],
+    "related": [
+      "a|nrld",
+      "ke|cf14",
+      "fal|force"
+    ],
+    "content": [
+      {
+        "explanation": "Expresa una acción que fue planeada o deseada, pero no tuvo éxito",
+        "examples": [
+          [
+            "Amu-fu-n Temuko",
+            "ir-(ipd)-(ind1s3) Temuco",
+            "Había ido a Temuco (pero...)"
+          ],
+          [
+            "Kim-fu-n mi rakiduam",
+            "saber-(ipd)-(ind1s3) (poss2s) idea",
+            "Quería saber tu opinión (pero no lo logré)"
+          ],
+          [
+            "Tripa-fu-ymi",
+            "salir-(ipd)-(ind4-23-s2)",
+            "Tú habías salido (pero...)"
+          ]
+        ]
+      },
+      {
+        "explanation": "En combinación con el futuro -a- expresa un resultado hipotético frustrado o temido",
+        "examples": [
+          [
+            "Chumngechi kim-a-fu-yiñ?",
+            "cómo saber-(nrld)-(ipd)-(ind4-1ns3-p2)?",
+            "¿Cómo íbamos a saber?"
+          ],
+          [
+            "Chafo-a-fu-ymi wütre mew",
+            "resfriarse-(nrld)-(ipd)-(ind4-23-s2) frío (inst)",
+            "Te podrías haber resfriado por el frío"
+          ]
+        ]
+      },
+      {
+        "explanation": "Puede señalar un deber no cumplido o una sugerencia que no se siguió (con -fal)",
+        "examples": [
+          [
+            "Amu-fal-fu-y",
+            "ir-(force)-(ipd)-(ind4-33)",
+            "Debía haber ido (pero no fue)"
+          ],
+          [
+            "Iglesia mew amu-fal-fu-y, welu amu-la-y",
+            "iglesia (inst) ir-(force)-(ipd)-(ind4-33), pero ir-(neg)-(ind4-33)",
+            "Debía ir a la iglesia, pero no fue"
+          ]
+        ]
+      },
+      {
+        "explanation": "En contexto emocional, expresa nostalgia o intención frustrada",
+        "examples": [
+          [
+            "Reye-fu-n tüfa-chi ruka mew",
+            "desear.mucho-(ipd)-(ind1s3) este-(adj) casa (inst)",
+            "Quería mucho vivir en esta casa (pero no se dio)"
+          ],
+          [
+            "Küpa kim-fu-n chumngechi pe-fiel",
+            "desear saber-(ipd)-(ind1s3) cómo ver-(tvn)",
+            "Me gustaría saber cómo lo ves"
+          ]
+        ]
+      },
+      {
+        "explanation": "En tiempo narrativo o relatos, indica acciones habituales del pasado que ya no ocurren",
+        "examples": [
+          [
+            "Müle-ke-fu-n kampu mew",
+            "estar-(cf14)-(ipd)-(ind1s3) campo (inst)",
+            "Cuando era joven vivía en el campo (pero ya no)"
+          ],
+          [
+            "Tripay-ke-fu-n ñi küdawtu-al",
+            "salir-(cf14)-(ipd)-(ind1s3) (poss1s) trabajo-(nrld)",
+            "Solía salir a trabajar (ya no lo hago)"
+          ]
+        ]
+      }
+    ]
   }
+
 }
