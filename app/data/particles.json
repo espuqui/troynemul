@@ -1299,6 +1299,68 @@
         ]
       }
     ]
+  },
+  "pu|loc": {
+    "title": "preposición locativa (dentro de, en)",
+    "color": "darkgreen",
+    "explanation": "La partícula <i>pu</i> se utiliza como preposición para indicar localización, especialmente con personas, objetos o lugares que están <b>en el interior</b> de otro elemento. Se traduce comúnmente como <i>dentro de</i> o <i>en</i>. Aunque en otros contextos puede actuar como pluralizador, aquí funciona estrictamente como marcador de lugar. Es más frecuente en el habla de personas mayores y siempre va seguida de un sustantivo.",
+    "variations": [],
+    "related": [
+      "mew|inst"
+    ],
+    "content": [
+      {
+        "explanation": "Uso locativo para indicar que algo o alguien está dentro de un lugar",
+        "examples": [
+          [
+            "Che müle-y pu ruka",
+            "persona estar-(ind4-33) (loc) casa",
+            "Hay gente dentro de la casa"
+          ],
+          [
+            "Iñche müle-n pu waria",
+            "yo estar-(ind1s3) (loc) ciudad",
+            "Estoy en la ciudad"
+          ],
+          [
+            "Puw-üy kiñe pu malliñ",
+            "llegar-(ind4-33) uno (loc) lago",
+            "Llegó a un lago / cayó en un lago"
+          ]
+        ]
+      },
+      {
+        "explanation": "Usado con expresiones temporales para indicar localización en el tiempo",
+        "examples": [
+          [
+            "Pu trafiya",
+            "(loc) atardecer",
+            "Al atardecer / en la tarde"
+          ],
+          [
+            "Mari mari, pu peñi",
+            "hola hola, (loc) hermano",
+            "Buenos días, hermanos (en presencia de ustedes)"
+          ]
+        ]
+      },
+      {
+        "explanation": "Diferencia entre <i>pu</i> y <i>mew</i>: <i>pu</i> funciona como preposición autónoma antes del sustantivo; <i>mew</i> va pospuesta. Ambas pueden significar ‘en’ o ‘dentro de’, pero se usan en estructuras distintas.",
+        "examples": [
+          [
+            "Mesa mew müle-y ti rali",
+            "mesa (inst) estar-(ind4-33) el plato",
+            "El plato está sobre la mesa"
+          ],
+          [
+            "Pu mesa müle-y ti rali",
+            "(loc) mesa estar-(ind4-33) el plato",
+            "El plato está en la mesa (más centrado en el interior o contexto del objeto)"
+          ]
+        ]
+      }
+    ]
   }
+
 
 }
