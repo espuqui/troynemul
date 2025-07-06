@@ -72,7 +72,6 @@
       }
     ]
   },
-
   "emu|com": {
     "title": "asociativo [{eymi + kiñe che}] (con)",
     "color": "aqua",
@@ -843,39 +842,74 @@
     ]
   },
   "chi|adj": {
-    "title": "adjetivizador de demostrativos",
+    "title": "sufijo adjetival (que)",
     "color": "blue",
     "fix": "post",
-    "explanation": "Este sufijo se añade a los demostrativos cuando se usan para modificar un sustantivo.  es decir, cuando no están solos, sino que acompañan a un sustantivo para señalarlo mejor.",
+    "explanation": "El sufijo <i>-chi</i> convierte ciertos elementos gramaticales en adjetivos. Se utiliza principalmente con pronombres demostrativos (como <i>{tüfa, tüfey, tiye}</i>) para señalar objetos o personas en relación con su posición espacial: [tüfa-chi|este-(adj)|este], [tüfey-chi|ese-(adj)|ese], [tiye-chi|aquel-(adj)|aquel]. También se emplea con sustantivos verbales para crear construcciones del tipo ‘persona que...’ o ‘cosa que...’, funcionando como cláusulas relativas sin verbo explícito. Estas formas preceden siempre al sustantivo que modifican.",
     "variations": [],
+    "related": [
+      "ta|adj",
+      "ke|distr",
+      "nge|verb"
+    ],
     "content": [
       {
-        "explanation": "Por ejemplo, con [chi|(adj)], decimos la cosa exacta que estamos viendo o de la que hablamos. El [chi|(adj)] convierte el demostrativo en una especie de adjetivo, como <i>este</i>, <i>esa</i>, <i>aquel</i> en español.",
+        "explanation": "Demostrativos modificando sustantivos (función adjetiva)",
         "examples": [
           [
-            "Tüfa-chi ruka",
-            "Ésta-(adj) casa",
-            "Ésta casa"
+            "Tüfa-chi wentru",
+            "este-(adj) hombre",
+            "Este hombre"
           ],
           [
-            "Tüfey-chi pichi-wentru",
-            "Ése-(adj) pequeño-hombre",
-            "Ese niño"
+            "Tüfey-chi domo",
+            "ese-(adj) mujer",
+            "Esa mujer"
+          ],
+          [
+            "Tiye-chi pu kawell",
+            "aquel-(adj) (coll) caballo",
+            "Aquellos caballos"
           ]
         ]
       },
       {
-        "explanation": "Sin [chi|(adj)], el demostrativo no modifica directamente al sustantivo. Se usa como pronombre, o sea, cuando el sustantivo no se nombra o cuando se refiere a algo más general.",
+        "explanation": "Sustantivos verbales relativizados (cláusulas relativas sin verbo)",
         "examples": [
           [
-            "Tüfa tañi ruka",
-            "Ésta (poss1s) casa",
-            "Ésta es mi casa"
+            "Küdaw-küle-chi wentru",
+            "trabajar-(st)-(adj) hombre",
+            "El hombre que trabaja"
           ],
           [
-            "Tüye tami chaw",
-            "Aquel (poss2s) papá",
-            "Ese de más allá es mi papá"
+            "Kutran-chi dungu",
+            "enfermedad-(adj) asunto",
+            "Asunto que enferma / preocupante"
+          ],
+          [
+            "Küpale-l-mu-fiel-chi kofke",
+            "traer-(ovn)-(cf)-(transv)-(adj) pan",
+            "El pan que fue traído"
+          ]
+        ]
+      },
+      {
+        "explanation": "Formación adjetival desde numerales o expresiones temporales",
+        "examples": [
+          [
+            "Kiñe-nge-chi antü",
+            "uno-(pass)-(adj) día",
+            "El primer día"
+          ],
+          [
+            "Chum-nge-chi rakiduam",
+            "cómo-(pass)-(adj) pensamiento",
+            "Una manera de pensar"
+          ],
+          [
+            "Ka-nge-chi dungu",
+            "otro-(pass)-(adj) asunto",
+            "Otro asunto / un asunto diferente"
           ]
         ]
       }
