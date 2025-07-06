@@ -1,4 +1,210 @@
 {
+  "iñchiw|com": {
+    "title": "asociativo [{iñche + kiñe che}] (con)",
+    "color": "aqua",
+    "explanation": "Indica que uno está acompañado de una persona o algo más que en total suman dos. Equivale a decir <i>con alguien</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [iñche amu-n|yo ir-(ind1s3)|yo fui] y queremos decir que fuimos con una persona más, agregamos <i>{iñchiw}</i> al final. Entonces queda: [iñche amu-n tañi ñuke iñchiw|yo ir-(ind1s3) (poss1s) mamá (com)|yo fui con mi mamá].",
+    "variations": [],
+    "related": [
+      "iñchiñ|com",
+      "emu|com",
+      "emün|com",
+      "engu|com",
+      "engün|com"
+    ],
+    "content": [
+      {
+        "examples": [
+          [
+            "Iñche müle-n tañi afkadi iñchiw",
+            "yo estar-(ind1s3) (poss1s) pareja (com)",
+            "Vivo con mi pareja"
+          ],
+          [
+            "Eymi iñchiw",
+            "tu (com)",
+            "Tú conmigo"
+          ],
+          [
+            "Fey iñchiw",
+            "el/ella (com)",
+            "el/ella conmigo"
+          ]
+        ]
+      }
+    ]
+  },
+  "iñchiñ|com": {
+    "title": "asociativo [{iñche + pu che}] (con algunos)",
+    "color": "aqua",
+    "explanation": "Indica que uno está acompañado de más de dos personas o cosas que en total suman mas de dos. Equivale a decir <i>con alguien</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [iñche amu-n|yo ir-(ind1s3)|yo fui] y queremos decir con quien más fuimos, agregamos <i>{iñchiñ}</i> al final. Entonces queda: [iñche amu-n tañi reñma iñchiñ|yo ir-(ind1s3) (poss1s) familia (com)|yo fui con mi familia].",
+    "variations": [],
+    "related": [
+      "iñchiw|com",
+      "emu|com",
+      "emün|com",
+      "engu|com",
+      "engün|com"
+    ],
+    "content": [
+      {
+        "examples": [
+          [
+            "Eymi iñchiñ",
+            "tu (com)",
+            "Tú con nosotros"
+          ],
+          [
+            "Fey iñchiñ",
+            "el/ella (com)",
+            "Él con nosotros"
+          ],
+          [
+            "Müle-n tañi reñma iñchiñ",
+            "estar-(ind1s3) (poss1s) familia (com)",
+            "Vivo con mi familia"
+          ],
+          [
+            "Müle-n tañi ñuke ka ñukentu iñchiñ",
+            "estar-(ind1s3) (poss1s) mamá y tía.materna (com)",
+            "Vivo con mi mamá y mi tía (materna)"
+          ]
+        ]
+      }
+    ]
+  },
+
+  "emu|com": {
+    "title": "asociativo [{eymi + kiñe che}] (con)",
+    "color": "aqua",
+    "explanation": "Indica que {eymi} (tú) estás acompañado de una persona o algo más. Equivale a decir <i>con alguien</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [eymi amu-ymi|tu ir-(ind4-23-s2)|tu fuiste] y queremos decir que tú fuiste con una persona más, agregamos <i>{emu}</i> al final. Entonces queda: [eymi amu-ymi tami ñuke emu|tu ir-(ind4-23-s2) (poss2s) mamá (com)|tu fuiste con tu mamá].",
+    "variations": [],
+    "related": [
+      "iñchiñ|com",
+      "iñchiw|com",
+      "emün|com",
+      "engu|com",
+      "engün|com"
+    ],
+    "content": [
+      {
+        "explanation": "Se presume que la otra persona está con una persona más.",
+        "examples": [
+          [
+            "Fey emu",
+            "él/ella (com)",
+            "Él/ella contigo"
+          ],
+          [
+            "Tami trewa emu",
+            "(poss2s) perro (com)",
+            "Tu perro y tú"
+          ],
+          [
+            "¿ Iney emu müle-ymi ?",
+            "¿ quién (com) estar-(ind4-23-s2) ?",
+            "¿ Con quién vives ?"
+          ]
+        ]
+      }
+    ]
+  },
+  "emün|com": {
+    "title": "asociativo [{eymi + kiñe che}] (con alguien)",
+    "color": "aqua",
+    "explanation": "Indica que {eymi} (tú) está acompañado de más personas o cosas que en total suman mas que dos. Equivale a decir <i>con alguien</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [eymi amu-ymi|tu ir-(ind4-23-s2)|tu fuiste] y queremos decir que tú fuiste con mas de una persona, agregamos <i>{emün}</i> al final. Entonces queda: [eymi amu-ymi tami reñma emün|tu ir-(ind4-23-s2) (poss2s) familia (com)|tu fuiste con tu familia].",
+    "variations": [ "eymün"],
+    "related": [
+      "iñchiñ|com",
+      "iñchiw|com",
+      "emu|com",
+      "engu|com",
+      "engün|com"
+    ],
+    "content": [
+      {
+        "examples": [
+          [
+            "Tüfa-chi trewa emün",
+            "ese-(adj) perro (com)",
+            "Este perro con ustedes"
+          ],
+          [
+            "Tami chaw ka tami ñuke eymün",
+            "(poss2s) papá y (poss2s) mamá (com)",
+            "Tu papá y tu mamá con ustedes"
+          ],
+          [
+            "¿ Iney emün müle-ymi ?",
+            "¿ quién (com) estar-(ind4-23-s2) ?",
+            "¿ Con quiénes vives ?"
+          ],
+          [
+            "Eymi lamngen, ¿ Iney emün müle-ymi Konsepsion mew ?",
+            "Tu hermana, ¿ quien (com) estar-(ind4-23-s2) Concepción (inst) ?",
+            "Y tu hermana, con quien viven en Concepción ?"
+          ]
+        ]
+      }
+    ]
+  },
+  "engu|com": {
+    "title": "asociativo [{fey + kiñe che}] (con alguien)",
+    "color": "aqua",
+    "explanation": "Indica que {fey} (él/ella) esta acompañado de una persona o una cosa y en total suman dos. Equivale a decir <i>con algo, con</i> en {wingkadungun}. Se puede poner al final de la oración como por ejemplo [mate engu asukura|mate (com) azúcar|mate con azúcar] o [mate asukura engu|mate azúcar (com)|mate con azúcar].",
+    "variations": [],
+    "related": [
+      "iñchiñ|com",
+      "iñchiw|com",
+      "emu|com",
+      "emün|com",
+      "engün|com"
+    ],
+    "content": [
+      {
+        "examples": [
+          [
+            "Ti trewa müle-y Paine engu",
+            "el perro estar-(ind4-33) Millaray (com)",
+            "el perro está junto con Millaray"
+          ],
+          [
+            "Mantequilla engu",
+            "mantequilla (com)",
+            "Con mantequilla"
+          ],
+          [
+            "Tami wen'üy amu-y ñi ñuke engu",
+            "(poss2s) amigo ir-(ind4-33) (poss3s) mamá (com)",
+            "Tu amigo fue con su madre"
+          ]
+        ]
+      }
+    ]
+  },
+  "engün|com": {
+    "title": "asociativo [{fey + pu che}] (con algunos)",
+    "color": "aqua",
+    "explanation": "Indica que {fey} (él/ella) esta acompañado de mas de una persona o mas una cosa y en total suman mas de dos. Equivale a decir <i>con algo, con</i> en {wingkadungun}. Se puede poner al final de la oración como por ejemplo [trewa pu ñarki engün|perro (coll) gato (com)|el perro con los gatos].",
+    "variations": [],
+    "related": [
+      "iñchiñ|com",
+      "iñchiw|com",
+      "emu|com",
+      "emün|com",
+      "engün|com"
+    ],
+    "content": [
+      {
+        "examples": [
+          [
+            "Ngillatu-a-iñ ñi fochüm engün",
+            "hacer.ngillatún-(fut)-(?) (poss1s) hijito (com)",
+            "Vamos a hacer ngillatún, mis hijitos"
+          ]
+        ]
+      }
+    ]
+  },
   "mew|inst": {
     "title": "sufijo (con, en, de, entre, hacia, por)",
     "color": "green",
@@ -219,106 +425,6 @@
       }
     ]
   },
-  "iñchiñ|com": {
-    "title": "asociativo [{iñche + pu che}] (con)",
-    "color": "aqua",
-    "explanation": "Indica que uno está acompañado de más de dos personas. Equivale a decir <i>con</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [iñche amu-n|yo ir-(ind1s3)|yo fui] y queremos decir con quien más fuimos, agregamos <i>{iñchiñ}</i> al final. Entonces queda: [iñche amu-n tañi reñma iñchiñ|yo ir-(ind1s3) (poss1s) familia (com)|yo fui con mi familia].",
-    "variations": [],
-    "related": [
-      "iñchiw|com",
-      "emu|com",
-      "emün|com"
-    ],
-    "content": [
-      {
-        "examples": [
-          [
-            "Müle-n tañi reñma iñchiñ",
-            "estar-(ind1s3) (poss1s) familia (com)",
-            "Vivo con mi familia"
-          ],
-          [
-            "Müle-n tañi ñuke ka ñukentu iñchiñ",
-            "estar-(ind1s3) (poss1s) mamá y tía.materna (com)",
-            "Vivo con mi mamá y mi tía (materna)"
-          ]
-        ]
-      }
-    ]
-  },
-  "iñchiw|com": {
-    "title": "asociativo [{iñche + kiñe che}] (con)",
-    "color": "aqua",
-    "explanation": "Indica que uno está acompañado de una persona más. Equivale a decir <i>con</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [iñche amu-n|yo ir-(ind1s3)|yo fui] y queremos decir que fuimos con una persona más, agregamos <i>{iñchiw}</i> al final. Entonces queda: [iñche amu-n tañi ñuke iñchiw|yo ir-(ind1s3) (poss1s) mamá (com)|yo fui con mi mamá].",
-    "variations": [],
-    "related": [
-      "iñchiñ|com",
-      "emu|com",
-      "emün|com"
-    ],
-    "content": [
-      {
-        "examples": [
-          [
-            "Iñche müle-n tañi afkadi iñchiw",
-            "yo estar-(ind1s3) (poss1s) pareja (com)",
-            "Vivo con mi pareja"
-          ]
-        ]
-      }
-    ]
-  },
-  "emu|com": {
-    "title": "asociativo [{eymi + kiñe che}] (con)",
-    "color": "aqua",
-    "explanation": "Indica que {eymi} (tú) estás acompañado de una persona más. Equivale a decir <i>con</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [eymi amu-ymi|tu ir-(ind4-23-s2)|tu fuiste] y queremos decir que tú fuiste con una persona más, agregamos <i>{emu}</i> al final. Entonces queda: [eymi amu-ymi tami ñuke emu|tu ir-(ind4-23-s2) (poss2s) mamá (com)|tu fuiste con tu mamá].",
-    "variations": [],
-    "related": [
-      "iñchiñ|com",
-      "iñchiw|com",
-      "emün|com"
-    ],
-    "content": [
-      {
-        "explanation": "Se presume que la otra persona está con una persona más.",
-        "examples": [
-          [
-            "¿ Iney emu müle-ymi ?",
-            "¿ quién (com) estar-(ind4-23-s2) ?",
-            "¿ Con quién vives ?"
-          ]
-        ]
-      }
-    ]
-  },
-  "emün|com": {
-    "title": "asociativo [{eymi + pu che}] (con)",
-    "color": "aqua",
-    "explanation": "Indica que {eymi} (tú) estás acompañado de varias personas más. Equivale a decir <i>con</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [eymi amu-ymi|tu ir-(ind4-23-s2)|tu fuiste] y queremos decir que tú fuiste con mas de una persona, agregamos <i>{emün}</i> al final. Entonces queda: [eymi amu-ymi tami reñma emün|tu ir-(ind4-23-s2) (poss2s) familia (com)|tu fuiste con tu familia].",
-    "variations": [],
-    "related": [
-      "iñchiñ|com",
-      "iñchiw|com",
-      "emu|com"
-    ],
-    "content": [
-      {
-        "explanation": "Se presume que la otra persona está con varias personas más.",
-        "examples": [
-          [
-            "¿ Iney emün müle-ymi ?",
-            "¿ quién (com) estar-(ind4-23-s2) ?",
-            "¿ Con quiénes vives ?"
-          ],
-          [
-            "Eymi lamngen, ¿ Iney emün müle-ymi Konsepsion mew ?",
-            "Tu hermana, ¿ quien (com) estar-(ind4-23-s2) Concepción (inst) ?",
-            "Y tu hermana, con quien viven en Concepción ?"
-          ]
-        ]
-      }
-    ]
-  },
   "tule|tr-st": {
     "title": "caracteristica, llevar puesto",
     "color": "chocolate",
@@ -395,7 +501,7 @@
     "title": "oficio",
     "color": "orange",
     "fix": "post",
-    "explanation": "Con este sufijo se pueden formar sustantivos para indicar profesiones, oficios o algo a que se dedica alguien. Se forman a partir de verbos de acción. Equivale al sufijo -dor del {wingkadungun}. La palabra terminada en [fe|(nom)] sirve tanto para mujer u hombre, no marca género.<br /><br />Por ejemplo, a partir de [ruka|casa|casa], podemos formar [ruka-fe|casa-(nom)|constructor].",
+    "explanation": "Con este sufijo se pueden formar sustantivos para indicar profesiones, oficios o algo a que se dedica alguien. Se forman a partir de verbos de acción. La palabra terminada en [fe|(nom)] sirve tanto para mujer u hombre, no marca género.<br /><br />Por ejemplo, a partir de [ruka|casa|casa], podemos formar [ruka-fe|casa-(nom)|constructor].",
     "variations": [],
     "content": [
       {
@@ -740,7 +846,7 @@
     "title": "adjetivizador de demostrativos",
     "color": "blue",
     "fix": "post",
-    "explanation": "El sufijo [chi|(adj)] se añade a los demostrativos cuando se usan para modificar un sustantivo, es decir, cuando no están solos, sino que acompañan a un sustantivo para señalarlo mejor.",
+    "explanation": "Este sufijo se añade a los demostrativos cuando se usan para modificar un sustantivo.  es decir, cuando no están solos, sino que acompañan a un sustantivo para señalarlo mejor.",
     "variations": [],
     "content": [
       {

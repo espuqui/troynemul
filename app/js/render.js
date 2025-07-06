@@ -4,7 +4,7 @@ import {search, loadSearchEvent} from "./search.js";
 import {UIStatus, Views} from "./uistatus.js";
 import {updateUI} from "./updateui.js";
 
-const startWord = "fe|nom"
+const startWord = "engün|com"
 
 
 /**
