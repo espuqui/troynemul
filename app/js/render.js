@@ -181,9 +181,14 @@ function c(text) {
 function h(text) {
   return text.replace(/\[([^\]]+)\]/g, (match, content) => {
     let parts = match.slice(1, -1).split("|")
-    if (parts.length < 2) {
-      alert("Error parsing inline example")
+    if (parts.length === 0) {
+      return ""
     }
+
+    if (parts.length === 1) {
+      return "<i>" + c(parts[0]) + "</i>"
+    }
+
 
     let output = parseExample(parts[0], parts[1])
     let wingkadungun = ""

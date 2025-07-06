@@ -497,33 +497,93 @@
     ]
   },
   "fe|nom": {
-    "title": "oficio",
+    "title": "sufijo de agente (quien hace...)",
     "color": "orange",
     "fix": "post",
-    "explanation": "Con este sufijo se pueden formar sustantivos para indicar profesiones, oficios o algo a que se dedica alguien. Se forman a partir de verbos de acción. La palabra terminada en [fe|(nom)] sirve tanto para mujer u hombre, no marca género.<br /><br />Por ejemplo, a partir de [ruka|casa|casa], podemos formar [ruka-fe|casa-(nom)|constructor].",
+    "explanation": "El sufijo [fe|(nom)] se usa para formar sustantivos a partir de verbos. Indica una persona que realiza habitualmente una acción o tiene un rol asociado a dicha acción. Funciona como un <b>nominalizador de agente</b>, es decir, crea palabras que significan ‘el que hace (verbo)’, como [küdaw|trabajar] -> [küdaw-fe|trabajar-(nom)|trabajador]. Se puede aplicar a verbos simples o complejos, incluyendo compuestos o derivados. <br><br>Los sustantivos creados con [fe|(nom)] designan típicamente oficios, actividades sociales o roles reconocidos, por lo que su uso está limitado semánticamente (por ejemplo, [küpan-fe|venir-(nom)|el que viene] es morfológicamente válido, pero no aceptado como sustantivo útil).<br><br>No distingue género gramatical; el sustantivo vale para cualquier persona.",
     "variations": [],
+    "related": [
+      "we|nom",
+      "fal|nom",
+      "enten|nom"
+    ],
     "content": [
       {
-        "explanation": "",
+        "explanation": "Oficios o roles derivados de verbos simples",
         "examples": [
+          [
+            "Küdaw-fe",
+            "trabajar-(nom)",
+            "Trabajador/a"
+          ],
+          [
+            "Weñe-fe",
+            "robar-(nom)",
+            "Ladrón/a"
+          ],
           [
             "Ülkantu-fe",
             "cantar-(nom)",
             "Cantante"
           ],
           [
-            "Weicha-fe",
-            "luchar-(nom)",
-            "Guerrero"
-          ],
+            "Wewpi-fe",
+            "hacer.discurso-(nom)",
+            "Orador/a"
+          ]
+        ]
+      },
+      {
+        "explanation": "Formación con verbos compuestos o con estructuras complejas",
+        "examples": [
           [
             "Lawen-tu-che-fe",
-            "remedio-(verb)-persona-(nom)",
-            "persona que se dedica a sanar usando lawen"
+            "medicina-usar-persona-(nom)",
+            "Persona que sana / médico tradicional"
           ],
           [
+            "Ilo-kulliñ-fe",
+            "carne-ganado-(nom)",
+            "Carnicero/a"
+          ],
+          [
+            "Ñidu-ka-fe",
+            "coser-(?)-(nom)",
+            "Costurero/a"
+          ]
+        ]
+      },
+      {
+        "explanation": "Neologismos a partir de conceptos modernos",
+        "examples": [
+          [
+            "Ingka-che-fe",
+            "defender-persona-(nom)",
+            "Abogado/a"
+          ],
+          [
+            "Pe-rakiduam-fe",
+            "ver-pensamiento-(nom)",
+            "Psicólogo/a"
+          ],
+          [
+            "Adkünu-fe",
+            "ordenar-(nom)",
+            "Informático/a"
+          ],
+          [
+            "Entu-dungu-fe",
+            "sacar-palabra-(nom)",
+            "Periodista"
+          ]
+        ]
+      },
+      {
+        "explanation": "Ejemplos en oraciones",
+        "examples": [
+          [
             "Waria mew pu ruka-fe fewla dewma-ke-yngün ruka",
-            "ciudad (inst) (coll) casa-(nom) ahora hacer-(cf14)-(ind4-3ns3-p2) casa",
+            "ciudad (inst) (coll) casa-(nom) ahora construir-(cf)-(ind4-3ns3-p2) casa",
             "En la ciudad los constructores ahora construyen casas"
           ],
           [
@@ -534,52 +594,17 @@
         ]
       },
       {
-        "explanation": "Las palabras de oficios que provienen del castellano no llevan esta partícula",
+        "explanation": "Palabras que provienen directamente del español no usan este sufijo",
         "examples": [
           [
             "Mediku",
-            "medico",
-            "Médico"
+            "médico",
+            "Médico/a"
           ],
           [
             "Tati mediku ngülam-tu-eyew pütrem-tu-welaya-imi Herminia",
             "El medico consejo-(verb)-(ind4-33-ds1) cigarro-(verb)-(ps19-neg-nrld9)-(ind4-23-s2) Herminia",
-            "El médico le aconsejó a Herminia que debe dejar de fumar"
-          ]
-        ]
-      },
-      {
-        "explanation": "Sin embargo, se pueden formar neologismos dada la versatilidad del {mapudungun}",
-        "examples": [
-          [
-            "Ingka-che-fe",
-            "defender-persona-(nom)",
-            "Abogado"
-          ],
-          [
-            "Pe-rakiduam-fe",
-            "Ver-pensamiento-(nom)",
-            "Psicólogo"
-          ],
-          [
-            "Adkünu-fe",
-            "Poner.en.orden-(nom)",
-            "Informático"
-          ],
-          [
-            "Entu-dungu-fe",
-            "sacar-palabras-(nom)",
-            "Periodista"
-          ],
-          [
-            "Dapi-kutran-fe",
-            "arrancar-enfermedad-(nom)",
-            "Enfermero/a"
-          ],
-          [
-            "Iñche ta ad-künu-fe-nge-n",
-            "Yo => forma,aspecto,estructura,armonía-(pfps32)-(nom)-(verb)-(ind1s3)",
-            "Yo soy informático"
+            "El médico le aconsejó a Herminia dejar de fumar"
           ]
         ]
       }
