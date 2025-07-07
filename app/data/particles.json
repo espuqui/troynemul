@@ -1469,5 +1469,106 @@
         ]
       }
     ]
+  },
+  "küpa|aux": {
+    "title": "querer / gustar hacer algo",
+    "color": "orangered",
+    "explanation": "<b>küpa</b> es un verbo auxiliar que se coloca antes de otro verbo para expresar <b>deseo</b> o <b>preferencia</b> por realizar una acción.<br><br>El significado  depende de si el verbo principal lleva o no la partícula <i>-ke</i>:<ul><li><b>Sin -ke</b>: küpa indica que alguien quiere hacer algo en un momento determinado (intención).</li><li><b>Con -ke</b>: küpa expresa que alguien suele hacer algo porque le gusta (preferencia habitual).</li></ul>",
+    "variations": [],
+    "related": [
+      "ke|cf",
+      "la|neg",
+      "pepi|pref",
+      "kim|pref"
+    ],
+    "content": [
+      {
+        "explanation": "Uso de <b>küpa</b> con un verbo sin <i>-ke</i>: expresa intención o deseo momentáneo (querer hacer algo)",
+        "examples": [
+          [
+            "Küpa amu-n tañi waria mew",
+            "(aux) ir-(ind1s3) (poss1s) pueblo (inst)",
+            "Quiero ir a mi pueblo"
+          ],
+          [
+            "Küpa i-la-y",
+            "(aux) comer-(neg)-(ind4-33)",
+            "No quiere comer"
+          ],
+          [
+            "Küpa kim-fu-n chumngechi mi pe-fiel",
+            "(aux) saber-(ipd)-(ind1s3) cómo (poss2s) ver-(tvn)",
+            "Quisiera saber cómo lo ves"
+          ],
+          [
+            "Küpa pu-le-n liwen",
+            "(aux) llegar-(st)-(ind1s3) mañana",
+            "Quiero llegar en la mañana"
+          ]
+        ]
+      },
+      {
+        "explanation": "Uso de <b>küpa</b> con verbo + <i>-ke</i>: expresa hábito por gusto (gustar hacer algo)",
+        "examples": [
+          [
+            "Küpa n’ampül-ke-n",
+            "(aux) viajar-(cf)-(ind1s3)",
+            "Me gusta viajar / Suelo viajar porque me gusta"
+          ],
+          [
+            "Küpa puru-ke-ymi",
+            "(aux) bailar-(cf)-(ind4-23-s2)",
+            "Te gusta bailar"
+          ],
+          [
+            "Küpa leli-ke-n pelikula",
+            "(aux) ver-(cf)-(ind1s3) película",
+            "Me gusta ver películas"
+          ]
+        ]
+      },
+      {
+        "explanation": "Uso negativo (no gustar):",
+        "examples": [
+          [
+            "Küpa n’ampül-ke-la-n",
+            "(aux) viajar-(cf)-(neg)-(ind1s3)",
+            "No me gusta viajar"
+          ],
+          [
+            "Küpa adentu-ke-la-y",
+            "(aux) dibujar-(cf)-(neg)-(ind4-33)",
+            "No le gusta dibujar"
+          ],
+          [
+            "Küpa i-ke-la-y",
+            "(aux) comer-(cf)-(neg)-(ind4-33)",
+            "No le gusta comer"
+          ]
+        ]
+      },
+      {
+        "explanation": "Preguntas con <i>küpa</i>: preguntar por gustos o intenciones",
+        "examples": [
+          [
+            "Chem küpa fem-ke-ymi?",
+            "qué (aux) hacer-(cf)-(ind4-23-s2)",
+            "¿Qué te gusta hacer?"
+          ],
+          [
+            "Chem küpa fem-ke-la-ymi?",
+            "qué (aux) hacer-(cf)-(neg)-(ind4-23-s2)",
+            "¿Qué no te gusta hacer?"
+          ],
+          [
+            "Chem küpa amu-y?",
+            "qué (aux) ir-(ind4-33)",
+            "¿Qué quiere hacer?"
+          ]
+        ]
+      }
+    ]
   }
+
+
 }
