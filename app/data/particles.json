@@ -1559,16 +1559,118 @@
             "Chem küpa fem-ke-la-ymi?",
             "qué (aux) hacer-(cf)-(neg)-(ind4-23-s2)",
             "¿Qué no te gusta hacer?"
+          ]
+        ]
+      }
+    ]
+  },
+  "tu|verb": {
+    "title": "verbalizador (hacer, consumir, usar, ir a)",
+    "color": "mediumvioletred",
+    "explanation": "La partícula <b>-tu</b> es un sufijo verbalizador que se une a sustantivos para formar verbos. El nuevo verbo expresa una acción común asociada al significado del sustantivo original, como comer, beber, usar, jugar, vestirse o desplazarse. Es muy productiva y se usa en gran variedad de contextos, desde comida y vestimenta hasta instrumentos musicales, lugares y objetos.<br><br>Puede conjugarse con otros sufijos como <i>-ke</i> (habitualidad) o <i>-la</i> (negación) para expresar hábitos o rechazos. En algunos casos también indica factitividad (hacer que algo exista o suceda).",
+    "variations": [],
+    "fix": "in",
+    "related": [
+      "ke|cf",
+      "la|neg",
+      "fe|nom"
+    ],
+    "content": [
+      {
+        "explanation": "Consumo de alimentos o bebidas",
+        "examples": [
+          [
+            "Kafe-tu-n",
+            "café-(verb)-(ind1s3)",
+            "Tomé café"
           ],
           [
-            "Chem küpa amu-y?",
-            "qué (aux) ir-(ind4-33)",
-            "¿Qué quiere hacer?"
+            "Ilo-tu-ke-la-n",
+            "carne-(verb)-(cf)-(neg)-(ind1s3)",
+            "No como carne (habitualmente)"
+          ],
+          [
+            "Mate-tu-a-fu-ymi, chachay ?",
+            "mate-(verb)-(nrld)-(ipd)-(ind4-23-s2), abuelo.materno ?",
+            "¿Quisiste tomar mate, abuelo (materno)?"
+          ]
+        ]
+      },
+      {
+        "explanation": "Uso de objetos o instrumentos",
+        "examples": [
+          [
+            "Kitra-tu-n",
+            "pipa-(verb)-(ind1s3)",
+            "Fumé pipa"
+          ],
+          [
+            "Papil-tu-n",
+            "papel-(verb)-(ind1s3)",
+            "Leí un papel / Estudié"
+          ],
+          [
+            "Trutruka-tu-fi-ñ",
+            "trutruca-(verb)-(edo6)-(ind1s3)",
+            "Toqué la trutruca"
+          ]
+        ]
+      },
+      {
+        "explanation": "Verbos derivados de lugares (movimiento hacia)",
+        "examples": [
+          [
+            "Wariya-tu-n",
+            "ciudad-(verb)-(ind1s3)",
+            "Fui a la ciudad"
+          ],
+          [
+            "Kolekio-tu-y",
+            "escuela-(verb)-(ind4-33)",
+            "Fue a la escuela"
+          ]
+        ]
+      },
+      {
+        "explanation": "Hábitos y negación",
+        "examples": [
+          [
+            "Kafe-tu-ke-n",
+            "café-(verb)-(cf)-(ind1s3)",
+            "Suelo tomar café"
+          ],
+          [
+            "Asukura-tu-ke-la-n",
+            "azúcar-(verb)-(cf)-(neg)-(ind1s3)",
+            "No consumo azúcar (habitualmente)"
+          ],
+          [
+            "Kachilla-tu-ke-la-n",
+            "trigo-(verb)-(cf)-(neg)-(ind1s3)",
+            "No consumo trigo (habitualmente)"
+          ]
+        ]
+      },
+      {
+        "explanation": "Otros usos extendidos: crear, usar, ponerse",
+        "examples": [
+          [
+            "Tralka-tu-n",
+            "arma-(verb)-(ind1s3)",
+            "Disparé / Usé un arma"
+          ],
+          [
+            "Chaketa-tu-n",
+            "chaqueta-(verb)-(ind1s3)",
+            "Me puse una chaqueta"
+          ],
+          [
+            "Kütral-tu-fi-ñ ti mamüll",
+            "fuego-(verb)-(edo6)-(ind1s3) el leño",
+            "Hice fuego con ese leño"
           ]
         ]
       }
     ]
   }
-
-
 }
