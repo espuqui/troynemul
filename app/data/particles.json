@@ -111,7 +111,9 @@
     "title": "asociativo [{eymi + kiñe che}] (con alguien)",
     "color": "aqua",
     "explanation": "Indica que {eymi} (tú) está acompañado de más personas o cosas que en total suman mas que dos. Equivale a decir <i>con alguien</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [eymi amu-ymi|tu ir-(ind4-23-s2)|tu fuiste] y queremos decir que tú fuiste con mas de una persona, agregamos <i>{emün}</i> al final. Entonces queda: [eymi amu-ymi tami reñma emün|tu ir-(ind4-23-s2) (poss2s) familia (com)|tu fuiste con tu familia].",
-    "variations": [ "eymün"],
+    "variations": [
+      "eymün"
+    ],
     "related": [
       "iñchiñ|com",
       "iñchiw|com",
@@ -197,7 +199,7 @@
         "examples": [
           [
             "Ngillatu-a-iñ ñi fochüm engün",
-            "hacer.ngillatún-(fut)-(?) (poss1s) hijito (com)",
+            "hacer.ngillatún-(nrld)-(?) (poss1s) hijito (com)",
             "Vamos a hacer ngillatún, mis hijitos"
           ]
         ]
@@ -1590,8 +1592,8 @@
             "No como carne (habitualmente)"
           ],
           [
-            "Mate-tu-a-fu-ymi, chachay ?",
-            "mate-(verb)-(nrld)-(ipd)-(ind4-23-s2), abuelo.materno ?",
+            "Mate-tu-a-fu-ymi , chachay ?",
+            "mate-(verb)-(nrld)-(ipd)-(ind4-23-s2) , abuelo.materno ?",
             "¿Quisiste tomar mate, abuelo (materno)?"
           ]
         ]
@@ -1668,6 +1670,162 @@
             "Kütral-tu-fi-ñ ti mamüll",
             "fuego-(verb)-(edo6)-(ind1s3) el leño",
             "Hice fuego con ese leño"
+          ]
+        ]
+      }
+    ]
+  },
+  "a|nrld": {
+    "title": "futuro, posibilidad o intención",
+    "color": "chartreuse",
+    "fix": "post",
+    "explanation": "La partícula -a indica que una acción no se ha realizado aún, pero se espera que ocurra en el futuro, o que es posible bajo ciertas condiciones. Es el marcador de situación no realizada. Tiene múltiples funciones según el contexto: puede señalar una acción futura, una posibilidad hipotética, una obligación, o una acción planificada o permitida.",
+    "variations": [
+      "ya"
+    ],
+    "content": [
+      {
+        "explanation": "Expresa una acción futura (marcador de tiempo futuro)",
+        "examples": [
+          [
+            "Amu-a-ymi",
+            "ir-(nrld)-(ind4-23-s2)",
+            "Tú irás"
+          ],
+          [
+            "Küdaw-a-yiñ",
+            "trabajar-(nrld)-(ind4-1p)",
+            "Nosotros trabajaremos"
+          ],
+          [
+            "Wüle amu-a-yu",
+            "mañana ir-(nrld)-(ind4-33)",
+            "Mañana irán"
+          ],
+          [
+            "Aku-a-y",
+            "llegar-(nrld)-(ind4-33)",
+            "Él/Ella llegará"
+          ]
+        ]
+      },
+      {
+        "explanation": "Indica una intención, plan o deseo de realizar una acción",
+        "examples": [
+          [
+            "Küpa amu-a-yu",
+            "querer ir-(nrld)-(ind4-33)",
+            "Él quiere ir"
+          ],
+          [
+            "Küpa umawtu-a-yu",
+            "querer dormir-(nrld)-(ind4-23-s2)",
+            "Tú quieres dormir"
+          ]
+        ]
+      },
+      {
+        "explanation": "En combinación con imperativo, puede expresar mandato indirecto o sugerencia",
+        "examples": [
+          [
+            "Trepe-a-ymi may !",
+            "despertarse-(nrld)-(ind4-23-s2) pues !",
+            "¡Despiértate pues!"
+          ],
+          [
+            "Dungu-a-ymi !",
+            "hablar-(nrld)-(ind4-23-s2) !",
+            "¡Hablarás con él!"
+          ]
+        ]
+      },
+      {
+        "explanation": "Expresa posibilidad o hipótesis futura (especialmente con -fu)",
+        "examples": [
+          [
+            "Chafo-afu-ymi",
+            "resfriarse-(nrld-ipd)-(ind4-23-s2)",
+            "Podrías resfriarte"
+          ],
+          [
+            "Ngilla-yafu-y",
+            "comprar-(nrld-ipd)-(ind4-33)",
+            "Podría comprar"
+          ],
+          [
+            "Küme-yafu-y",
+            "estar.bien-(nrld-ipd)-(ind4-33)",
+            "Estaría bien"
+          ]
+        ]
+      },
+      {
+        "explanation": "Se usa en construcciones de obligación, necesidad o consejo",
+        "examples": [
+          [
+            "Müley ñi pe-a-fel",
+            "(oblg) (oblg) ver-(nrld)-(tvn4)",
+            "Debo verte / Tengo que verte"
+          ],
+          [
+            "Müley ñi kucha-w-a-l",
+            "(oblg) (oblg) lavar-(ref)-(nrld)-(ovn4)",
+            "Debo lavarme"
+          ]
+        ]
+      },
+      {
+        "explanation": "Usado en condicionales, indica resultado probable de una acción futura",
+        "examples": [
+          [
+            "Aku-a-lu, pi-fi-ñ",
+            "llegar-(nrld)-(svn4), decir-(edo6)-(ind1s3)",
+            "Si llegara, diría..."
+          ],
+          [
+            "Kücha-la-yafu-y",
+            "lavarse-(neg)-(nrld-ipd)-(ind4-33)",
+            "No se lavaría"
+          ]
+        ]
+      },
+      {
+        "explanation": "Indica situaciones futuras no determinadas, como hábitos o posibilidades abiertas",
+        "examples": [
+          [
+            "Mapudungu-a-yu",
+            "hablar.mapuche-(nrld)-(ind4-33)",
+            "Hablará mapuche (algún día)"
+          ],
+          [
+            "Kallfü-nge-a-yu",
+            "Azul-(verb)-(nrld)-(ind4-33)",
+            "Se pondrá azul"
+          ],
+          [
+            "Amu-a-lu",
+            "ir-(nrld)-(svn4)",
+            "Si va (eventualmente)"
+          ]
+        ]
+      },
+      {
+        "explanation": "En combinación con -lu y subordinadas, expresa obligación, deseo o expectativa futura",
+        "examples": [
+          [
+            "Ñi tripa-ya-l",
+            "(poss1s) salir-(nrld)-(ovn4)",
+            "Mi salida futura / Lo que tengo que hacer"
+          ],
+          [
+            "Ñi chem-a-l",
+            "(poss1s) qué.hacer-(nrld)-(ovn4)",
+            "Lo que tengo que hacer"
+          ],
+          [
+            "Ñi umawtu-afu-lu",
+            "(poss1s) dormir-(nrld-ipd)-(ovn4)",
+            "Lo que debería dormir / Mi sueño pendiente"
           ]
         ]
       }
