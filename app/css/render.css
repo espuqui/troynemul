@@ -85,6 +85,24 @@ Estilos
   background-color: #333;
 }
 
+.retryButton {
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #333;
+}
+
+.retryButton:active {
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #555;
+}
+
 .errorSendingFeedbackMessage {
   text-align: center;
   color: #ff9f5a;

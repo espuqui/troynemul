@@ -100,6 +100,7 @@ function init() {
     }
 
     updateUI()
+    document.getElementById("mainDiv").scrollTop = window.uistatus.currentWordScroll
   });
 }
 
@@ -168,6 +169,8 @@ export function renderParticleContent(particleId) {
   // Misma palabra, solo agregarla al historial si diferente
   if (window.uistatus.currentWord !== uniqueParticleId) {
     window.uistatus.pushHistory(uniqueParticleId)
+  } else {
+    window.uistatus.currentWordScroll = document.getElementById("mainDiv").scrollTop
   }
 
   renderFromParticleData(window.particleData[uniqueParticleId], uniqueParticleId)

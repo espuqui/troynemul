@@ -71,6 +71,7 @@ export function updateUI() {
     }
 
     helpWidgetElement.innerHTML = uistatus.convertPhrase(originalHelpText)
+    document.getElementById("mainDiv").scrollTop = 0
   }
 
   if (uistatus.currentView === Views.SEARCH) {
@@ -94,7 +95,9 @@ export function updateUI() {
     document.getElementById("navigationBackIconDisabled").hidden =  uistatus.hasHistory()
 
     window.updateExamples()
-    document.getElementById("mainDiv").scrollTop = 0
+
+   // alert(uistatus.currentWordScroll)
+    document.getElementById("mainDiv").scrollTop = uistatus.currentWordScroll
   }
 
   if (uistatus.currentView === Views.FEEDBACK) {

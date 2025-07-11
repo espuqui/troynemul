@@ -1,7 +1,7 @@
 import {AlphabetConverter, NoopAlphabetConverter} from "./backend/alphabet_converter.js";
 import {sendWordFeedback} from "./backend/send_feedback.js";
 
-const VERSION = '06/22/2025_TEST'
+const VERSION = '07/09/2025_PRE1'
 const feedbackMap = new Map();
 
 import {
@@ -42,6 +42,7 @@ export class UIStatus {
     this.particlesTotal = 0
     this.examplesTotal = 0
     this.searchWidgetScroll = 0
+    this.currentWordScroll = 0
     this.searchWidgetWord = ""
 
 
@@ -49,6 +50,7 @@ export class UIStatus {
 
     // Copia de historial
     this.hist = []
+    this.scrollHistory = []
     this.updateUI = updateUI
   }
 
@@ -111,10 +113,16 @@ export class UIStatus {
 
   popHistory() {
     this.hist.pop()
+
     if (this.hist.length > 0) {
       this.currentWord = this.hist.at(this.hist.length - 1)
     } else {
       this.currentWord = null
+    }
+
+    if (this.scrollHistory.length > 0) {
+      this.currentWordScroll = this.scrollHistory.at(this.scrollHistory.length - 1);
+      this.scrollHistory.pop()
     }
   }
 
@@ -122,6 +130,8 @@ export class UIStatus {
     window.history.pushState(word, "")
     this.currentWord = word
     this.hist.push(word)
+    this.scrollHistory.push(document.getElementById("mainDiv").scrollTop)
+    this.currentWordScroll = 0
   }
 
   hasHistory() {
