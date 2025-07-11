@@ -16,13 +16,29 @@ import android.os.Build;
 import android.content.Context;
 import android.graphics.Color;
 import android.os.Handler;
+import android.net.ConnectivityManager;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+// Function to load all URLs in same webview
+class CustomWebViewClient extends WebViewClient {
+  public boolean shouldOverrideUrlLoading(WebView view, String url) {
+    if (!MainActivity.checkInternetConnection(view.getContext())) {
+      view.loadUrl("file:///android_asset/nointernet.html");
+    } else {
+      view.loadUrl(url);
+    }
+    return true;
+  }
+
+}
+
 public class MainActivity extends AppCompatActivity {
 
-	public static final String index_path = "file:///android_asset/index.html";
+// Actualizar para modo offline
+	//public static final String index_path = "file:///android_asset/index.html";
+public static final String index_path = "https://test.troynemul.org/";
 
 	public static WebView webView = null;
 	public static WebSettings webSettings = null;
@@ -131,11 +147,19 @@ public class MainActivity extends AppCompatActivity {
 			});
 			webSettings = webView.getSettings();
 
+			boolean online = true;
+
+      if (online) {
+        final CustomWebViewClient c = new CustomWebViewClient();
+        webView.setWebViewClient(c);
+      }
 			// Allows
 			webSettings.setJavaScriptEnabled(true);
 			webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
 			webSettings.setSupportMultipleWindows(true);
-			webSettings.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
+      if (!online){
+        webSettings.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
+      }
 			webSettings.setDisplayZoomControls(false);
 			webSettings.setAllowFileAccess(true);
 			webSettings.setAllowFileAccessFromFileURLs(true);
@@ -158,12 +182,32 @@ public class MainActivity extends AppCompatActivity {
 			webView.addJavascriptInterface(new JSInterface(this, webView, webSettings), "Android");
 
 			// GO
-			webView.loadUrl(index_path);
+			if (online) {
+         if (!MainActivity.checkInternetConnection(webView.getContext())) {
+            webView.loadUrl("file:///android_asset/nointernet.html");
+         } else {
+            webView.loadUrl(index_path);
+        }
+  		} else {
+  		      webView.loadUrl(index_path);
+
+  		}
 
 		} catch (Exception e) {
 			showError("Exception", e.getMessage());
 		}
 	}
+
+	public static boolean checkInternetConnection(Context context) {
+
+      ConnectivityManager con_manager = (ConnectivityManager)
+        context.getSystemService(Context.CONNECTIVITY_SERVICE);
+
+      return (con_manager.getActiveNetworkInfo() != null
+          && con_manager.getActiveNetworkInfo().isAvailable()
+          && con_manager.getActiveNetworkInfo().isConnected());
+
+  }
 
 	@Override
 	public void onBackPressed() {

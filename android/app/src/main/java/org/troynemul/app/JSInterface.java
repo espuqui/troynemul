@@ -19,6 +19,9 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.StringWriter;
 import java.io.PrintWriter;
+import android.webkit.WebView;
+import static org.troynemul.app.MainActivity.index_path;
+import static org.troynemul.app.MainActivity.checkInternetConnection;
 
 public class JSInterface {
 
@@ -172,6 +175,24 @@ public class JSInterface {
 			 */
 			activity.setRequestedOrientation(state);
 		});
+	}
+
+	@JavascriptInterface
+	public void reloadPage() {
+
+			activity.runOnUiThread(() -> {
+				try {
+          final WebView webView = activity.getWindow().findViewById(R.id.webview0);
+
+            if (!MainActivity.checkInternetConnection(webView.getContext())) {
+                 webView.loadUrl("file:///android_asset/nointernet.html");
+            } else {
+                webView.loadUrl(MainActivity.index_path);
+            }
+          } catch (Exception e) {
+            showToast(getStackStrace(e), 5);
+          }
+      });
 	}
 
 	@JavascriptInterface
