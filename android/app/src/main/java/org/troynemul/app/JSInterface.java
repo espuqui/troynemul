@@ -20,7 +20,7 @@ import java.io.OutputStreamWriter;
 import java.io.StringWriter;
 import java.io.PrintWriter;
 import android.webkit.WebView;
-import static org.troynemul.app.MainActivity.index_path;
+import static org.troynemul.app.MainActivity.ONLINE_URL;
 import static org.troynemul.app.MainActivity.checkInternetConnection;
 
 public class JSInterface {
@@ -185,9 +185,9 @@ public class JSInterface {
           final WebView webView = activity.getWindow().findViewById(R.id.webview0);
 
             if (!MainActivity.checkInternetConnection(webView.getContext())) {
-                 webView.loadUrl("file:///android_asset/nointernet.html");
+                 webView.loadUrl(MainActivity.NO_INTERNET_URL);
             } else {
-                webView.loadUrl(MainActivity.index_path);
+                webView.loadUrl(MainActivity.ONLINE_URL);
             }
           } catch (Exception e) {
             showToast(getStackStrace(e), 5);
