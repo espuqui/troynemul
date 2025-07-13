@@ -8,3 +8,5 @@ dist
 *.iml
 *.keystore
 *.apk
+android/gradlew
+android/gradle/wrapper

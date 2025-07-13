@@ -1366,9 +1366,9 @@
   "ke|cf": {
     "title": "acción habitual / rasgo constante",
     "color": "goldenrod",
-    "fix": "post",
+    "fix": "in",
     "variations": [],
-    "explanation": "El sufijo <i>-ke</i> indica que una acción se realiza <b>habitualmente</b>, de forma continua, como parte de una rutina o costumbre. También puede marcar características constantes del sujeto o expresar que algo ocurre <b>regularmente</b> o como <b>regla general</b>. Se coloca entre la raíz verbal y la terminación personal. Cuando se combina con el sufijo negativo <i>-la</i>, indica una acción que <b>no se hace habitualmente</b>.<br><br>Se traduce como ‘suelo’, ‘habitualmente’, ‘normalmente’, ‘cada día’, ‘siempre’, o incluso como ‘nunca’ si se combina con negación. Es útil para hablar de rutinas diarias, hábitos, reglas culturales o generalizaciones.",
+    "explanation": "La partícula [ke|(cf)] indica que una acción se realiza <b>habitualmente</b>, de forma continua, como parte de una rutina o costumbre. Cuando se combina con el sufijo negativo [la|(neg)], indica una acción que <b>no se hace habitualmente</b> (Ver [kela|(cf-neg)]).<br><br>Se traduce como ‘suelo’, ‘habitualmente’, ‘normalmente’, ‘cada día’, ‘siempre’, o ‘nunca’ si se combina con [la|(neg)].",
     "related": [
       "fu|ipd",
       "ye|cf",
@@ -1376,12 +1376,12 @@
     ],
     "content": [
       {
-        "explanation": "Describe acciones habituales, rutinas o repeticiones frecuentes",
+        "explanation": "Describe acciones habituales, rutinas o repeticiones frecuentes:",
         "examples": [
           [
             "Kücha-foro-ke-n",
-            "lavar los.dientes-(cf)-(ind)",
-            "Suelo lavarme los dientes"
+            "lavar-diente/hueso-(cf)-(ind)",
+            "A menudo me lavo los dientes"
           ],
           [
             "Amu-ke-n tañi waria mew",
@@ -1401,27 +1401,27 @@
         ]
       },
       {
-        "explanation": "Puede usarse con negación para expresar que una acción no es habitual",
+        "explanation": "Puede usarse con negación para expresar que una acción no es habitual. (Ver [kela|(cf-neg)]):",
         "examples": [
           [
-            "Chillkatu-ke-la-n",
-            "estudiar-(cf)-(neg)-(ind)",
+            "Chillkatu-kela-n",
+            "estudiar-(cf-neg)-(ind)",
             "No suelo estudiar"
           ],
           [
-            "Amu-ke-la-y ñi waria mew",
-            "ir-(cf)-(neg)-(ind) (poss3s) ciudad (inst)",
+            "Amu-kela-y ñi waria mew",
+            "ir-(cf-neg)-(ind) (poss3s) ciudad (inst)",
             "No suele ir a su pueblo"
           ],
           [
             "Fey-pi-ke-la-y",
             "así-decir-(cf)-(neg)-(ind)",
-            "Así no se dice (habitualmente)"
+            "Así no se dice"
           ]
         ]
       },
       {
-        "explanation": "Permite agregar matices de frecuencia como ‘algunas veces’ con adverbios como <i>kiñe-ke mew</i>",
+        "explanation": "Permite agregar matices de frecuencia como ‘algunas veces’:",
         "examples": [
           [
             "Kiñeke mew chillkatu-ke-n",
@@ -1436,36 +1436,31 @@
         ]
       },
       {
-        "explanation": "Puede expresar normas o rasgos constantes de una persona, lugar o situación",
+        "explanation": "Puede expresar normas o rasgos constantes de una persona, lugar o situación:",
         "examples": [
           [
-            "Po-küle-ke-y",
+            "Pod-küle-ke-y",
             "sucio-(st)-(cf)-(ind)",
             "Siempre está sucio"
           ],
           [
             "Umañ-pa-ke-la-y ta witran",
-            "quedarse-hh-(cf)-(neg)-(ind) el visitante",
+            "quedarse-(hh)-(cf)-(neg)-(ind) el visitante",
             "Un visitante no suele quedarse aquí"
           ],
           [
             "Dallütu-meke-ke-la-y",
-            "quejarse-(intensivo)-(cf)-(neg)-(ind)",
+            "quejarse-(boost)-(cf)-(neg)-(ind)",
             "No se queja nunca"
           ]
         ]
       },
       {
-        "explanation": "También puede indicar acciones repetidas en el pasado o rasgos en relatos",
+        "explanation": "También puede indicar acciones repetidas en el pasado (Ver [kefu|(cf-ipd)]):",
         "examples": [
           [
-            "Küpa leli-ke-n pelikula",
-            "desear ver-(cf)-(ind) película",
-            "Me gusta ver películas (regularmente)"
-          ],
-          [
-            "Tripa-ke-fu-n",
-            "salir-(cf)-(ipd)-(ind)",
+            "Tripa-kefu-n",
+            "salir-(cf-ipd)-(ind)",
             "Solía salir / salía antes"
           ]
         ]
