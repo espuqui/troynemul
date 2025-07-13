@@ -1475,7 +1475,7 @@
   "küpa|aux": {
     "title": "querer / gustar hacer algo",
     "color": "orangered",
-    "explanation": "<b>küpa</b> es un verbo auxiliar que se coloca antes de otro verbo para expresar <b>deseo</b> o <b>preferencia</b> por realizar una acción.<br><br>El significado  depende de si el verbo principal lleva o no la partícula <i>-ke</i>:<ul><li><b>Sin -ke</b>: küpa indica que alguien quiere hacer algo en un momento determinado (intención).</li><li><b>Con -ke</b>: küpa expresa que alguien suele hacer algo porque le gusta (preferencia habitual).</li></ul>",
+    "explanation": "[küpa|(aux)] es un verbo auxiliar que se coloca antes de otro verbo para expresar <b>deseo</b> o <b>preferencia</b> por realizar una acción. <br/><br/> Si el verbo que sigue lleva la partícula [ke|(cf)], expresa que alguien suele hacer algo porque le gusta: [¿ Küpa mansana-tu-ke-ymi ?|¿ (aux) manzana-(verb)-(cf)-(ind) ?|¿Te gusta comer manzana?]. <br/><br/>Si no lleva la partícula [ke|(cf)], indica que alguien quiere hacer algo en un momento determinado. [¿ Küpa mansana-tu-imi ?|¿ (aux) manzana-(verb)-(ind) ?|¿Te gusta comer manzana?]",
     "variations": [],
     "related": [
       "ke|cf",
@@ -1485,7 +1485,7 @@
     ],
     "content": [
       {
-        "explanation": "Uso de <b>küpa</b> con un verbo sin <i>-ke</i>: expresa intención o deseo momentáneo (querer hacer algo)",
+        "explanation": "Uso de [küpa|(aux)], expresa intención o deseo momentáneo:",
         "examples": [
           [
             "Küpa amu-n tañi waria mew",
@@ -1510,12 +1510,12 @@
         ]
       },
       {
-        "explanation": "Uso de <b>küpa</b> con verbo + <i>-ke</i>: expresa hábito por gusto (gustar hacer algo)",
+        "explanation": "Uso de [küpa|(aux)] con [ke|(cf)] expresa hábito por gusto:",
         "examples": [
           [
-            "Küpa n’ampül-ke-n",
+            "Küpa n'ampül-ke-n",
             "(aux) viajar-(cf)-(ind)",
-            "Me gusta viajar / Suelo viajar porque me gusta"
+            "Me gusta viajar"
           ],
           [
             "Küpa puru-ke-ymi",
@@ -1530,11 +1530,11 @@
         ]
       },
       {
-        "explanation": "Uso negativo (no gustar):",
+        "explanation": "Uso negativo (Ver [kela|(cf-neg)]):",
         "examples": [
           [
-            "Küpa n’ampül-ke-la-n",
-            "(aux) viajar-(cf)-(neg)-(ind)",
+            "Küpa n'ampül-kela-n",
+            "(aux) viajar-(cf-neg)-(ind)",
             "No me gusta viajar"
           ],
           [
@@ -1550,16 +1550,16 @@
         ]
       },
       {
-        "explanation": "Preguntas con <i>küpa</i>: preguntar por gustos o intenciones",
+        "explanation": "Preguntar por gustos o intenciones:",
         "examples": [
           [
-            "Chem küpa fem-ke-ymi?",
-            "qué (aux) hacer-(cf)-(ind)",
+            "¿ Chem küpa fem-ke-ymi ?",
+            "¿ qué (aux) hacer-(cf)-(ind) ?",
             "¿Qué te gusta hacer?"
           ],
           [
-            "Chem küpa fem-ke-la-ymi?",
-            "qué (aux) hacer-(cf)-(neg)-(ind)",
+            "¿ Chem küpa fem-kela-ymi ?",
+            "¿ qué (aux) hacer-(cf-neg)-(ind) ?",
             "¿Qué no te gusta hacer?"
           ]
         ]
@@ -1740,7 +1740,7 @@
         ]
       },
       {
-        "explanation": "Expresa posibilidad o hipótesis futura con [fu|(ipd)]. Ver [afu|(nrld-ipd)]:",
+        "explanation": "Expresa posibilidad o hipótesis futura con [fu|(ipd)] (Ver [afu|(nrld-ipd)]):",
         "examples": [
           [
             "Chafo-afu-ymi",

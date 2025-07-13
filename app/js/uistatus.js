@@ -303,7 +303,7 @@ export class UIStatus {
     }
 
     if (name.length === 0) {
-      showError("Nombre no puede estar vacío")
+      showError("e-mail no puede estar vacío, lo usaré si necesito aclarar dudas sobre el comentario")
       return false
     }
 
