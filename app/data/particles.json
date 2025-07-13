@@ -1569,7 +1569,7 @@
   "tu|verb": {
     "title": "verbalizador (hacer, consumir, usar, ir a)",
     "color": "mediumvioletred",
-    "explanation": "La partícula <b>-tu</b> es un sufijo verbalizador que se une a sustantivos para formar verbos. El nuevo verbo expresa una acción común asociada al significado del sustantivo original, como comer, beber, usar, jugar, vestirse o desplazarse. Es muy productiva y se usa en gran variedad de contextos, desde comida y vestimenta hasta instrumentos musicales, lugares y objetos.<br><br>Puede conjugarse con otros sufijos como <i>-ke</i> (habitualidad) o <i>-la</i> (negación) para expresar hábitos o rechazos. En algunos casos también indica factitividad (hacer que algo exista o suceda).",
+    "explanation": "La partícula [tu|(verb)] es un partícula verbalizadora que se une a sustantivos para formar verbos. El nuevo verbo expresa una acción común asociada al significado del sustantivo original, como comer, beber, usar, jugar, vestirse o desplazarse. Se usa en gran variedad de contextos, desde comida y vestimenta hasta instrumentos musicales, lugares y objetos.<br><br>Puede conjugarse con otros sufijos como [ke|(cf)] o [la|neg] para expresar hábitos o rechazos. En algunos casos también indica factitividad (hacer que algo exista o suceda).",
     "variations": [],
     "fix": "in",
     "related": [
@@ -1579,7 +1579,7 @@
     ],
     "content": [
       {
-        "explanation": "Consumo de alimentos o bebidas",
+        "explanation": "Consumo de alimentos o bebidas:",
         "examples": [
           [
             "Kafe-tu-n",
@@ -1589,17 +1589,17 @@
           [
             "Ilo-tu-ke-la-n",
             "carne-(verb)-(cf)-(neg)-(ind)",
-            "No como carne (habitualmente)"
+            "No suelo comer carne"
           ],
           [
             "Mate-tu-afu-ymi , chachay ?",
             "mate-(verb)-(nrld-ipd)-(ind) , abuelo.materno ?",
-            "¿Quisiste tomar mate, abuelo (materno)?"
+            "¿Quieres tomar mate, abuelo (materno)?"
           ]
         ]
       },
       {
-        "explanation": "Uso de objetos o instrumentos",
+        "explanation": "Uso de objetos o instrumentos:",
         "examples": [
           [
             "Kitra-tu-n",
@@ -1619,10 +1619,10 @@
         ]
       },
       {
-        "explanation": "Verbos derivados de lugares (movimiento hacia)",
+        "explanation": "Verbos derivados de lugares (movimiento hacia):",
         "examples": [
           [
-            "Wariya-tu-n",
+            "Waria-tu-n",
             "ciudad-(verb)-(ind)",
             "Fui a la ciudad"
           ],
@@ -1634,7 +1634,7 @@
         ]
       },
       {
-        "explanation": "Hábitos y negación",
+        "explanation": "Hábitos y negación:",
         "examples": [
           [
             "Kafe-tu-ke-n",
@@ -1642,19 +1642,19 @@
             "Suelo tomar café"
           ],
           [
-            "Asukura-tu-ke-la-n",
-            "azúcar-(verb)-(cf)-(neg)-(ind)",
-            "No consumo azúcar (habitualmente)"
+            "Asukura-tu-[kela]-n",
+            "azúcar-(verb)-(cf-neg)-(ind)",
+            "No suelo consumir azúcar"
           ],
           [
             "Kachilla-tu-ke-la-n",
             "trigo-(verb)-(cf)-(neg)-(ind)",
-            "No consumo trigo (habitualmente)"
+            "No suelo consumir trigo"
           ]
         ]
       },
       {
-        "explanation": "Otros usos extendidos: crear, usar, ponerse",
+        "explanation": "Otros usos extendidos: crear, usar, ponerse:",
         "examples": [
           [
             "Tralka-tu-n",
@@ -1667,9 +1667,9 @@
             "Me puse una chaqueta"
           ],
           [
-            "Kütral-tu-fi-ñ ti mamüll",
-            "fuego-(verb)-(edo6)-(ind) el leño",
-            "Hice fuego con ese leño"
+            "Kütral-tu-fiñ ti mamüll",
+            "fuego-(verb)-(edo-ind) el madera",
+            "Hice fuego con esa leña"
           ]
         ]
       }

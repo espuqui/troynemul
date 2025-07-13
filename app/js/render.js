@@ -5,7 +5,7 @@ import {UIStatus, Views} from "./uistatus.js";
 import {updateUI} from "./updateui.js";
 
 // Caracteres especiales ² ⁺
-const startWord = null
+const startWord = "tu|verb"
 
 //const startWord = "a|nrld"
 
@@ -349,7 +349,7 @@ function renderParticle(examplePart, particleId) {
   let examplePartToLookup = examplePart.toLowerCase()
   let currentWord = window.aliasMap.get(examplePartToLookup)
   if (currentWord === undefined) {
-    html += renderWithSpanOnClickTooltip(c(wordParts[0]), "Falta: <br/> (" + examplePartToLookup + ")",
+    html += renderWithSpanOnClickTooltip(c(wordParts[0]), "🚧Küdawleiñ!",
                                          "particleMissing particleExample")
   } else {
     let color = window.particleData[currentWord].color
