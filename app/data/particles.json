@@ -1209,10 +1209,10 @@
     ]
   },
   "fu|ipd": {
-    "title": "sufijo impedido / contraexpectación",
+    "title": "impedimento / contraexpectación",
     "color": "indianred",
     "fix": "post",
-    "explanation": "El sufijo <i>-fu</i> indica que una acción fue interrumpida, impedida o que no tuvo el resultado esperado. Muchas veces puede traducirse como ‘había...’, ‘quería... pero...’, o ‘no se pudo...’. Su significado va más allá del pasado: señala una ruptura en lo que normalmente se esperaría. Por eso, también puede usarse en deseos que no se cumplieron, hipótesis no realizadas, deberes no efectuados, o acciones que no resultaron como se pensaba.<br><br>Siempre deja implícito un <b>“pero”</b>, incluso si no se dice explícitamente. Se puede combinar con otros sufijos como <i>-a</i> (acción no realizada), <i>-ke</i> (continuativo), o <i>-fal</i> (deber, obligación), para expresar diferentes matices de posibilidad frustrada, consejo no seguido o intención no cumplida.",
+    "explanation": "El sufijo [fu|(ipd)] indica que una acción fue interrumpida, impedida o que no tuvo el resultado esperado. Muchas veces puede traducirse como ‘había...’, ‘quería... pero...’, o ‘no se pudo...’. <br/><br/>Su significado va más allá del pasado: señala una ruptura en lo que normalmente se esperaría. Por eso, también puede usarse en deseos que no se cumplieron, hipótesis no realizadas, deberes no efectuados, o acciones que no resultaron como se pensaba.<br><br>Siempre deja implícito un <b>'pero'</b>, incluso si no se dice explícitamente. Se puede combinar con otros sufijos como [a|(nrld)] → [afu|(nrld-ipd)] (acción no realizada), [ke|(cf)] → [kefu|(cf-ipd)] (continuativo), o [fal|(force)] → [falfu|(force-ipd)] (deber, obligación), para expresar diferentes matices de posibilidad frustrada, consejo no seguido o intención no cumplida.",
     "variations": [],
     "related": [
       "a|nrld",
@@ -1221,7 +1221,7 @@
     ],
     "content": [
       {
-        "explanation": "Expresa una acción que fue planeada o deseada, pero no tuvo éxito",
+        "explanation": "Expresa una acción que fue planeada o deseada, pero no tuvo éxito:",
         "examples": [
           [
             "Amu-fu-n Temuko",
@@ -1241,11 +1241,11 @@
         ]
       },
       {
-        "explanation": "En combinación con el futuro -a- expresa un resultado hipotético frustrado o temido",
+        "explanation": "En combinación con el futuro -a- expresa un resultado hipotético frustrado o temido:",
         "examples": [
           [
-            "Chumngechi kim-a-fu-yiñ ?",
-            "cómo saber-(nrld)-(ipd)-(ind4-1ns3-p2) ?",
+            "¿ Chumngechi kim-a-fu-iñ ?",
+            "¿ cómo saber-(nrld)-(ipd)-(ind) ?",
             "¿Cómo íbamos a saber?"
           ],
           [
@@ -1256,7 +1256,7 @@
         ]
       },
       {
-        "explanation": "Puede señalar un deber no cumplido o una sugerencia que no se siguió (con -fal)",
+        "explanation": "Puede señalar un deber no cumplido o una sugerencia que no se siguió (con [fal|(force)]):",
         "examples": [
           [
             "Amu-fal-fu-y",
@@ -1271,7 +1271,7 @@
         ]
       },
       {
-        "explanation": "En contexto emocional, expresa nostalgia o intención frustrada",
+        "explanation": "En contexto emocional, expresa nostalgia o intención frustrada:",
         "examples": [
           [
             "Reye-fu-n tüfa-chi ruka mew",
@@ -1280,22 +1280,22 @@
           ],
           [
             "Küpa kim-fu-n chumngechi pe-fiel",
-            "desear saber-(ipd)-(ind) cómo ver-(tvn)",
+            "desear saber-(ipd)-(ind) como ver-(tvn)",
             "Me gustaría saber cómo lo ves"
           ]
         ]
       },
       {
-        "explanation": "En tiempo narrativo o relatos, indica acciones habituales del pasado que ya no ocurren",
+        "explanation": "En tiempo narrativo o relatos, indica acciones habituales del pasado que ya no ocurren:",
         "examples": [
           [
-            "Müle-ke-fu-n kampu mew",
-            "estar-(cf14)-(ipd)-(ind) campo (inst)",
+            "Müle-kefu-n lelfün mew",
+            "estar-(cf-ipd)-(ind) campo (inst)",
             "Cuando era joven vivía en el campo (pero ya no)"
           ],
           [
-            "Tripay-ke-fu-n ñi küdawtu-al",
-            "salir-(cf14)-(ipd)-(ind) (poss1s) trabajo-(nrld)",
+            "Tripay-kefu-n ñi küdawtu-al",
+            "salir-(cf-ipd)-(ind) (poss1s) trabajo-(nrld-ovn)",
             "Solía salir a trabajar (ya no lo hago)"
           ]
         ]
@@ -1763,8 +1763,8 @@
             "Debo verte / Tengo que verte"
           ],
           [
-            "Müley ñi kucha-w-a-l",
-            "(oblg) (oblg) lavar-(ref)-(nrld)-(ovn)",
+            "Müley ñi kucha-w-al",
+            "(oblg) (oblg) lavar-(ref)-(nrld-ovn)",
             "Debo lavarme"
           ]
         ]
@@ -1808,13 +1808,13 @@
         "explanation": "En combinación con [el|(ovn)], expresa obligación, deseo o expectativa futura:",
         "examples": [
           [
-            "Ñi tripa-ya-l",
-            "(poss1s) salir-(nrld)-(ovn)",
+            "Ñi tripa-yal",
+            "(poss1s) salir-(nrld-ovn)",
             "Mi salida futura / Lo que tengo que hacer"
           ],
           [
-            "Ñi chem-a-l",
-            "(poss1s) qué.hacer-(nrld)-(ovn)",
+            "Ñi chem-al",
+            "(poss1s) qué.hacer-(nrld-ovn)",
             "Lo que tengo que hacer"
           ]
         ]
