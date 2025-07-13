@@ -4,7 +4,10 @@ import {search, loadSearchEvent} from "./search.js";
 import {UIStatus, Views} from "./uistatus.js";
 import {updateUI} from "./updateui.js";
 
+// Caracteres especiales ² ⁺
 const startWord = null
+
+//const startWord = "a|nrld"
 
 
 /**

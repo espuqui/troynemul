@@ -2,7 +2,7 @@
   "iñchiw|com": {
     "title": "asociativo [{iñche + kiñe che}] (con)",
     "color": "aqua",
-    "explanation": "Indica que uno está acompañado de una persona o algo más que en total suman dos. Equivale a decir <i>con alguien</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [iñche amu-n|yo ir-(ind1s3)|yo fui] y queremos decir que fuimos con una persona más, agregamos <i>{iñchiw}</i> al final. Entonces queda: [iñche amu-n tañi ñuke iñchiw|yo ir-(ind1s3) (poss1s) mamá (com)|yo fui con mi mamá].",
+    "explanation": "Indica que uno está acompañado de una persona o algo más que en total suman dos. Equivale a decir <i>con alguien</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [iñche amu-n|yo ir-(ind)|yo fui] y queremos decir que fuimos con una persona más, agregamos <i>{iñchiw}</i> al final. Entonces queda: [iñche amu-n tañi ñuke iñchiw|yo ir-(ind) (poss1s) mamá (com)|yo fui con mi mamá].",
     "variations": [],
     "related": [
       "iñchiñ|com",
@@ -16,7 +16,7 @@
         "examples": [
           [
             "Iñche müle-n tañi afkadi iñchiw",
-            "yo estar-(ind1s3) (poss1s) pareja (com)",
+            "yo estar-(ind) (poss1s) pareja (com)",
             "Vivo con mi pareja"
           ],
           [
@@ -36,7 +36,7 @@
   "iñchiñ|com": {
     "title": "asociativo [{iñche + pu che}] (con algunos)",
     "color": "aqua",
-    "explanation": "Indica que uno está acompañado de más de dos personas o cosas que en total suman mas de dos. Equivale a decir <i>con alguien</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [iñche amu-n|yo ir-(ind1s3)|yo fui] y queremos decir con quien más fuimos, agregamos <i>{iñchiñ}</i> al final. Entonces queda: [iñche amu-n tañi reñma iñchiñ|yo ir-(ind1s3) (poss1s) familia (com)|yo fui con mi familia].",
+    "explanation": "Indica que uno está acompañado de más de dos personas o cosas que en total suman mas de dos. Equivale a decir <i>con alguien</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [iñche amu-n|yo ir-(ind)|yo fui] y queremos decir con quien más fuimos, agregamos <i>{iñchiñ}</i> al final. Entonces queda: [iñche amu-n tañi reñma iñchiñ|yo ir-(ind) (poss1s) familia (com)|yo fui con mi familia].",
     "variations": [],
     "related": [
       "iñchiw|com",
@@ -60,12 +60,12 @@
           ],
           [
             "Müle-n tañi reñma iñchiñ",
-            "estar-(ind1s3) (poss1s) familia (com)",
+            "estar-(ind) (poss1s) familia (com)",
             "Vivo con mi familia"
           ],
           [
             "Müle-n tañi ñuke ka ñukentu iñchiñ",
-            "estar-(ind1s3) (poss1s) mamá y tía.materna (com)",
+            "estar-(ind) (poss1s) mamá y tía.materna (com)",
             "Vivo con mi mamá y mi tía (materna)"
           ]
         ]
@@ -75,7 +75,7 @@
   "emu|com": {
     "title": "asociativo [{eymi + kiñe che}] (con)",
     "color": "aqua",
-    "explanation": "Indica que {eymi} (tú) estás acompañado de una persona o algo más. Equivale a decir <i>con alguien</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [eymi amu-ymi|tu ir-(ind4-23-s2)|tu fuiste] y queremos decir que tú fuiste con una persona más, agregamos <i>{emu}</i> al final. Entonces queda: [eymi amu-ymi tami ñuke emu|tu ir-(ind4-23-s2) (poss2s) mamá (com)|tu fuiste con tu mamá].",
+    "explanation": "Indica que {eymi} (tú) estás acompañado de una persona o algo más. Equivale a decir <i>con alguien</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [eymi amu-ymi|tu ir-(ind)|tu fuiste] y queremos decir que tú fuiste con una persona más, agregamos <i>{emu}</i> al final. Entonces queda: [eymi amu-ymi tami ñuke emu|tu ir-(ind) (poss2s) mamá (com)|tu fuiste con tu mamá].",
     "variations": [],
     "related": [
       "iñchiñ|com",
@@ -100,7 +100,7 @@
           ],
           [
             "¿ Iney emu müle-ymi ?",
-            "¿ quién (com) estar-(ind4-23-s2) ?",
+            "¿ quién (com) estar-(ind) ?",
             "¿ Con quién vives ?"
           ]
         ]
@@ -110,7 +110,7 @@
   "emün|com": {
     "title": "asociativo [{eymi + kiñe che}] (con alguien)",
     "color": "aqua",
-    "explanation": "Indica que {eymi} (tú) está acompañado de más personas o cosas que en total suman mas que dos. Equivale a decir <i>con alguien</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [eymi amu-ymi|tu ir-(ind4-23-s2)|tu fuiste] y queremos decir que tú fuiste con mas de una persona, agregamos <i>{emün}</i> al final. Entonces queda: [eymi amu-ymi tami reñma emün|tu ir-(ind4-23-s2) (poss2s) familia (com)|tu fuiste con tu familia].",
+    "explanation": "Indica que {eymi} (tú) está acompañado de más personas o cosas que en total suman mas que dos. Equivale a decir <i>con alguien</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [eymi amu-ymi|tu ir-(ind)|tu fuiste] y queremos decir que tú fuiste con mas de una persona, agregamos <i>{emün}</i> al final. Entonces queda: [eymi amu-ymi tami reñma emün|tu ir-(ind) (poss2s) familia (com)|tu fuiste con tu familia].",
     "variations": [
       "eymün"
     ],
@@ -136,12 +136,12 @@
           ],
           [
             "¿ Iney emün müle-ymi ?",
-            "¿ quién (com) estar-(ind4-23-s2) ?",
+            "¿ quién (com) estar-(ind) ?",
             "¿ Con quiénes vives ?"
           ],
           [
             "Eymi lamngen, ¿ Iney emün müle-ymi Konsepsion mew ?",
-            "Tu hermana, ¿ quien (com) estar-(ind4-23-s2) Concepción (inst) ?",
+            "Tu hermana, ¿ quien (com) estar-(ind) Concepción (inst) ?",
             "Y tu hermana, con quien viven en Concepción ?"
           ]
         ]
@@ -165,7 +165,7 @@
         "examples": [
           [
             "Ti trewa müle-y Paine engu",
-            "el perro estar-(ind4-33) Millaray (com)",
+            "el perro estar-(ind) Millaray (com)",
             "el perro está junto con Millaray"
           ],
           [
@@ -175,7 +175,7 @@
           ],
           [
             "Tami wen'üy amu-y ñi ñuke engu",
-            "(poss2s) amigo ir-(ind4-33) (poss3s) mamá (com)",
+            "(poss2s) amigo ir-(ind) (poss3s) mamá (com)",
             "Tu amigo fue con su madre"
           ]
         ]
@@ -220,12 +220,12 @@
         "examples": [
           [
             "Tranu mew wül-el-enew",
-            "zapatilla (inst) dar/golpe-(cf14)-(ido6-ind1s3-ds1)",
+            "zapatilla (inst) dar/golpe-(cf14)-(ido6-ind-ds1)",
             "Me pegó con una zapatilla"
           ],
           [
             "Diwillün-ngeke-y kiñe wütrü mew",
-            "revolver-(pass-cf14)-(ind4-33) una cuchara (inst)",
+            "revolver-(pass-cf14)-(ind) una cuchara (inst)",
             "Se revuelve con una cuchara"
           ]
         ]
@@ -236,7 +236,7 @@
         "examples": [
           [
             "Tañi wen'uy müle-y tañi ruka mew",
-            "(poss1s) amigo estar-(ind4-33) (poss1s) casa (inst)",
+            "(poss1s) amigo estar-(ind) (poss1s) casa (inst)",
             "Mi amigo está en mi casa"
           ]
         ]
@@ -247,12 +247,12 @@
         "examples": [
           [
             "Lelfün mew tuw-ün",
-            "campo (inst) origen,procedencia-(ind1s3)",
+            "campo (inst) origen,procedencia-(ind)",
             "Soy originiario del campo"
           ],
           [
             "Iñche amu-a-n waria mew",
-            "yo ir-(nrld)-(ind1s3) ciudad (inst)",
+            "yo ir-(nrld)-(ind) ciudad (inst)",
             "Yo iré a la ciudad"
           ]
         ]
@@ -262,12 +262,12 @@
         "examples": [
           [
             "Santiaw tuw-ün",
-            "Santiago origen,procedencia-(ind1s3)",
+            "Santiago origen,procedencia-(ind)",
             "Soy originario de Santiago"
           ],
           [
             "Fey amu-a-y Tralkawenu",
-            "ella ir-(nrld)-(ind4-33) Talcahuano",
+            "ella ir-(nrld)-(ind) Talcahuano",
             "Ella irá a Talcahuano"
           ]
         ]
@@ -288,7 +288,7 @@
         "examples": [
           [
             "Pun' wüla tüku-a-n ñi firma",
-            "noche después poner-(nrld)-(ind1s3) (poss1s) firma",
+            "noche después poner-(nrld)-(ind) (poss1s) firma",
             "A la noche firmaré"
           ]
         ]
@@ -299,14 +299,14 @@
         "examples": [
           [
             "¿ Chumngelu petu witra-la-ymi ? Petu witra-la-n rume wütre-le-n mew",
-            "¿ Por.qué todavía levantar-(neg)-(ind4-23-s2) ? Todavía levantar-(neg)-(ind1s3) muy frio-(st28)-(pvn4)-(inst)",
+            "¿ Por.qué todavía levantar-(neg)-(ind) ? Todavía levantar-(neg)-(ind) muy frio-(st28)-(pvn4)-(inst)",
             "¿ Por qué todavía no te levantas ? Todavía no me levanto porque hace mucho frío"
           ]
         ]
       }
     ]
   },
-  "n|ind1s3": {
+  "n|ind": {
     "title": "indicativo [{iñche}] (yo)",
     "color": "dodgerblue",
     "fix": "post",
@@ -319,19 +319,19 @@
         "examples": [
           [
             "Müle-n Konse mew",
-            "estoy-(ind1s3) Conce (inst)",
+            "estoy-(ind) Conce (inst)",
             "Me encuentro en Concepción (Conce)"
           ],
           [
             "Iñche ta Paskual Koña pi-nge-n",
-            "yo Paskual Coña el decir-(pass)-(ind1s3)",
+            "yo Paskual Coña el decir-(pass)-(ind)",
             "Me llamo Pascual Coña"
           ]
         ]
       }
     ]
   },
-  "ymi|ind4-23-s2": {
+  "ymi|ind": {
     "title": "indicativo [{eymi}] (tú)",
     "color": "dodgerblue",
     "fix": "post",
@@ -345,19 +345,19 @@
         "examples": [
           [
             "Eymi Temuko tuw-imi",
-            "tu Temuco provenir-(ind4-23-s2)",
+            "tu Temuco provenir-(ind)",
             "Vienes de Temuco"
           ],
           [
             "¿ Chew tuw-imi ?",
-            "¿ donde provenir-(ind4-23-s2) ?",
+            "¿ donde provenir-(ind) ?",
             "¿ De dónde eres ?"
           ]
         ]
       }
     ]
   },
-  "y|ind4-33": {
+  "y|ind": {
     "title": "indicativo [{fey}] (él, ella)",
     "color": "dodgerblue",
     "fix": "post",
@@ -372,19 +372,19 @@
         "examples": [
           [
             "Tami chaw Chawrakawiñ tuw-i",
-            "(poss2s) papá Osorno provenir-(ind4-33)",
+            "(poss2s) papá Osorno provenir-(ind)",
             "Mi papá es Osornino"
           ],
           [
             "Fey pi-nge-la-y Linkoyan",
-            "él decir-(pass)-(neg)-(ind4-33) Lincoyán",
+            "él decir-(pass)-(neg)-(ind) Lincoyán",
             "Él no se llama Lincoyán"
           ]
         ]
       }
     ]
   },
-  "y engu|ind4-3ns3-d2": {
+  "y engu|ind": {
     "title": "indicativo [{fey}] (ellos², ellas²)",
     "color": "dodgerblue",
     "fix": "post",
@@ -398,14 +398,14 @@
         "examples": [
           [
             "fey engu aku-y engu",
-            "Ellos² ellos² llegar-(ind4-3ns3-d2) (ind4-3ns3-d2)",
+            "Ellos² ellos² llegar-(ind) (ind)",
             "Ellos² llegaron"
           ]
         ]
       }
     ]
   },
-  "y engün|ind4-3ns3-p2": {
+  "y engün|ind": {
     "title": "indicativo [{fey}] (ellos, ellas)",
     "color": "dodgerblue",
     "fix": "post",
@@ -419,7 +419,7 @@
         "examples": [
           [
             "fey engün aku-y engün",
-            "Ellos ellos llegar-(ind4-3ns3-p2) (ind4-3ns3-p2)",
+            "Ellos ellos llegar-(ind) (ind)",
             "Ellos llegaron"
           ]
         ]
@@ -443,27 +443,27 @@
         "examples": [
           [
             "Lig longko-tule-n",
-            "blanco pelo-(tr-st)-(ind1s3)",
+            "blanco pelo-(tr-st)-(ind)",
             "Tengo el cabello blanco (cano)"
           ],
           [
             "Fütrake longko-tule-n",
-            "largo cabello-(tr-st)-(ind1s3)",
+            "largo cabello-(tr-st)-(ind)",
             "Tengo el cabello largo"
           ],
           [
             "Karü nge-tule-y",
-            "verde ojo-(tr-st)-(ind4-33)",
+            "verde ojo-(tr-st)-(ind)",
             "Tiene ojos verdes"
           ],
           [
             "Liftra longko-tule-la-n",
-            "calvo cabello-(tr-st)-(neg)-(ind1s3)",
+            "calvo cabello-(tr-st)-(neg)-(ind)",
             "No estoy pelado/a"
           ],
           [
             "Allwe lig longko-tule-n",
-            "algo blanco cabello-(tr-st)-(ind1s3)",
+            "algo blanco cabello-(tr-st)-(ind)",
             "Tengo el cabello medianamente cano"
           ]
         ]
@@ -473,12 +473,12 @@
         "examples": [
           [
             "Kürü chimpiru-tule-ymi",
-            "negro sombrero-(tr-st)-(ind4-23-s2)",
+            "negro sombrero-(tr-st)-(ind)",
             "Llevas un sombrero negro"
           ],
           [
             "Koñoll iwüdpel'-tule-n",
-            "morado bufanda-(tr-st)-(ind1s3)",
+            "morado bufanda-(tr-st)-(ind)",
             "Estoy usando una bufanda morada"
           ]
         ]
@@ -488,12 +488,12 @@
         "examples": [
           [
             "¿Chem ad-tule-y ñi longko?",
-            "¿cómo forma-(tr-st)-(ind4-33) (poss3s) cabello?",
+            "¿cómo forma-(tr-st)-(ind) (poss3s) cabello?",
             "¿Cómo es su cabello?"
           ],
           [
             "Lig longko-tule-la-n",
-            "blanco cabello-(tr-st)-(neg)-(ind1s3)",
+            "blanco cabello-(tr-st)-(neg)-(ind)",
             "No tengo el cabello cano"
           ]
         ]
@@ -503,17 +503,17 @@
         "examples": [
           [
             "Lig longko-tule-n",
-            "blanco cabello-(tr-st)-(ind1s3)",
+            "blanco cabello-(tr-st)-(ind)",
             "Tengo el cabello blanco"
           ],
           [
             "Lig longko-tule-ymi",
-            "blanco cabello-(tr-st)-(ind4-23-s2)",
+            "blanco cabello-(tr-st)-(ind)",
             "Tienes el cabello blanco"
           ],
           [
             "Lig longko-tule-y",
-            "blanco cabello-(tr-st)-(ind4-33)",
+            "blanco cabello-(tr-st)-(ind)",
             "Tiene el cabello blanco"
           ]
         ]
@@ -523,12 +523,12 @@
         "examples": [
           [
             "Wim-tule-n ñi lef-el",
-            "acostumbrarse-(tr-st)-(ind1s3) (poss1s) correr-(ovn4)",
+            "acostumbrarse-(tr-st)-(ind) (poss1s) correr-(ovn4)",
             "Estoy acostumbrado a correr"
           ],
           [
             "Wim-tule-n ñi kishu-le-ke-n",
-            "acostumbrarse-(tr-st)-(ind1s3) (poss1s) estar.solo-(st)-(cf14)-(pvn4)",
+            "acostumbrarse-(tr-st)-(ind) (poss1s) estar.solo-(st)-(cf14)-(pvn4)",
             "Estoy acostumbrado a estar solo"
           ]
         ]
@@ -546,12 +546,12 @@
         "examples": [
           [
             "Juanita pi-nge-la-n",
-            "Juanita decir-(pass)-(neg)-(ind1s3)",
+            "Juanita decir-(pass)-(neg)-(ind)",
             "No me llamo Juanita"
           ],
           [
             "¿ Tuw-la-ymi Concepción waria ?",
-            "¿ provenir-(neg)-(ind4-23-s2) Concepción waria ?",
+            "¿ provenir-(neg)-(ind) Concepción waria ?",
             "¿ No provienes de Concepción ?"
           ]
         ]
@@ -644,12 +644,12 @@
         "examples": [
           [
             "Waria mew pu ruka-fe fewla dewma-ke-yngün ruka",
-            "ciudad (inst) (coll) casa-(nom) ahora construir-(cf)-(ind4-3ns3-p2) casa",
+            "ciudad (inst) (coll) casa-(nom) ahora construir-(cf)-(ind) casa",
             "En la ciudad los constructores ahora construyen casas"
           ],
           [
             "Duamnie-nge-n kiñe ruka-fe ñi dewma-yal ruka",
-            "necesitar-(pass)-(ind1s3) una casa-(nom) (poss3s) construir-(ovn4) casa",
+            "necesitar-(pass)-(ind) una casa-(nom) (poss3s) construir-(ovn4) casa",
             "Se necesita un constructor para construir casas"
           ]
         ]
@@ -664,7 +664,7 @@
           ],
           [
             "Tati mediku ngülam-tu-eyew pütrem-tu-welaya-imi Herminia",
-            "El medico consejo-(verb)-(ind4-33-ds1) cigarro-(verb)-(ps19-neg-nrld)-(ind4-23-s2) Herminia",
+            "El medico consejo-(verb)-(ind-ds1) cigarro-(verb)-(ps19-neg-nrld)-(ind) Herminia",
             "El médico le aconsejó a Herminia dejar de fumar"
           ]
         ]
@@ -687,7 +687,7 @@
           ],
           [
             "Kallfükura pi-nge-y",
-            "Calfucura decir-(pass)-(ind4-33)",
+            "Calfucura decir-(pass)-(ind)",
             "Me dicen Calfucura"
           ]
         ]
@@ -705,7 +705,7 @@
         "examples": [
           [
             "Kure-nge-n iñche",
-            "esposa-(verb)-(ind1s3) yo",
+            "esposa-(verb)-(ind) yo",
             "Estoy casado (un hombre)"
           ],
           [
@@ -715,22 +715,22 @@
           ],
           [
             "üllcha domo-nge-ymi",
-            "Joven.mujer mujer-(verb)-(ind4-23-s2)",
+            "Joven.mujer mujer-(verb)-(ind)",
             "Eres una mujer joven"
           ],
           [
             "Püchi witran che-nge-n",
-            "pequeño estar.de.pie persona-(verb)-(ind1s3)",
+            "pequeño estar.de.pie persona-(verb)-(ind)",
             "Soy una persona baja"
           ],
           [
             "Iñche püchi wentru-nge-n",
-            "Yo pequeño hombre-(verb)-(ind1s3)",
+            "Yo pequeño hombre-(verb)-(ind)",
             "Yo soy un niño"
           ],
           [
             "¿ Chum-nge-ymi eymi ?",
-            "¿ cómo-(verb)-(ind4-23-s2) tu ?",
+            "¿ cómo-(verb)-(ind) tu ?",
             "¿ Cómo eres tú ?"
           ]
         ]
@@ -764,7 +764,7 @@
           ],
           [
             "Iñche ñi chuchu yem , Klarita pi-nge-fu-y",
-            "Yo (poss1s) abuela.materna (ex) , Clarita decir-(pass)-(ipd)-(ind4-33)",
+            "Yo (poss1s) abuela.materna (ex) , Clarita decir-(pass)-(ipd)-(ind)",
             "Mi finada abuela por parte de mamá se llamaba Clarita"
           ]
         ]
@@ -803,7 +803,7 @@
           ],
           [
             "Tami inan deya Relmu pi-nge-y",
-            "(poss2s) menor.en.una.sucesión hermana.de.un.hombre Relmu decir-(pass)-(ind4-33)",
+            "(poss2s) menor.en.una.sucesión hermana.de.un.hombre Relmu decir-(pass)-(ind)",
             "Tu hermana (de un hombre) menor se llama Relmu"
           ]
         ]
@@ -863,12 +863,12 @@
           ],
           [
             "Tami ñuke yem Clorinda pi-nge-fu-y",
-            "(poss2s) mamá (ex) Clorinda decir-(pass)-(ipd)-(ind4-33)",
+            "(poss2s) mamá (ex) Clorinda decir-(pass)-(ipd)-(ind)",
             "Tu difunta madre se llamaba Clorinda"
           ],
           [
             "Tañi l'aku yem Rodo pi-nge-fu-y welu kim-pa-la-fiñ",
-            "(poss1s) abuelo (ex) Rodo decir-(pass)-(ipd)-(ind4-33) pero conocer-(hh)-(neg)-(ind1s3)",
+            "(poss1s) abuelo (ex) Rodo decir-(pass)-(ipd)-(ind) pero conocer-(hh)-(neg)-(ind)",
             "Mi abuelo paterno fallecido se llamaba Rodo pero no lo alcancé a conocer"
           ]
         ]
@@ -903,7 +903,7 @@
           ],
           [
             "Tañi ñuke yem küme piwke-nge-fu-y",
-            "(poss1s) mamá (ex) buen corazón-(verb)-(ipd)-(ind4-33)",
+            "(poss1s) mamá (ex) buen corazón-(verb)-(ipd)-(ind)",
             "Mi madre fallecida era una buena persona"
           ]
         ]
@@ -913,12 +913,12 @@
         "examples": [
           [
             "Kim-la-fiñ ñi ñuke",
-            "conocer-(neg)-(ind1s3) (poss1s) madre",
+            "conocer-(neg)-(ind) (poss1s) madre",
             "No conocí a mi madre"
           ],
           [
             "Iñche kim-pa-la-fiñ tañi l'aku yem",
-            "yo conocer-(hh)-(neg)-(ind1s3) (poss1s) abuelo.paterno (ex)",
+            "yo conocer-(hh)-(neg)-(ind) (poss1s) abuelo.paterno (ex)",
             "No alcancé a conocer a mi abuelo paterno"
           ]
         ]
@@ -1066,22 +1066,22 @@
         "examples": [
           [
             "Püra-le-y",
-            "subir-(st)-(ind4-33)",
+            "subir-(st)-(ind)",
             "Está arriba / está subiendo"
           ],
           [
             "Pire-le-y",
-            "nevar-(st)-(ind4-33)",
+            "nevar-(st)-(ind)",
             "Está nevado / está nevando"
           ],
           [
             "Kutran-küle-y ti pichiche",
-            "enfermar-(st)-(ind4-33) el niño",
+            "enfermar-(st)-(ind) el niño",
             "El niño está enfermo"
           ],
           [
             "Üyew küdaw-küle-y tañi chaw",
-            "allí trabajar-(st)-(ind4-33) (poss1s) padre",
+            "allí trabajar-(st)-(ind) (poss1s) padre",
             "Mi papá está trabajando allá"
           ]
         ]
@@ -1091,17 +1091,17 @@
         "examples": [
           [
             "Weyel-küle-y",
-            "nadar-(st)-(ind4-33)",
+            "nadar-(st)-(ind)",
             "Está nadando"
           ],
           [
             "Allkütu-le-y",
-            "escuchar-(st)-(ind4-33)",
+            "escuchar-(st)-(ind)",
             "Está escuchando"
           ],
           [
             "Ülkantu-le-y",
-            "cantar-(st)-(ind4-33)",
+            "cantar-(st)-(ind)",
             "Está cantando"
           ]
         ]
@@ -1111,12 +1111,12 @@
         "examples": [
           [
             "Po-küle-w-üy",
-            "sucio-(st)-(ref)-(ind4-33)",
+            "sucio-(st)-(ref)-(ind)",
             "Se está ensuciando cada vez más"
           ],
           [
             "Müchayke po-küle-w-üy",
-            "pronto sucio-(st)-(ref)-(ind4-33)",
+            "pronto sucio-(st)-(ref)-(ind)",
             "Se está ensuciando pronto / cada vez más sucio"
           ]
         ]
@@ -1126,22 +1126,22 @@
         "examples": [
           [
             "Mawün'-küle-y",
-            "llover-(st)-(ind4-33)",
+            "llover-(st)-(ind)",
             "Está lloviendo"
           ],
           [
             "Mawün'-nge-y",
-            "llover-(verb)-(ind4-33)",
+            "llover-(verb)-(ind)",
             "Es lluvioso (clima)"
           ],
           [
             "Kuntro-le-y",
-            "cojear-(st)-(ind4-33)",
+            "cojear-(st)-(ind)",
             "Está cojeando (ahora)"
           ],
           [
             "Kuntro-nge-y",
-            "cojear-(verb)-(ind4-33)",
+            "cojear-(verb)-(ind)",
             "Es cojo (de nacimiento o permanente)"
           ]
         ]
@@ -1151,12 +1151,12 @@
         "examples": [
           [
             "Miñche-mesa-le-ymi",
-            "debajo-mesa-(st)-(ind4-23-s2)",
+            "debajo-mesa-(st)-(ind)",
             "Estás debajo de la mesa"
           ],
           [
             "Tati trewa inafül-küle-y anümka mew",
-            "el perro cerca-(st)-(ind4-33) árbol (inst)",
+            "el perro cerca-(st)-(ind) árbol (inst)",
             "El perro está cerca del árbol"
           ]
         ]
@@ -1166,12 +1166,12 @@
         "examples": [
           [
             "Achiwall-küle-y",
-            "pollo-(st)-(ind4-33)",
+            "pollo-(st)-(ind)",
             "Parece un pollo"
           ],
           [
             "Mawün-küle-lu-le-y",
-            "llover-(st)-(svn)-(st)-(ind4-33)",
+            "llover-(st)-(svn)-(st)-(ind)",
             "Parece que está lloviendo"
           ]
         ]
@@ -1181,12 +1181,12 @@
         "examples": [
           [
             "Püñen-küle-n",
-            "hijo/a-(st)-(ind1s3)",
+            "hijo/a-(st)-(ind)",
             "Todavía puedo tener hijos"
           ],
           [
             "Inche pu-le-n tüfa-chi küdaw-mew",
-            "yo llegar-(st)-(ind1s3) ese-(adj) trabajo-(inst)",
+            "yo llegar-(st)-(ind) ese-(adj) trabajo-(inst)",
             "Todavía soy capaz de hacer ese trabajo"
           ]
         ]
@@ -1196,12 +1196,12 @@
         "examples": [
           [
             "Küpa-le-y engün",
-            "venir-(st)-(ind4-3ns3-p2) (com)",
+            "venir-(st)-(ind) (com)",
             "Ellos ya vienen / están viniendo"
           ],
           [
             "Tripa-küle-n",
-            "salir-(st)-(ind1s3)",
+            "salir-(st)-(ind)",
             "Estoy saliendo (habitualmente / en ese momento)"
           ]
         ]
@@ -1225,17 +1225,17 @@
         "examples": [
           [
             "Amu-fu-n Temuko",
-            "ir-(ipd)-(ind1s3) Temuco",
+            "ir-(ipd)-(ind) Temuco",
             "Había ido a Temuco (pero...)"
           ],
           [
             "Kim-fu-n mi rakiduam",
-            "saber-(ipd)-(ind1s3) (poss2s) idea",
+            "saber-(ipd)-(ind) (poss2s) idea",
             "Quería saber tu opinión (pero no lo logré)"
           ],
           [
             "Tripa-fu-ymi",
-            "salir-(ipd)-(ind4-23-s2)",
+            "salir-(ipd)-(ind)",
             "Tú habías salido (pero...)"
           ]
         ]
@@ -1250,7 +1250,7 @@
           ],
           [
             "Chafo-a-fu-ymi wütre mew",
-            "resfriarse-(nrld)-(ipd)-(ind4-23-s2) frío (inst)",
+            "resfriarse-(nrld)-(ipd)-(ind) frío (inst)",
             "Te podrías haber resfriado por el frío"
           ]
         ]
@@ -1260,12 +1260,12 @@
         "examples": [
           [
             "Amu-fal-fu-y",
-            "ir-(force)-(ipd)-(ind4-33)",
+            "ir-(force)-(ipd)-(ind)",
             "Debía haber ido (pero no fue)"
           ],
           [
             "Iglesia mew amu-fal-fu-y , welu amu-la-y",
-            "iglesia (inst) ir-(force)-(ipd)-(ind4-33) , pero ir-(neg)-(ind4-33)",
+            "iglesia (inst) ir-(force)-(ipd)-(ind) , pero ir-(neg)-(ind)",
             "Debía ir a la iglesia, pero no fue"
           ]
         ]
@@ -1275,12 +1275,12 @@
         "examples": [
           [
             "Reye-fu-n tüfa-chi ruka mew",
-            "desear.mucho-(ipd)-(ind1s3) este-(adj) casa (inst)",
+            "desear.mucho-(ipd)-(ind) este-(adj) casa (inst)",
             "Quería mucho vivir en esta casa (pero no se dio)"
           ],
           [
             "Küpa kim-fu-n chumngechi pe-fiel",
-            "desear saber-(ipd)-(ind1s3) cómo ver-(tvn)",
+            "desear saber-(ipd)-(ind) cómo ver-(tvn)",
             "Me gustaría saber cómo lo ves"
           ]
         ]
@@ -1290,12 +1290,12 @@
         "examples": [
           [
             "Müle-ke-fu-n kampu mew",
-            "estar-(cf14)-(ipd)-(ind1s3) campo (inst)",
+            "estar-(cf14)-(ipd)-(ind) campo (inst)",
             "Cuando era joven vivía en el campo (pero ya no)"
           ],
           [
             "Tripay-ke-fu-n ñi küdawtu-al",
-            "salir-(cf14)-(ipd)-(ind1s3) (poss1s) trabajo-(nrld)",
+            "salir-(cf14)-(ipd)-(ind) (poss1s) trabajo-(nrld)",
             "Solía salir a trabajar (ya no lo hago)"
           ]
         ]
@@ -1316,17 +1316,17 @@
         "examples": [
           [
             "Che müle-y pu ruka",
-            "persona estar-(ind4-33) (loc) casa",
+            "persona estar-(ind) (loc) casa",
             "Hay gente dentro de la casa"
           ],
           [
             "Iñche müle-n pu waria",
-            "yo estar-(ind1s3) (loc) ciudad",
+            "yo estar-(ind) (loc) ciudad",
             "Estoy en la ciudad"
           ],
           [
             "Puw-üy kiñe pu malliñ",
-            "llegar-(ind4-33) uno (loc) lago",
+            "llegar-(ind) uno (loc) lago",
             "Llegó a un lago / cayó en un lago"
           ]
         ]
@@ -1351,12 +1351,12 @@
         "examples": [
           [
             "Mesa mew müle-y ti rali",
-            "mesa (inst) estar-(ind4-33) el plato",
+            "mesa (inst) estar-(ind) el plato",
             "El plato está sobre la mesa"
           ],
           [
             "Pu mesa müle-y ti rali",
-            "(loc) mesa estar-(ind4-33) el plato",
+            "(loc) mesa estar-(ind) el plato",
             "El plato está en la mesa (más centrado en el interior o contexto del objeto)"
           ]
         ]
@@ -1380,22 +1380,22 @@
         "examples": [
           [
             "Kücha-foro-ke-n",
-            "lavar los.dientes-(cf)-(ind1s3)",
+            "lavar los.dientes-(cf)-(ind)",
             "Suelo lavarme los dientes"
           ],
           [
             "Amu-ke-n tañi waria mew",
-            "ir-(cf)-(ind1s3) (poss1s) ciudad (inst)",
+            "ir-(cf)-(ind) (poss1s) ciudad (inst)",
             "Voy habitualmente a mi pueblo"
           ],
           [
             "Faw umawtu-ke-y",
-            "aquí dormir-(cf)-(ind4-33)",
+            "aquí dormir-(cf)-(ind)",
             "Duerme aquí habitualmente"
           ],
           [
             "Treka-ke-y ñi küdaw mew",
-            "caminar-(cf)-(ind4-33) (poss3s) trabajo (inst)",
+            "caminar-(cf)-(ind) (poss3s) trabajo (inst)",
             "Suele caminar a su trabajo"
           ]
         ]
@@ -1405,17 +1405,17 @@
         "examples": [
           [
             "Chillkatu-ke-la-n",
-            "estudiar-(cf)-(neg)-(ind1s3)",
+            "estudiar-(cf)-(neg)-(ind)",
             "No suelo estudiar"
           ],
           [
             "Amu-ke-la-y ñi waria mew",
-            "ir-(cf)-(neg)-(ind4-33) (poss3s) ciudad (inst)",
+            "ir-(cf)-(neg)-(ind) (poss3s) ciudad (inst)",
             "No suele ir a su pueblo"
           ],
           [
             "Fey-pi-ke-la-y",
-            "así-decir-(cf)-(neg)-(ind4-33)",
+            "así-decir-(cf)-(neg)-(ind)",
             "Así no se dice (habitualmente)"
           ]
         ]
@@ -1425,12 +1425,12 @@
         "examples": [
           [
             "Kiñeke mew chillkatu-ke-n",
-            "algunas veces estudiar-(cf)-(ind1s3)",
+            "algunas veces estudiar-(cf)-(ind)",
             "A veces estudio"
           ],
           [
             "Kiñeke mew trek-a-ke-y ñi küdaw mew",
-            "algunas veces caminar-(nrld)-(cf)-(ind4-33) (poss3s) trabajo (inst)",
+            "algunas veces caminar-(nrld)-(cf)-(ind) (poss3s) trabajo (inst)",
             "A veces camina a su trabajo"
           ]
         ]
@@ -1440,17 +1440,17 @@
         "examples": [
           [
             "Po-küle-ke-y",
-            "sucio-(st)-(cf)-(ind4-33)",
+            "sucio-(st)-(cf)-(ind)",
             "Siempre está sucio"
           ],
           [
             "Umañ-pa-ke-la-y ta witran",
-            "quedarse-hh-(cf)-(neg)-(ind4-33) el visitante",
+            "quedarse-hh-(cf)-(neg)-(ind) el visitante",
             "Un visitante no suele quedarse aquí"
           ],
           [
             "Dallütu-meke-ke-la-y",
-            "quejarse-(intensivo)-(cf)-(neg)-(ind4-33)",
+            "quejarse-(intensivo)-(cf)-(neg)-(ind)",
             "No se queja nunca"
           ]
         ]
@@ -1460,12 +1460,12 @@
         "examples": [
           [
             "Küpa leli-ke-n pelikula",
-            "desear ver-(cf)-(ind1s3) película",
+            "desear ver-(cf)-(ind) película",
             "Me gusta ver películas (regularmente)"
           ],
           [
             "Tripa-ke-fu-n",
-            "salir-(cf)-(ipd)-(ind1s3)",
+            "salir-(cf)-(ipd)-(ind)",
             "Solía salir / salía antes"
           ]
         ]
@@ -1489,22 +1489,22 @@
         "examples": [
           [
             "Küpa amu-n tañi waria mew",
-            "(aux) ir-(ind1s3) (poss1s) pueblo (inst)",
+            "(aux) ir-(ind) (poss1s) pueblo (inst)",
             "Quiero ir a mi pueblo"
           ],
           [
             "Küpa i-la-y",
-            "(aux) comer-(neg)-(ind4-33)",
+            "(aux) comer-(neg)-(ind)",
             "No quiere comer"
           ],
           [
             "Küpa kim-fu-n chumngechi mi pe-fiel",
-            "(aux) saber-(ipd)-(ind1s3) cómo (poss2s) ver-(tvn)",
+            "(aux) saber-(ipd)-(ind) cómo (poss2s) ver-(tvn)",
             "Quisiera saber cómo lo ves"
           ],
           [
             "Küpa pu-le-n liwen",
-            "(aux) llegar-(st)-(ind1s3) mañana",
+            "(aux) llegar-(st)-(ind) mañana",
             "Quiero llegar en la mañana"
           ]
         ]
@@ -1514,17 +1514,17 @@
         "examples": [
           [
             "Küpa n’ampül-ke-n",
-            "(aux) viajar-(cf)-(ind1s3)",
+            "(aux) viajar-(cf)-(ind)",
             "Me gusta viajar / Suelo viajar porque me gusta"
           ],
           [
             "Küpa puru-ke-ymi",
-            "(aux) bailar-(cf)-(ind4-23-s2)",
+            "(aux) bailar-(cf)-(ind)",
             "Te gusta bailar"
           ],
           [
             "Küpa leli-ke-n pelikula",
-            "(aux) ver-(cf)-(ind1s3) película",
+            "(aux) ver-(cf)-(ind) película",
             "Me gusta ver películas"
           ]
         ]
@@ -1534,17 +1534,17 @@
         "examples": [
           [
             "Küpa n’ampül-ke-la-n",
-            "(aux) viajar-(cf)-(neg)-(ind1s3)",
+            "(aux) viajar-(cf)-(neg)-(ind)",
             "No me gusta viajar"
           ],
           [
             "Küpa adentu-ke-la-y",
-            "(aux) dibujar-(cf)-(neg)-(ind4-33)",
+            "(aux) dibujar-(cf)-(neg)-(ind)",
             "No le gusta dibujar"
           ],
           [
             "Küpa i-ke-la-y",
-            "(aux) comer-(cf)-(neg)-(ind4-33)",
+            "(aux) comer-(cf)-(neg)-(ind)",
             "No le gusta comer"
           ]
         ]
@@ -1554,12 +1554,12 @@
         "examples": [
           [
             "Chem küpa fem-ke-ymi?",
-            "qué (aux) hacer-(cf)-(ind4-23-s2)",
+            "qué (aux) hacer-(cf)-(ind)",
             "¿Qué te gusta hacer?"
           ],
           [
             "Chem küpa fem-ke-la-ymi?",
-            "qué (aux) hacer-(cf)-(neg)-(ind4-23-s2)",
+            "qué (aux) hacer-(cf)-(neg)-(ind)",
             "¿Qué no te gusta hacer?"
           ]
         ]
@@ -1583,17 +1583,17 @@
         "examples": [
           [
             "Kafe-tu-n",
-            "café-(verb)-(ind1s3)",
+            "café-(verb)-(ind)",
             "Tomé café"
           ],
           [
             "Ilo-tu-ke-la-n",
-            "carne-(verb)-(cf)-(neg)-(ind1s3)",
+            "carne-(verb)-(cf)-(neg)-(ind)",
             "No como carne (habitualmente)"
           ],
           [
-            "Mate-tu-a-fu-ymi , chachay ?",
-            "mate-(verb)-(nrld)-(ipd)-(ind4-23-s2) , abuelo.materno ?",
+            "Mate-tu-afu-ymi , chachay ?",
+            "mate-(verb)-(nrld-ipd)-(ind) , abuelo.materno ?",
             "¿Quisiste tomar mate, abuelo (materno)?"
           ]
         ]
@@ -1603,17 +1603,17 @@
         "examples": [
           [
             "Kitra-tu-n",
-            "pipa-(verb)-(ind1s3)",
+            "pipa-(verb)-(ind)",
             "Fumé pipa"
           ],
           [
             "Papil-tu-n",
-            "papel-(verb)-(ind1s3)",
+            "papel-(verb)-(ind)",
             "Leí un papel / Estudié"
           ],
           [
-            "Trutruka-tu-fi-ñ",
-            "trutruca-(verb)-(edo6)-(ind1s3)",
+            "Trutruka-tu-fiñ",
+            "trutruca-(verb)-(edo-ind)",
             "Toqué la trutruca"
           ]
         ]
@@ -1623,12 +1623,12 @@
         "examples": [
           [
             "Wariya-tu-n",
-            "ciudad-(verb)-(ind1s3)",
+            "ciudad-(verb)-(ind)",
             "Fui a la ciudad"
           ],
           [
             "Kolekio-tu-y",
-            "escuela-(verb)-(ind4-33)",
+            "escuela-(verb)-(ind)",
             "Fue a la escuela"
           ]
         ]
@@ -1638,17 +1638,17 @@
         "examples": [
           [
             "Kafe-tu-ke-n",
-            "café-(verb)-(cf)-(ind1s3)",
+            "café-(verb)-(cf)-(ind)",
             "Suelo tomar café"
           ],
           [
             "Asukura-tu-ke-la-n",
-            "azúcar-(verb)-(cf)-(neg)-(ind1s3)",
+            "azúcar-(verb)-(cf)-(neg)-(ind)",
             "No consumo azúcar (habitualmente)"
           ],
           [
             "Kachilla-tu-ke-la-n",
-            "trigo-(verb)-(cf)-(neg)-(ind1s3)",
+            "trigo-(verb)-(cf)-(neg)-(ind)",
             "No consumo trigo (habitualmente)"
           ]
         ]
@@ -1658,17 +1658,17 @@
         "examples": [
           [
             "Tralka-tu-n",
-            "arma-(verb)-(ind1s3)",
+            "arma-(verb)-(ind)",
             "Disparé / Usé un arma"
           ],
           [
             "Chaketa-tu-n",
-            "chaqueta-(verb)-(ind1s3)",
+            "chaqueta-(verb)-(ind)",
             "Me puse una chaqueta"
           ],
           [
             "Kütral-tu-fi-ñ ti mamüll",
-            "fuego-(verb)-(edo6)-(ind1s3) el leño",
+            "fuego-(verb)-(edo6)-(ind) el leño",
             "Hice fuego con ese leño"
           ]
         ]
@@ -1678,154 +1678,149 @@
   "a|nrld": {
     "title": "futuro, posibilidad o intención",
     "color": "chartreuse",
-    "fix": "post",
-    "explanation": "La partícula -a indica que una acción no se ha realizado aún, pero se espera que ocurra en el futuro, o que es posible bajo ciertas condiciones. Es el marcador de situación no realizada. Tiene múltiples funciones según el contexto: puede señalar una acción futura, una posibilidad hipotética, una obligación, o una acción planificada o permitida.",
+    "fix": "in",
+    "explanation": "La partícula [a|(nrld)] indica que una acción no se ha realizado aún, pero se espera que ocurra en el futuro, o que es posible bajo ciertas condiciones. <br/><br/>  Es la partícula que indica una situación no realizada. Tiene múltiples funciones según el contexto: puede señalar una acción futura, una posibilidad hipotética, una obligación, o una acción planificada o permitida.",
     "variations": [
       "ya"
     ],
     "content": [
       {
-        "explanation": "Expresa una acción futura (marcador de tiempo futuro)",
+        "explanation": "Expresa una acción futura:",
         "examples": [
           [
             "Amu-a-ymi",
-            "ir-(nrld)-(ind4-23-s2)",
+            "ir-(nrld)-(ind)",
             "Tú irás"
           ],
           [
-            "Küdaw-a-yiñ",
+            "Küdaw-a-iñ",
             "trabajar-(nrld)-(ind4-1p)",
             "Nosotros trabajaremos"
           ],
           [
-            "Wüle amu-a-yu",
-            "mañana ir-(nrld)-(ind4-33)",
-            "Mañana irán"
+            "Wüle amu-a-y",
+            "mañana ir-(nrld)-(ind)",
+            "Mañana irá"
           ],
           [
             "Aku-a-y",
-            "llegar-(nrld)-(ind4-33)",
+            "llegar-(nrld)-(ind)",
             "Él/Ella llegará"
           ]
         ]
       },
       {
-        "explanation": "Indica una intención, plan o deseo de realizar una acción",
+        "explanation": "Indica una intención, plan o deseo de realizar una acción:",
         "examples": [
           [
             "Küpa amu-a-yu",
-            "querer ir-(nrld)-(ind4-33)",
-            "Él quiere ir"
+            "querer ir-(nrld)-(ind)",
+            "Nosotros² queremos ir"
           ],
           [
-            "Küpa umawtu-a-yu",
-            "querer dormir-(nrld)-(ind4-23-s2)",
+            "Küpa umawtu-a-ymi",
+            "querer dormir-(nrld)-(ind)",
             "Tú quieres dormir"
           ]
         ]
       },
       {
-        "explanation": "En combinación con imperativo, puede expresar mandato indirecto o sugerencia",
+        "explanation": "En combinación con imperativo, puede expresar mandato indirecto o sugerencia:",
         "examples": [
           [
-            "Trepe-a-ymi may !",
-            "despertarse-(nrld)-(ind4-23-s2) pues !",
+            "¡ Trepe-a-ymi may !",
+            "¡ despertarse-(nrld)-(ind) pues !",
             "¡Despiértate pues!"
           ],
           [
-            "Dungu-a-ymi !",
-            "hablar-(nrld)-(ind4-23-s2) !",
+            "¡ Dungu-a-ymi !",
+            "¡ hablar-(nrld)-(ind) !",
             "¡Hablarás con él!"
           ]
         ]
       },
       {
-        "explanation": "Expresa posibilidad o hipótesis futura (especialmente con -fu)",
+        "explanation": "Expresa posibilidad o hipótesis futura con [fu|(ipd)]. Ver [afu|(nrld-ipd)]:",
         "examples": [
           [
             "Chafo-afu-ymi",
-            "resfriarse-(nrld-ipd)-(ind4-23-s2)",
+            "resfriarse-(nrld-ipd)-(ind)",
             "Podrías resfriarte"
           ],
           [
             "Ngilla-yafu-y",
-            "comprar-(nrld-ipd)-(ind4-33)",
-            "Podría comprar"
+            "comprar-(nrld-ipd)-(ind)",
+            "Él podría comprar"
           ],
           [
             "Küme-yafu-y",
-            "estar.bien-(nrld-ipd)-(ind4-33)",
+            "estar.bien-(nrld-ipd)-(ind)",
             "Estaría bien"
           ]
         ]
       },
       {
-        "explanation": "Se usa en construcciones de obligación, necesidad o consejo",
+        "explanation": "Se usa en construcciones de obligación, necesidad o consejo:",
         "examples": [
           [
             "Müley ñi pe-a-fel",
-            "(oblg) (oblg) ver-(nrld)-(tvn4)",
+            "(oblg) (oblg) ver-(nrld)-(ipd-ovn)",
             "Debo verte / Tengo que verte"
           ],
           [
             "Müley ñi kucha-w-a-l",
-            "(oblg) (oblg) lavar-(ref)-(nrld)-(ovn4)",
+            "(oblg) (oblg) lavar-(ref)-(nrld)-(ovn)",
             "Debo lavarme"
           ]
         ]
       },
       {
-        "explanation": "Usado en condicionales, indica resultado probable de una acción futura",
+        "explanation": "Usado en condicionales, indica resultado probable de una acción futura:",
         "examples": [
           [
-            "Aku-a-lu, pi-fi-ñ",
-            "llegar-(nrld)-(svn4), decir-(edo6)-(ind1s3)",
+            "Aku-a-lu, pi-fiñ",
+            "llegar-(nrld)-(svn4), decir-(edo-ind)",
             "Si llegara, diría..."
           ],
           [
             "Kücha-la-yafu-y",
-            "lavarse-(neg)-(nrld-ipd)-(ind4-33)",
+            "lavarse-(neg)-(nrld-ipd)-(ind)",
             "No se lavaría"
           ]
         ]
       },
       {
-        "explanation": "Indica situaciones futuras no determinadas, como hábitos o posibilidades abiertas",
+        "explanation": "Indica situaciones futuras no determinadas, como hábitos o posibilidades abiertas:",
         "examples": [
           [
-            "Mapudungu-a-yu",
-            "hablar.mapuche-(nrld)-(ind4-33)",
+            "Mapudungu-a-y",
+            "hablar.mapuche-(nrld)-(ind)",
             "Hablará mapuche (algún día)"
           ],
           [
-            "Kallfü-nge-a-yu",
-            "Azul-(verb)-(nrld)-(ind4-33)",
+            "Kallfü-nge-a-y",
+            "Azul-(verb)-(nrld)-(ind)",
             "Se pondrá azul"
           ],
           [
             "Amu-a-lu",
-            "ir-(nrld)-(svn4)",
+            "ir-(nrld)-(svn)",
             "Si va (eventualmente)"
           ]
         ]
       },
       {
-        "explanation": "En combinación con -lu y subordinadas, expresa obligación, deseo o expectativa futura",
+        "explanation": "En combinación con [el|(ovn)], expresa obligación, deseo o expectativa futura:",
         "examples": [
           [
             "Ñi tripa-ya-l",
-            "(poss1s) salir-(nrld)-(ovn4)",
+            "(poss1s) salir-(nrld)-(ovn)",
             "Mi salida futura / Lo que tengo que hacer"
           ],
           [
             "Ñi chem-a-l",
-            "(poss1s) qué.hacer-(nrld)-(ovn4)",
+            "(poss1s) qué.hacer-(nrld)-(ovn)",
             "Lo que tengo que hacer"
-          ],
-          [
-            "Ñi umawtu-afu-lu",
-            "(poss1s) dormir-(nrld-ipd)-(ovn4)",
-            "Lo que debería dormir / Mi sueño pendiente"
           ]
         ]
       }
