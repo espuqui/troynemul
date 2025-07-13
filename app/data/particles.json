@@ -1212,11 +1212,11 @@
     "title": "impedimento / contraexpectación",
     "color": "indianred",
     "fix": "post",
-    "explanation": "El sufijo [fu|(ipd)] indica que una acción fue interrumpida, impedida o que no tuvo el resultado esperado. Muchas veces puede traducirse como ‘había...’, ‘quería... pero...’, o ‘no se pudo...’. <br/><br/>Su significado va más allá del pasado: señala una ruptura en lo que normalmente se esperaría. Por eso, también puede usarse en deseos que no se cumplieron, hipótesis no realizadas, deberes no efectuados, o acciones que no resultaron como se pensaba.<br><br>Siempre deja implícito un <b>'pero'</b>, incluso si no se dice explícitamente. Se puede combinar con otros sufijos como [a|(nrld)] → [afu|(nrld-ipd)] (acción no realizada), [ke|(cf)] → [kefu|(cf-ipd)] (continuativo), o [fal|(force)] → [falfu|(force-ipd)] (deber, obligación), para expresar diferentes matices de posibilidad frustrada, consejo no seguido o intención no cumplida.",
+    "explanation": "La partícula [fu|(ipd)] indica que una acción fue interrumpida, impedida o que no tuvo el resultado esperado. Muchas veces puede traducirse como ‘había...’, ‘quería... pero...’, o ‘no se pudo...’. <br/><br/>Su significado va más allá del pasado: señala una ruptura en lo que normalmente se esperaría. Por eso, también puede usarse en deseos que no se cumplieron, hipótesis no realizadas, deberes no efectuados, o acciones que no resultaron como se pensaba.<br><br>Siempre deja implícito un <b>'pero'</b>, incluso si no se dice explícitamente. Se puede combinar con otros sufijos como [a|(nrld)] → [afu|(nrld-ipd)] (acción no realizada), [ke|(cf)] → [kefu|(cf-ipd)] (continuativo), o [fal|(force)] → [falfu|(force-ipd)] (deber, obligación), para expresar diferentes matices de posibilidad frustrada, consejo no seguido o intención no cumplida.",
     "variations": [],
     "related": [
       "a|nrld",
-      "ke|cf14",
+      "ke|cf",
       "fal|force"
     ],
     "content": [
@@ -1241,7 +1241,7 @@
         ]
       },
       {
-        "explanation": "En combinación con el futuro -a- expresa un resultado hipotético frustrado o temido:",
+        "explanation": "En combinación con el futuro [a|(nrld)] expresa un resultado hipotético frustrado o temido:",
         "examples": [
           [
             "¿ Chumngechi kim-a-fu-iñ ?",
