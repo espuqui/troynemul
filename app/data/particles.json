@@ -977,7 +977,9 @@
     "title": "sufijo adjetival (que)",
     "color": "blue",
     "fix": "post",
-    "explanation": "El sufijo <i>-chi</i> convierte ciertos elementos gramaticales en adjetivos. Se utiliza principalmente con pronombres demostrativos (como <i>{tüfa, tüfey, tiye}</i>) para señalar objetos o personas en relación con su posición espacial: [tüfa-chi|este-(adj)|este], [tüfey-chi|ese-(adj)|ese], [tiye-chi|aquel-(adj)|aquel]. También se emplea con sustantivos verbales para crear construcciones del tipo ‘persona que...’ o ‘cosa que...’, funcionando como cláusulas relativas sin verbo explícito. Estas formas preceden siempre al sustantivo que modifican.",
+    "explanation": "La partícula [chi|(adj)] se utiliza principalmente con pronombres demostrativos, como [tüfa|este|este], [tüfey|ese|ese], [tiye|aquel|aquel] cuando acompañan a un sustantivo para señalarlo mejor. <br /><br/>Si decimos (sin agregar un verbo): [Tüfa trewa|este perro|Esto es un perro], es como decir:  'esta cosa que está cerca mío, es un perro'. Aquí me importa mas la cosa que el perro. <br /><br/>Si decimos [Tüfa-chi trewa|este-(adj) perro|Este perro], queremos decir 'el perro estoy viendo'. Aqui me importa que quede claro que estamos hablando del perro específico que estoy viendo. <br/><br/>También se emplea con sustantivos verbales para crear construcciones del tipo 'persona que...' o 'cosa que...'.",
+
+
     "variations": [],
     "related": [
       "ta|adj",
@@ -986,12 +988,12 @@
     ],
     "content": [
       {
-        "explanation": "Demostrativos modificando sustantivos (función adjetiva)",
+        "explanation": "Demostrativos modificando sustantivos (específico):",
         "examples": [
           [
             "Tüfa-chi wentru",
             "este-(adj) hombre",
-            "Este hombre"
+            "Este hombre (el hombre que esta cerca mío)"
           ],
           [
             "Tüfey-chi domo",
@@ -1006,7 +1008,7 @@
         ]
       },
       {
-        "explanation": "Sustantivos verbales relativizados (cláusulas relativas sin verbo)",
+        "explanation": "Actuando como 'que...':",
         "examples": [
           [
             "Küdaw-küle-chi wentru",
@@ -1026,7 +1028,7 @@
         ]
       },
       {
-        "explanation": "Formación adjetival desde numerales o expresiones temporales",
+        "explanation": "Numerales o expresiones temporales:",
         "examples": [
           [
             "Kiñe-nge-chi antü",
@@ -1050,11 +1052,11 @@
   "le|st": {
     "title": "estado actual / en curso",
     "color": "mediumspringgreen",
-    "fix": "post",
+    "fix": "in",
     "variations": [
       "küle"
     ],
-    "explanation": "El sufijo <i>-le</i> (o <i>-küle</i> si se agrega tras una consonante) indica que algo o alguien está en un estado actual o en un proceso en curso. Puede marcar que una acción está ocurriendo ahora, que alguien está en una condición resultante de un evento anterior, o que algo parece estar en cierto estado. También puede expresar hábitos, capacidad residual, direcciones de movimiento y apariencia.<br><br>Es uno de los sufijos más versátiles del mapudungun para expresar el <b>aspecto estativo o progresivo</b>. Se usa tanto con verbos de acción como con verbos de estado o cambio, y se opone frecuentemente al sufijo <i>-nge</i>, que expresa cualidades permanentes.",
+    "explanation": "La partícula [le|(st)] indica que una acción está ocurriendo ahora, que alguien está en una condición resultante de un evento anterior, o que algo parece estar en cierto estado. <br/><br/>También puede expresar hábitos, capacidad residual, direcciones de movimiento y apariencia.<br><br>Se usa tanto con verbos de acción como con verbos de estado o cambio, y se opone frecuentemente al sufijo [nge|(verb)], que expresa cualidades permanentes.",
     "related": [
       "nge|verb",
       "tule|tr-st",
@@ -1062,7 +1064,7 @@
     ],
     "content": [
       {
-        "explanation": "Estado resultante o actual de una acción (ocasionalmente progresiva)",
+        "explanation": "Estado resultante o actual de una acción (ocasionalmente progresiva):",
         "examples": [
           [
             "Püra-le-y",
@@ -1087,7 +1089,7 @@
         ]
       },
       {
-        "explanation": "Marcador de proceso en curso o estado observable",
+        "explanation": "Proceso en curso o estado observable:",
         "examples": [
           [
             "Weyel-küle-y",
@@ -1107,22 +1109,22 @@
         ]
       },
       {
-        "explanation": "Cambio gradual de estado (con reflexivo o adverbios)",
+        "explanation": "Cambio gradual de estado (con [w|(ref)]):",
         "examples": [
           [
-            "Po-küle-w-üy",
+            "Pod-küle-w-üy",
             "sucio-(st)-(ref)-(ind)",
             "Se está ensuciando cada vez más"
           ],
           [
-            "Müchayke po-küle-w-üy",
+            "Müchayke pod-küle-w-üy",
             "pronto sucio-(st)-(ref)-(ind)",
             "Se está ensuciando pronto / cada vez más sucio"
           ]
         ]
       },
       {
-        "explanation": "Diferencia entre estado temporal (-le) y cualidad permanente (-nge)",
+        "explanation": "Diferencia entre estado temporal [le|(st)] y cualidad permanente [nge|(verb)]:",
         "examples": [
           [
             "Mawün'-küle-y",
@@ -1147,7 +1149,7 @@
         ]
       },
       {
-        "explanation": "Ubicación o posición actual de personas o cosas",
+        "explanation": "Ubicación o posición actual de personas o cosas:",
         "examples": [
           [
             "Miñche-mesa-le-ymi",
@@ -1162,37 +1164,37 @@
         ]
       },
       {
-        "explanation": "Expresiones de apariencia, similitud o posibilidad",
+        "explanation": "Expresiones de apariencia, similitud o posibilidad:",
         "examples": [
           [
-            "Achiwall-küle-y",
+            "Achawall-küle-y",
             "pollo-(st)-(ind)",
             "Parece un pollo"
           ],
           [
-            "Mawün-küle-lu-le-y",
+            "Mawün'-küle-lu-le-y",
             "llover-(st)-(svn)-(st)-(ind)",
             "Parece que está lloviendo"
           ]
         ]
       },
       {
-        "explanation": "Capacidad residual o aún disponible",
+        "explanation": "Capacidad residual o aún disponible:",
         "examples": [
           [
             "Püñen-küle-n",
-            "hijo/a-(st)-(ind)",
+            "hijo/a.de.una.mujer-(st)-(ind)",
             "Todavía puedo tener hijos"
           ],
           [
-            "Inche pu-le-n tüfa-chi küdaw-mew",
-            "yo llegar-(st)-(ind) ese-(adj) trabajo-(inst)",
+            "Iñche pu-le-n tüfa-chi küdaw mew",
+            "yo llegar-(st)-(ind) ese-(adj) trabajo (inst)",
             "Todavía soy capaz de hacer ese trabajo"
           ]
         ]
       },
       {
-        "explanation": "Expresiones habituales o de repetición en relatos",
+        "explanation": "Expresiones habituales o de repetición en relatos:",
         "examples": [
           [
             "Küpa-le-y engün",
@@ -1202,7 +1204,7 @@
           [
             "Tripa-küle-n",
             "salir-(st)-(ind)",
-            "Estoy saliendo (habitualmente / en ese momento)"
+            "Voy saliendo (ahora)"
           ]
         ]
       }
@@ -1211,7 +1213,7 @@
   "fu|ipd": {
     "title": "impedimento / contraexpectación",
     "color": "indianred",
-    "fix": "post",
+    "fix": "in",
     "explanation": "La partícula [fu|(ipd)] indica que una acción fue interrumpida, impedida o que no tuvo el resultado esperado. Muchas veces puede traducirse como ‘había...’, ‘quería... pero...’, o ‘no se pudo...’. <br/><br/>Su significado va más allá del pasado: señala una ruptura en lo que normalmente se esperaría. Por eso, también puede usarse en deseos que no se cumplieron, hipótesis no realizadas, deberes no efectuados, o acciones que no resultaron como se pensaba.<br><br>Siempre deja implícito un <b>'pero'</b>, incluso si no se dice explícitamente. Se puede combinar con otros sufijos como [a|(nrld)] → [afu|(nrld-ipd)] (acción no realizada), [ke|(cf)] → [kefu|(cf-ipd)] (continuativo), o [fal|(force)] → [falfu|(force-ipd)] (deber, obligación), para expresar diferentes matices de posibilidad frustrada, consejo no seguido o intención no cumplida.",
     "variations": [],
     "related": [
