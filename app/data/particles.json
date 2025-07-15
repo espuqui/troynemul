@@ -698,7 +698,7 @@
     "title": "verbalizador (estar, ser)",
     "color": "lime",
     "fix": "in",
-    "explanation": "Indica una caracteristica propia o permanente. Su conjugación depende de quién exprese la característica.",
+    "explanation": "Indica una caracteristica propia o permanente de alguien o alguna cosa.",
     "variations": [],
     "content": [
       {
@@ -714,7 +714,7 @@
             "Seremos personas correctas"
           ],
           [
-            "üllcha domo-nge-ymi",
+            "Üllcha domo-nge-ymi",
             "Joven.mujer mujer-(verb)-(ind)",
             "Eres una mujer joven"
           ],
@@ -736,11 +736,11 @@
         ]
       },
       {
-        "explanation": "Conjugado según la persona que corresponda más la unión de un número",
+        "explanation": "Indica el grupo de personas que son cuando se utiliza un numero:",
         "examples": [
           [
-            "Tañi reñma mew kayu che-nge-iñ tañi ñuke",
-            "(poss1s) familia (inst) seis persona-(verb)-(ind4-1ns3-p2)",
+            "Tañi reñma mew kayu che-nge-iñ",
+            "(poss1s) familia (inst) seis persona-(verb)-(ind)",
             "En mi familia somos seis personas"
           ]
         ]
@@ -750,7 +750,7 @@
   "tañi|poss1s": {
     "title": "posesivo [{iñche}] (mi)",
     "color": "pink",
-    "explanation": "Posesivo de {iñche}. Equivale a decir <i>mi</i> en {wingkadungun}.",
+    "explanation": "Posesivo de [iñche|yo]. Equivale a decir <i>mi</i> en {wingkadungun}.",
     "variations": [
       "ñi"
     ],
@@ -770,7 +770,7 @@
         ]
       },
       {
-        "explanation": "el posesivo de {fey} también es [tañi|(poss3s)], usamos {iñche} [tañi|(poss1s)] o {fey} [tañi|poss3s] para evitar confusión.",
+        "explanation": "El posesivo de [fey|el/ella], también es [tañi|(poss3s)], por lo que usamos [iñche tañi|yo (poss1s)] o [fey tañi|el/ella (poss3s)] para evitar confusión:",
         "examples": [
           [
             "Iñche ñi ñuke",
@@ -787,9 +787,9 @@
     ]
   },
   "tami|poss2s": {
-    "title": "posesivo [{eymi}] (mi)",
+    "title": "posesivo [{eymi}] (tu)",
     "color": "pink",
-    "explanation": "Posesivo de {eymi}. Equivale a decir <i>tu</i> en {wingkadungun}.",
+    "explanation": "Posesivo de [eymi|tu]. Equivale a decir tu (de ti) en {wingkadungun}.",
     "variations": [
       "mi"
     ],
@@ -813,7 +813,7 @@
   "tañi|poss3s": {
     "title": "posesivo [{fey}] (su)",
     "color": "hotpink",
-    "explanation": "Posesivo de {fey}. Equivale a decir su en {wingkadungun}.",
+    "explanation": "Posesivo de [fey|el]. Equivale a decir su (de él) {wingkadungun}.",
     "variations": [
       "ñi"
     ],
@@ -828,7 +828,7 @@
         ]
       },
       {
-        "explanation": "el posesivo de {fey} también es {tañi}, usamos [iñche tañi|yo (poss1s)] o [fey tañi|el/ella (poss3s)] para evitar confusión.",
+        "explanation": "El posesivo de [iñche|yo] también es [tañi|(poss1s)], por lo que usamos [iñche tañi|yo (poss1s)] o [fey tañi|el/ella (poss3s)] para evitar confusión:",
         "examples": [
           [
             "Iñche ñi ñuke",
@@ -1300,7 +1300,7 @@
     ]
   },
   "pu|loc": {
-    "title": "dentro de, en",
+    "title": "ubicación (dentro de, en)",
     "color": "darkgreen",
     "explanation": "La partícula [pu|(loc)] se utiliza como preposición para indicar localización, especialmente con personas, objetos o lugares que están <b>en el interior</b> de otro elemento. Se traduce comúnmente como 'dentro de' o 'en'. Es más frecuente en el habla de personas mayores y siempre va seguida de un sustantivo.",
     "variations": [],
