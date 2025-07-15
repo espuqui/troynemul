@@ -845,16 +845,16 @@
     ]
   },
   "yem|ex": {
-    "title": "pasado, fallecido, que ya no está",
+    "title": "fallecido , nostalgia",
     "color": "saddlebrown",
     "fix": "post",
     "variations": [
       "em"
     ],
-    "explanation": "El sufijo <i>-yem</i> (o su variante <i>-em</i>) indica que algo o alguien ya no está presente, ya sea porque ha fallecido, desaparecido o dejado de funcionar. Se coloca al final de sustantivos, especialmente de personas, y equivale a decir <i>difunto, finado, ex-</i> o <i>anterior</i> en {wingkadungun}.<br /><br />En el caso de personas, es obligatorio cuando se menciona a alguien que ha fallecido, en especial familiares. Cuando se informa su nombre, se combina con el sufijo verbal <i>-fu</i> para indicar una acción completada en el pasado (por ejemplo: <i>pi-nge-fu-y</i>, ‘se llamaba’).<br /><br />Con cosas inanimadas o abstractas, expresa que algo pertenece al pasado o ha perdido vigencia (por ejemplo, una antigua casa, trabajo anterior, tiempo ido).",
+    "explanation": "El sufijo [yem|(ex)] indica que algo o alguien ya no está presente, ya sea porque ha fallecido, desaparecido o dejado de funcionar. Se coloca al final de sustantivos, especialmente de personas, y equivale a decir <i>difunto, finado, ex-</i> o <i>anterior</i> en {wingkadungun}.<br /><br />En el caso de personas, es obligatorio cuando se menciona a alguien que ha fallecido, en especial familiares. Cuando se informa su nombre, se combina con [fu|(ipd)], como en: [Tami chuchu Hilda pi-nge-fu-y|mi abuela.materna Hilda decir-(pass)-(ipd)-(ind)|Mi abuela (que ya no está) se llamaba Hilda].<br /><br />Con cosas inanimadas o abstractas, expresa que algo pertenece al pasado o ha perdido vigencia con cierta nostalgia (por ejemplo, una antigua casa, trabajo anterior, tiempo ido).",
     "content": [
       {
-        "explanation": "Uso con nombres de familiares fallecidos",
+        "explanation": "Uso con nombres de familiares fallecidos:",
         "examples": [
           [
             "Tañi chaw yem",
@@ -874,12 +874,12 @@
         ]
       },
       {
-        "explanation": "Uso con objetos, ideas o lugares que ya no existen o dejaron de usarse",
+        "explanation": "Uso con objetos, ideas o lugares que ya no existen o dejaron de usarse:",
         "examples": [
           [
             "Tañi mapu yem",
             "(poss1s) tierra (ex)",
-            "Mi antiguo territorio / mi tierra de antes"
+            "Mi antiguo tierra"
           ],
           [
             "Küdaw yem",
@@ -889,12 +889,12 @@
           [
             "Kuifi yem",
             "antiguo (ex)",
-            "Tiempo pasado / lo de antes"
+            "Antiguamente (con nostalgia porque ya no es así)"
           ]
         ]
       },
       {
-        "explanation": "Para marcar respeto o nostalgia por personas fallecidas, a veces también se añade el marcador <i>ero</i>",
+        "explanation": "Para marcar respeto o nostalgia por personas fallecidas:",
         "examples": [
           [
             "Kuifi lay tañi chaw yem",
@@ -909,13 +909,8 @@
         ]
       },
       {
-        "explanation": "Empleo de formas negativas para indicar que no se conoció a un familiar",
+        "explanation": "Empleo de formas negativas para indicar que no se conoció a un familiar:",
         "examples": [
-          [
-            "Kim-la-fiñ ñi ñuke",
-            "conocer-(neg)-(ind) (poss1s) madre",
-            "No conocí a mi madre"
-          ],
           [
             "Iñche kim-pa-la-fiñ tañi l'aku yem",
             "yo conocer-(hh)-(neg)-(ind) (poss1s) abuelo.paterno (ex)",
@@ -926,10 +921,10 @@
     ]
   },
   "ke|distr": {
-    "title": "sufijo pluralizador distributivo (varios y distintos)",
+    "title": "pluralizador (varios y distintos)",
     "color": "firebrick",
     "fix": "post",
-    "explanation": "El sufijo [ke|distr] se usa en mapudungun para hablar de varios elementos, pero no de cualquier manera. No indica simplemente que hay <i>muchos</i> (como lo hace [pu|(coll)], sino que lo que se menciona está compuesto por partes distintas, una por una, o que la acción o cualidad se repite en diferentes casos.",
+    "explanation": "El sufijo [ke|(distr)] se usa en mapudungun para hablar de varios elementos. No indica simplemente que hay <i>muchos</i> (como lo hace [pu|(coll)], sino que lo que se menciona está compuesto por partes distintas, una por una, o que la acción o cualidad se repite en diferentes casos.",
     "variations": [],
     "content": [
       {
@@ -962,7 +957,7 @@
         ]
       },
       {
-        "explanation": "Se puede usar en conjunto con [pu|(coll)], grupo donde cada uno tiene una característica",
+        "explanation": "Se puede usar en conjunto con [pu|(coll)], grupo donde cada uno tiene una característica:",
         "examples": [
           [
             "Pu küme-ke che",
@@ -974,7 +969,7 @@
     ]
   },
   "chi|adj": {
-    "title": "sufijo adjetival (que)",
+    "title": "adjetivizador de demostrativos (que)",
     "color": "blue",
     "fix": "post",
     "explanation": "La partícula [chi|(adj)] se utiliza principalmente con pronombres demostrativos, como [tüfa|este|este], [tüfey|ese|ese], [tiye|aquel|aquel] cuando acompañan a un sustantivo para señalarlo mejor. <br /><br/>Si decimos (sin agregar un verbo): [Tüfa trewa|este perro|Esto es un perro], es como decir:  'esta cosa que está cerca mío, es un perro'. Aquí me importa mas la cosa que el perro. <br /><br/>Si decimos [Tüfa-chi trewa|este-(adj) perro|Este perro], queremos decir 'el perro estoy viendo'. Aqui me importa que quede claro que estamos hablando del perro específico que estoy viendo. <br/><br/>También se emplea con sustantivos verbales para crear construcciones del tipo 'persona que...' o 'cosa que...'.",
@@ -1366,7 +1361,7 @@
     ]
   },
   "ke|cf": {
-    "title": "acción habitual / rasgo constante",
+    "title": "habitualidad / rasgo constante",
     "color": "goldenrod",
     "fix": "in",
     "variations": [],
