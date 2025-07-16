@@ -562,7 +562,7 @@
     "title": "sufijo de agente (quien hace...)",
     "color": "orange",
     "fix": "post",
-    "explanation": "El sufijo [fe|(nom)] se usa para formar sustantivos a partir de verbos. Indica una persona que realiza habitualmente una acción o tiene un rol asociado a dicha acción. Funciona como un <b>nominalizador de agente</b>, es decir, crea palabras que significan ‘el que hace (verbo)’, como [küdaw|trabajar] -> [küdaw-fe|trabajar-(nom)|trabajador]. Se puede aplicar a verbos simples o complejos, incluyendo compuestos o derivados. <br><br>Los sustantivos creados con [fe|(nom)] designan típicamente oficios, actividades sociales o roles reconocidos, por lo que su uso está limitado semánticamente (por ejemplo, [küpan-fe|venir-(nom)|el que viene] es morfológicamente válido, pero no aceptado como sustantivo útil).<br><br>No distingue género gramatical; el sustantivo vale para cualquier persona.",
+    "explanation": "La partícula [fe|(nom)] se usa para formar sustantivos a partir de verbos. Indica una persona que realiza habitualmente una acción o tiene un rol asociado a dicha acción. Crea palabras que significan ‘el que hace (verbo)’, como [küdaw|trabajar] → [küdaw-fe|trabajar-(nom)|trabajador]. Se puede aplicar a verbos simples o complejos, incluyendo compuestos o derivados. <br><br>Los sustantivos creados con [fe|(nom)] designan típicamente oficios, actividades sociales o roles reconocidos, por lo que su uso está limitado (por ejemplo, [küpan-fe|venir-(nom)|el que viene] es morfológicamente válido, pero no aceptado como sustantivo útil).<br><br>No distingue género gramatical; el sustantivo vale para cualquier persona.",
     "variations": [],
     "related": [
       "we|nom",
@@ -672,76 +672,277 @@
     ]
   },
   "nge|pass": {
-    "title": "voz pasiva",
-    "color": "yellow",
+    "title": "voz pasiva (se [verbo], me [verbo], fue [verbo])",
+    "color": "gold",
     "fix": "in",
-    "explanation": "Indica que la persona a la que se refiere el verbo sufre o recibe la acción de alguien que no se menciona en la frase",
+    "explanation": "La partícula [nge|(pass)] indica que el sujeto de la oración <b>recibe</b> la acción del verbo, sin que se mencione quién la realiza. Es decir, marca una <b>voz pasiva</b> con <b>agente indeterminado</b>. Se conjuga normalmente con las terminaciones del modo indicativo, pero cambia el foco del agente al paciente. <br><br>Es común para expresar cosas como ‘me dijeron’, ‘se hace’, ‘fue visto’, etc. También se usa para preguntar cómo se hacen o usan las cosas. A diferencia del español, no permite expresar quién hizo la acción (por ejemplo, no se dice 'fue hecho por Juan').",
     "variations": [],
+    "related": [
+      "mu|pass",
+      "uw|pass",
+      "nge|verb"
+    ],
     "content": [
       {
+        "explanation": "Acción recibida por el sujeto (sin que se mencione quién):",
         "examples": [
           [
-            "Wew-nge-la-ya-iñ",
-            "ganar-(pass)-(neg)-(nrld)-(ind4-1ns3-p2)",
-            "No nos vencerán"
+            "Dungu-nge-n",
+            "hablar-(pass)-(ind)",
+            "Me hablaron / Fui hablado"
           ],
           [
-            "Kallfükura pi-nge-y",
-            "Calfucura decir-(pass)-(ind)",
-            "Me dicen Calfucura"
+            "Pe-nge-n",
+            "ver-(pass)-(ind)",
+            "Me vieron"
+          ],
+          [
+            "Mütrum-nge-n",
+            "llamar-(pass)-(ind)",
+            "Me llamaron"
+          ],
+          [
+            "Elu-nge-ymi",
+            "dar-(pass)-(ind)",
+            "Te dieron"
+          ]
+        ]
+      },
+      {
+        "explanation": "Expresa acciones con 'se' impersonal (uso general):",
+        "examples": [
+          [
+            "Kim-nge-la-y",
+            "saber-(pass)-(neg)-(ind3s)",
+            "No se sabe"
+          ],
+          [
+            "Pe-nge-ke-y",
+            "ver-(pass)-(cf)-(ind3s)",
+            "Se suele ver"
+          ],
+          [
+            "Allkütu-nge-la-y",
+            "escuchar-(pass)-(neg)-(ind3s)",
+            "No se escucha"
+          ],
+          [
+            "Dewma-nge-ke-la-y",
+            "hacer-(pass)-(cf)-(neg)-(ind3s)",
+            "No se suele hacer"
+          ]
+        ]
+      },
+      {
+        "explanation": "Uso en preguntas: ¿Cómo se hace/se usa...? (Ver [ngeke|(pass-cf)])",
+        "examples": [
+          [
+            "¿ Chumngechi trawü-ngeke-y ti trariwe ?",
+            "¿ cómo usar-(pass-cf)-(ind) la faja ?",
+            "¿Cómo se usa la faja?"
+          ],
+          [
+            "¿ Chumngechi dewma-ngeke-y ti küpam ?",
+            "¿ cómo hacer-(pass-cf)-(ind) el chamal ?",
+            "¿Cómo se hace el chamal?"
+          ]
+        ]
+      },
+      {
+        "explanation": "Acción sufrida por una tercera persona (no se menciona el agente):",
+        "examples": [
+          [
+            "Kulli-nge-y",
+            "pagar-(pass)-(ind)",
+            "Fue pagado"
+          ],
+          [
+            "Langüm-nge-y",
+            "matar-(pass)-(ind)",
+            "Fue matado"
+          ]
+        ]
+      },
+      {
+        "explanation": "Uso narrativo o discursivo: el paciente cobra protagonismo",
+        "examples": [
+          [
+            "Feypi-ngeke-la-y",
+            "decir-(pass-cf)-(neg)-(ind)",
+            "No se dice (forma establecida)"
+          ],
+          [
+            "Langüm-nge-pa-fu-y",
+            "morir-(pass)-(th)-(ipd)-(ind)",
+            "Había muerto (por alguien no mencionado)"
           ]
         ]
       }
     ]
   },
   "nge|verb": {
-    "title": "verbalizador (estar, ser)",
+    "title": "verbalizador (ser, tener, parecer)",
     "color": "lime",
     "fix": "in",
-    "explanation": "Indica una caracteristica propia o permanente de alguien o alguna cosa.",
+    "explanation": "La partícula [nge|(verb)] se añade a sustantivos, adjetivos, numerales y ciertas partículas interrogativas para formar verbos intransitivos. Estos verbos indican una <b>característica intrínseca o permanente</b> del sujeto, como su identidad, color, estado físico o apariencia. También puede usarse para indicar pertenencia a un grupo, cantidad de personas, efecto característico, fenómeno climático o incluso tiempo pasado. <br><br>Se opone a [le|(st)], que expresa estados <i>temporales</i> o situaciones en curso.",
     "variations": [],
+    "related": [
+      "le|st",
+      "tule|tr-st"
+    ],
     "content": [
       {
+        "explanation": "Características permanentes, identidad o naturaleza del sujeto:",
         "examples": [
           [
-            "Kure-nge-n iñche",
-            "esposa-(verb)-(ind) yo",
-            "Estoy casado (un hombre)"
-          ],
-          [
-            "Nor-che-nge-a-iñ",
-            "correcto-persona-(verb)-(nrld)-(ind4-1ns3-p2)",
-            "Seremos personas correctas"
+            "Wentru-nge-y",
+            "hombre-(verb)-(ind)",
+            "Es un hombre"
           ],
           [
             "Üllcha domo-nge-ymi",
-            "Joven.mujer mujer-(verb)-(ind)",
+            "joven mujer-(verb)-(ind)",
             "Eres una mujer joven"
           ],
           [
-            "Püchi witran che-nge-n",
-            "pequeño estar.de.pie persona-(verb)-(ind)",
-            "Soy una persona baja"
+            "Püchi wentru-nge-n",
+            "pequeño hombre-(verb)-(ind)",
+            "Soy un niño"
           ],
           [
-            "Iñche püchi wentru-nge-n",
-            "Yo pequeño hombre-(verb)-(ind)",
-            "Yo soy un niño"
-          ],
-          [
-            "¿ Chum-nge-ymi eymi ?",
-            "¿ cómo-(verb)-(ind) tu ?",
-            "¿ Cómo eres tú ?"
+            "Chum-nge-y",
+            "cómo-(verb)-(ind)",
+            "Es de tal manera / así es"
           ]
         ]
       },
       {
-        "explanation": "Indica el grupo de personas que son cuando se utiliza un numero:",
+        "explanation": "Cualidades permanentes o intrínsecas (especialmente con colores, formas o propiedades):",
         "examples": [
           [
-            "Tañi reñma mew kayu che-nge-iñ",
-            "(poss1s) familia (inst) seis persona-(verb)-(ind)",
-            "En mi familia somos seis personas"
+            "Karü-nge-y",
+            "verde-(verb)-(ind)",
+            "Es verde (por naturaleza)"
+          ],
+          [
+            "Kelü-nge-y",
+            "rojo-(verb)-(ind)",
+            "Es rojo"
+          ],
+          [
+            "Kurti-nge-y",
+            "negro-(verb)-(ind)",
+            "Es negro"
+          ],
+          [
+            "Nor-nge-y",
+            "recto-(verb)-(ind)",
+            "Es recto (naturalmente)"
+          ]
+        ]
+      },
+      {
+        "explanation": "Indica número fijo de integrantes en un grupo (especialmente con numerales):",
+        "examples": [
+          [
+            "Küla-nge-y",
+            "tres-(verb)-(ind)",
+            "Son tres (personas)"
+          ],
+          [
+            "Tañi reñma mew epu che-nge-iñ",
+            "(poss1s) familia (inst) dos persona-(verb)-(ind)",
+            "En mi familia somos dos personas"
+          ]
+        ]
+      },
+      {
+        "explanation": "Señala una cualidad que genera un efecto, como causar dolor, hambre u otra sensación:",
+        "examples": [
+          [
+            "Kutran-nge-y",
+            "dolor/enfermedad-(verb)-(ind)",
+            "Causa dolor / es doloroso"
+          ],
+          [
+            "Ngüñü-nge-y",
+            "hambre-(verb)-(ind)",
+            "Da hambre / es algo que da hambre"
+          ]
+        ]
+      },
+      {
+        "explanation": "Describe fenómenos del clima o el tiempo:",
+        "examples": [
+          [
+            "Antü-nge-y",
+            "sol/día-(verb)-(ind)",
+            "Hay sol / es un día soleado"
+          ],
+          [
+            "Kürruf-nge-y",
+            "viento-(verb)-(ind)",
+            "Hace viento"
+          ],
+          [
+            "Wesha antü-nge-y",
+            "malo sol/día-(verb)-(ind)",
+            "Está malo el día / el clima está feo"
+          ]
+        ]
+      },
+      {
+        "explanation": "Expresa ideas relacionadas con el paso del tiempo o momentos del pasado:",
+        "examples": [
+          [
+            "Mari tripantu-nge-y",
+            "diez año-(verb)-(ind)",
+            "Fue hace diez años"
+          ],
+          [
+            "We-nge-y",
+            "nuevo-(verb)-(ind)",
+            "Es reciente / fue reciente"
+          ]
+        ]
+      },
+      {
+        "explanation": "En construcciones con raíces nominalizadas, puede formar nombres de temporadas o periodos:",
+        "examples": [
+          [
+            "Kosecha-nge-n",
+            "cosecha-(verb)-(pvn)",
+            "Temporada de cosecha"
+          ],
+          [
+            "Fillan-nge-n",
+            "escasez-(verb)-(pvn)",
+            "Época de escasez"
+          ]
+        ]
+      },
+      {
+        "explanation": "Puede aparecer en modo hipotético o combinado con sufijos de negación o impedimento:",
+        "examples": [
+          [
+            "Feypi-nge-li",
+            "decir-(verb)-(hip)",
+            "Si le dijeran"
+          ],
+          [
+            "Dungu-nge-fu-lmu",
+            "hablar-(verb)-(hip)-(ipd))",
+            "Si les hubieran hablado"
+          ],
+          [
+            "Wülel-nge-fu-lmi",
+            "pegar-(verb)-(ipd)-(hip)",
+            "Si te hubieran pegado"
+          ],
+          [
+            "Feypi-nge-no-fu-li",
+            "decir-(verb)-(neg)-(ipd)-(hip)",
+            "Si no me hubieran dicho"
           ]
         ]
       }

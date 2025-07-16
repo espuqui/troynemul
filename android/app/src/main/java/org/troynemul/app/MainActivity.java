@@ -156,7 +156,7 @@ public class MainActivity extends AppCompatActivity {
       });
       webSettings = webView.getSettings();
 
-      boolean online = true;
+      boolean online = false;
 
       if (online) {
         final CustomWebViewClient c = new CustomWebViewClient();
