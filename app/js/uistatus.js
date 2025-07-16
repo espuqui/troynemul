@@ -1,7 +1,7 @@
 import {AlphabetConverter, NoopAlphabetConverter} from "./backend/alphabet_converter.js";
 import {sendWordFeedback} from "./backend/send_feedback.js";
 
-const VERSION = '07/09/2025_PRE1'
+const VERSION = '07/15/2025_MVP1'
 const feedbackMap = new Map();
 
 import {
