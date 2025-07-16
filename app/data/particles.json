@@ -2,7 +2,7 @@
   "iñchiw|com": {
     "title": "asociativo [{iñche + kiñe che}] (con)",
     "color": "aqua",
-    "explanation": "Indica que uno está acompañado de una persona o algo más que en total suman dos. Equivale a decir <i>con alguien</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [iñche amu-n|yo ir-(ind)|yo fui] y queremos decir que fuimos con una persona más, agregamos <i>{iñchiw}</i> al final. Entonces queda: [iñche amu-n tañi ñuke iñchiw|yo ir-(ind) (poss1s) mamá (com)|yo fui con mi mamá].",
+    "explanation": "Indica que [iñche|yo] está acompañado de una persona o algo más que en total suman dos. Equivale a decir <i>con alguien</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [iñche amu-n|yo ir-(ind)|yo fui] y queremos decir que fuimos con una persona más, agregamos <i>{iñchiw}</i> al final. Entonces queda: [iñche amu-n tañi ñuke iñchiw|yo ir-(ind) (poss1s) mamá (com)|yo fui con mi mamá].",
     "variations": [],
     "related": [
       "iñchiñ|com",
@@ -36,7 +36,7 @@
   "iñchiñ|com": {
     "title": "asociativo [{iñche + pu che}] (con algunos)",
     "color": "aqua",
-    "explanation": "Indica que uno está acompañado de más de dos personas o cosas que en total suman mas de dos. Equivale a decir <i>con alguien</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [iñche amu-n|yo ir-(ind)|yo fui] y queremos decir con quien más fuimos, agregamos <i>{iñchiñ}</i> al final. Entonces queda: [iñche amu-n tañi reñma iñchiñ|yo ir-(ind) (poss1s) familia (com)|yo fui con mi familia].",
+    "explanation": "Indica que [iñche|yo] está acompañado de más de dos personas o cosas que en total suman mas de dos. Equivale a decir <i>con alguien</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [iñche amu-n|yo ir-(ind)|yo fui] y queremos decir con quien más fuimos, agregamos <i>{iñchiñ}</i> al final. Entonces queda: [iñche amu-n tañi reñma iñchiñ|yo ir-(ind) (poss1s) familia (com)|yo fui con mi familia].",
     "variations": [],
     "related": [
       "iñchiw|com",
@@ -75,7 +75,7 @@
   "emu|com": {
     "title": "asociativo [{eymi + kiñe che}] (con)",
     "color": "aqua",
-    "explanation": "Indica que {eymi} (tú) estás acompañado de una persona o algo más. Equivale a decir <i>con alguien</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [eymi amu-ymi|tu ir-(ind)|tu fuiste] y queremos decir que tú fuiste con una persona más, agregamos <i>{emu}</i> al final. Entonces queda: [eymi amu-ymi tami ñuke emu|tu ir-(ind) (poss2s) mamá (com)|tu fuiste con tu mamá].",
+    "explanation": "Indica que [eymi|tu] está acompañado de una persona o algo más. Equivale a decir <i>con alguien</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [eymi amu-ymi|tu ir-(ind)|tu fuiste] y queremos decir que tú fuiste con una persona más, agregamos <i>{emu}</i> al final. Entonces queda: [eymi amu-ymi tami ñuke emu|tu ir-(ind) (poss2s) mamá (com)|tu fuiste con tu mamá].",
     "variations": [],
     "related": [
       "iñchiñ|com",
@@ -110,7 +110,7 @@
   "emün|com": {
     "title": "asociativo [{eymi + kiñe che}] (con alguien)",
     "color": "aqua",
-    "explanation": "Indica que {eymi} (tú) está acompañado de más personas o cosas que en total suman mas que dos. Equivale a decir <i>con alguien</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [eymi amu-ymi|tu ir-(ind)|tu fuiste] y queremos decir que tú fuiste con mas de una persona, agregamos <i>{emün}</i> al final. Entonces queda: [eymi amu-ymi tami reñma emün|tu ir-(ind) (poss2s) familia (com)|tu fuiste con tu familia].",
+    "explanation": "Indica que [eymi|tú] está acompañado de más personas o cosas que en total suman mas que dos. Equivale a decir <i>con alguien</i> en {wingkadungun}. Se pone al final de la oración. <br /><br />Por ejemplo, si decimos: [eymi amu-ymi|tu ir-(ind)|tu fuiste] y queremos decir que tú fuiste con mas de una persona, agregamos <i>{emün}</i> al final. Entonces queda: [eymi amu-ymi tami reñma emün|tu ir-(ind) (poss2s) familia (com)|tu fuiste con tu familia].",
     "variations": [
       "eymün"
     ],
@@ -151,7 +151,7 @@
   "engu|com": {
     "title": "asociativo [{fey + kiñe che}] (con alguien)",
     "color": "aqua",
-    "explanation": "Indica que {fey} (él/ella) esta acompañado de una persona o una cosa y en total suman dos. Equivale a decir <i>con algo, con</i> en {wingkadungun}. Se puede poner al final de la oración como por ejemplo [mate engu asukura|mate (com) azúcar|mate con azúcar] o [mate asukura engu|mate azúcar (com)|mate con azúcar].",
+    "explanation": "Indica que [fey|él/ella] esta acompañado de una persona o una cosa y en total suman dos. Equivale a decir <i>con algo, con</i> en {wingkadungun}. Se puede poner al final de la oración como por ejemplo [mate engu asukura|mate (com) azúcar|mate con azúcar] o [mate asukura engu|mate azúcar (com)|mate con azúcar].",
     "variations": [],
     "related": [
       "iñchiñ|com",
@@ -185,7 +185,7 @@
   "engün|com": {
     "title": "asociativo [{fey + pu che}] (con algunos)",
     "color": "aqua",
-    "explanation": "Indica que {fey} (él/ella) esta acompañado de mas de una persona o mas una cosa y en total suman mas de dos. Equivale a decir <i>con algo, con</i> en {wingkadungun}. Se puede poner al final de la oración como por ejemplo [trewa pu ñarki engün|perro (coll) gato (com)|el perro con los gatos].",
+    "explanation": "Indica que [fey|él/ella] esta acompañado de mas de una persona o mas una cosa y en total suman mas de dos. Equivale a decir <i>con algo, con</i> en {wingkadungun}. Se puede poner al final de la oración como por ejemplo [trewa pu ñarki engün|perro (coll) gato (com)|el perro con los gatos].",
     "variations": [],
     "related": [
       "iñchiñ|com",
@@ -209,14 +209,13 @@
   "mew|inst": {
     "title": "sufijo (con, en, de, entre, hacia, por)",
     "color": "green",
-    "explanation": "se ubica después de un sustantivo, cuyo significado pueder ser de instrumento, lugar, dirección o causa. ",
+    "explanation": "La palabra [mew|(inst)] se ubica después de un sustantivo, cuyo significado pueder ser de instrumento, lugar, dirección o causa. ",
     "variations": [
       "mu"
     ],
     "content": [
       {
-        "subtitle": "1. instrumento <i>(con)</i>",
-        "explanation": "se una para para decir que se hace algo con una cosa (equivalente a <i>con</i>)",
+        "explanation": "Se una para para decir que se hace algo con una cosa (instrumento, equivalente a <i>con</i>):",
         "examples": [
           [
             "Tranu mew wül-el-enew",
@@ -231,8 +230,7 @@
         ]
       },
       {
-        "subtitle": "2. lugar <i>(en, de)</i>",
-        "explanation": "se una para para decir en el lugar donde ocurre algo (equivalente a <i>con</i>)",
+        "explanation": "Se una para para decir en el lugar donde ocurre algo (lugar, equivalente a <i>en</i>):",
         "examples": [
           [
             "Tañi wen'uy müle-y tañi ruka mew",
@@ -242,8 +240,7 @@
         ]
       },
       {
-        "subtitle": "3. dirección <i>(a, para)</i>",
-        "explanation": "se una para para decir el lugar de donde o hacia donde ocurre algo.",
+        "explanation": "Se usa para para decir el lugar de donde o hacia donde ocurre algo (dirección).",
         "examples": [
           [
             "Lelfün mew tuw-ün",
@@ -258,7 +255,7 @@
         ]
       },
       {
-        "explanation": "pero el lugar es un nombre propio, se puede omitir [mew|(inst)].",
+        "explanation": "Pero si el lugar es un nombre propio, se puede omitir [mew|(inst)]:",
         "examples": [
           [
             "Santiaw tuw-ün",
@@ -273,8 +270,7 @@
         ]
       },
       {
-        "subtitle": "4. tiempo <i>(en)</i>",
-        "explanation": "se usa para decir en cuanto tiempo ocurrirá algo",
+        "explanation": "Se usa para decir en cuanto tiempo ocurrirá algo (tiempo):",
         "examples": [
           [
             "Epu antü mew",
@@ -284,7 +280,7 @@
         ]
       },
       {
-        "explanation": "pero no se se ocupa si es durante el mismo día",
+        "explanation": "Pero no se se ocupa si es durante el mismo día:",
         "examples": [
           [
             "Pun' wüla tüku-a-n ñi firma",
@@ -294,12 +290,11 @@
         ]
       },
       {
-        "subtitle": "4. causa <i>(porque)</i>",
-        "explanation": "se usa para decir <i>porque</i> (indicar causa o motivo). Para responder una pregunta hecha con <i>{chumngelu?}</i>.",
+        "explanation": "Se usa para decir <i>porque</i> (indicar causa o motivo). Para responder una pregunta hecha con [¿ Chumngelu ?|¿ Por.qué ?]:",
         "examples": [
           [
             "¿ Chumngelu petu witra-la-ymi ? Petu witra-la-n rume wütre-le-n mew",
-            "¿ Por.qué todavía levantar-(neg)-(ind) ? Todavía levantar-(neg)-(ind) muy frio-(st28)-(pvn4)-(inst)",
+            "¿ Por.qué todavía levantar-(neg)-(ind) ? Todavía levantar-(neg)-(ind) muy frio-(st)-(pvn)-(inst)",
             "¿ Por qué todavía no te levantas ? Todavía no me levanto porque hace mucho frío"
           ]
         ]
@@ -430,7 +425,7 @@
     "title": "característica, forma, llevar puesto",
     "color": "chocolate",
     "fix": "in",
-    "explanation": "El sufijo <i>-tule</i> (también conjugado como <i>-tulen</i>, etc.) indica una característica visible, natural o adquirida, principalmente relacionada con partes del cuerpo (como cabello u ojos), o con accesorios (como ropa). Puede expresar forma, color, estado o el hecho de ‘llevar algo puesto’. También puede aparecer en construcciones para expresar hábitos o condiciones habituales.<br><br>Se conjuga según la persona, y puede combinarse con marcadores como <i>allwe</i> para atenuar la expresión (por ejemplo, ‘medianamente canoso’). La negación se expresa con el sufijo <i>-la</i> colocado antes de la terminación personal.",
+    "explanation": "La partícula [tule|(tr-st)] (formada por [tu-le|(tr)-(st)]) indica una característica visible, natural o adquirida, principalmente relacionada con partes del cuerpo (como cabello u ojos), o con accesorios (como ropa). Puede expresar forma, color, estado o el hecho de ‘llevar algo puesto’. También puede aparecer en construcciones para expresar hábitos o condiciones habituales.<br><br>Se conjuga según la persona, y puede combinarse con [allwe|algo] para atenuar la expresión (por ejemplo, [Allwe lig longko-tule-n|algo blanco pelo-(tr-st)-(ind)|Tengo el pelo medio canoso]).",
     "variations": [],
     "related": [
       "le|st",
@@ -439,7 +434,7 @@
     ],
     "content": [
       {
-        "explanation": "Características del cabello u otras partes del cuerpo",
+        "explanation": "Características del cabello u otras partes del cuerpo:",
         "examples": [
           [
             "Lig longko-tule-n",
@@ -469,7 +464,7 @@
         ]
       },
       {
-        "explanation": "Accesorios o vestimenta que se lleva puesta",
+        "explanation": "Accesorios o vestimenta que se lleva puesta:",
         "examples": [
           [
             "Kürü chimpiru-tule-ymi",
@@ -484,7 +479,7 @@
         ]
       },
       {
-        "explanation": "Preguntas y negaciones sobre aspecto físico o forma",
+        "explanation": "Preguntas y negaciones sobre aspecto físico o forma:",
         "examples": [
           [
             "¿Chem ad-tule-y ñi longko?",
@@ -499,7 +494,7 @@
         ]
       },
       {
-        "explanation": "Conjugación según persona",
+        "explanation": "Conjugación según persona:",
         "examples": [
           [
             "Lig longko-tule-n",
@@ -519,16 +514,16 @@
         ]
       },
       {
-        "explanation": "Uso en expresiones habituales o estados de costumbre",
+        "explanation": "Uso en expresiones habituales o estados de costumbre:",
         "examples": [
           [
             "Wim-tule-n ñi lef-el",
-            "acostumbrarse-(tr-st)-(ind) (poss1s) correr-(ovn4)",
+            "acostumbrarse-(tr-st)-(ind) (poss1s) correr-(ovn)",
             "Estoy acostumbrado a correr"
           ],
           [
             "Wim-tule-n ñi kishu-le-ke-n",
-            "acostumbrarse-(tr-st)-(ind) (poss1s) estar.solo-(st)-(cf14)-(pvn4)",
+            "acostumbrarse-(tr-st)-(ind) (poss1s) estar.solo-(st)-(cf)-(pvn)",
             "Estoy acostumbrado a estar solo"
           ]
         ]
@@ -570,7 +565,7 @@
     ],
     "content": [
       {
-        "explanation": "Oficios o roles derivados de verbos simples",
+        "explanation": "Oficios o roles derivados de verbos simples:",
         "examples": [
           [
             "Küdaw-fe",
@@ -595,7 +590,7 @@
         ]
       },
       {
-        "explanation": "Formación con verbos compuestos o con estructuras complejas",
+        "explanation": "Formación con verbos compuestos o con estructuras complejas:",
         "examples": [
           [
             "Lawen-tu-che-fe",
@@ -615,7 +610,7 @@
         ]
       },
       {
-        "explanation": "Neologismos a partir de conceptos modernos",
+        "explanation": "Neologismos a partir de conceptos modernos:",
         "examples": [
           [
             "Ingka-che-fe",
@@ -640,7 +635,7 @@
         ]
       },
       {
-        "explanation": "Ejemplos en oraciones",
+        "explanation": "Ejemplos en oraciones:",
         "examples": [
           [
             "Waria mew pu ruka-fe fewla dewma-ke-yngün ruka",
@@ -655,7 +650,7 @@
         ]
       },
       {
-        "explanation": "Palabras que provienen directamente del español no usan este sufijo",
+        "explanation": "Palabras que provienen directamente del español no usan este sufijo:",
         "examples": [
           [
             "Mediku",
