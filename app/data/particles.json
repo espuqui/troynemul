@@ -1437,13 +1437,13 @@
         "explanation": "En combinación con el futuro [a|(nrld)] expresa un resultado hipotético frustrado o temido:",
         "examples": [
           [
-            "¿ Chumngechi kim-a-fu-iñ ?",
-            "¿ cómo saber-(nrld)-(ipd)-(ind) ?",
+            "¿ Chumngechi kim-afu-iñ ?",
+            "¿ cómo saber-(nrld-ipd)-(ind) ?",
             "¿Cómo íbamos a saber?"
           ],
           [
-            "Chafo-a-fu-ymi wütre mew",
-            "resfriarse-(nrld)-(ipd)-(ind) frío (inst)",
+            "Chafo-afu-ymi wütre mew",
+            "resfriarse-(nrld-ipd)-(ind) frío (inst)",
             "Te podrías haber resfriado por el frío"
           ]
         ]
