@@ -2013,5 +2013,73 @@
         ]
       }
     ]
+  },
+  "ntu|verbev": {
+    "title": "verbalizador evaluativo (parecer, gustar)",
+    "color": "mediumorchid",
+    "fix": "in",
+    "explanation": "La partícula [ntu|verbev] o [tu|verbev] se añade a adjetivos para formar un verbo que indica una valoración subjetiva. Se usa para expresar que <b>algo parece ser</b> de cierta manera, o que <b>algo le gusta a alguien</b>. Por ejemplo, a partir de [küme|bueno] se forma [küme-ntu|bueno (verbev)|parece bueno/gustar].<br><br>El sujeto de la oración es quien hace la valoración (quien gusta), mientras que el objeto es lo que se evalúa.<br>También puede expresar juicios como ‘parece pesado’, ‘lo siente tibio’, o ‘cree que vale la pena’.",
+    "variations": [],
+    "related": [
+      "nge|verb",
+      "ngen|noun"
+    ],
+    "content": [
+      {
+        "explanation": "Se forma a partir de un adjetivo. El resultado expresa gusto, sensación o evaluación del hablante:",
+        "examples": [
+          [
+            "Küme-ntu-ke-n",
+            "bueno-(verbev)-(cf)-(ind)",
+            "Me parece bueno / Me gusta"
+          ],
+          [
+            "Küme-ntu-ke-ymi",
+            "bueno-(verbev)-(cf)-(ind)",
+            "Te gusta / Te parece bueno"
+          ],
+          [
+            "Are-ntu-ke-y",
+            "tibio-(verbev)-(cf)-(ind)",
+            "Le parece tibio / siente que está tibio"
+          ],
+          [
+            "Fane-ntu-ke-y",
+            "pesado-(verbev)-(cf)-(ind)",
+            "Le parece pesado"
+          ]
+        ]
+      },
+      {
+        "explanation": "Comparaciones de gusto o preferencia con construcciones con [doy|mas]:",
+        "examples": [
+          [
+            "Doy küme-ntu-ke-n füre mate ta kochü mate mew",
+            "más bueno-(verbev)-(distr)-(ind) mate amargo que mate dulce (inst)",
+            "Me gusta más el mate amargo que el dulce"
+          ],
+          [
+            "Doy küme-ntu-ke-ymi fayümko ta pülko mew",
+            "más bueno-(verbev)-(distr)-(ind) cerveza que vino (inst)",
+            "Te gusta más la cerveza que el vino"
+          ],
+          [
+            "Doy küme-ntu-ke-y kochü-ke iyael ta kotrü-ke iyael mew",
+            "más bueno-(verbev)-(distr)-(ind) comida-(distr) dulce que salada-(distr) comida (inst)",
+            "Le gustan más las comidas dulces que las saladas"
+          ]
+        ]
+      },
+      {
+        "explanation": "También se usa para indicar valoración general o juicio subjetivo:",
+        "examples": [
+          [
+            "¿ Chum-nge-ntu-ke-y ?",
+            "¿ cómo-(verb)-(verbev)-(cf)-(ind) ?",
+            "¿Qué te parece? / ¿Cómo se ve?"
+          ]
+        ]
+      }
+    ]
   }
 }
