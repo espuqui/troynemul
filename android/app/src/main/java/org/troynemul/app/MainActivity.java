@@ -41,7 +41,7 @@ class CustomWebViewClient extends WebViewClient {
 public class MainActivity extends AppCompatActivity {
 
   // Actualizar para modo offline
-  //public static final String OFFLINE_URL = "file:///android_asset/index.html";
+  public static final String OFFLINE_URL = "file:///android_asset/index.html";
   public static final String ONLINE_URL = "https://test.troynemul.org/";
   public static final String NO_INTERNET_URL = "file:///android_asset/nointernet.html";
   public static final String KURI = "#000000";
@@ -198,7 +198,7 @@ public class MainActivity extends AppCompatActivity {
           webView.loadUrl(ONLINE_URL);
         }
       } else {
-        webView.loadUrl(ONLINE_URL);
+        webView.loadUrl(OFFLINE_URL);
 
       }
 
