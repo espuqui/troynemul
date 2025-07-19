@@ -1169,8 +1169,6 @@
     "color": "blue",
     "fix": "post",
     "explanation": "La partícula [chi|(adj)] se utiliza principalmente con pronombres demostrativos, como [tüfa|este|este], [tüfey|ese|ese], [tiye|aquel|aquel] cuando acompañan a un sustantivo para señalarlo mejor. <br /><br/>Si decimos (sin agregar un verbo): [Tüfa trewa|este perro|Esto es un perro], es como decir:  'esta cosa que está cerca mío, es un perro'. Aquí me importa mas la cosa que el perro. <br /><br/>Si decimos [Tüfa-chi trewa|este-(adj) perro|Este perro], queremos decir 'el perro estoy viendo'. Aqui me importa que quede claro que estamos hablando del perro específico que estoy viendo. <br/><br/>También se emplea con sustantivos verbales para crear construcciones del tipo 'persona que...' o 'cosa que...'.",
-
-
     "variations": [],
     "related": [
       "ta|adj",
@@ -1406,7 +1404,7 @@
     "color": "indianred",
     "fix": "in",
     "explanation": "La partícula [fu|(ipd)] indica que una acción fue interrumpida, impedida o que no tuvo el resultado esperado. Muchas veces puede traducirse como ‘había...’, ‘quería... pero...’, o ‘no se pudo...’. <br/><br/>Su significado va más allá del pasado: señala una ruptura en lo que normalmente se esperaría. Por eso, también puede usarse en deseos que no se cumplieron, hipótesis no realizadas, deberes no efectuados, o acciones que no resultaron como se pensaba.<br><br>Siempre deja implícito un <b>'pero'</b>, incluso si no se dice explícitamente. Se puede combinar con otros sufijos como [a|(nrld)] → [afu|(nrld-ipd)] (acción no realizada), [ke|(cf)] → [kefu|(cf-ipd)] (continuativo), o [fal|(force)] → [falfu|(force-ipd)] (deber, obligación), para expresar diferentes matices de posibilidad frustrada, consejo no seguido o intención no cumplida.",
-    "variations": [],
+    "variations": ["f"],
     "related": [
       "a|nrld",
       "ke|cf",
@@ -2018,8 +2016,10 @@
     "title": "verbalizador evaluativo (parecer, gustar)",
     "color": "mediumorchid",
     "fix": "in",
-    "explanation": "La partícula [ntu|verbev] o [tu|verbev] se añade a adjetivos para formar un verbo que indica una valoración subjetiva. Se usa para expresar que <b>algo parece ser</b> de cierta manera, o que <b>algo le gusta a alguien</b>. Por ejemplo, a partir de [küme|bueno] se forma [küme-ntu|bueno (verbev)|parece bueno/gustar].<br><br>El sujeto de la oración es quien hace la valoración (quien gusta), mientras que el objeto es lo que se evalúa.<br>También puede expresar juicios como ‘parece pesado’, ‘lo siente tibio’, o ‘cree que vale la pena’.",
-    "variations": [],
+    "explanation": "La partícula [ntu|(verbev)] o [tu|(verbev)] se añade a adjetivos para formar un verbo que indica una valoración subjetiva. Se usa para expresar que <b>algo parece ser</b> de cierta manera, o que <b>algo le gusta a alguien</b>. Por ejemplo, a partir de [küme|bueno] se forma [küme-ntu|bueno (verbev)|parece bueno/gustar].<br><br>El sujeto de la oración es quien hace la valoración (quien gusta), mientras que el objeto es lo que se evalúa.<br>También puede expresar juicios como ‘parece pesado’, ‘lo siente tibio’, o ‘cree que vale la pena’.",
+    "variations": [
+      "tu"
+    ],
     "related": [
       "nge|verb",
       "ngen|noun"
@@ -2077,6 +2077,131 @@
             "¿ Chum-nge-ntu-ke-y ?",
             "¿ cómo-(verb)-(verbev)-(cf)-(ind) ?",
             "¿Qué te parece? / ¿Cómo se ve?"
+          ]
+        ]
+      }
+    ]
+  },
+  "eyu|ind": {
+    "title": "indicativo [{iñche} → {eymi}] (yo te...)",
+    "color": "dodgerblue",
+    "fix": "post",
+    "explanation": "La partícula [eyu|(ind)] marca la relación entre un [iñche|yo|yo] y un objeto directo de [eymi|tu|tu]. Indica que <i>yo hago algo contigo o hacia ti</i>. Se usa con verbos transitivos, y la acción recae directamente sobre el interlocutor. Es una terminación muy frecuente en conversaciones, especialmente para expresar acciones como enseñar, ver, decir, ayudar, o agradecer.<br><br>Nota: esta partícula no cubre situaciones hay un tercer elemento (como [kintu-lel-eyu rüngo|buscar-(ben)-(ind) harina|yo te busco harina] ), en cuyo caso se usa una partícula intermedia como [lel|(ben)]. Es complementaria a [en|(ind)|tu me...].\"",
+    "variations": [],
+    "related": ["en|ind", "lel|ben"],
+    "content": [
+      {
+        "explanation": "Se usa cuando el hablante (yo) realiza una acción sobre el interlocutor (tú):",
+        "examples": [
+          [
+            "Kimeltu-eyu",
+            "enseñar-(ind)",
+            "Yo te enseñé"
+          ],
+          [
+            "Pe-eyu",
+            "ver-(ind)",
+            "Yo te vi"
+          ],
+          [
+            "Kintu-eyu",
+            "buscar-(ind)",
+            "Yo te busqué"
+          ],
+          [
+            "Dungu-eyu",
+            "hablar-(ind)",
+            "Yo te hablé"
+          ],
+          [
+            "Feypi-eyu",
+            "decir-(ind)",
+            "Yo te dije"
+          ]
+        ]
+      },
+      {
+        "explanation": "También se emplea con verbos en futuro o en fórmulas conversacionales:",
+        "examples": [
+          [
+            "Kimeltu-a-eyu may, peñi",
+            "enseñar-(nrld)-(ind) pues, hermano",
+            "Te enseñaré pues, hermano"
+          ],
+          [
+            "Feley peñi, ñochi-kechi dungu-a-eyu",
+            "Está.bien hermano, despacio-(cf-distr) hablar-(nrld)-(ind)",
+            "Está bien, hermano, te hablaré despacio"
+          ],
+          [
+            "Mañium-eyu",
+            "agradecer-(ind)",
+            "Te agradezco"
+          ]
+        ]
+      },
+      {
+        "explanation": "Distinción importante: [eyu|(ind)] se usa solo para objeto directo. Para indicar una cosa adicional, se agrega la partícula [lel|(ben)].",
+        "examples": [
+          [
+            "Kintu-lel-eyu kofke",
+            "buscar-(ben)-(ind) pan",
+            "Yo te busco harina"
+          ]
+        ]
+      }
+    ]
+  },
+  "en|ind": {
+    "title": "indicativo [{eymi} → {iñche}] (tu me...)",
+    "color": "dodgerblue",
+    "fix": "post",
+    "explanation": "La partícula [en|(ind)] marca la relación entre un [eymi|tu|tu] y el objeto directo [iñche|yo|yo]. Es decir, tú realizas una acción que me afecta directamente a mí. Esta terminación aparece con verbos transitivos y es una de las formas más comunes en conversaciones entre dos personas. Es complementaria a [eyu|(ind)|yo te...].",
+    "variations": [],
+    "related": ["eyu|(ind)", "lel|verb"],
+    "content": [
+      {
+        "explanation": "Se usa cuando el hablante (yo) es el receptor de la acción y el interlocutor (tú) es quien la realiza:",
+        "examples": [
+          [
+            "Dungu-en",
+            "hablar-(ind)",
+            "Me hablaste"
+          ],
+          [
+            "Feypi-en",
+            "decir-(ind)",
+            "Me dijiste"
+          ],
+          [
+            "Pe-la-en",
+            "ver-(neg)-(ind)",
+            "No me viste"
+          ],
+          [
+            "Elu-en",
+            "dar-(ind)",
+            "Tú me diste"
+          ],
+          [
+            "Kimeltu-en",
+            "enseñar-(ind)",
+            "Tú me enseñaste"
+          ]
+        ]
+      },
+      {
+        "explanation": "También se encuentra en preguntas y expresiones comunes:",
+        "examples": [
+          [
+            "¿ Feypi-af-en ?",
+            "¿ decir-(nrld-ipd)-(ind) ?",
+            "¿Me podrías decir?"
+          ],
+          [
+            "¿ Fürene-af-en ?",
+            "¿ hacer-(nrld-ipd)-(ind) ?",
+            "¿Me harías un favor?"
           ]
         ]
       }
